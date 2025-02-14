@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--discord-->
+    <meta content="EIDOLONENTROPY - OFFICIAL WEBSITE" property="og:title" />
+      <meta content="RAISE EIDOLONS, DEFY ENTROPY" property="og:description" />
+      <meta content="https:/eidolonentropy.art/" property="og:url" />
+      <meta content="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/bothtext.png" property="og:image" />
+      <meta content="#000" data-react-helmet="true" name="theme-color" />
+
+    <!-- Bootstrap CSS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cf51d7e348.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="consolidated.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anim.css">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<style>
+        @import url('https://fonts.googleapis.com/css?family=Goldman|Metal+Mania|Orbitron|Redacted|Play');
+        body, .tooltip {
+            font-family: Play, Tahoma, sans-serif;
+        }
+        .goldman {
+          font-family: Goldman;
+        }
+        .grid .card, .card-deck .card, #reg4 .card {
+          background: rgba(0,0,0,0.6);
+        }
+        a:hover .redden-icon {
+          opacity:0.75
+        }
+        .btn.btn-primary:hover, 
+        .btn.btn-primary:focus, 
+        .btn.btn-primary.active {
+          background: #f44236 !important;
+          border-color: #f44236 !important;
+        }
+        .grid.row {
+          height: 100% !important;
+        }
+        .text-mako {
+          color: #0f8;
+        }
+        .card-outline-mako {
+          border-color: #0f8
+        }
+        .text-vox {
+          color: #0f0;
+        }
+        .card-outline-vox {
+          border-color: #0f0
+        }
+        @media (max-height: 800px) {
+          .entozier {
+            display:none !important;
+          }
+        }
+        @media (max-width: 767.98px) {
+          .header-wrapper {
+            left: 0 !important;
+          }
+          .border-card {
+            clip-path: none !important;
+            border-top-left-radius: 50px;
+          }
+          .main-card {
+            overflow-x: hidden;
+            border-top-left-radius: 50px;
+          }
+          .header-word {
+            text-indent: 1.5rem;
+            font-size:2rem;
+          }
+        }
+	</style>
+	<!--title-->
+    <title>EidolonEntropy</title>
+  </head>
+  <body style="background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/gradient.svg);background-attachment:fixed;background-position:center;background-color:#111; color: #e2e2e2">
+  
+  <!--bg-->
+  <!--<div class="container-flex" style="background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/gradient.svg);background-attachment:fixed;background-position:center;">-->
+    <div style="position:absolute;width:100%;height:100%;z-index:-1;mix-blend-mode: difference;">
+	    <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/corner1.svg" style="position:absolute;top:0;left:0;max-width:50%;max-height:50%">
+	    <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/corner2.svg" style="position:absolute;top:0;right:0;max-width:50%;max-height:50%">
+	    <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/corner3.svg" style="position:absolute;bottom:0;left:0;max-width:50%;max-height:50%">
+	    <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/corner4.svg" style="position:absolute;bottom:0;right:0;max-width:50%;max-height:50%">
+    </div>
+  <!--end bg-->
+
+  <!--nav-->
+  <div class="p-2 container-fluid ui-group filters" style="position:fixed; z-index:100;">
+    <ul class="w-100 row justify-content-between mx-auto nav nav-pills" style="max-width:400px">
+      <li class="align-self-center" data-toggle="tooltip" title="Status" onclick="triggerHeaderAnim('Status')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#reg2"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Projects" onclick="triggerHeaderAnim('Projects')"><a class="text-danger fas fa-photo-video fa-2x button" data-toggle="tab" href="#reg3" data-filter=".project-ongoing"></a> </li>
+      <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/bothtext500.png" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#reg1"></li>
+      <li class="align-self-center" data-toggle="tooltip" title="Contributors" onclick="triggerHeaderAnim('Contributors')"><a class="text-info fas fa-address-card fa-2x" data-toggle="tab" href="#reg4"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Shops" onclick="triggerHeaderAnim('Shops')"><a class="text-success fas fa-shopping-cart fa-2x" data-toggle="tab" href="#reg5"></a> </li>
+    </ul>
+  </div><!--end nav-->
+  
+  <!--body-->
+  <div class="w-100" style="height:100px"></div>
+  <div class="mx-3" style="margin-top:1em;">
+    <div class="mx-auto" style="max-width:1600px; height:calc(100vh - (100px + 2em)); position: relative;">
+      <div class="border-card" style="position:absolute;height:100%;width:100%;left:0;top:0; border:solid 2px red;border-bottom-right-radius: 50px; z-index:1; pointer-events: none; clip-path: polygon(180px 50px, 180px 0, 100% 0, 100% 100%, 0 100%, 0 50px);"></div>
+      <div class="main-card card border-0 h-100 p-3" style="background:rgba(0,0,0,0.6);border-bottom-right-radius: 50px;"><!--start inner card-->
+        <div class="header-wrapper" style="position:absolute; left:170px;top:-10px;">
+          <div class="header-word goldman h1 pt-4" style="width:fit-content; height: 20vw; max-height:100px; position:relative; background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/header1.svg);background-size:auto 100%;background-repeat:no-repeat;background-position: right center;"><span id="header" class="reveal-text bg-transparent text-uppercase">EidolonEntropy</span><div style="width:400px"></div><div class="header-design" style="position:absolute;height:100%;width:300px;top:0; right:100%; background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/header2.svg); background-size: auto 100%; background-repeat: no-repeat; background-position: right;"></div></div>
+        </div>
+
+        <div class="tab-content" style="height:100%">
+          <div class="tab-pane fade active show" id="reg1" style="height:calc(100% - 100px);margin-top:90px">
+            <div class="container-fluid" style="height:calc(100% - 30px);overflow-y:scroll;">
+
+              <div class="tab-content">
+                <div class="tab-pane fade active show" id="main1">
+                  <img class="entozier d-none d-lg-block" src="https://i.ibb.co/gVNX9Th/ezgif-com-gif-maker-4.gif" style="position:absolute;bottom:0;right:10px;">
+                  <h2 class="goldman text-center text-uppercase">Raise Eidolons, Defy Entropy</h2><hr>
+                  <p class="lead text-center"><span class="text-uppercase">EidolonEntropy</span> is a collaborative effort. See <span>Contributors</span> tab for more.</p>
+                  <h3 class="text-danger goldman mb-0"><span class="px-3" style="background-image:url(https://ohdoylerules.com/images/font-awesome-sheet.svg);background-size:1000px;background-position:-93px 396px;filter: invert(17%) sepia(98%) saturate(5174%) hue-rotate(352deg) brightness(96%) contrast(109%);"></span><em>Battalia of EidolonEntropy // SCP</em></h3>
+                  <span><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger" data-toggle="tooltip" data-placement="bottom" title="Videos branded with the red left facing insignia"><i class="fab fa-youtube"></i>&nbsp;&nbsp;EidolonEntropy</a>&nbsp;&nbsp;||&nbsp;
+                    <a href="https://battaliascp.tumblr.com/" target="_blank" class="text-danger"><i class="fab fa-tumblr"></i>&nbsp;&nbsp;BattaliaSCP</a>&nbsp;&nbsp;||&nbsp;
+                    <a href="https://battaliaart.tumblr.com/" target="_blank" class="text-danger"><i class="fab fa-tumblr"></i>&nbsp;&nbsp;BattaliaArt</a>&nbsp;&nbsp;||&nbsp;
+                    <a href="https://toyhou.se/Battalia" target="_blank" class="text-danger"><span><img src="https://toyhou.se/img/favicon.ico" class="redden-icon"></span>&nbsp;&nbsp;Battalia</a>&nbsp;&nbsp;||&nbsp;
+                    <a href="https://artfight.net/~Battalia" target="_blank" class="text-danger"><i class="fas fa-pencil-ruler"></i>&nbsp;&nbsp;Battalia</a>
+                  </span>
+                  <p class="pt-2">Battalia is the primary content creator for and the founder of EidolonEntropy. The artist-animator creates most of EidolonEntropy's content featuring a range of techniques spanning both 2D and 3D methods. Battalia specialises in a wide variety of different content types including voice/audio, video editing, web design, and the technical side of animation.</p>
+                  <p>Battalia is the author of <i>TAKEOVER: In The Name Of Love</i>, a story of meaning and happiness told through the lens of cool dragons.</p>
+                  <p>Unless otherwise stated, most work done under EidolonEntropy is by Battalia, the webmaster. Thumbnails and other items are watermarked with the red left facing insignia.</p>
+                  <p>While Eidolon is acceptable, the names Battalia (B//EidolonEntropy) or SCP are preferable.</p>
+                </div>
+              
+                <div class="tab-pane fade" id="main2">
+
+                  <div class="accordion md-accordion" id="accordionB" role="tablist" aria-multiselectable="true">
+
+                    <!--accordion0--><div>
+                    <div class="mb-2" role="tab" id="heading0B">
+                      <a class="lead mb-0 goldman" data-toggle="collapse" data-parent="#accordionB" href="#accordion0B" aria-expanded="true" aria-controls="accordion0B">
+                        About B//EidolonEntropy</a>
+                    </div>
+                    <div id="accordion0B" class="collapse show" role="tabpanel" aria-labelledby="heading0B" data-parent="#accordionB">
+                      <a class="float-right d-none d-lg-block" href='http://internetometer.com/give/50593'><img src='http://internetometer.com/image/50593.png'/></a>
+                      <p><i class="text-uppercase">Distortion Rectrix // The New Insane</i></p>
+                      <p>not normal</p>
+                      <p>I got horrible luck with jobs PLEASE hire me istg battalia (at) eidolonentropy dot art</p>
+                      <p class="pb-0 mb-0">Talk to me about (aka the pillars of my personality):</p>
+						            <div class="row px-4 pb-2">
+						              <ul class="col-12 col-md-4 mb-0">
+						              	<li>Devil May Cry</li>
+						              	<li>Jojo's Bizarre Adventure</li>
+						              	<li>Sly Cooper</li>
+						              	<li>Ratchet and Clank</li>
+							              <li>The Matrix</li>
+							              <li>OFF</li>
+
+						              </ul>
+						              <ul class="col-12 col-md-4 mb-0">
+						              	<li>Stranger Things</li>
+						              	<li>Psychonauts</li>
+						              	<li>Inscryption</li>
+						              	<li>Five Nights at Freddy's</li>
+						              	<li>Undertale</li>
+						              	<li>Music</li>
+							
+						              </ul>
+						            </div>
+                        <a class="mx-auto text-center d-block d-lg-none" href='http://internetometer.com/give/50593'><img src='http://internetometer.com/image/50593.png'/></a>
+                    </div>
+                    <!--end accordion0--></div>
+
+                    <!--accordion1--><div>
+                    <div class="mb-2" role="tab" id="heading1B">
+                      <a class="lead mb-0 goldman" data-toggle="collapse" data-parent="#accordionB" href="#accordion1B" aria-expanded="false" aria-controls="accordion1B">
+                      Peter's Laws</a>
+                    </div>
+                    <div id="accordion1B" class="collapse" role="tabpanel" aria-labelledby="heading1B" data-parent="#accordionB">
+                      <div class="p-3">
+                        <h5 class="goldman">Creed of the Sociopathic Obsessive Compulsive</h5>
+                      
+            <hr>
+            <ol>
+              <li>If anything can go wrong, Fix It!!… to hell with Murphy!</li>
+              <li>When given a choice…  take both!!</li>
+              <li>Multiple projects lead to multiple successes.</li>
+              <li>Start at the top then work your way up.</li>
+              <li>Do it by the book … but be the author!</li>
+              <li>When forced to compromise, ask for more.</li>
+              <li>If it’s worth doing, it’s got to be done right now.</li>
+              <li>If you can’t win, change the rules.</li>
+              <li>If you can’t change the rules, then ignore them.</li>
+              <li>Perfection is not optional.</li>
+              <li>When faced without a challenge, make one.</li>
+              <li>“No” simply means begin again at one level higher.</li>
+              <li>Don’t walk when you can run.</li>
+              <li>Bureaucracy is a challenge to be conquered with a righteous attitude, a tolerance for stupidity, and a bulldozer when necessary.</li>
+              <li>When in doubt: THINK!</li>
+              <li>Patience is a virtue, but persistence to the point of success is a blessing.</li>
+              <li>The squeaky wheel gets replaced.</li>
+              <li>The faster you move, the slower time passes, the longer you live.</li>
+              <li>The best way to predict the future is to create it yourself!</li>
+              <li>The ratio of something to nothing is infinite.</li>
+              <li>You get what you incentivize.</li>
+              <li>If you think it is impossible, then it is… for you.</li>
+              <li>An expert is someone who can tell you exactly how it can’t be done.</li>
+              <li>The day before something is a breakthrough it’s a crazy idea.</li>
+              <li>If it were easy it would have been done already.</li>
+              <li>Without a target you’ll miss it every time.</li>
+              <li>Bullshit walks, hardware talks.</li>
+              <li>A crisis is a terrible thing to waste.</li>
+              <li>The world’s most precious resource is the passionate and committed human mind.</li>
+              <li>Fail early, fail often!</li>
+              <li>If you can’t measure it, you can’t improve it.</li>
+            </ol>
+                      
+                      </div>
+                    </div>
+                    <!--end accordion1--></div>
+                    
+                    <!--accordion2--><div>
+                    <div class="mb-2" role="tab" id="heading2B">
+                      <a class="collapsed lead mb-0 goldman" data-toggle="collapse" data-parent="#accordionB" href="#accordion2B" aria-expanded="false" aria-controls="accordion2B">
+                        Quotes</a>
+                    </div>
+                    <div id="accordion2B" class="collapse" role="tabpanel" aria-labelledby="heading2B" data-parent="#accordionB">
+                      
+            <div>
+              <p class="mb-0">All the seven deadly sins are man's true nature. To be greedy. To be hateful. To have lust. Of course, you have to control them, but if you're made to feel guilty for being human, then you're going to be trapped in a never-ending sin-and-repent cycle that you can't escape from.</p>
+              <footer class="blockquote-footer text-right">Marilyn Manson, head of the Celebretarian Corporation</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">You know what's hard about being the smartest person in the world? Everyone else is stupid.</p>
+              <footer class="blockquote-footer text-right">Dr. Robotnik, <cite>Sonic the Hedgehog (2020)</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">I &#91;think&#93; that without scars, emotional and physical, you can't really find yourself. It doesn't mean you should want to have scars, it's just that the people who have gone through the hardest points in their life growing up, tend to be &#91;...&#93; people who I find to be great artists.</p>
+              <footer class="blockquote-footer text-right">Marilyn Manson, Apple Music WE ARE CHAOS Interview</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Do we get what we deserve?<br>Or do we deserve what we get?<br>Steal from the last, fuck the past<br>Here is your present, let's take the future</p>
+              <footer class="blockquote-footer text-right"> <cite>KEEP MY HEAD TOGETHER</cite> by Marilyn Manson</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Usurper slain, an empty throne<br>The crown lies covered in blood.<br>Power is its own reward and we have only just begun.<br>So grab your blade, the time has come<br>We only have each other.</p>
+              <footer class="blockquote-footer text-right">Devil May Cry 5 Special Edition, Secret Ending Blurb (Vergil)<footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Tell me what you regard as your Greatest Strength,<br>so I will know how to undermine you;<br>Tell me of your Greatest Fear,<br>so I will know which I must force you to face;<br>Tell me what you Cherish most,<br>so I will know what to take from you;<br>And tell me what you Crave,<br>so that I must deny you.</p>
+              <footer class="blockquote-footer text-right">Darth Plagueis</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Though the chains of destiny may bind you, though you may be fated to fight, know that a noble heart is as strong as a diamond, and as free as golden wind in the sky. Though you may be imprisoned in a sea of stone, you can keep walking toward the light. There's always a blessing waiting in the wings, and as many signposts to guide you as there are stars in the sky.</p>
+              <footer class="blockquote-footer text-right"><cite>Jojo's Bizarre Adventure: Eyes of Heaven</cite> Epilogue</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Unwinding is the mortal coil that drives the gears to tick and toil, until at last, it rests, unwound, and we lay silent in the ground.</p>
+              <footer class="blockquote-footer text-right">Gold Watch item description, <cite>Psychonauts</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">For every person who dreams up the electric light bulb, there's the one who dreams up the atom bomb.</p>
+              <footer class="blockquote-footer text-right">Mr. Electric, <cite>The Adventures of Sharkboy and Lavagirl</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Dreams and reality aren't that different - the reality you believe in is just another delusion.</p>
+              <footer class="blockquote-footer text-right">Vladimir Kocaqi, <cite>Purple Haze Feedback</cite> pg. 78</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">We are all just frequencies in the same beam of light, rainbow-bound and bonded.</p>
+              <footer class="blockquote-footer text-right">Vision, <cite>Psychonauts 2</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">That choice, although futile, I believe was the right one.<br>Nothing remains now,<br>except<br>for our<br>regrets.</p>
+              <footer class="blockquote-footer">The Judge</footer>
+              <br>
+              <p class="mb-0">It's better this way.<br>Escaping from<br>your purpose<br>is<br>impossible.</p>
+              <footer class="blockquote-footer">The Batter</footer>
+              <footer class="blockquote-footer text-right"><cite>OFF</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">It's him.<br>The anomaly.<br>Do we proceed?<br>Yes.<br>He's still,<br>only human.</p>
+              <footer class="blockquote-footer text-right">Three Smiths,<cite>The Matrix Reloaded</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Observing doesn't simply mean to look. It means to look carefully. It doesn't mean to just listen, it means to listen well.</p>
+              <footer class="blockquote-footer text-right">Jotaro Kujo, <cite>Jojo's Bizarre Adventure: Diamond is Unbreakable</cite> Episode 23 // Chapter 90</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Make love, not war. Actually, make war. And love. MAKE IT ALL.</p>
+              <footer class="blockquote-footer text-right">Marilyn Manson, <cite>K!1725</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">If it looks like a duck, and quacks like a duck, we have at least to consider the possibility that we have a small aquatic bird of the family anatidae on our hands.</p>
+              <footer class="blockquote-footer text-right">Douglas Adams</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">In the Soviet Army, it takes more courage to retreat than to advance.</p>
+              <footer class="blockquote-footer text-right">Take a guess (it was Stalin)</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Sometimes, isolation is a good thing. It can lead to important discoveries.</p>
+              <footer class="blockquote-footer text-right">Sasha Nein, <cite>Psychonauts</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">A strong attack eliminates the need for defense.</p>
+              <footer class="blockquote-footer text-right">Anakin Skywalker, <cite>Star Wars: The Clone Wars (2008)</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">The demogorgan is tired of your silly human bickering.</p>
+              <footer class="blockquote-footer text-right">Mike, <cite>Stranger Things</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">It's time to put away childish things.</p>
+              <footer class="blockquote-footer text-right">Rex Dangervest, <cite>The Lego Movie 2: The Second Part</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">The purpose of life is to end.</p>
+              <footer class="blockquote-footer text-right">Smith, <cite>The Matrix Revolutions</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Leave me in a room with some crayons and I'll draw on the wall.</p>
+              <footer class="blockquote-footer text-right">Marilyn Manson</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Super is but a strong word; maybe even a weapon is a tad overdoing it. We do, however, have a lovely view of the ocean at sunset.</p>
+              <footer class="blockquote-footer text-right">Lawrence, <cite>Ratchet and Clank: Up Your Arsenal</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Be true to yourself,<br>don't miss your chance;<br>And you won't end up like the fool who ripped his pants.</p>
+              <footer class="blockquote-footer text-right">Spongebob, <cite>Ripped Pants</cite></footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">Fire Works</p>
+              <footer class="blockquote-footer text-right">Marilyn Manson</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">I had an existential crisis while making a sandwich</p>
+              <footer class="blockquote-footer text-right">Ocelot</footer>
+              <br>
+            </div>
+            <div>
+              <p class="mb-0">When the dark threatens the light,<br>there is always a choice.<br>A hydra,<br>or a basilisk,<br>there is always a choice.<br>The universe loves all<br>and all<br>are given<br>a choice.</p>
+              <br>
+              <p class="mb-0">Do. Or do not. There is no try.</p>
+              <footer class="blockquote-footer">Yoda, <cite>The Empire Strikes Back</cite></footer>
+              <footer class="blockquote-footer text-right"><cite>Gyaryith's Story</cite> epilogue</footer>
+              <br>
+            </div>
+            <a href="https://minecraft.gamepedia.com/End_Poem" class="lead text-success" target="_blank">The End</a>
+            <p class="mb-2">&nbsp;</p>
+                      
+                    </div>
+                    <!--end accordion2--></div>
+                    
+                    
+                    <!--accordion3--><div>
+                    <div class="mb-2" role="tab" id="heading3B">
+                      <a class="collapsed lead mb-0 goldman" data-toggle="collapse" data-parent="#accordionB" href="#accordion3B" aria-expanded="false" aria-controls="accordion3B">
+                      Goodies</a>
+                    </div>
+                    <div id="accordion3B" class="collapse" role="tabpanel" aria-labelledby="heading3B" data-parent="#accordionB">
+                      <div class="p-3">
+                        <p class="lead">If you're looking for swag ToyHouse templates, check out <a href="https://toyhou.se/Battlewinner" target="_blank">my code storage profile!</a></p>
+                        <p class="lead">I have written numerous ArtFight Premium profile CSS themes! View the document <a href="https://docs.google.com/document/d/1orrYRD7iwRH4SD0yZTiOCxqGG4gVg6tpu08cxJer-tU/edit?usp=sharing" target="_blank">here</a> or see a live preview of them <a href="https://eidolonentropy.art/random/artfight/csstestprofile.htm" target="_blank">here!</a></p>
+                        <p class="lead">Want to host a WoF MAP without going through the pain of locating or creating designs? I've got free to use designs for almost every canon Pyrrhian at <a href="https://www.deviantart.com/scarletoftheskywings/gallery/67672370/wings-of-fire-canon-character-designs" target="_blank">my resource dA</a> to relieve you of that pain!</p>
+                      </div>
+                    </div>
+                    <!--end accordion3--></div>
+                    
+                  </div>
+                </div>
+              
+                <div class="tab-pane fade" id="main3">
+                  <div class="">
+                    <h3 class="goldman">Legal</h3>
+                    <p>Under fair use laws, no matter if you credit us or not, our work can be used if you are using it for criticism, comment, news reporting, teaching, scholarship, and/or research purposes. This doesn't stop you from crediting, but you are not required to. Using our work transformatively is safer.</p>
+                    <p>Additionally, we permit the use of our work for visual entertainment purposes such as profile pictures, printed stills, and animator tributes without credit, so long as you do not pass it off as your own work. You are not allowed to say the work is yours. It is preferred to say it belongs to us, but we don't require it.</p>
+                    <p>We do NOT allow our work to be plagiarized without direct credit. This means you cannot trace, copy, or otherwise edit any of our work, drawn or written, without giving a direct link to our original source work. You must say your work was based on work by EidolonEntropy.</p>
+                    <p>In short:</p>
+                    <dl>
+                    <dt>You are allowed to use our work without credit for...</dt>
+                    <dd>- uses permitted under fair use (criticism, comment, news reporting, teaching, scholarship, and research)</dd>
+                    <dd>- profile pictures/banners</dd>
+                    <dd>- printing physical copies for your enjoyment</dd>
+                    <dd>- animator tributes/other compilations</dd>
+                    <dt>...though it's nice of you to include credit.</dt>
+                    </dl>
+                    <dl>
+                    <dt>You are not allowed to use our work if you...</dt>
+                    <dd>- trace it</dd>
+                    <dd>- copy it</dd>
+                    <dd>- edit it</dd>
+                    <dt>...without providing a link to the original source and crediting EidolonEntropy.</dt>
+                    </dl>
+                    <br>
+                    <p>Additionally, our work can be used as stated above no matter what it features. For example, if we did an art trade with another person that features their character, you can use it as your profile picture without credit.</p>
+                    <p>It is also not required that you ask before using our work.</p>
+                    <p>If you have any questions on if your usage is legal, please send a message via any link on the front page or <a href="https://merch.eidolonentropy.art/pages/contact">here</a>.</p>
+                    <p><a href="https://copyheart.org/manifesto/" target="_blank" class="text-warning">Share the love.<span style="font-family:sans-serif">♡</span></a></p>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <ul class="nav px-0 no-gutters flex-wrap order-1 order-lg-0 d-flex pb-3 pr-4" style="position:absolute;bottom:0">
+                <li class="nav-item">
+                    <a class="btn btn-primary active show" style="border-top-right-radius:0;border-bottom-right-radius:0;" data-toggle="tab" href="#main1">//</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary rounded-0" data-toggle="tab" href="#main2">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary rounded-0" data-toggle="tab" href="#main3">Legal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" style="border-top-left-radius:0;border-bottom-left-radius:0;" href="https://eidolonentropy.art/~portfolioB.html">Portfolio <i class="fas fa-external-link-alt"></i></a>
+                </li>
+            </ul>
+            </div>
+            
+          </div>
+        
+          <div class="tab-pane fade" id="reg2" style="height:100%">
+            <div class="card-header-spacer w-100" style="height:100px"></div>
+            <div style="height:calc(100% - 100px)">
+              <div class="embed-responsive" style="height:100%">
+						    <iframe src="~statusB.html" style="width:100%;border:none;background:none;flex-grow:1;flex-direction: column;" class="better-scrollbar" title="Battalia Status"></iframe> 
+              </div>
+            </div>
+          </div>
+        
+          <div class="tab-pane fade" id="reg3" style="height:calc(100% - 100px);margin-top:90px">
+            <div class="container-fluid" style="height:100%;">
+              <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
+                <div class="button-group js-radio-button-group btn-group">
+                  <button class="button btn btn-primary is-checked" data-filter="">All</button>
+                  <button class="button btn btn-primary" data-filter=".project-story">Stories</button>
+                  <button class="button btn btn-primary" data-filter=".project-ongoing">Ongoing</button>
+                  <button class="button btn btn-primary" data-filter=".project-map">Hosting</button>
+                  <button class="button btn btn-primary" data-filter=".project-va">Casting</button>
+                </div>
+              </div>
+              <div class="grid row" style="height:100%;overflow-y:scroll;">
+                <div class="grid-sizer w-100"></div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-story">
+                  <div class="card">
+                    <img class="card-img-top" src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/takeover.webp">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://toyhou.se/~world/100510.takeover">Takeover: In The Name Of Love</a></h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-story">
+                  <div class="card">
+                    <img class="card-img-top" src="https://file.garden/ZdoQg-gxzVCR-9h7/filmAssets/Untitled_000020.png">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="#">ARTIFICE</a></h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-story">
+                  <div class="card">
+                    <img class="card-img-top" src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/abstractozia.png" style="filter:invert(100)">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="#">Duality of a Wolf</a></h4>
+                    </div>
+                  </div>
+                </div>
+				<!--new under this cut-->
+				<div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/W9svYmaUuZg/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/watch?v=W9svYmaUuZg&list=PLPcMN9jr9wAXP9xESODHSw46lO53rSJIs&index=1">Sacrilegious MAP</a></h4>
+                      <p>The Halloween 2024 MAP is a successful three-day production challenge with only a month of development time.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-shortfilm">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/V_5zvUQTXS4/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/watch?v=V_5zvUQTXS4">Better Together</a></h4>
+                      <p>An original animated short film about love and lonership.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map project-ongoing">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/XwhqGBr_0lU/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAXdlRkLEW3qVnKBy4Q-iCIN">Seeing Red MAP</a></h4>
+                      <p>A high energy palette MAP about the negativity from the spotlight.</p>
+                      <i class="text-success">Currently in progress</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map project-ongoing">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/SXGk124DhKE/mqdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAXdlRkLEW3qVnKBy4Q-iCIN">Ten Plagues MAP</a></h4>
+                      <p>A Leaf/SilkWing uprising AU MAP about five years in the making, finally nearing completion.</p>
+                      <i>Wings of Fire</i>
+                      <i class="text-success">Currently in progress</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-va">
+                  <div class="card">
+                    <img class="card-img-top" src="https://file.garden/ZdoQg-gxzVCR-9h7/x0verseer.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/watch?v=5sHwpGOAOlc">The System</a></h4>
+                      <p>B voices The Overseer in this upcoming animated series.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/ryIqgUOyOjo/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAXdlRkLEW3qVnKBy4Q-iCIN">You Can't Hide MAP</a></h4>
+                      <p>A PMV MAP for Halloween 2022 told through the framing device of a haunted house master scaring their visitors with scary scenes.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/nhSZCfqdE_4/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://eidolonentropy.art/~FAITHMAP.html">FAITH MAP</a></h4>
+                      <p>Finally completed for Valentine's Day 2022, this palette MAP focuses on dark love.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/_92hwOkRtKA/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAWaIbTE06zJJBdeaIm668Hd">The Devil Within MAP</a></h4>
+                      <p>Revived from a fraught development cycle comes the 2021 Halloween MAP.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/33f_2ZsS67g/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://eidolonentropy.art/~NGGYUMAP.html">Never Gonna Give You Up MAP</a></h4>
+                      <p>Arctic shamelessly rickrolls you (and Moonwatcher) in this goofy spoof MAP.</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/yDX24KA06RI/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://eidolonentropy.art/~FHMAP.html">Frozen Heart MAP</a></h4>
+                      <p>The most successful of EidolonEntropy's MAPs, Frozen Heart is an artistic depiction of Foeslayer's misery as the challenge of the Diamond Trial.</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-shortfilm">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/qUFpfc2Ae84/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://youtu.be/qUFpfc2Ae84">FETCH</a></h4>
+                      <p>B's first animated short film (2021 Remaster)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/X0NQzqGOMkE/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://eidolonentropy.art/~ACASMAP.html">Along Came A Spider MAP</a></h4>
+                      <p>Originally slated for a 2019 release, this Halloween palette MAP was completed in time for 2020.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/FSBSoTACX1s/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAU0DX5VQE8_-NqFr3RRmktW">Miser Brothers Spoof MAP</a></h4>
+                      <p>The only EidolonEntropy holiday MAP, a comedic, cursed rendition of Arctic's and Peril's stories.</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/sHamyafVjjA/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAUg7mxfXWrrADg6NBN506ug">Nightmare's Lullaby MAP</a></h4>
+                      <p>The first EidolonEntropy Halloween MAP, an AU where the ghost of Darkstalker returns to haunt Peacemaker.</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/KumSq3op0LQ/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAXgRLsokskeP7c6wtJuBscI">Not Evil MAP</a></h4>
+                      <p>A cornerstone of the old Wings of Fire animation community, telling the story of Queen Scarlet after encountering the Dragonets of Destiny</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item col-12 col-lg-4 mb-4 project-map">
+                  <div class="card">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/Fo9CV0V4oEU/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://eidolonentropy.art/~FDMAP.html">Flawed Design MAP</a></h4>
+                      <p>The first Multiple Animator Project created by B//EidolonEntropy, focusing on the story of Legends: Darkstalker</p>
+                      <i>Wings of Fire</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="reg4" style="height:calc(100% - 100px);margin-top:90px">
+			      <div class="container-fluid" style="height:calc(100%);overflow-y:scroll;">
+              <!--<h1 class="goldman text-uppercase text-center">Coming Soon</h1>-->
+			        <div class="card card-outline-info px-4 pb-4 pt-0">
+                <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/mwater.png" style="position:absolute;right:0;width:10%;min-width:100px;margin-right:10px;">
+				
+				        <h1 class="goldman text-uppercase text-info pt-4">Myth <span class="h5 goldman">M//EidolonEntropy</span></h1>
+				        <p class="card-text">Myth was the original co-operator of EidolonEntropy. As of 2024 they are no longer associated with the collective.<br>They were the creator of many characters and concepts in both Takeover and Duality of a Wolf that have made the worlds what they are today.</p>
+
+                <h3 class="goldman">Contributions</h3>
+                <div class="card-deck">
+                  <div class="card card-outline-info">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/-cvTuevIRAc/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://www.youtube.com/watch?v=V_5zvUQTXS4">Secrets 3</a></h4>
+                      <p class="card-text">Contributed sketches and style for Entropy</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">5 Februrary 2024</small></div>
+                  </div>
+                  <div class="card card-outline-info">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/Y0fsUfkBUwc/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://youtu.be/Y0fsUfkBUwc">You Can't Hide 19</a></h4>
+                      <p class="card-text">Edited by Battalia</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">31 October 2022</small></div>
+                  </div>
+                  <div class="card card-outline-info">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/Nv1YK9A7A2A/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://youtu.be/Nv1YK9A7A2A">Take Your Pick 12</a></h4>
+                      <p class="card-text">Contributed art, owns character cast</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">16 March 2022</small></div>
+                  </div>
+                </div>
+
+                <div class="accordion md-accordion" id="accordionMyth">
+                  <div class="">
+                    <div id="collapseMyth" class="collapse" data-parent="#accordionMyth">
+                      <div class="w-100 mb-sm-4"></div>
+                      <div class="card-deck">
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/uq4ninVbcvI/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/uq4ninVbcvI">FAITH 12-13</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">14 Februrary 2022</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/3qbA9dJBvCY/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://www.youtube.com/watch?v=3qbA9dJBvCY">Chug Jug With You 26-27</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">14 April 2021</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/gTLhHrntgbs/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/gTLhHrntgbs">Never Gonna Give You Up 3</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">11 Februrary 2021</small></div>
+                        </div> 
+                        <div class="w-100 mb-sm-4"></div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/d-Q4eUJqF5c/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/d-Q4eUJqF5c">Along Came A Spider 1-2</a></h4>
+                            <p class="card-text">Parts completed by Battalia</p>
+                          </div>
+                          <div class="card-footer"><small class="text-light">31 October 2020</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/um5SLsrtz_k/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/um5SLsrtz_k">Myth Did You Lay This Egg</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">5 September 2020</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/WFL5xzPtiMI/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/WFL5xzPtiMI">Giorno's Theme 2</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">6 April 2020</small></div>
+                        </div>
+                        <div class="w-100 mb-sm-4"></div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/WFUAHFgCHg4/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/WFUAHFgCHg4">Q&A Meme</a></h4>
+                            <p class="card-text"></p>
+                          </div>
+                          <div class="card-footer"><small class="text-light">30 March 2020</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/Ht1ftKv55I8/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://www.youtube.com/watch?v=Ht1ftKv55I8">A P P L E  B O S S</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">21 February 2020</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/FSBSoTACX1s/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/FSBSoTACX1s">Miser Brothers 6/11 (Winter)</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">25 December 2019</small></div>
+                        </div>
+                        <div class="w-100 mb-sm-4"></div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/DDN6GhYRBf8/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/DDN6GhYRBf8">All Bets Are Off 10</a></h4>
+                            <p class="card-text">First shot + editing by Battalia</p>
+                          </div>
+                          <div class="card-footer"><small class="text-light">14 October 2019</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/QRiVmo4x5II/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/QRiVmo4x5II">Lion King Spoofs Speedpaint</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">14 July 2019</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/o6CIt5tg_80/mqdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/o6CIt5tg_80">Megalovania But It's A Bunch Of Memes</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">2 July 2019</small></div>
+                        </div>
+                        <div class="w-100 mb-sm-4"></div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/EudiZqYH9-8/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/EudiZqYH9-8">Leekbomb Part</a></h4>
+                          </div>
+                          <div class="card-footer"><small class="text-light">26 May 2019</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/UWb7vjb2ZI0/mqdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/UWb7vjb2ZI0">Mountain Sound 15</a></h4>
+                            <p class="card-text">Contributed art</p>
+                          </div>
+                          <div class="card-footer"><small class="text-light">20 April 2019</small></div>
+                        </div>
+                        <div class="card card-outline-info">
+                          <img class="card-img-top" src="https://img.youtube.com/vi/dhw29jZccLI/maxresdefault.jpg">
+                          <div class="card-body">
+                            <h4 class="goldman"><a href="https://youtu.be/dhw29jZccLI">Flawed Design 15</a></h4>
+                            <p class="card-text">Boarded and edited by Battalia</p>
+                          </div>
+                          <div class="card-footer"><small class="text-light">2 July 2019</small></div>
+                        </div>
+                      </div>
+                    </div>
+                    <h5 class="mb-0"><a class="collapsed btn btn-link text-info" data-toggle="collapse" data-target="#collapseMyth">Show More</a></h5> 
+                  </div>
+                </div>
+			        </div><!--end Myth-->
+
+
+              <div class="card card-outline-mako px-4 pb-4 pt-0 mt-4">
+                <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/zwater.png" style="position:absolute;right:0;width:10%;min-width:100px;margin-right:10px;">
+				
+				        <h1 class="goldman text-uppercase text-mako pt-4" style="z-index:2">MakoZilla <a href="https://www.youtube.com/channel/UC1ScVAy1zKA83J1V_WMZXWA"><small class="fas fa-external-link-alt"></small></a> <span class="h5 goldman">Z//EidolonEntropy</span></h1>
+				        <p class="card-text">Soon to be collaborator</p>
+
+                <h3 class="goldman">Contributions</h3>
+                <div class="card-deck">
+                  <div class="card card-outline-mako">
+                    <img class="card-img-top" src="https://64.media.tumblr.com/2e7d7e3a8555935d578f3fc0094cd309/8977ae610b2cd8e2-b9/s1280x1920/df4cfbac10cda1905c7ad71cd47ed87d0328ac54.gifv">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="#">Seeing Red 6</a></h4>
+                      <p class="card-text">Contributed animation</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">Soon</small></div>
+                  </div>
+                  <div class="card card-outline-mako">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://youtu.be/OT2Dwh5MD_4">Go To War</a></h4>
+                      <p class="card-text">Contributed art</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">11 July 2023</small></div>
+                  </div>
+                  <div class="card card-outline-mako d-none d-sm-flex" style="visibility:hidden">
+                    <img class="card-img-top" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="https://youtu.be/OT2Dwh5MD_4">Go To War</a></h4>
+                      <p class="card-text">Contributed art</p>
+                    </div>
+                    <div class="card-footer"><small class="text-light">11 July 2023</small></div>
+                  </div>
+                </div>
+
+			        </div>
+
+              <div class="card card-outline-vox px-4 pb-4 pt-0 mt-4">
+                <img src="https://file.garden/ZdoQg-gxzVCR-9h7/websiteAssets/zwater.png" style="position:absolute;right:0;width:10%;min-width:100px;margin-right:10px;filter:hue-rotate(330deg)">
+				
+				        <h1 class="goldman text-uppercase text-vox pt-4" style="z-index:2">DeadishVoxel <span class="h5 goldman">X//EidolonEntropy</span></h1>
+				        <p class="card-text">Voxel is a writer on the ARTIFICE saga and a key player in <i>Takeover</i>. In time he will help to take these stories into another dimension.</p>
+
+			        </div>
+
+              <!--end contributors-->
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="reg5" style="height:calc(100% - 100px);margin-top:90px">
+            <div class="mx-2 row justify-content-center">
+              <div class="card-deck">
+                <div class="card col-lg-4 text-center">
+                  <div class="card-header bg-transparent"><h4 class="goldman">Threadless</h4></div>
+                  <div class="card-body">
+                    <small class="lead">General Merch</small>
+                    <p>If you enjoy our work enough to want it on something, check it out here.</p>
+                  </div>
+                  <div class="card-footer"><a class="btn btn-outline-primary" href="https://eidolonentropy.threadless.com/"><i class="fas fa-external-link-alt"></i></a></div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <div class="card-header bg-transparent"><h4 class="goldman">Ko-Fi</h4></div>
+                  <div class="card-body">
+                    <small class="lead">Commissions</small>
+                    <p>See offerings for art and other digital goods here, and the occasional handmade item for sale.</p>
+                  </div>
+                  <div class="card-footer"><a class="btn btn-outline-primary" href="https://ko-fi.com/eidolonentropy"><i class="fas fa-external-link-alt"></i></a></div>
+                </div>
+                <div class="card col-lg-4 text-center">
+                  <div class="card-header bg-transparent"><h4 class="goldman">Merch Subdomain</h4></div>
+                  <div class="card-body">
+                    <small class="lead">Specialised Merch</small>
+                    <p>Find uniquely tailored products and crowdfunded preorders here. <br><small>These are the items that appear in the YouTube shelf.</small></p>
+                  </div>
+                  <div class="card-footer"><a class="btn btn-outline-primary" href="https://merch.eidolonentropy.art/"><i class="fas fa-external-link-alt"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!--end card-->
+    </div>
+	</div>
+	
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="/isotope.js"></script>
+  <script>
+    function triggerHeaderAnim(x) {
+      document.getElementById('header').innerHTML=x;
+      console.log("Hello, World!");
+      document.getElementById('header').classList.remove("reveal-text");
+      document.getElementById('header').offsetWidth;
+      document.getElementById('header').classList.add("reveal-text");
+    }
+  </script>
+
+    <!--JavaScript for iframes to be full height--><script src="https://eidolonentropy.art/resources/parentcode.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--<script>$('body').scrollspy({ target: '#navbar' })</script>-->
+  <script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	<!--</div>bg-->
+  </body>
+</html>
