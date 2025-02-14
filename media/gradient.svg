@@ -1,0 +1,74 @@
+<svg xmlns='http://www.w3.org/2000/svg'>
+<defs>
+<linearGradient id='g6'>
+<stop stop-color='#0a0a0a'/>
+<stop offset='1' stop-color='#000'/>
+</linearGradient>
+<linearGradient id='g5' gradientUnits='userSpaceOnUse' x1='100.86%' y1='50.89%' x2='-0.86%' y2='49.11%'>
+<stop stop-color='#232323' stop-opacity='.08'/>
+<stop offset='.11' stop-color='#232323' stop-opacity='.08'/>
+<stop offset='.11' stop-color='#4c4c4c' stop-opacity='.06'/>
+<stop offset='.23' stop-color='#4c4c4c' stop-opacity='.06'/>
+<stop offset='.23' stop-color='#1c1c1c' stop-opacity='0'/>
+<stop offset='.72' stop-color='#1c1c1c' stop-opacity='0'/>
+<stop offset='.72' stop-color='#595959' stop-opacity='0'/>
+<stop offset='.86' stop-color='#595959' stop-opacity='0'/>
+<stop offset='.86' stop-color='#1d1d1d' stop-opacity='.06'/>
+<stop offset='1' stop-color='#1d1d1d' stop-opacity='.06'/>
+</linearGradient>
+<linearGradient id='g4' gradientUnits='userSpaceOnUse' x1='-10.09%' y1='29.31%' x2='110.09%' y2='70.69%'>
+<stop stop-color='#222' stop-opacity='.14'/>
+<stop offset='.03' stop-color='#222' stop-opacity='.14'/>
+<stop offset='.03' stop-color='#2e2e2e' stop-opacity='.08'/>
+<stop offset='.4' stop-color='#2e2e2e' stop-opacity='.08'/>
+<stop offset='.4' stop-color='#191919' stop-opacity='.06'/>
+<stop offset='.55' stop-color='#191919' stop-opacity='.06'/>
+<stop offset='.55' stop-color='#050505' stop-opacity='.06'/>
+<stop offset='.73' stop-color='#050505' stop-opacity='.06'/>
+<stop offset='.73' stop-color='#717171' stop-opacity='.03'/>
+<stop offset='1' stop-color='#717171' stop-opacity='.03'/>
+</linearGradient>
+<linearGradient id='g3' gradientUnits='userSpaceOnUse' x1='-7.54%' y1='61.19%' x2='107.54%' y2='38.81%'>
+<stop stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.27' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.27' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.33' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.33' stop-color='#535353' stop-opacity='.08'/>
+<stop offset='.34' stop-color='#535353' stop-opacity='.08'/>
+<stop offset='.34' stop-color='#202020' stop-opacity='.08'/>
+<stop offset='.63' stop-color='#202020' stop-opacity='.08'/>
+<stop offset='.63' stop-color='#4f4f4f' stop-opacity='.08'/>
+<stop offset='1' stop-color='#4f4f4f' stop-opacity='.08'/>
+</linearGradient>
+<linearGradient id='g2' gradientUnits='userSpaceOnUse' x1='-10.09%' y1='29.31%' x2='110.09%' y2='70.69%'>
+<stop stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.23' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.23' stop-color='#1e1e1e' stop-opacity='.03'/>
+<stop offset='.63' stop-color='#1e1e1e' stop-opacity='.03'/>
+<stop offset='.63' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.73' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.73' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.84' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='.84' stop-color='#585858' stop-opacity='.04'/>
+<stop offset='1' stop-color='#585858' stop-opacity='.04'/>
+</linearGradient>
+<linearGradient id='g1' gradientUnits='userSpaceOnUse' x1='-10.09%' y1='20.69%' x2='110.09%' y2='79.31%'>
+<stop stop-color='#3d3d3d' stop-opacity='.08'/>
+<stop offset='.1' stop-color='#3d3d3d' stop-opacity='.08'/>
+<stop offset='.1' stop-color='#0e0e0e' stop-opacity='.08'/>
+<stop offset='.66' stop-color='#0e0e0e' stop-opacity='.08'/>
+<stop offset='.66' stop-color='#3d3d3d' stop-opacity='.08'/>
+<stop offset='.72' stop-color='#3d3d3d' stop-opacity='.08'/>
+<stop offset='.72' stop-color='#141414' stop-opacity='.08'/>
+<stop offset='.81' stop-color='#141414' stop-opacity='.08'/>
+<stop offset='.81' stop-color='#1a1a1a' stop-opacity='.08'/>
+<stop offset='1' stop-color='#1a1a1a' stop-opacity='.08'/>
+</linearGradient>
+</defs>
+<rect width='100%' height='100%' fill='url(#g6)'/>
+<rect width='100%' height='100%' fill='url(#g5)'/>
+<rect width='100%' height='100%' fill='url(#g4)'/>
+<rect width='100%' height='100%' fill='url(#g3)'/>
+<rect width='100%' height='100%' fill='url(#g2)'/>
+<rect width='100%' height='100%' fill='url(#g1)'/>
+</svg>
