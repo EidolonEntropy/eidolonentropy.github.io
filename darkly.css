@@ -1,0 +1,696 @@
+/*this file is a copy of consolidated for legacy pages*/
+@import url('https://fonts.googleapis.com/css?family=Goldman|Metal+Mania|Orbitron|Redacted|Play');
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5,
+.display-1, .display-2, .display-3, .display-4,
+.lead, .btn, #footer a, nav a, .navbar-text,
+.play, body  {
+  font-family: 'Play', Tahoma;
+}
+.goldman {
+  font-family: 'Goldman', Tahoma;
+}
+.metalmania {
+  font-family: 'Metal Mania', Tahoma !important;
+}
+.orbitron {
+  font-family: 'Orbitron', Tahoma !important;
+}
+.redacted {
+  font-family: 'Redacted', Tahoma !important;
+}
+
+.container-flex > .container > p > small { /*legacy footer code*/
+  font-family: 'Play', Tahoma;
+}
+
+/*th*/
+html {
+  scroll-behavior: smooth;
+}
+body, div, p, td, li {
+	color:#FFF;
+}
+.btn,
+.card,
+.card-block,
+.alert,
+.progress,
+.progress-bar,
+.navbar .btn {
+ border-radius:.25em
+}
+::-webkit-scrollbar {
+ width:.75em
+}
+::-webkit-scrollbar-track {
+ background:#222
+}
+::-webkit-scrollbar-thumb {
+ background:#111;
+ border:1px solid rgba(255,255,255,0.125)
+}
+body {
+ background:#000;
+ background:#000;
+}
+.card ::-webkit-scrollbar {
+ width:.5em
+}
+.card ::-webkit-scrollbar-track {
+ background:#222;
+}
+.card ::-webkit-scrollbar-thumb {
+ background:#f44236;
+ border:none
+}
+.fr-element.fr-view p {
+ color:#000
+}
+.navbar-dark {
+	background:#060606 !important
+}
+#footer {
+ background:#222
+}
+#footer div {
+ font-size:9pt;
+ margin-bottom:5px;
+ color:rgba(255,255,255,0.6)
+}
+#footer a {
+ color:rgba(255,255,255,0.6)
+}
+#footer span.mx-1 {
+ display:none
+}
+.navbar .dropdown-menu {
+ background:#222;
+}
+/*.navbar {
+ background-color:#4b4646!important
+}*/
+#header a.dropdown-item:hover,
+#header a.dropdown-item:focus,
+#header a.dropdown-item:active {
+ background:#f44236;
+ color:#fff
+}
+.navbar .dropdown-menu a:hover,
+.navbar .dropdown-menu a:focus,
+.navbar .dropdown-menu a:active {
+ background:#f44236;
+ color:#fff
+}
+.navbar-inverse .navbar-brand {
+ color:#fff
+}
+.navbar-inverse .navbar-toggler,
+.navbar .dropdown-menu .dropdown-header,
+.navbar-inverse .navbar-nav .nav-link,
+.navbar .dropdown-menu a {
+ color:rgba(255,255,255,0.7)
+}
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-toggler:focus,
+.navbar-inverse .navbar-toggler:hover,
+.navbar-inverse .navbar-nav .nav-link:focus,
+.navbar-inverse .navbar-nav .nav-link:hover,
+#footer a:hover,
+#footer a:focus {
+ color:rgba(233,17,11,0.75)
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgba(233,17,11,0.75);
+  background: rgba(255,255,255,0.8)
+}
+::selection {
+  color: rgba(233,17,11,0.75);
+  background: rgba(255,255,255,0.8)
+}
+.character-profile .profile-section {
+ margin-bottom:20px
+}
+.side-nav li.literature-name,
+.side-nav li.literature-name a {
+ text-align:center;
+ font-size:1.1em
+}
+.side-nav li.pl-2 {
+ padding-left:.5em;
+ padding-right:.5em;
+ border-radius:.25em
+}
+.btn.btn-default:active,
+.btn.btn-default.active,
+.show > .btn.btn-default.dropdown-toggle,
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+ background:#f44236;
+ border-color:#f44236;
+ color:#fff
+}
+.nav-link.disabled {
+ color:rgba(255,255,255,0.125)
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+ background:#222;
+ color:#fff
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-link:focus {
+ border-color:rgba(255,255,255,0.125) rgba(255,255,255,0.125) #222
+}
+.dropdown-menu {
+ background:#222;
+ color:#fff;
+ border:1px solid rgba(255,255,255,0.125)
+}
+a.dropdown-item,
+.dropdown-item {
+ color:#fff
+}
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item:active {
+ color:#f44236;
+ background:#111
+}
+.dropdown-divider {
+ background-color:rgba(255,255,255,0.125)
+}
+.page-link {
+ color:#fff
+}
+.page-item.disabled .page-link {
+ color:rgba(255,255,255,0.125)
+}
+.page-link,
+.page-item.disabled .page-link {
+ background:#222
+}
+.page-link:focus,
+.page-link:hover {
+ background:#111;
+ color:#f44236
+}
+.page-item.active .page-link {
+ color:#fff;
+ background:#f44236;
+ border-color:#f44236
+}
+.card {
+ background-color:#222
+}
+.card-header {
+ background:#111;
+ border-bottom:1px solid rgba(255,255,255,0.125)
+}
+a,
+.btn,
+.badge,
+.dropdown-menu a,
+.navbar .dropdown-menu a,
+.page-link {
+
+}
+.card,
+hr,
+.literature .literature-header-content .literature-header-subinfo,
+.fr-view table,
+.page-item.disabled .page-link,
+.page-link,
+.page-link:focus,
+.page-link:hover,
+.poll-header,
+.character-profile .profile-tags-content,
+.fr-view blockquote,
+blockquote,
+.comment .comment-replies,
+.forum-post .comment-replies,
+.forum-category-wrapper,
+.breadcrumb,
+.table,
+.table thead th {
+ border-color:rgba(255,255,255,0.125)
+}
+.list-group-item {
+ background:#111;
+ border:1px solid rgba(255,255,255,0.125)
+}
+.nav-tabs .nav-link:hover {
+ border-color:transparent
+}
+.tooltip-inner {
+ background:#111;
+ border:none;
+ color:#fff
+}
+.tooltip.bs-tether-element-attached-bottom .tooltip-inner:before,
+.tooltip.tooltip-top .tooltip-inner:before {
+ border:none
+}
+.content-warning .alert.alert-danger,
+.content-warning p.alert.alert-info {
+ background:#111!important;
+ color:#fff!important;
+ border:none
+}
+.content-warning .alert.alert-danger hr {
+ border-color:rgba(255,255,255,0.125)
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+ box-shadow:none!important
+}
+.card-primary,
+.card-warning,
+.card-danger,
+.card-success,
+.card-info,
+.alert-primary,
+.alert-warning,
+.alert-danger,
+.alert-success,
+.alert-info,
+.card.link-panel:before {
+ border:none
+}
+.progress {
+ background:#111
+}
+.progress-bar {
+ background-color:#f44236
+}
+.breadcrumb {
+ background:#111
+}
+.table-striped tbody tr {
+ border-bottom:1px solid rgba(255,255,255,0.125)
+}
+.table-striped tbody tr:nth-child(odd) {
+ background:rgba(48,48,48,0.6)!important
+}
+.table-striped tbody tr:nth-child(even) {
+ background:#222!important
+}
+.table-striped tbody tr:last-child,
+.navbar .dropdown-menu {
+ border:none
+}
+.table-hover tbody tr:hover {
+ background:#111!important
+}
+a {
+ color:#f44236
+}
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus {
+ color:rgba(233,17,11,0.75)
+}
+a:hover {
+ text-decoration:none
+}
+.text-primary {
+ color:#f44236!important
+}
+a.text-primary:focus, a.text-primary:hover {
+ color:rgba(233,17,11,0.75)!important
+}
+.text-danger {
+ color:#ff090f!important
+}
+a.text-danger:focus, a.text-danger:hover {
+ color:rgba(255,9,15,0.75)!important
+}
+.text-warning {
+ color:#f11637!important
+}
+a.text-warning:focus, a.text-warning:hover {
+ color:rgba(241,22,55,0.75)!important
+}
+.text-info {
+ color:#113aff!important
+}
+a.text-info:focus, a.text-info:hover {
+ color:rgba(17,58,255,0.75)!important
+}
+.text-success {
+ color:#09BAEF!important
+}
+a.text-success:focus, a.text-success:hover {
+ color:rgba(9,186,239,0.75)!important
+}
+.text-secondary {
+ color:#4b4646!important
+}
+a.text-secondary:focus, a.text-secondary:hover {
+ color:rgba(75,70,70,0.75)!important
+}
+.text-dark {
+ color:#060606!important
+}
+a.text-dark:focus, a.text-dark:hover {
+ color:rgba(17,17,17,0.75)!important
+}
+.text-light {
+ color:#e2e2e2!important
+}
+a.text-light:focus, a.text-light:hover {
+ color:rgba(226,226,226,0.75)!important
+}
+.text-muted {
+ color:#222!important
+}
+.bg-dark {
+ background-color:#060606!important
+}
+.bg-light {
+ background-color:#e2e2e2!important
+}
+.bg-muted {
+ background-color:#222!important
+}
+.bg-primary,
+.card-primary,
+.alert-primary {
+ background-color:#f44236!important
+}
+.bg-warning,
+.card-warning,
+.alert-warning {
+ background-color:#f11637!important
+}
+.bg-danger,
+.card-danger,
+.alert-danger {
+ background-color:#ff090f!important
+}
+.bg-info,
+.card-info,
+.alert-info {
+ background-color:#113aff!important
+}
+.bg-success,
+.card-success,
+.alert-success {
+ background-color:#09BAEF!important
+}
+.bg-faded,
+.card-block.bg-faded {
+ background-color:#111!important
+}
+.bg-secondary {
+ background-color:#4b4646!important
+}
+.alert-primary hr,
+.alert-warning hr,
+.alert-danger hr,
+.alert-info hr,
+.alert-success hr {
+ border-color:#fff
+}
+.bg-primary p,
+.card-primary p,
+.bg-success p,
+.card-success p,
+.bg-info p,
+.card-info p,
+.bg-danger p,
+.card-danger p,
+.bg-warning p,
+.card-warning p,
+.bg-primary a,
+.card-primary a,
+.bg-success a,
+.card-success a,
+.bg-info a,
+.card-info a,
+.bg-danger a,
+.card-danger a,
+.bg-warning a,
+.card-warning a,
+.alert-primary,
+.alert-warning,
+.alert-danger,
+.alert-success,
+.alert-info,
+.alert-lkw,
+.alert-info a,
+.alert-primary a,
+.alert-warning a,
+.alert-danger a,
+.alert-success a {
+ color:#fff
+}
+.card-outline-primary,
+.card-outline-primary .card-header {
+ border-color:#f44236!important
+}
+.card-outline-danger,
+.card-outline-danger .card-header {
+ border-color:#ff090f!important
+}
+.card-outline-warning,
+.card-outline-warning .card-header {
+ border-color:#f11637!important
+}
+.card-outline-info,
+.card-outline-info .card-header {
+ border-color:#113aff!important
+}
+.card-outline-success,
+.card-outline-success .card-header {
+ border-color:#09BAEF!important
+}
+.card-outline-secondary {
+ border-color:#4b4646
+}
+.card-outline-primary,
+.card-outline-danger,
+.card-outline-warning,
+.card-outline-info,
+.card-outline-success,
+.card-outline-secondary {
+ background:#222
+}
+.btn.btn-default,
+.badge-primary {
+  background:#111;
+  color:#f44236;
+  border-color:#4b4646
+}
+.btn.btn-primary,
+.badge-primary,
+.btn.btn-secondary,
+.badge-secondary,
+.btn.btn-warning,
+.badge-warning,
+.btn.btn-danger,
+.badge-danger,
+.btn.btn-info,
+.badge-info,
+.btn.btn-success,
+.badge-success {
+  background:rgba(17,17,17,0.6);
+  border:none
+}
+.btn.btn-primary,
+.badge-primary {
+  color:#f44236
+}
+.btn.btn-secondary,
+.badge-secondary {
+  color:#aaa
+}
+.btn.btn-warning,
+.badge-warning {
+  color:#f11637
+}
+.btn.btn-danger,
+.badge-danger {
+  color:#ff090f
+}
+.btn.btn-info,
+.badge-info {
+  color:#113aff
+}
+.btn.btn-success,
+.badge-success {
+  color:#09BAEF
+}
+.btn.btn-default:hover,
+.btn.btn-default:focus,
+.btn.btn-default.active,
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.active {
+  background:#000 !important;
+  color:rgba(233,17,11,0.75);
+  border-color:#f44236
+}
+.btn.btn-default:focus,
+.btn-default:focus {
+  color:#FFF!important
+}
+.btn.btn-primary:hover,
+.badge.badge-primary:hover,
+.badge.badge-primary:focus,
+.btn.btn-primary:focus,
+.btn.btn-primary.active {
+  background:#f44236 !important;
+  border-color:#f44236;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.badge.badge-secondary:hover,
+.badge.badge-secondary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.active {
+  background:#322F31 !important;
+  border-color:#322F31;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.badge.badge-warning:hover,
+.badge.badge-warning:focus,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.active {
+  background:#f11637 !important;
+  border-color:#f11637;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.badge.badge-danger:hover,
+.badge.badge-danger:focus,
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.active {
+  background:#ff090f !important;
+  border-color:#ff090f;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.badge.badge-info:hover,
+.badge.badge-info:focus,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.active {
+  background:#113aff !important;
+  border-color:#113aff;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.badge.badge-success:hover,
+.badge.badge-success:focus,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.active {
+  background:#09BAEF !important;
+  border-color:#09BAEF;
+  color:#fff!important;
+  text-shadow:none!important
+}
+.btn a,
+.btn.btn-outline-primary.active,
+.btn.btn-outline-warning.active,
+.btn.btn-outline-danger.active,
+.btn.btn-outline-info.active,
+.btn.btn-outline-success.active,
+.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-warning:hover,
+.btn.btn-outline-warning:focus,
+.btn.btn-outline-danger:hover,
+.btn.btn-outline-danger:focus,
+.btn.btn-outline-info:hover,
+.btn.btn-outline-info:focus,
+.btn.btn-outline-success:hover,
+.btn.btn-outline-success:focus {
+  color:#fff!important
+}
+.badge-default,
+.badge-secondary {
+  background:#111;
+  color:#fff
+}
+.badge.badge-default:hover,
+.badge.badge-default:focus,
+.badge.badge-secondary:hover,
+.badge.badge-secondary:focus {
+  background:#222;
+  color:#fff
+}
+.btn.btn-outline-default {
+  background-color:rgba(255,255,255,0.125);
+  color:#fff
+}
+.btn.btn-outline-primary {
+  border-color:#f44236;
+  color:#f44236
+}
+.btn.btn-outline-secondary {
+  border-color:#322F31;
+  color:#322F31
+}
+.btn.btn-outline-warning {
+  border-color:#f11637;
+  color:#f11637
+}
+.btn.btn-outline-danger {
+  border-color:#ff090f;
+  color:#ff090f
+}
+.btn.btn-outline-info {
+  border-color:#113aff;
+  color:#113aff
+}
+.btn.btn-outline-success {
+  border-color:#09BAEF;
+  color:#09BAEF
+}
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary.active {
+  background:#f44236;
+  border-color:#f44236
+}
+.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:focus,
+.btn.btn-outline-secondary.active {
+  background:#f44236;
+  border-color:#f44236
+}
+.btn.btn-outline-warning:hover,
+.btn.btn-outline-warning:focus,
+.btn.btn-outline-warning.active {
+  background:#f11637;
+  border-color:#f11637
+}
+.btn.btn-outline-danger:hover,
+.btn.btn-outline-danger:focus,
+.btn.btn-outline-danger.active {
+  background:#ff090f;
+  border-color:#ff090f
+}
+.btn.btn-outline-info:hover,
+.btn.btn-outline-info:focus,
+.btn.btn-outline-info.active {
+  background:#113aff;
+  border-color:#113aff
+}
+.btn.btn-outline-success:hover,
+.btn.btn-outline-success:focus,
+.btn.btn-outline-success.active {
+  background:#09BAEF;
+  border-color:#09BAEF
+}
