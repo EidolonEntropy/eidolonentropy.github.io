@@ -1,0 +1,211 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This code is definitely NOT user friendly, there's a million colors being used here and nothing's organised or even functioning the same. sorry. psychonauts is cool
+*/
+
+.dropdown-menu, .nametag, .btn {
+  font-family: cursive;
+}
+.panel-heading, .panel-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .profile-header-mobile-status .card  {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine3.png);
+  background-color: #90A322 !important;
+  color: #2C663C !important;
+  font-family: cursive;
+  border: solid 4px #42631F !important;
+}
+.panel-footer, .profile-characters-header .card-header, .profile-attacks-title, .profile-overall-stats .card-header {
+  background-position: bottom;
+}
+.profile-links .panel-heading, .profile-attacks-header .card-header, .profile-characters-title, .comments h2, .profile-stats-title {
+  background-position: center;
+}
+.sceditor-container, div.sceditor-group {
+  border: none !important;
+  background: #82FD70;
+}
+div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
+  background: #90A322 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #content ul .nav-item {
+  width: 100% !important;
+  }
+}
+.profile-mobile-header .profile-avatar-wrapper {
+  background: #4BF28A;
+  border: none;
+}
+
+.btn, .nav-tabs .nav-item a {
+  border: 2px solid #7DFF38;
+  background: #5BB338;
+}
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active {
+  background: #34FF7A;
+}
+.btn:hover, .btn:active, .btn-focus, .btn-primary:not(:disabled):not(.disabled).active {
+  border: 2px solid #7DFF38 !important;
+  color: #2C663C !important;
+}
+.btn-warning:hover, .btn-danger:hover {
+  background: #F5FA11;
+}
+.btn-success:hover {
+  background: #82FD70 !important;
+}
+.btn-secondary:hover {
+  background: #49EAAF !important;
+}
+
+#content ul .nav-item {
+  width: 20%;
+  text-align: center;
+  font-family: cursive;
+}
+.nav-tabs {
+  background: #7DFF38;
+}
+.nav-tabs .nav-item a:hover {
+  border: 2px solid #7DFF38 !important;
+  background: #49EAAF;
+  color: #2C663C;
+}
+.nav-tabs .nav-item .active {
+  border: 2px solid #7DFF38 !important;
+  background: #90A322 !important;
+  color: #F9FFB7 !important;
+}
+
+.banner {
+  background: none !important;
+}
+#wrapper {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #69892F;
+}
+.artfight-nav {
+  background: none !important;
+}
+.panel-default, .achievement-panel .card {
+  border: none;
+}
+.artfight-nav .nav-link {
+  color: #6FFFF1 !important;
+  font-weight: bold;
+}
+.artfight-nav .nav-link:hover {
+  color: #3DCEA7 !important;
+}
+.profile-gallery-header a, .panel-heading input, .panel-heading .btn, .panel-footer a, .nav-tabs .nav-item a {
+  color: #C2EB6C;
+}
+.profile-gallery-header a:hover, .panel-footer a:hover, .profile-header-name a:hover {
+  text-decoration: none !important;
+  color: #FFF !important;
+}
+.profile-header-name a {
+  color: #C2EB6C !important;
+}
+.profile-description {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine2.png) center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #08685F;
+  padding: 10px;
+}
+.panel {
+  background: #E0DC2C;
+}
+.thumbnail {
+  border-style: solid;
+  border-width: 4px !important;
+}
+.thumbnail:hover {
+  border-style: double !important;
+}
+.table .bg-light, .nametag, .thumbnail, .dropdown-item:hover {
+  background: #82FD70 !important;
+  color: #48C766 !important;
+}
+.table td {
+  border-color: #747C1F !important;
+}
+.table td a, .comment, .dropdown-header, .table {
+  color: #747C1F;
+}
+.profile-characters-permissions a:hover, .profile-description a:hover, .comment a:hover, .profile-follower a:hover, .profile-links a:hover, .footer a:hover, .nametag a:hover {
+  opacity: 0.6;
+  text-decoration: none !important;
+}
+.footer .contain, .badge-danger, .badge-info {
+  background: #4BF28A !important;
+  color: #38AA7F !important;
+}
+.footer .contain a, .nametag i, .dropdown-item:hover {
+  color: #2C663C !important;
+}
+.panel.panel-default.profile-header {
+  background: none !important;
+}
+.profile-header-normal-status, .badge, .dropdown-item {
+  color: #F9FFB7;
+}
+hr, .dropdown-divider {
+  border-color: #747C1F;
+}
+.comments h2 {
+padding:10px 0 !important;
+text-indent: 16px;
+}
+.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title {
+margin-top:0 !important;
+margin-bottom:0 !important;
+width:100% !important;
+padding:10px 0 !important;
+text-indent: 16px
+}
+.profile-defenses-title {
+width: 85% !important
+}
+
+.page-link, .disabled .page-link {
+  border: 2px solid #7DFF38 !important;
+  background: #5BB338 !important;
+  color: #C2EB6C !important;
+}
+.page-item.active .page-link, .page-link:hover {
+  border: 2px solid #7DFF38 !important;
+  background: #49EAAF !important;
+  color: #2C663C !important;
+}
+
+.sitewide-notice, .alert-info {
+display:none !important;
+}
+.alert-success {
+background-color:#000 !important;
+color:#0F0 !important
+}
+.achievement-panel img {
+	width: 200px;
+}
+.donation_meter {
+  color: #38AA7F !important;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color:#90A322 !important
+}
+.footer .mt-0 {
+  background:#82FD70;
+}
+.footer .contain {
+  background-image: url(https://i.imgur.com/guWaze8.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}

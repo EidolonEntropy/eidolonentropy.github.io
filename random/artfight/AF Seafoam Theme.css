@@ -1,0 +1,243 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This code was designed without many layout changes, so you can copy in the ones you want from this document: https://docs.google.com/document/d/16kgp1jjPUDCQoAzhALCx2xNpbJPqWQTXzO3RvKws7Sw/edit?usp=sharing
+Note that if you use anything that relocates the bio, you must remove the chunk notated below!
+
+See the top entries for customisable pieces.
+*/
+
+/*BANNER - change this link to change the banner*/
+.banner {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/seafoamicon.png) !important;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+/*BIO OPTIONS - If you use a snippet that changes the bio, delete (or comment out) this chunk*/
+.profile-description {
+  padding: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-container {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/seafoambg.png);
+  background-position: bottom;
+  margin-bottom: 0 !important;
+}
+#wrapper {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/seafoamgradvert.svg);
+}
+#content {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/seafoambg.png);
+  padding-top: 1rem !important;
+  background-position: center top;
+}
+.artfight-nav, .footer .contain {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/seafoamgradvert2.svg);
+}
+
+
+.card-header, .panel-footer, .profile-header-background {
+  background: #FFC48E !important;
+  color: #E20408;
+}
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  background: #FFC48E !important;
+  color: #E20408 !important;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+
+.card {
+  background: #FFE6D0;
+}
+.table .bg-light {
+  background: #FF838F !important;
+}
+table .active, .table .bg-light *, .fa-question-circle {
+  color: #F9E0DE !important;
+  font-weight: 600;
+}
+table td, .profile-header-mobile-status {
+  color: #005333;
+}
+
+.profile-description {
+  background: rgba(61, 141, 116, 0.6);
+  padding: 1rem;
+}
+blockquote, .profile-header-normal-status, .comment .card, .profile-character-permissions, .achievement-panel .card {
+  background: rgba(61, 141, 116, 0.6);
+  border: none !important;
+  color: #F9E0DE;
+}
+.profile-header-normal-status {
+  margin: 0 !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nametag {
+  background: rgba(0, 83, 51, 0.8) !important;
+  border: none !important;
+  color: #EDD3D1;
+  font-weight: bold;
+}
+.nametag a:hover, .profile-follower a:hover {
+  opacity: 0.7;
+}
+
+.profile-header-name .element-disabled {
+  color: #FFE6D0 !important;
+  opacity: 1 !important;
+}
+.table .bg-light .strong {
+  color: #EDD3D1 !important;
+}
+.profile-avatar-wrapper {
+  background: #3D8D74;
+  border: none !important;
+}
+.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu {
+  border: none !important;
+}
+
+.footer a, .artfight-nav .nav-link, .navbar-brand {
+  color: #3D8D74 !important;
+  opacity: 1;
+}
+.footer a:hover, .footer .social a:hover, .artfight-nav .nav-link:hover, .navbar-brand:hover {
+  text-decoration: none;
+  color: #005333 !important;
+}
+
+a {
+  color: #B4102F;
+}
+a:hover {
+  text-decoration: none;
+  color: #FF838F;
+}
+.footer div {
+  color: #FFE6D0 !important;
+  opacity: 1;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value,
+.progress-bar {
+  background-color: #3D8D74 !important;
+  color: #FFE6D0;
+}
+.footer .mt-0, .progress {
+  background:#55D1A2;
+}
+
+.thumbnail {
+  border-style: groove;
+  border-width: 5px !important;
+  background: rgba(61, 141, 116, 0.6);
+}
+.thumbnail:hover {
+  border-style: ridge !important;
+}
+
+.dropdown-menu {
+  background: #3D8D74;
+}
+.dropdown-item {
+  color: #EDD3D1
+}
+.dropdown-header {
+  color: #55D1A2
+}
+.dropdown-item:hover {
+  color: #005333;
+  background: #55D1A2
+}
+.dropdown-divider {
+  border-color: #55D1A2;
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.badge {
+  background: #D08364;
+  color: #FFC48E
+}
+
+.profile-gallery-header h2, .card-header {
+  font-weight: 600;
+}
+
+.sceditor-container, div.sceditor-group {
+  border: none !important;
+  background: #FFC48E;
+}
+div.sceditor-toolbar  {
+  background: #D08364 !important;
+}
+.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+  background: #FF838F
+}
+
+.nav-tabs {
+  background: #FFC48E;
+  border: none !important;
+}
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+}
+.nav-tabs .active {
+  background: #D08364 !important;
+  color: #B4102F !important;
+}
+.nav-tabs .nav-link {
+  border: none !important;
+}
+.nav-tabs .nav-link:hover {
+  color: #FF838F;
+  background: #FFD3CB;
+}
+
+.btn {
+  background: #D08364 !important;
+  border-color: #D08364 !important;
+  color: #B4102F !important;
+  font-weight: 600;
+}
+.btn:hover, .btn.active, .btn:active, .btn:focus {
+  background: #FFD3CB !important;
+  border-color: #FF838F !important;
+  color: #FF838F !important;
+  border-style: dotted;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs .nav-item {
+  width: 100% !important;
+  }
+}
+
+.sitewide-notice, .alert-info {
+display:none !important;
+}
+.alert-success {
+background-color: rgba(0,0,0,0.6) !important;
+color:white !important
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/JRUsqaW.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}

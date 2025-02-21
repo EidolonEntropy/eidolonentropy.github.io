@@ -1,0 +1,193 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+Thank you AF user ChaseK for providing the animated gradient and inspiring these themes!
+
+Want more layout changes? You should be able to paste in most of the snippets from this doc without issue: https://docs.google.com/document/d/16kgp1jjPUDCQoAzhALCx2xNpbJPqWQTXzO3RvKws7Sw/edit?usp=sharing
+
+Change the banner by pasting the direct image link within the parentheses in the topmost chunk.
+*/
+
+.banner {
+	background-image: url(LINK) !important;
+}
+
+#wrapper {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewbackground.svg);
+}
+.banner {
+  height: 260px;
+  margin-top: -60px;
+}
+.profile-header-normal-status p, .profile-header-mobile-status p, .profile-description, .card-header, .table .bg-light, .text-muted, .comment, .footer, .footer a, .dropdodown-item {
+  color: white;
+}
+.profile-gallery-header a, .card-footer a, .profile-links a, .profile-description a {
+  color: rgb(98, 145, 173);
+}
+.profile-gallery-header a:hover, .card-footer a:hover, .profile-links a:hover, .profile-description a:hover, .profile-followers a:hover, .profile-header-name a:hover, .nametag a:hover, .comment-footer a:hover, .comment .card-body a:hover, .comment strong a:hover, .footer a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+.artfight-nav {
+  background: none !important;
+}
+.card-header, .profile-header-background, .dropdown-menu {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
+  border: none !important;
+}
+.card, blockquote {
+  background: rgba(0,0,0,0.3);
+  border: none;
+}
+.table .bg-light, .nametag, .sceditor-container, .table-striped tr:first-child {
+  background: rgba(0,0,0,0.3) !important;
+  border: none !important;
+}
+.table .bg-light, .nametag {
+	font-weight: lighter !important;
+}
+td, blockquote  {
+  border: none !important;
+}
+.card-footer {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
+  border: none;
+}
+.footer .contain {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
+}
+.footer {
+  background: none !important;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/5dXuRo7.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}
+.badge {
+  background: rgb(98, 145, 173) !important;
+  color: white;
+}
+.profile-header-normal-status {
+  background: url(https://i.imgur.com/t2BZKkT.png) no-repeat;
+  background-position: 99%;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+}
+
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  background-color: rgba(0,0,0,0.3) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
+  border: none !important;
+  color: white; !important;
+  padding: 0.75rem 1rem;
+}
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+
+.thumbnail {
+  border-style: inset;
+  border-width: 2px;
+}
+.thumbnail:hover {
+  border-style: outset;
+}
+
+.btn {
+  background: rgba(98, 145, 173, 0.6);
+  color: white !important;
+  border-color: transparent !important;
+}
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active {
+  background: #8CB8CE;
+}
+.btn:hover, .btn:active, .btn-focus, .btn-primary:not(:disabled):not(.disabled).active {
+  color: white !important;
+}
+.btn-warning:hover, .btn-danger:hover {
+  background: #473949 !important;
+}
+.btn-success:hover, .btn-info:hover {
+  background: #395872 !important;
+}
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+  background: #262F3C !important;
+}
+
+.dropdown-header {
+  color: white;
+}
+.dropdown-item:hover {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg)
+}
+.dropdown-divider, .comment hr {
+  border-color: rgb(98, 145, 173);
+}
+
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
+}
+.nav-tabs.my-3 {
+  border: none;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv.svg);
+}
+.nav-tabs .nav-item:hover, .nav-tabs .nav-item.active {
+  background: rgba(255,255,255,0.1);
+}
+.nav-tabs .nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+.nav-tabs .nav-link.active {
+  border-color: transparent;
+  background: none;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .nav-tabs .nav-item {
+  width: 100% !important;
+  }
+  .artfight-nav {
+    background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
+  }
+}
+
+div.sceditor-group {
+  border: none !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg);
+}
+div.sceditor-toolbar, .achievement-panel .card {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv.svg) !important;
+}
+.sceditor-container, div.sceditor-dropdown {
+border-color: #000 !important;
+}
+.sceditor-button.active, .sceditor-button:hover {
+  background: rgba(255,255,255,0.1) !important;
+  color: white !important;
+  border: transparent;
+}
+
+.sitewide-notice, .alert-info {
+display:none !important;
+}
+.alert-success {
+background-color: rgba(0,0,0,0.6) !important;
+color:white !important
+}
+.achievement-panel img {
+	width: 200px;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color:#6291AD !important
+}
+.footer .mt-0 {
+  background:rgba(0,0,0,0.3);
+}

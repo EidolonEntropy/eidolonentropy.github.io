@@ -1,0 +1,335 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This profile utilizes exclusively images for backgrounds, they are as follows (replace every instance of these links for easy image exchanging):
+Full page background (normal): https://i.imgur.com/ExaXlEV.jpg
+Full page background (mobile (larger version)): https://i.imgur.com/svB2wBD.jpg
+Headers: https://i.imgur.com/A7OjgEC.jpg
+Navbar + footer + some other headers: https://i.imgur.com/R3LqU4o.jpg
+Horizontal Rainbow (tiling): https://i.imgur.com/Wj5t7wj.png
+Vertical Rainbow (tiling): https://i.imgur.com/qYxAlms.png
+Pagination Small Rainbow: https://i.imgur.com/7X2OBUs.png
+...is that it?
+Links and buttons are all unique for the most part.
+I used the css color 'white' for text elements instead of #FFF this time around. 
+Most hover colors are the same RGB values as the non-hover color and are controlled by 0.75 opacity instead of color. Other colors use RGBA values of either 0.6, 0.7 or 0.2 depending on the application.
+Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+I used a positioning value on the banner here, you might want to remove it if it's misbehaving.
+*/
+
+#wrapper {
+  background-image: url(https://i.imgur.com/ExaXlEV.jpg);
+  background-color: black;
+  background-position: bottom;
+}
+.banner {
+  background: url(https://i.imgur.com/Wdvuwnz.png) !important;
+  background-position: center !important;
+}
+.banner-container {
+  padding-bottom: 1rem;
+  background: url(https://i.imgur.com/Wj5t7wj.png);
+  background-position: right;
+}
+.card {
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+.profile-header-background {
+  border: none !important;
+  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background-position: bottom left;
+}
+.footer .contain {
+  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background-position: bottom;
+  color: white !important;
+}
+.footer .contain a {
+  text-transform: uppercase;
+}
+.footer {
+  padding-top: 1rem;
+  background: url(https://i.imgur.com/Wj5t7wj.png);
+  background-position: -30%;
+}
+.artfight-nav {
+  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background-position: center 60%;
+}
+.card-header {
+  background: url(https://i.imgur.com/A7OjgEC.jpg);
+  text-transform: uppercase;
+  color: white;
+}
+.profile-gallery-header a, .table a, .profile-followers .card-footer a, .profile-description a {
+  color: #62F99C
+}
+.profile-gallery-header a:hover, .table a:hover, .profile-followers .card-footer a:hover, .profile-description a:hover {
+  color: #25BC5F;
+  text-decoration: none;
+}
+.footer a:hover, .nametag a:hover, .profile-followers .card-body a:hover, .comment strong a:hover, .comment .card-body a:hover {
+  text-decoration: none !important;
+  opacity: 0.7;
+}
+.profile-header-name a:hover {
+  text-decoration: none !important;
+}
+.profile-gallery-header, .achievement-panel .card, .profile-characters-permissions {
+  border: none !important;
+}
+.profile-attacks-header .card-header {
+  background-position: bottom right;
+}
+.profile-defenses-header .card-header {
+  background-position: left 80%;
+}
+.profile-characters-header .card-header {
+  background-position: left 70%;
+}
+.profile-links .card-header, .profile-overall-stats .card-header, .profile-characters-permissions .card-header {
+  background-position: right 82%;
+  font-size: large;
+}
+.profile-followers .card-header, .profile-current-stats .card-header {
+  background-position: left 78%;
+  font-size: large;
+}
+.achievement-panel .card-header {
+  background-position: center 85%;
+  font-size: large;
+}
+.profile-followers .card-footer {
+  background: url(https://i.imgur.com/A7OjgEC.jpg);
+  background-position: center 90%;
+}
+.nametag, .table .bg-light {
+  background: rgba(0,0,0,0.6) !important;
+  border: none !important;
+}
+.thumbnail {
+  border-style: groove;
+  border-width: 4px !important;
+}
+.thumbnail:hover {
+  border-style: ridge !important;
+}
+.profile-header-normal-status {
+  background: rgba(0,0,0,0.6);
+  margin-top: 0 !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  color: white;
+}
+.table .bg-light {
+  color: white !important;
+}
+.navbar-nav .nav-link, .navbar-brand {
+  color: white !important;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link:hover, .navbar-brand:hover {
+  opacity: 0.7;
+}
+blockquote {
+  border: none !important;
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+.profile-links .card, .profile-followers .card, .comment .card, .profile-avatar-wrapper, .profile-current-stats, .profile-overall-stats, .achievement-panel {
+  border: none !important;
+}
+.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title, .comments h2 {
+  color: white !important;
+  text-transform: uppercase;
+}
+.profile-description {
+  color: white;
+}
+
+.nav-tabs .nav-link {
+  border-color: transparent !important;
+  color: white;
+  text-transform:uppercase;
+  font-size:larger;
+  margin-bottom: -4px;
+}
+#content ul .nav-item {
+  width: 20%;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  #content ul .nav-item {
+  width: 100% !important;
+  }
+  #wrapper {
+	background-image: url(https://i.imgur.com/svB2wBD.jpg) !important;
+	background-position: center top;
+  }
+}
+.nav.nav-tabs.my-3 {
+  background: url(https://i.imgur.com/Wj5t7wj.png);
+  background-position: -80% 0%;
+  border: none !important
+}
+.nav-tabs .nav-link.active {
+  background: transparent;
+}
+.nav-tabs .nav-item.active {
+  border: solid white 3px !important;
+  background: rgba(255,255,255,0.2) !important;
+}
+.nav-tabs .nav-item:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
+
+.btn {
+  color: white !important;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-primary, .btn-primary:not(:disabled):not(.disabled).active {
+  background: #25A8BC;
+}
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active:hover {
+  background: #62E5F9;
+}
+.btn-danger {
+  background: #AF2C18
+}
+.btn-danger:hover {
+  background: #F97662
+}
+.btn-success {
+  background: #60BF28
+}
+.btn-success:hover {
+  background: #99F962
+}
+.btn-warning {
+  background: #C6B52F
+}
+.btn-warning:hover {
+  background: #F9E862
+}
+.btn-info {
+  background: #0F20A6
+}
+.btn-info:hover {
+  background: #6273F9
+}
+.btn-secondary {
+  background: #AF1875
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle {
+  background: #F962BF
+}
+
+.comment .d-md-block .text-center {
+  background: rgba(0,0,0,0.6);
+  padding: .5rem;
+  width: 120px;
+  margin-left: 20%;
+}
+.comment .d-md-block .text-center br {
+  display: none;
+}
+
+.dropdown-menu {
+  background: url(https://i.imgur.com/qYxAlms.png);
+  background-position: center 70%;
+  text-transform: uppercase;
+  border: none !important;
+}
+.dropdown-item {
+  color: white !important;
+}
+.dropdown-header {
+  display: none !important;
+}
+.dropdown-divider, hr {
+  border-color: white !important;
+  opacity: 0.6
+}
+.dropdown-item:hover {
+  background: rgba(255,255,255,0.2)
+}
+.badge {
+  background: #7515AC;
+  color: white;
+}
+
+.page-link, .disabled .page-link {
+background: none !important;
+border: none !important;;
+color: white !important;
+}
+.page-item.active .page-link, .page-link:hover {
+background: rgba(255,255,255,0.2) !important;
+border: none !important;
+}
+.pagination {
+  background: url(https://i.imgur.com/7X2OBUs.png) !important;
+}
+
+div.sceditor-toolbar {
+  background: url(https://i.imgur.com/Wj5t7wj.png) !important;
+}
+div.sceditor-group {
+  background: none !important;
+  border: none !important;
+}
+.sceditor-container {
+  border: none !important;
+}
+.sceditor-button.active, .sceditor-button:hover {
+  background: rgba(255,255,255,0.2) !important;
+}
+
+.profile-gallery-character:first-child .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #99F962 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack  + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #62F99C !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child .thumbnail {
+  border-color: #62E5F9 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character+ .profile-gallery-character  + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense .thumbnail {
+  border-color: #C262F9 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #F97662 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense .thumbnail {
+  border-color: #F9E862 !important;
+}
+
+.sitewide-notice, .alert-info {
+display:none !important;
+}
+.alert-success {
+background-color: rgba(0,0,0,0.6) !important;
+color:white !important
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/JRUsqaW.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}

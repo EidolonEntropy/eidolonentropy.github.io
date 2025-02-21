@@ -1,0 +1,243 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This code was designed without many layout changes, so you can copy in the ones you want from this document: https://docs.google.com/document/d/16kgp1jjPUDCQoAzhALCx2xNpbJPqWQTXzO3RvKws7Sw/edit?usp=sharing
+Note that if you use anything that relocates the bio, you must remove the chunk notated below!
+
+See the top entries for customisable pieces.
+*/
+
+/*BANNER - change this link to change the banner*/
+.banner {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/stardusticon.png) !important;
+  background-position: center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+/*BIO OPTIONS - If you use a snippet that changes the bio, delete (or comment out) this chunk*/
+.profile-description {
+  padding: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-container {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/stardustbg.png);
+  background-position: bottom;
+  margin-bottom: 0 !important;
+}
+#wrapper {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/stardustgradvert2.svg);
+}
+#content {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/stardustbg.png);
+  padding-top: 1rem !important;
+  background-position: center top;
+}
+.artfight-nav, .footer .contain {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/stardustgradvert.svg);
+}
+
+
+.card-header, .panel-footer, .profile-header-background {
+  background: #33156C !important;
+  color: #2208F0;
+}
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  background: #33156C !important;
+  color: #2208F0 !important;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+
+.card {
+  background: #14193A;
+}
+.table .bg-light {
+  background: #5A43AD !important;
+}
+table .active, .table .bg-light *, .fa-question-circle {
+  color: #C8D9E5 !important;
+  font-weight: 600;
+}
+table td, .profile-header-mobile-status {
+  color: #DAD4FF;
+}
+
+.profile-description {
+  background: rgba(20, 25, 58, 0.6);
+  padding: 1rem;
+}
+blockquote, .profile-header-normal-status, .comment .card, .profile-character-permissions, .achievement-panel .card {
+  background: rgba(20, 25, 58, 0.6);
+  border: none !important;
+  color: #C8D9E5;
+}
+.profile-header-normal-status {
+  margin: 0 !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.nametag {
+  background: rgba(20, 25, 58, 0.6) !important;
+  border: none !important;
+  color: #F2E3FE;
+  font-weight: bold;
+}
+.nametag a:hover, .profile-follower a:hover {
+  opacity: 0.7;
+}
+
+.profile-header-name .element-disabled {
+  color: #8079D1 !important;
+  opacity: 1 !important;
+}
+.table .bg-light .strong {
+  color: #F2E3FE !important;
+}
+.profile-avatar-wrapper {
+  background: #14193A;
+  border: none !important;
+}
+.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu {
+  border: none !important;
+}
+
+.footer a, .artfight-nav .nav-link, .navbar-brand {
+  color: #8079D1 !important;
+  opacity: 1;
+}
+.footer a:hover, .footer .social a:hover, .artfight-nav .nav-link:hover, .navbar-brand:hover {
+  text-decoration: none;
+  color: #DAD4FF !important;
+}
+
+a {
+  color: #5D17E8;
+}
+a:hover {
+  text-decoration: none;
+  color: #5A43AD;
+}
+.footer div {
+  color: #14193A !important;
+  opacity: 1;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value,
+.progress-bar {
+  background-color: #8079D1 !important;
+  color: #14193A;
+}
+.footer .mt-0, .progress {
+  background:#1D2265;
+}
+
+.thumbnail {
+  border-style: groove;
+  border-width: 5px !important;
+  background: rgba(20, 25, 58, 0.6);
+}
+.thumbnail:hover {
+  border-style: ridge !important;
+}
+
+.dropdown-menu {
+  background: #8079D1;
+}
+.dropdown-item {
+  color: #F2E3FE
+}
+.dropdown-header {
+  color: #1D2265
+}
+.dropdown-item:hover {
+  color: #DAD4FF;
+  background: #1D2265
+}
+.dropdown-divider {
+  border-color: #1D2265;
+  border-style: dotted;
+  border-width: 1px;
+}
+
+.badge {
+  background: #A771CD;
+  color: #33156C
+}
+
+.profile-gallery-header h2, .card-header {
+  font-weight: 600;
+}
+
+.sceditor-container, div.sceditor-group {
+  border: none !important;
+  background: #33156C;
+}
+div.sceditor-toolbar  {
+  background: #8079D1 !important;
+}
+.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+  background: #5A43AD
+}
+
+.nav-tabs {
+  background: #33156C;
+  border: none !important;
+}
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+}
+.nav-tabs .active {
+  background: #8079D1 !important;
+  color: #5D17E8 !important;
+}
+.nav-tabs .nav-link {
+  border: none !important;
+}
+.nav-tabs .nav-link:hover {
+  color: #5A43AD;
+  background: #A771CD;
+}
+
+.btn {
+  background: #8079D1 !important;
+  border-color: #8079D1 !important;
+  color: #5D17E8 !important;
+  font-weight: 600;
+}
+.btn:hover, .btn.active, .btn:active, .btn:focus {
+  background: #A771CD !important;
+  border-color: #5A43AD !important;
+  color: #5A43AD !important;
+  border-style: dotted;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs .nav-item {
+  width: 100% !important;
+  }
+}
+
+.sitewide-notice, .alert-info {
+display:none !important;
+}
+.alert-success {
+background-color: rgba(0,0,0,0.6) !important;
+color:white !important
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/3XikEwO.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}

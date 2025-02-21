@@ -1,0 +1,432 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+Code is very lengthy due to the amount of colors at play here. If only one color is desired, use the Neon Voxel theme instead.
+Red: #F97662
+Yellow: #F9E862
+Green: #99F962
+Cyan: #62F99C
+Blue: #62E5F9
+Purple: #C262F9
+
+Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+*/
+
+#wrapper {
+  background-image: url(https://i.imgur.com/eLaElXS.png) !important;
+  background-attachment: fixed; !important;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.banner-container {
+  padding: 2px;
+  background: #F9E862;
+}
+.banner {
+  background-image: url(https://i.imgur.com/qc0XNqE.png) !important;
+  background-position: center !important;
+}
+
+.profile-description {
+  width:60%;
+  max-height:700px;
+  overflow:auto;
+  margin-left:1%;
+  float:right;
+  margin-top:0.9%;
+  padding-top:10px;
+}
+.profile-attacks-header {
+  clear: right !important;
+}
+.profile-links {
+  margin-right:1%;
+  min-width:100%;
+  padding: 0;
+}
+.profile-followers {
+  margin-top:-1%;
+  margin-bottom:2%;
+  min-width:100% !important;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-links, .profile-followers {
+    float: none !important;
+    width: 100% !important;
+    margin:0% 0% 0% 0%;
+  }
+  .profile-description + .row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+ .profile-links .panel, .profile-followers .panel {
+    width:100% !important;
+ }
+  .profile-description {
+    float: none !important;
+    width: 100% !important;
+  }
+  .nav-tabs .nav-item {
+    width: 100% !important;
+  }
+}
+
+.panel-heading, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show, .modal-body, .modal-header, .modal-footer, .modal tr {
+  background-color: #000 !important;
+}
+.dropdown-header, .table .bg-light, .comments .text-center, .nametag .fa-bookmark, .progress-bar {
+  color: white !important;
+}
+
+.profile-header-normal-status {
+  background:#000;
+  color:#99F962;
+  height:115px;
+  margin-top:-1px !important;
+  padding-top:10px !important
+}
+.profile-header-name .element-disabled, .profile-header-name strong a, .profile-header-wrapper .dropdown-item {
+  color:#99F962 !important;
+  opacity: 1;
+}
+.profile-header-mobile-status .card {
+  background:#000 !important;
+  color:#99F962 !important
+}
+.profile-header-wrapper {
+  border: #99F962 2px solid;
+}
+.follows-you.badge {
+  background: #99F962 !important;
+}
+
+.artfight-nav .nav-link, .artfight-nav .navbar-brand div, .artfight-nav .dropdown-item {
+  color: #F9E862 !important;
+}
+.badge {
+  background: #F9E862 !important;
+  color: black !important;
+}
+
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
+}
+.nav-tabs .nav-link {
+  color: #62F99C !important;
+  border-color: transparent !important;
+}
+.nav-tabs .active .nav-link {
+  border: solid 2px #62F99C !important;
+  background: #000 !important;
+  color: #62F99C !important;
+}
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.profile-links, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
+  border: 2px #62E5F9 solid;
+}
+.profile-links a, .profile-links .card-header, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
+  color: #62E5F9 !important;
+}
+.profile-links .card, .profile-followers .card, .profile-stats .achievement-panel {
+  margin-top: 0 !important;
+}
+.profile-followers, .profile-links, .profile-stats .col-12 {
+  margin-top: 1rem;
+}
+.profile-followers, .profile-overall-stats, .profile-characters-permissions, .comment .card, .modal-dialog {
+  border: 2px #C262F9 solid !important;
+}
+.profile-followers .card-header, .profile-followers .card-footer a, .profile-overall-stats .card-header, .profile-overall-stats td, .profile-characters-permissions, .comment .element-disabled, .comment a, .modal, .modal tr {
+  color: #C262F9;
+}
+.profile-overall-stats .progress-bar {
+  background: #C262F9 !important;
+}
+.profile-overall-stats .progress {
+  background: black;
+  border: 1px solid #C262F9;
+}
+.comment .card hr {
+  border-color: #C262F9;
+}
+
+.profile-description {
+  border: 2px #F97662 solid;
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+blockquote {
+  border: none !important;
+}
+.profile-description table tr {
+  background: black !important;
+}
+.profile-description hr {
+  border-color: #F97662;
+}
+.profile-description a, .profile-current-stats .card-header, .profile-current-stats td {
+  color: #F97662;
+}
+.profile-current-stats {
+  border: 2px #F97662 solid !important;
+}
+.profile-current-stats .progress-bar {
+  background: #F97662 !important;
+}
+.profile-current-stats .progress {
+  background: black;
+  border: 1px solid #F97662;
+}
+
+.profile-attacks-header, .achievement-panel {
+  border: 2px #F9E862 solid !important;
+}
+.profile-attacks-header h2, .profile-attacks-header a, .achievement-panel {
+  color: #F9E862 !important;
+}
+.profile-defenses-header {
+  border: 2px #99F962 solid !important;
+}
+.profile-defenses-header h2, .profile-defenses-header a {
+  color: #99F962 !important;
+}
+.profile-characters-header {
+  border: 2px #62F99C solid !important;
+}
+.profile-characters-header h2, .profile-characters-header a {
+  color: #62F99C !important;
+}
+
+.comments h2 {
+  color: #62E5F9;
+  border: 2px #62E5F9 solid;
+}
+
+.footer {
+  padding-top: 2px;
+  background: #F9E862 !important;;
+  background-position: 60%;
+}
+.footer .contain a, .footer .contain div {
+  color: #F9E862;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color: #F9E862; !important;
+}
+.footer .mt-0 {
+  background:#000;
+  border: 1px solid #F9E862;
+}
+
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  background: #000 !important;
+  padding: 0.75rem 1rem;
+}
+
+.card, .dropdown-menu.show {
+  background: #000 !important;
+  border: 0;
+}
+
+.page-link, .disabled .page-link {
+  background: #000 !important;
+  border: 1px #000 solid !important;;
+  color: #F97662 !important;
+}
+.page-item.active .page-link, .page-link:hover {
+  background: #000 !important;
+  border: 1px #F97662 solid !important;;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  opacity: 0.75;
+  background: #000 !important;
+}
+.dropdown-divider {
+  border-color: #000;
+}
+.badge {
+  background: #0F0;
+  color: #000 !important;
+}
+
+.footer .contain a:hover {
+  text-decoration: none !important;
+  opacity: 0.75;
+}
+.comment .card-panel a:hover, a:hover.bbcode_url, .username-navbar:hover, .comment strong a:hover, .card a:hover, .profile-header-name a:hover {
+  opacity: 0.75 !important;
+  text-decoration: none !important;
+}
+.profile-header-name a, .navbar-brand div, .username-navbar span {
+  font-weight: 300;
+}
+.nametag i:hover {
+  opacity: 0.75 !important;
+}
+.nametag a:hover {
+  text-decoration: none !important;
+}
+
+.thumbnail {
+  border-style: inset;
+  border-width: 2px;
+}
+.thumbnail:hover {
+  border-style: outset;
+  border-width: 2px;
+}
+
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title {
+  background:#000 !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  width:100% !important;
+  padding:10px 0 !important;
+  text-indent: 16px
+}
+.profile-defenses-title {
+  width: 85% !important
+}
+ 
+.sceditor-container, div.sceditor-group {
+  border: none !important;
+}
+.sceditor-container iframe, .sceditor-container iframe body, .sceditor-container textarea {
+  color: #62E5F9; !important;
+  background-color: #000 !important;
+}
+div.sceditor-toolbar {
+  color: #62E5F9; !important;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
+}
+div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
+  background: #000 !important;
+}
+.sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
+  border-color: #000 !important;
+}
+.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+  background: #62E5F9; !important;
+  color: #000 !important;
+}
+.sceditor-color-option:hover {
+  border-color: #000 !important;
+}
+div.sceditor-dropdown * {
+  color: #62E5F9; !important;
+  background: #000;
+  border-color: #62E5F9; !important;
+}
+
+.table-card td {
+  border: none !important;
+}
+
+div {
+  font-family: Arial, sans-serif;
+}
+
+.profile-header-mobile-status {
+  margin-top: 0 !important;
+}
+
+.sitewide-notice, .alert-info {
+  display:none !important;
+}
+.alert-success {
+  background-color:#000 !important;
+  color:#F97662 !important;
+  border: 2px #F97662 solid;
+}
+.achievement-panel img {
+	width: 200px;
+}
+
+.footer .contain {
+  background-image: url(https://i.imgur.com/guWaze8.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}
+
+.profile-gallery-character:first-child .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #99F962 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack  + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #62F99C !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child .thumbnail {
+  border-color: #62E5F9 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character+ .profile-gallery-character  + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense .thumbnail {
+  border-color: #C262F9 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense .thumbnail {
+  border-color: #F97662 !important;
+}
+.profile-gallery-character:first-child + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character + .profile-gallery-character .thumbnail,
+.profile-gallery-attack:first-child + .profile-gallery-attack .thumbnail,
+.profile-gallery-defense:first-child + .profile-gallery-defense + .profile-gallery-defense  + .profile-gallery-defense .thumbnail {
+  border-color: #F9E862 !important;
+}
+.btn {
+  color: black !important;
+  border: none;
+}
+.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-info {
+  background: #25A8BC;
+}
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active:hover, .btn-info:hover {
+  background: #62E5F9;
+}
+.btn-danger {
+  background: #AF2C18
+}
+.btn-danger:hover {
+  background: #F97662
+}
+.btn-success {
+  background: #60BF28
+}
+.btn-success:hover {
+  background: #99F962
+}
+.btn-warning {
+  background: #C6B52F
+}
+.btn-warning:hover {
+  background: #F9E862
+}
+.btn-secondary {
+  background: #AF1875
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle {
+  background: #F962BF
+}
+
