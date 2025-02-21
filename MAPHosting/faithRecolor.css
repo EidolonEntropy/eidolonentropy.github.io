@@ -1,0 +1,124 @@
+/*for main: #FF003F*/
+/*for hover: (255,0,63,0.75)*/
+
+.btn.btn-default:active,
+.btn.btn-default.active,
+.show > .btn.btn-default.dropdown-toggle,
+.nav-pills .nav-link.active,
+.nav-pills .nav-item.show .nav-link {
+ background:#FF003F;
+ border-color:#FF003F;
+ color:#fff
+}
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item:active {
+ color:#FF003F;
+ /*background:#111*/
+}
+.page-link:focus,
+.page-link:hover {
+ /*background:#111;*/
+ color:#FF003F
+}
+.page-item.active .page-link {
+ color:#fff;
+ background:#FF003F;
+ border-color:#FF003F
+}
+.progress-bar {
+ background-color:#FF003F
+}
+a {
+ color:#FF003F
+}
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus {
+ color:rgba(255,0,63,0.75)
+}
+.text-primary {
+ color:#FF003F!important
+}
+a.text-primary:focus, a.text-primary:hover {
+ color:rgba(255,0,63,0.75)!important
+}
+.bg-primary,
+.card-primary,
+.alert-primary {
+ background-color:#FF003F!important
+}
+.card-outline-primary,
+.card-outline-primary .card-header {
+ border-color:#FF003F!important
+}
+.btn.btn-primary,
+.badge-primary,
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus,
+.btn.btn-outline-primary.active {
+ background:#FF003F;
+ border-color:#FF003F
+}
+.btn.btn-primary:hover,
+.badge.badge-primary:hover,
+.badge.badge-primary:focus,
+.btn.btn-primary:focus,
+.btn.btn-primary.active {
+ background:rgba(255,0,63,0.75);
+ border-color:rgba(255,0,63,0.75)
+}
+.btn.btn-outline-primary {
+ border-color:#FF003F;
+ color:#FF003F
+}
+.card ::-webkit-scrollbar-thumb {
+ background:#FF003F;
+}
+
+/*for main: #EDC905*/
+/*for hover: (237,201,5,0.75)*/
+
+.text-info {
+ color:#EDC905!important
+}
+a.text-info:focus, a.text-info:hover {
+ color:rgba(237,201,5,0.75)!important
+}
+.bg-info,
+.card-info,
+.alert-info {
+ background-color:#EDC905!important
+}
+.card-outline-info,
+.card-outline-info .card-header {
+ border-color:#EDC905!important
+}
+.badge.badge-info,
+.btn-info {
+  background:#EDC905 !important;
+  color:white !important;
+  border:none
+}
+.badge.badge-info:hover,
+.badge.badge-info:focus,
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.active {
+ background:rgba(237,201,5,0.75) !important;
+ border-color:rgba(237,201,5,0.75) !important;
+}
+.btn.btn-outline-info {
+ border-color:#EDC905;
+ color:#EDC905
+}
+.btn.btn-outline-info:hover,
+.btn.btn-outline-info:focus,
+.btn.btn-outline-info.active {
+  background:rgba(237,201,5,0.75);
+  border-color:rgba(237,201,5,0.75)
+}
+.card ::-webkit-scrollbar-thumb {
+ background:#EDC905;
+}
