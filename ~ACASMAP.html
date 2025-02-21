@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="darkly.css">
+	<link rel="shortcut icon" href="favicon.png">
+	<!--extra css, vertical center etc-->
+	<style>
+.vertical-center {
+  top: 50%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+	.yeehaw {
+		mix-blend-mode: hue;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #f44336;
+		animation-name: example;
+		animation-duration: 40s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes example {
+		0%   {background-color: #f44336;}
+		50%  {background-color: #e91e63;}
+		100% {background-color: #f44336;}
+	}
+	</style>
+	<!--title-->
+    <title>Along Came A Spider MAP</title>
+  </head>
+  <body>
+  
+  <!--bg-->
+  <div class="container-flex" style="background-image:url('MAPHosting/ACASfinalbg.png');background-attachment:fixed;background-position:center; z-index:-1;">
+  <div class="yeehaw" style="height:100vh; width:100vw;"></div>
+  <!--end bg-->
+  
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container col-9">
+  <a class="navbar-brand p-0" href="#">
+    <img class="d-inline-block align-top" src="favicon.png" width="40" height="40" alt="A">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <a class="nav-item nav-link" href="~index.html">Home</a>
+      <a class="nav-item nav-link active" href="~ACAS.html">Along Came A Spider MAP <span class="sr-only">(current)</span></a>
+    </div>
+	<span class="navbar-text">
+      Promotional document for the Along Came A Spider MAP
+      </span>
+  </div>
+  </div>
+</nav>
+  <!--end of nav-->
+  
+  <!--small boi
+  
+  <a href="#" id="target">
+  <img style="max-width:15%;position:fixed;bottom:30px;left:5px;z-index:3;" src="indivImages/e.png">
+  </a>
+  <div class='_content' id='blah' style="width: 600px;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>-->
+  
+  <!--body-->
+  <br>
+  <br>
+<div class="container col-12 col-md-8 my-5" style="background-color:rgba(0, 0, 0, 0.6); position: relative;"  data-spy="scroll" data-target="#navbar">
+	<div class="justify-content-center">
+	
+		<div class="container col-7 pt-4 pb-0">
+			<div class="card border-0 bg-transparent">
+				<!--<img class="card-img" src="MAPHosting/ACASfinalbg.png" alt="Logo">
+					<div class="card-img-overlay">
+					<h1>Logo Goes Here</h1>
+					</div>-->
+				<img src="MAPHosting/ACASlogo.png" class="img-fluid">
+			</div>
+		</div>
+		
+		<div class="container col-12 col-md-11 pt-4">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/X0NQzqGOMkE?ecver=1&amp;autoplay=1&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+			</div>
+		</div>
+		
+		<hr style="border-style: double; border-width: 5px;">
+		
+		<!--start of part box-->
+		<div class="card col-12 col-md-11 mx-auto" style="background-color:rgba(0, 0, 0, 0.4);">
+			<div class="card-header bg-transparent pb-0">
+			
+				<div class="tab-content">
+				
+					<div class="tab-pane container show fade active" id="pink">
+				<ul class="nav nav-tabs flex-column flex-sm-row  d-flex flex-wrap-reverse nav-fill">
+					<li class="nav-item"> <a class="flex-sm-fill nav-link active" data-toggle="tab" href="#basics">Main</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part1">1</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part2">2</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part3">3</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part4">4</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part5">5</a> </li>
+					<li class="nav-item px-0 mx-0"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part6">6</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part7">7</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part8">8</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part9">9</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part10">10</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part11">11</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part12">12</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part13">13</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part14">14</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#orange">More Parts</a> </li>
+				</ul>
+					</div>
+					<div class="tab-pane container show fade" id="orange">
+				<ul class="nav nav-tabs flex-column flex-sm-row  d-flex flex-wrap-reverse nav-fill">
+					<li class="nav-item"> <a class="flex-sm-fill nav-link active" data-toggle="tab" href="#basics">Main</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part15">15</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part16">16</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part17">17</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part18">18</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part19">19</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part20">20</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part21">21</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part22">22</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part23">23</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#part24">24</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#partX">X</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#outro">Outro</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#pink">Back</a> </li>
+				</ul>
+				</div>
+			</div>
+		
+			<div class="card-body text-center bg-muted pt-0">
+				<div class="card col-12 overflow-auto">
+					<div class="tab-content">
+						<!--First Page-->
+						<div class="tab-pane container show fade active" id="basics">
+							<div class="card border-0" style="height: 500px;">
+								<div class="my-auto vertical-center d-none d-md-block">
+									<h1 class="display-4 text-warning pt-4">Participants &amp; Parts</h1>
+									<h5>Use the tabs above to explore each part, featuring links to and commentary from the animators!</h5>
+									<p class="pb-0">If parts appear different here than in the final product, they were edited by the host.</p>
+								</div>
+								<div class="my-auto d-block d-md-none">
+									<br>
+									<h3 class="display-4 text-warning">Participants &amp; Parts</h3>
+									<h5>Use the tabs above to explore each part, featuring links to and commentary from the animators!</h5>
+									<p>If parts appear different here than in the final product, they were edited by the host.</p>
+									<br>
+								</div>
+							</div>
+						</div>
+						<!--Part 1-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part1">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 1</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank">EidolonEntropy <small class="font-weight-light">Battalia and Myth</small></a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"First of all, I would like to give a massive thank you to Battalia. I had fallen behind in school and as the quarter's end neared, I had to shift all focus to completing all the missing work I had, rendering me unable to complete my parts (1-2). She then took what I had finished/planned and completed the parts for me and I cannot thank her enough. Here, as the scene opens we see a spider, nicknamed SpÏder, just chilling in their web. The reason why I had this occur was because I thought it'd be a fun way to introduce/begin the MAP as it plays off the title and actually has it in the web. When planning the parts, I also wanted to build up some spooky tension, especially the one created by Part 1's audio. Thus why in Part 1 it slowly pans away from the spider to only show an empty field waving in the wind while a deer, jokingly nicknamed Louis by Battalia and I, stands there, hopefully creating an unnerving feeling in viewers."<br>(Continued in the next page...)</p>
+										<footer class="blockquote-footer">M//EidolonEntropy</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/d-Q4eUJqF5c?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 2-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part2">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 2</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank">EidolonEntropy <small class="font-weight-light">Battalia and Myth</small></a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"As the deer enters the forest, I wanted to continue to play into this unnerving feeling, but make it scarier-more shocking to hopefully create some terror in the viewers in the good name of Halloween. So, I planned to have the deer trot through the forest a bit, playing off the chiller music to create a more relaxed mood so that when the shadowy figure, a formerly-human, cursed entity being punished for their crimes (note: they are not supposed to be a representation of a a w/n/d/g/o), suspense is recreated, but hopefully in a stronger manner. And as a result, when the deer is suddenly killed there is a strong feeling of shock instilled."</p>
+										<footer class="blockquote-footer">M//EidolonEntropy</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/d-Q4eUJqF5c?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=11&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 3-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part3">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 3</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCSgZfYsR6AMv7CMPb8vwBgQ" target="_blank">StarCat</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Boulder has a strange obsession with a fellow wolf of his pack, Sapphire. The only other things Boulder seems interested in are the many spiders that reside throughout the forest..."</p>
+										<footer class="blockquote-footer">Starcat</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/hyoEeYFKxN4?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=1&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 4-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part4">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 4</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCSgZfYsR6AMv7CMPb8vwBgQ" target="_blank">StarCat</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"...he might just find it hard to win over Sapphire with his love for spiders."</p>
+										<footer class="blockquote-footer">Starcat</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/hyoEeYFKxN4?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=10&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 5-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part5">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 5</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCVRkXCkk9TUM9aa0xF1qZ6w" target="_blank">Pelago</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Ed hated the basement. Old furniture covered in sheets of dust and cobwebs littered the floor, threatening to trip him in the dim luminance of his dingy flashlight. The smell of mildew never left his nose since he descended the stairs—which as he shimmied his way to the breaker box, it occurred to him he should probably tell Henson about the mold problem before it gets topside. It was bad luck that brought him here, what were the odds the storm would knock out the power lines and the asset would escape containment? The rest of his colleagues opted to stay on watch duty in case they sighted   i&nbsp;t   while he and Kicks backed up the power. Cowards. He had split up with his partner to run a gen cord down to the breakers while Kicks went to look for the gasoline generator in the garage. Upon opening the box, it appeared the breakers had been tampered with.... That couldn’t be right. Wasn’t he the only one who had access to the basement key? <br><i>T&nbsp;h&nbsp;u&nbsp;d&nbsp;.</i><br>"An old grandfather clock lay crippled on the floor behind him. Were there rats down here? Eddie lit the forest of dilapidated furnishings with his flash light, attempting to find the source of the noise. Then,</p>
+										<p>"He saw i&nbsp;t&nbsp;."</p>
+										<footer class="blockquote-footer">Pelago</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/mEROvdbOtWM?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 6-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part6">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 6</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCnazxNfkjMbD9ynWNC5im7Q" target="_blank">Amethysteon</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/X0NQzqGOMkE?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=44&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 7-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part7">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 7</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC4ojctpZYuX8-Y2ZCsZ-8AA" target="_blank">FlyWolf</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/oQbhwtE22u4?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 8-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part8">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 8</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Battalia of EidolonEntropy</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"The first characters I thought of when designing this MAP's color palettes weren't OCs at all; they were these two, Cat Noir and Cat Blanc, from the animated cartoon <i>Miraculous: Tales of Ladybug and Cat Noir.</i> Although we had always intended for this to be an OC MAP, I just had to make an exception... <br> "I always like stories where a dark side of a character is haunting themselves; see the Nightmare's Lullaby MAP. So, although these two would never meet, and likely the canon-timeline Noir will never know Blanc existed, I wanted to play with Blanc representing Noir's potential to turn to the dark, that he's still human, and if it all goes wrong, Blanc can rise again."</p>
+										<footer class="blockquote-footer">B//EidolonEntropy</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/TwGKylb6y5I?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 9-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part9">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 9</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCxp1xIVql0J3h4DOIBKgg8w" target="_blank">Otterstar Warrior cats</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"For part nine, I used my dragon OC, Storm, an assassin. She is suffering from grief from one of the marks she has being one of her closet friends, Felix. After she kills Felix, she feels permanently changed. She can no longer suppress her emotions after a kill like she used to, she feels like she must grieve for her marks."</p>
+										<footer class="blockquote-footer">otterstar</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/WTDPnxNCqZU?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 10-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part10">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 10</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC5i5LU6TEU6pmfNkQYQoRAA" target="_blank">IceArctix</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/35xbFGfoe5M?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 11-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part11">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 11</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UChhNq1MhyPKTtkdXG4dsZpA" target="_blank">YourFruity Skrill</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"When I was looking through the parts for the first time, part 11 really 'caught my eye'. The music box-like theme really reminded me of a puppet theatre or circus and something related to amusement parks. This was also an experiment with stylization and designing, to fit the atmosphere and theme of the part.<br>"The plot, where a puppeteer plays with their puppet came to my mind and I decided to use Static (white-eyed wolf) for it. He is a robot, and he has his own AI - Adrie (aka Adrenaline; black wolf). The idea of Adrie controlling Static, who is just entertaining people, was something I came up with nearly immediately. Adrie is the representation of Static's darker side, the gloomy depths of his consciousness, his deepest fears."</p>
+										<footer class="blockquote-footer">YourFruitySkrill</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/ydPSdVLOWLM?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=4&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 12-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part12">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 12</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCPgBqkin_s1zg4kHPZKcbjw" target="_blank">laurierrose</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/Azsgy9Uf-8A?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 13-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part13">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 13</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCmJV4RyPN3TrAtKcEjQg3GA" target="_blank">Ecliptic Arts</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"There once was a autistic Icewing named Arctic by his parents. Unfortunately, his parents hated imperfection, and they were distraught their son wasn’t perfect. So Arctic’s father took him to a group of banished Icewings that were hidden from the rest of the tribe. So there Arctic lived and was raised by an Icewing named Snowball. They then changed Arctic's name to Ribbon. After many years, Ribbon became the new leader of the group. Unfortunately, the Icewing's Queen found them and forced them to hide somewhere else. Along the way, Ribbon saw his father. He was still angry about being abandoned so him and his father fought, and there Ribbon won."</p>
+										<footer class="blockquote-footer">EclipticArts</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/mFavn_95VCc?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 14-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part14">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 14</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCsEUwBLtMGnqXa1pRwAFjFg" target="_blank">Ulvana Can Draw Too</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/MLKmrl7OiJY?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 15-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part15">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 15</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank">Battalia of EidolonEntropy</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"<strong>YOUR WORDS AIN'T WORTH YOUR LULLABIES! </strong>The nine characters you see here are my <a href="https://toyhou.se/7251210.omegadiluvians" target="_blank">Omega Antediluvians</a>, demigods of the cardinal sins. They find someone who is lost and in need of guidance and makes them their 'user'. Using their abilities of clairvoyance, they tell their users exactly what they need to know to lead to their desired future.<br>"Here, they're shown in an abstract situation, not in a way indicitive of their story/purpose.<br>"Followers of this channel might remember this part from last year; that one I edited in a few hours, and it had come out way less than satisfactory. Here, I've redone the editing, using all of the same assets with only a few added frames in the frame-by-frame section. Is it the best it can be? No, but if you ask me, that final scene is enough to provide some nightmares."</p>
+										<footer class="blockquote-footer">B//EidolonEntropy</footer>
+										<br>
+										<p><small>Additional Credit: Foreground of first frame borrowed from Part 14</small></p><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/XqgNAvDJbLU?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 16-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part16">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 16</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCSgZfYsR6AMv7CMPb8vwBgQ" target="_blank">StarCat</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Boulder becomes enraged after his younger brother Mud, falls in love with Sapphire. Boulder has always hated his brother, but now, this is the final straw."</p>
+										<footer class="blockquote-footer">Starcat</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/hyoEeYFKxN4?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=20&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 17-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part17">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 17</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCL5T9thpAUTOfnse6ZOty_g" target="_blank">Silver D. Golden</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Malice is a large, darkly colored Wendigo who has flame patterns along his arms, feet, and around his eyes. He was originally a human but some people had to get some revenge on Malice, so they used a Ouija board and summoned a demon that made him into a large wendigo. Malice went mad and broke into a facility. This is where where Mill and Er (Miller) lived. Miller was a odd creature. He was nearly skeletal and had two heads. Wires twined around his neck and the ability to burst ears with his loud noises. He has the ability to tune into radios and play songs and news reports! Malice broke in and started wrecking the place. Miller was terrified at this massive, blazing wendigo that had broke into his home! He hid in the ventilation system and found a way out while the facility burned to ashes from the skulled beast."</p>
+										<footer class="blockquote-footer">Silver D. Golden</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/l1xB7gZcCMg?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 18-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part18">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 18 &#91;28&#93;</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC1ScVAy1zKA83J1V_WMZXWA" target="_blank">Godzilla the Kaijuwing</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<!--<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>-->
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/PmAPNwp5E7A?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 19-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part19">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 19</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCtrnw1Z6NGa4EdJT3lPuYMQ" target="_blank">Echo Solaris</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Apocalypse is, well, was the god of everything, simply named 'The Creator'. He had a god named Surge at his side, who took care of the things The Creator might have missed. He was in a higher up group with three other gods. A snake named Sol, a dragon named Eliatrope, and a wingless dragon named Eon.<br>Eon was extremely jealous of Surge's position, and plotted to take him out. He crafted something dark and evil, which he aptly named 'Corruption'.<br>Unfortunately, The Creator found it first. He walked into the trap Eon set up for Surge, and the Corruption quickly took over him, turning him darker and more red, compared to his original shades of blue. His eyes turned from green to red, as well as the normally white part of his eyes turning pitch black.<br>He trapped and killed Surge by ripping off his head to wear as a mask. He turned to Sol, Eliatrope and Eon, all of which were horrified at the state of their god. The Creator then took a new name. Apocalypse."</p>
+										<footer class="blockquote-footer">Echo Solaris</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/TDLUWlQfxIc?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 20-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part20">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 20</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC_jByntLeFr1z2sORuIehbw" target="_blank">Lady Helio</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<!--<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>-->
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/rwp0v8PrDis?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 21-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part21">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 21</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCu2c2LYnudE3bMzYqUfJPwg" target="_blank">Lumunei</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/tCGS9hhS2K0?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 22-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part22">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 22</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCSgZfYsR6AMv7CMPb8vwBgQ" target="_blank">StarCat</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"Lucy is a person with snake like features, like fangs, and a snake tongue, but she also has a snake for a tail. She is one of the villians in a story I am developing about superheros!"</p>
+										<footer class="blockquote-footer">Starcat</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/_IrRZQH6Xrw?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=11&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 23-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part23">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 23</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCj1h0bbDz-lXcFxchHgz-_Q" target="_blank">thegreatmaddu</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"One of my favorite maps when I was younger was the Along Came a Spider lineart map, so I was excited to see another map with the same song was made! I liked the part I got due to how intense the music was, I found it really fitting for my ocs.<br>"For my ocs themselves, this part is about how one of them are taken hostage (it's implied somewhat poorly lol), and how the rest of the group freaks out. Doggo was the one who was closest with said character, so she goes after her with no hesitation. Doggo ends up getting shot with some magic intensifier in hopes that she'll become unstable and turn on her friends, but instead an unconscious spirit inside her takes over, and she snaps."</p>
+										<footer class="blockquote-footer">thegreatmaddu</footer><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/RP7p-yDP6qo?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=8&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part 24-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part24">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part 24 &#91;30&#93;</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCsEUwBLtMGnqXa1pRwAFjFg" target="_blank">Ulvana Can Draw Too</a></h1>
+									</div>
+									<!--<div class="card-body" style="overflow-y: auto;">
+										<p>My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+										<footer class="blockquote-footer">Username</footer><br>
+									</div>-->
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/umnkjS7CkpY?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Part X-->
+						<div class="tab-pane container show fade px-0 mx-0" id="partX">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Part X</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCiC0lShgWtfUSHKXL1zdq2w" target="_blank">Vala in a can</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>"So I had the amazing opportunity to have Part X! When I found this Map I knew I had to join, when I had looked at the parts, nothing really stood out to me, but the second part X had started playing, my brain immediately had started going wild over it. When I had woken up I saw that my idea was accepted I had immediately started getting to work!<br>"My whole part is that you had entered in to an abandoned asylum, when you got there you see these 3 little girls, the walls are dripping with blood, there was this weird smell of dried up blood and guts, it was as if someone had died there, you quickly try and rush to the exit but you are stopped by the 3 little girls. They start singing they are wearing masks and it looks like their in a cult. You get knocked out by the one in the ponytail while your knocked out you have a vision. It’s the same girl who knocked you out, it seems like she was being forced in to their cult, you then quickly wake up and you see the girls again this time they disappear in to dust. You start freaking out, all of a sudden you get pulled upside down and you see the girl with a ponytail again, but this time she looks different, this time she has long arms and legs that had reached the floor, it seemed like her hair had been pulled out, her eyes where bright pink and orange and it seems as she was no longer wearing a mask. This time her eyes wear stitched together to look like she is wearing a mask but she is actually not, there were pieces of all kinds of skin sewed around her eyes, and chunks of her mouth gone to form a smile. She then without hesitation, she GRABS YOU AND BITES IN TO YOUR SKIN, slowly eating you outside in. You then lay there on the ground helpless and then you slowly die a slow and painful death.<br>"I hope you enjoyed my part! I had a lot of fun thinking and making it!"</p>
+										<footer class="blockquote-footer">Valacander</footer><br>
+										
+										<p><small>Additional Credit: End of part not seen here finished by B//EidolonEntropy</small></p><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/YSIGu__Ri5o?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Outro-->
+						<div class="tab-pane container show fade px-0 mx-0" id="outro">
+							<div class="row">
+								<div class="card col-md-4 border-top-0 border-bottom-0 border-left-0 rounded-0 text-left" style="height: 500px;">
+									<div class="card-header px-0 mx-0 bg-transparent">
+										<h5 class="pt-2 pb-0 mb-0">Outro</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank">Battalia of EidolonEntropy</a></h1>
+									</div>
+									<div class="card-body" style="overflow-y: auto;">
+										<p>I have OCs or something</p>
+										<footer class="blockquote-footer">B//EidolonEntropy</footer><br>
+									
+									<p><small>The Outro was not an obtainable part. A piece of Part X was appended to the outro due to time constraints.</small></p><br>
+									</div>
+									<!--<div class="card-footer">
+									<h2>Button??</h2>
+									</div>-->
+								</div>
+								<div class="card col-md-8 border-top-0 border-bottom-0 border-right-0 rounded-0 mx-auto" style="height: 500px;">
+									<div class="embed-responsive embed-responsive-16by9 my-auto">
+										<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/X0NQzqGOMkE?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=248&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Fourth Page-->
+						<div class="tab-pane container show fade" id="e">
+							<h1>e</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div><!--?-->
+		</div> <!--card-->
+		
+		<hr style="border-style: double; border-width: 5px;">
+		
+		<div class="px-2">
+			<h1 class="pt-2"><strong>Along Came A Spider</strong></h1>
+			<h3 class="font-weight-light">Halloween Palette MAP</h3>
+			<hr>
+			<h5>You're in for a treat.</h5>
+			<p>What better way to celebrate Halloween than an animation set to the song that embodies the dark, spooky nature of the holiday?</p>
+			<p>Way back in mid-2019, Jaxorri and I collaborated on hosting this MAP, with the call originally going up on their channel. Unfortunately, we did not receive enough parts in time, so this year, I rehosted it individually, and with a few tweaks to the original call. This time around, enough parts were accounted for to create this outstanding final product!</p>
+			<p>A huge thank you to all the participants, direct and indirect! Only your exceptional participation made this possible!</p>
+			<center>
+				<div class="d-none d-md-block">
+				<div class="btn-group">
+					<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAU6VS5_T6HSoLBh0fcm_AqV" target="_blank">Part Playlist</a>
+					<a class="btn btn-primary" href="https://eidolonentropy.art/~ACAS.html" target="_blank">Rule Document</a>
+					<a class="btn btn-primary" href="https://www.youtube.com/watch?v=xt2Pz2z-O28" target="_blank">Current Call</a>
+					<a class="btn btn-primary" href="https://www.youtube.com/watch?v=1gbGfL7XE8A" target="_blank">Old Call</a>
+				</div>
+				</div>
+				<div class="d-block d-md-none">
+					<a class="btn btn-primary" href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAU6VS5_T6HSoLBh0fcm_AqV" target="_blank">Part Playlist</a>
+					<a class="btn btn-primary" href="https://eidolonentropy.art/~ACAS.html" target="_blank">Rule Document</a>
+					<div class="w-100"></div>
+					<a class="btn btn-primary" href="https://www.youtube.com/watch?v=xt2Pz2z-O28" target="_blank">Current Call</a>
+					<a class="btn btn-primary" href="https://www.youtube.com/watch?v=1gbGfL7XE8A" target="_blank">Old Call</a>
+				</div>
+				<div class="p-4">
+					<a class="btn btn-primary" href="http://www.strawpoll.me/21194683" target="_blank">Website Survey</a>
+				</div>
+			</center>
+			
+			
+		</div>
+		
+		
+	
+	</div>
+</div>
+	<p class="mb-2">&nbsp;</p>
+	<!--end of container; begin stuff off the page-->
+
+<!--footer thing-->
+<div class="container-flex fixed-bottom bg-dark d-none d-md-block">
+	<div class="container col-9 pt-2">
+		<p class="align-middle text-secondary"><small>© 2020 by EidolonEntropy. See About page for image use information. This website was built from the ground up by SCP. How cool is that?!</small></p>
+	</div>
+</div>
+<div class="container-flex bg-dark d-block d-md-none">
+	<div class="container col-11 pt-2">
+		<p class="align-middle text-secondary"><small>© 2020 by EidolonEntropy. See About page for image use information. This website was built from the ground up by SCP. How cool is that?!</small></p>
+	</div>
+</div>
+<!--end footer thing-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--<script>$('body').scrollspy({ target: '#navbar' })</script>-->
+	<script>
+	$(document).ready(function() {
+
+    // We don't want to see the popover contents until the user clicks the target.
+    // If you don't hide 'blah' first it will be visible outside of the popover.
+    //
+    $('#blah').hide();
+
+    // Initialize our popover
+    //
+    $('#target').popover({
+        content: $('#blah'), // set the content to be the 'blah' div
+        placement: 'bottom',
+        html: true
+    });
+    // The popover contents will not be set until the popover is shown.  Since we don't 
+    // want to see the popover when the page loads, we will show it then hide it.
+    //
+    $('#target').popover('show');
+    $('#target').popover('hide');
+    
+    // Now that the popover's content is the 'blah' dive we can make it visisble again.
+    //
+    $('#blah').show();
+  
+
+});
+	</script>
+	</div><!--bg-->
+  </body>
+</html>
