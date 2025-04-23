@@ -46,12 +46,21 @@
         
     <div id="wrapper">
         <!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-37994168-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <!-- Static navbar -->
 <nav class="artfight-nav navbar navbar-dark navbar-static-top navbar-expand-md mb-0">
   <a class="navbar-brand d-flex align-items-center p-0" href="/">
-    <img class="w-25 mr-2" style="min-width: 20px;" src="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/logo40.png">
+    <img class="w-25 mr-2" style="min-width: 20px;" src="https://artfight.net/images/logo40.png">
     <div class="w-75">ART FIGHT</div>
   </a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -286,13 +295,13 @@ function copyText(element) {
 <script src="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false" type="text/javascript"></script><script data-turbo-eval="false" data-turbolinks-eval="false" type="text/javascript">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'kUCk6wwAoMdaJBRWVl4vYlOHylzMfnW8u9TnowRJ';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', () => {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
             <ul class="nav nav-tabs my-3">
    <li class="nav-item active" role="presentation">
-      <a class="nav-link active" href="#">Profile</a>
+      <a class="nav-link active" data-toggle="tab" href="#BODY">Profile</a>
    </li>
    <li class="nav-item " role="presentation">
-      <a class="nav-link " href="#">Statistics</a>
+      <a class="nav-link " data-toggle="tab" href="#STATS">Statistics</a>
    </li>
    <li class="nav-item " role="presentation">
-      <a class="nav-link " href="#">Characters</a>
+      <a class="nav-link " data-toggle="tab" href="#CHARAS">Characters</a>
    </li>
    <li class="nav-item " role="presentation">
       <a class="nav-link " href="#">Attacks</a>
@@ -301,13 +310,16 @@ function copyText(element) {
       <a class="nav-link " href="#">Defenses</a>
    </li>
 </ul>
+<div class="tab-content FALSE-ELEMENT">
+    <div class="tab-pane fade active show FALSE-ELEMENT" id="BODY">
         <div class="profile-body">
     <!-- Custom profile area -->
     <div class="profile-description mb-4 clearfix">
 	<blockquote>
         <center><span class="bbcode-size-5" style="font-size:2rem;"><b>This is a preview of an ArtFight page with a CSS sheet applied. You are currently viewing eidolonentropy.art, not the actual ArtFight website.</b></span></center>
-<center><span>This page is only to be used for demo purposes. Some aspects are broken. The other profile pages are currently unavailable but may be accessible sometime in the future. <a href="https://artfight.net/info/credits">No copyright infringement intended.</a><br>
+<center><span>This page is only to be used for demo purposes. Some aspects are broken. <b>NEW: the Statistics and Characters pages can now be accessed!</b> I'm holding off on Attacks and Defenses for now. A character page will also be accessible upon the release of character CSS. <a href="https://artfight.net/info/credits">No copyright infringement intended.</a><br>
 Fun fact: you can edit my templates directly on this page using developer tools / inspect element! Toggle your desired template, navigate to the CSS sheet, and watch your edits update in realtime!<br>
+<a href="https://docs.google.com/document/d/16kgp1jjPUDCQoAzhALCx2xNpbJPqWQTXzO3RvKws7Sw/edit?usp=sharing" target="_blank">CSS Snippets</a> // <a href="https://docs.google.com/document/d/1orrYRD7iwRH4SD0yZTiOCxqGG4gVg6tpu08cxJer-tU/edit?usp=sharing" target="_blank">CSS Templates</a> // <a href="https://docs.google.com/document/d/1uG5T0-1T8Hl89yrxHu6ZAO6Ns1xeKOjEsv3rv-LLzYo/edit?usp=sharing" target="_blank">BBCode Tricks</a> // <a href="https://docs.google.com/document/d/1A9_fmZ5H3tT2FVYdRH6gxhP0Ej8Yxw-Q8mxiC0dIhDg/edit?usp=sharing" target="_blank">Banner Info</a><br>
 <a href="https://eidolonentropy.art">Return to EE Homepage</a></span>
 </center>
 </blockquote>
@@ -321,11 +333,13 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme3')">Eye Shrine Theme (Psychonauts 2)</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme4')">WIP Ram It Down Theme (Psychonauts 2)</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme5')">Holo Theme</button>
-		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme10')">NEW! Neon Rainbow Theme</button>
+		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme10')">Neon Rainbow Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme6')">Unofficial Vampire Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme7')">Unofficial Werewolf Theme</button>
-		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme8')">NEW! Unofficial Seafoam Theme</button>
-		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme9')">NEW! Unofficial Stardust Theme</button>
+		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme8')">Unofficial Seafoam Theme</button>
+		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme9')">Unofficial Stardust Theme</button>
+		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme11')">NEW! Windows 98 Theme</button>
+		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme12')">FUNSIES: April Fools 2025</button>
 		
 	</div>
 </div>
@@ -618,9 +632,406 @@ Fun fact: you can edit my templates directly on this page using developer tools 
     </div>
 </div>
                     </div>
-        <div class="d-flex justify-content-center comments-paginate mt-3"></div>
+                    <div class="d-flex justify-content-center comments-paginate mt-3"><nav>
+                        <ul class="pagination">
+                            
+                                            <li class="page-item disabled" aria-disabled="true">
+                                    <span class="page-link">« Previous</span>
+                                </li>
+                            
+                            
+                                            <li class="page-item">
+                                    <a class="page-link" href="#" rel="next">Next »</a>
+                                </li>
+                                    </ul>
+                    </nav>
+                </div>
         <!-- End comments section -->
     </div>
+</div><!--end body tab-->
+<div class="tab-pane fade FALSE-ELEMENT" id="STATS">
+    <div class="profile-stats">
+        <h2 class="profile-stats-title">Statistics</h2>
+        <div class="profile-stats-body">
+            <!-- Statistics -->
+            <div class="row">
+                <div class="col-md-6 profile-overall-stats-wrapper">
+                    <div class="card panel panel-default profile-overall-stats mt-3">
+                        <div class="card-header panel-heading">
+                            Overall Battle Stats
+                        </div>
+                        <table class="table table-bordered table-card">
+                            <tbody><tr>
+                                <td class="w-25 text-right bg-light active">
+                                    <span class="fa fa-question-circle text-secondary" data-toggle="tooltip" title="" data-original-title="A ratio of 50% means the amount of attacks and defenses are equal. A lower ratio means there are more defenses than attacks, and a higher ratio means there are more attacks than defenses."></span>
+                                    Battle Ratio:
+                                </td>
+                                <td><div class="progress" style="margin:0px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="38.30" aria-valuemin="0" aria-valuemax="100" style="width: 38.30%;background-color:#7d6a69">38.30%</div> </div></td>
+                            </tr>
+                            <tr>
+                            
+                                <td class="w-25 text-right bg-light active">Points:</td>
+                                <td>2690.5</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Attacks:</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Friendly Fire:</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Defenses:</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Characters:</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Followers:</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td class="w-25 text-right bg-light active">Following:</td>
+                                <td>46</td>
+                            </tr>
+                        </tbody></table>
+                    </div> <!-- .profile-overall-stats -->
+                </div> <!-- .profile-overall-stats-wrapper -->
+                <div class="col-md-6 profile-current-stats-wrapper">
+                    <div class="card panel panel-default profile-current-stats mt-3">
+                        <div class="card-header panel-heading">
+                            Current Battle Stats
+                        </div>
+                        <table class="table table-bordered table-card">
+                            <tbody><tr>
+                                <td class="w-25 text-right bg-light active">Team:</td>
+                                <td>Stardust</td>
+                            </tr>
+                                                        <tr>
+                                    <td class="w-25 text-right bg-light active">
+                                        <span class="fa fa-question-circle text-secondary" data-toggle="tooltip" title="" data-original-title="A ratio of 50% means the amount of attacks and defenses are equal. A lower ratio means there are more defenses than attacks, and a higher ratio means there are more attacks than defenses."></span>
+                                        Battle Ratio:
+                                    </td>
+                                    <td><div class="progress" style="margin:0px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30.77" aria-valuemin="0" aria-valuemax="100" style="width: 30.77%;background-color:#877FEB">30.77%</div> </div></td>
+                                </tr>
+                                <tr>
+                                
+                                    <td class="w-25 text-right bg-light active">Points:</td>
+                                    <td>496.75</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-25 text-right bg-light active">Attacks:</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-25 text-right bg-light active">Friendly Fire:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-25 text-right bg-light active">Defenses:</td>
+                                    <td>9</td>
+                                </tr>
+                                                </tbody></table>
+                    </div> <!-- .profile-current-stats -->
+                </div> <!-- .profile-current-stats-wrapper -->
+                <div class="col-12">
+                    <div class="card panel panel-default mt-3 achievement-panel">
+                        <div class="card-header panel-heading">
+                            Achievements
+                        </div>
+                        <div class="card-body panel-body">
+                                                    <div class="row">
+                                                        <div class="row">
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/30.png" data-toggle="tooltip" title="" data-original-title="100 Attacks - 100 Attacks?!?!?"></span>
+                                </div>
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/14.png" data-toggle="tooltip" title="" data-original-title="75 Attacks - Just one. More. Attack. Then I'll sleep."></span>
+                                </div>
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/20.png" data-toggle="tooltip" title="" data-original-title="35 Attacks - Wait, when did 10 attacks turn into 35? Oh well, more points for me!"></span>
+                                </div>
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/19.png" data-toggle="tooltip" title="" data-original-title="10 Attacks - I'm just getting started."></span>
+                                </div>
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/13.png" data-toggle="tooltip" title="" data-original-title="First Attack - ArtFight better watch out because now I'm in town! I've got an attack and I'm not afraid to use it!"></span>
+                                </div>
+                                                            <div class="col-md-2 col-4 mb-3">
+                                    <span class="card border-light"><img class="m-auto p-1" src="https://artfight.net/images/achievements/0/48.png" data-toggle="tooltip" title="" data-original-title="Site Deleter - This user &quot;deleted the site&quot; on April Fools' day."></span>
+                                </div>
+                                                        </div>
+                                                </div>
+                    </div>
+                    <!-- Achievements panel -->
+                </div>
+                <!-- .col-sm-6 -->
+            </div> <!-- .row -->
+        </div>
+    </div>
+    </div>
+</div><!--end stats tab-->
+<div class="tab-pane fade FALSE-ELEMENT" id="CHARAS">
+    <div class="profile-characters">
+        <h2 class="profile-characters-title">Characters (39)</h2>
+            <div class="card panel panel-default profile-characters-permissions mt-3">
+            <div class="card-header panel-heading bg-danger-muted">EidolonEntropy's Character Permissions</div>
+            <div class="card-body panel-body"><div class="table-responsive"><table class="table table-striped table-bordered"><tbody><tr><td>This is a table - it may be styled similarly or differently from any on the front page. This is a <a href="#" class="bbcode_url">link</a> as it would appear here.</td></tr></tbody></table></div><ul><br>
+    <li>We're no strangers to love, you know the rules and so do I </li><li>A full commitment's what I'm thinking of, you wouldn't get this from any other guy</li><li>I just wanna tell you how I'm feeling</li><li>Gotta make you understand</li><li>Never gonna give you up</li><li>Never gonna let you down</li><li>Never gonna run around and desert you</li><li>Never gonna make you cry</li><li>Never gonna say goodbye</li><li>Never gonna tell a lie and hurt you</li></ul><span>yes I did just put my <a href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAWbWxeahLwh9u23u3Wl2hdF" target="_blank" class="bbcode_url">blorbos</a> on this page, why do you ask</span></div> 
+        </div>
+            <div class="profile-characters-body mt-3">
+                        <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="535933">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/1.png" data-toggle="tooltip" title="" data-original-title="GLaDOS by Portal" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 1"><a class="text-break" href="#"><i style="color: #877feb;">Character 1</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="558294">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/2.png" data-toggle="tooltip" title="" data-original-title="Dr. Nefarious by Ratchet and Clank" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 2"><a class="text-break" href="#"><i style="color: #877feb;">Character 2</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4516181">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/3.png" data-toggle="tooltip" title="" data-original-title="Bill Cipher by Gravity Falls" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 3"><a class="text-break" href="#"><i style="color: #877feb;">Character 3</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4064789">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/3x.png" data-toggle="tooltip" title="" data-original-title="Prof by The Reckoners Saga" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 4"><a class="text-break" href="#"><i style="color: #877feb;">Character 4</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="1365623">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/4.png" data-toggle="tooltip" title="" data-original-title="Cyrus by Pokémon" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 5"><a class="text-break" href="#"><i style="color: #877feb;">Character 5</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="1581999">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/5.png" data-toggle="tooltip" title="" data-original-title="WINGS OF FART IS CRINGE" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 6"><a class="text-break" href="#"><i style="color: #877feb;">Character 6</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="557599">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/6.png" data-toggle="tooltip" title="" data-original-title="Agent Smith by The Matrix" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 7"><a class="text-break" href="#"><i style="color: #877feb;">Character 7</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="1550914">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/7.png" data-toggle="tooltip" title="" data-original-title="Anakin Skywalker by Star Wars" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 8"><a class="text-break" href="#"><i style="color: #877feb;">Character 8</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="3026357">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/8.png" data-toggle="tooltip" title="" data-original-title="Bentley by Sly Cooper" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+                                            <div class="d-flex thumbnail-width align-items-center">
+                                                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 9"><a class="text-break" href="#"><i style="color: #877feb;">Character 9</i></a></div>
+                                                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="3026279">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/9.png" data-toggle="tooltip" title="" data-original-title="Infinite by Sonic Forces" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 10"><a class="text-break" href="#"><i style="color: #877feb;">Character 10</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="5822119">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/A.png" data-toggle="tooltip" title="" data-original-title="Jotaro Kujo by JoJo's Bizarre Adventure" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 11"><a class="text-break" href="#"><i style="color: #877feb;">Character 11</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/B.png" data-toggle="tooltip" title="" data-original-title="Vergil by Devil May Cry" style="width:200px;">
+                <div class="text-center"></div>
+            </a>
+            <div class="d-flex thumbnail-width align-items-center">
+                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 12"><a class="text-break" href="#"><i style="color: #877feb;">Character 12</i></a></div>
+                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                            <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/C.png" data-toggle="tooltip" title="" data-original-title="001 by Stranger Things 4" style="width:200px;">
+                                    <div class="text-center"></div>
+                                </a>
+                                <div class="d-flex thumbnail-width align-items-center">
+                                    <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 13"><a class="text-break" href="#"><i style="color: #877feb;">Character 13</i></a></div>
+                                    <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                        <i class="far fa-bookmark" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                    <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/D.png" data-toggle="tooltip" title="" data-original-title="Sasha Nein by Psychonauts" style="width:200px;">
+                                                        <div class="text-center"></div>
+                                                    </a>
+                                                    <div class="d-flex thumbnail-width align-items-center">
+                                                        <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 14"><a class="text-break" href="#"><i style="color: #877feb;">Character 14</i></a></div>
+                                                        <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                            <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                                    <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                                        <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/E.png" data-toggle="tooltip" title="" data-original-title="Tyrion Lannister by Game of Thrones" style="width:200px;">
+                                                                            <div class="text-center"></div>
+                                                                        </a>
+                                                                        <div class="d-flex thumbnail-width align-items-center">
+                                                                            <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 15"><a class="text-break" href="#"><i style="color: #877feb;">Character 15</i></a></div>
+                                                                            <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                                                <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                                                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                                                            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/F.png" data-toggle="tooltip" title="" data-original-title="Miguel O'hara by Spiderverse" style="width:200px;">
+                                                                                                <div class="text-center"></div>
+                                                                                            </a>
+                                                                                            <div class="d-flex thumbnail-width align-items-center">
+                                                                                                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 16"><a class="text-break" href="#"><i style="color: #877feb;">Character 16</i></a></div>
+                                                                                                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                                                                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                                            <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                                                <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/G.png" data-toggle="tooltip" title="" data-original-title="P03 by Inscryption" style="width:200px;">
+                                                                                    <div class="text-center"></div>
+                                                                                </a>
+                                                                                <div class="d-flex thumbnail-width align-items-center">
+                                                                                    <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 17"><a class="text-break" href="#"><i style="color: #877feb;">Character 17</i></a></div>
+                                                                                    <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                                                        <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                                <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                                    <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/H.png" data-toggle="tooltip" title="" data-original-title="Gabriel Agreste by Miraculous Ladybug" style="width:200px;">
+                                                                        <div class="text-center"></div>
+                                                                    </a>
+                                                                    <div class="d-flex thumbnail-width align-items-center">
+                                                                        <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 18"><a class="text-break" href="#"><i style="color: #877feb;">Character 18</i></a></div>
+                                                                        <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                                            <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                                    <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                                        <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/I.png" data-toggle="tooltip" title="" data-original-title="Springtrap by Five Nights at Freddy's" style="width:200px;">
+                                                            <div class="text-center"></div>
+                                                        </a>
+                                                        <div class="d-flex thumbnail-width align-items-center">
+                                                            <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 19"><a class="text-break" href="#"><i style="color: #877feb;">Character 19</i></a></div>
+                                                            <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                                <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-md-4 col-lg-2 mb-2" style="border-color:#877feb;">
+                                                        <a href="#" class="card p-1 m-1 thumb-attack character-thumb thumbnail" data-id="4236937">
+                                            <img class="mx-auto rounded" src="https://file.garden/ZdoQg-gxzVCR-9h7/blorboboard/K.png" data-toggle="tooltip" title="" data-original-title="Vox by Hazbin Hotel" style="width:200px;">
+                                                <div class="text-center"></div>
+                                            </a>
+                                            <div class="d-flex thumbnail-width align-items-center">
+                                                <div class="nametag thumbnail-width w-100 h5 p-1 my-auto bg-light border rounded text-center text-truncate" title="Character 20"><a class="text-break" href="#"><i style="color: #877feb;">Character 20</i></a></div>
+                                                <div class="nametag bookmark-character flex-shrink-0 h5 p-1 ml-1 my-auto bg-light border rounded" data-id="5733543" data-toggle="modal" data-target="#modal">
+                                                    <i class="far fa-bookmark" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                </div>
+                </div>
+    </div>
+</div><!--end charas tab-->
+</div><!--end tab-content-->
         </div>
         </div> <!-- /content -->
         <footer class="footer">
@@ -659,7 +1070,7 @@ Fun fact: you can edit my templates directly on this page using developer tools 
         </ul>
         <ul class="list-inline text-center">
             <li class="list-inline-item"><a href="https://artfight.net/info/credits">Credits</a></li> |
-            <li class="list-inline-item">© 2015 <a href="https://artfight.net/lolwut">-</a> 2024 Art Fight</li>
+            <li class="list-inline-item">© 2015 <a href="https://artfight.net/lolwut">-</a> 2025 Art Fight</li>
         </ul>
       </div>
 <div class="col-md-4 mb-4" style="padding-top: 23px; background-image: url();">
@@ -669,7 +1080,7 @@ Fun fact: you can edit my templates directly on this page using developer tools 
                 <br>
                 <div class="d-flex mt-2">
                     <div>
-                        2024 Contributions: <b>$12345.67</b><br>Goal (tier 1): $98000 <a href="#"><i class="far fa-info-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Click to learn all about contributions to art fight and rewards you can get for contributing."></i></a>
+                        2025 Contributions: <b>$12345.67</b><br>Goal (tier 3): $175000 <a href="#"><i class="far fa-info-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Click to learn all about contributions to art fight and rewards you can get for contributing."></i></a>
                     </div>
                     <form class="ml-auto" action="#">
                         <button type="submit" class="btn btn-primary donate-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="Click to contribute and to learn all about contributions to art fight and rewards you can get for contributing.">Support</button>
@@ -717,6 +1128,8 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 <link id="theme8" rel="stylesheet" type="text/css" href="AF Seafoam Theme.css" disabled=""/>
 <link id="theme9" rel="stylesheet" type="text/css" href="AF Stardust Theme.css" disabled=""/>
 <link id="theme10" rel="stylesheet" type="text/css" href="AF Neon Rainbow Theme.css" disabled=""/>
+<link id="theme11" rel="stylesheet" type="text/css" href="AF Windows 98 Theme.css" disabled=""/>
+<link id="theme12" rel="stylesheet" type="text/css" href="AF April Fools 2025.css" disabled=""/>
   
     <script>
         function toggleTheme(value) {
@@ -730,6 +1143,8 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 			document.getElementById('theme8').disabled = true;
 			document.getElementById('theme9').disabled = true;
 			document.getElementById('theme10').disabled = true;
+			document.getElementById('theme11').disabled = true;
+			document.getElementById('theme12').disabled = true;
             document.getElementById(value).disabled = false;
         }
     </script>

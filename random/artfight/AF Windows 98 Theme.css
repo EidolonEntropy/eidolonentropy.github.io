@@ -1,0 +1,418 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+Based on Windows 98 and not really intended to be edited.
+Icons from https://win98icons.alexmeub.com/, the medium sized ones. They can be interchanged if desired.
+To change the banner image, change the link in the chunk directly below.
+*/
+	
+.banner {
+  background-image: url(https://external-preview.redd.it/Xe9GBLEcyfY8AL9LKD6-4vuRtz_h-j2ibYodhYA9yHs.jpg?auto=webp&s=62d6e93da04759b397b443e1fccb57edc241c488) !important;
+  background-position: center;
+}
+
+/*This does not currently work but I'm including it in case it gets whitelisted in the near future. Uncomment it and delete this line to have it take effect, one of these days.
+
+.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card {
+  border-radius: 0 !important;
+}*/
+
+* {
+  font-family: Tahoma, Segue UI, sans-serif;
+}
+#wrapper {
+  background-color:#008080;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  color: black;
+}
+.container-fluid {
+  background-color:#c0c0c0;
+  border-top:none !important;
+  border:3px solid #555;
+  border-left-color: #eee;
+  padding-top:1rem;
+  padding-bottom:1rem
+}
+#content, .artfight-nav, .banner-container {
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0 !important
+}
+.banner-container {
+  border:3px solid #eee;
+  border-right-color: #555;
+  border-bottom:none;
+  border-top:none;
+}
+
+.artfight-nav {
+  border:3px solid #eee;
+  border-right-color: #555;
+  border-bottom:none;
+  background-image:url("https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad.svg");
+  background-color:#000080 !important
+}
+.artfight-nav .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+.artfight-nav .nav-link:hover {
+  text-decoration: underline;
+}
+.artfight-nav .nav-item.mr-3 {
+  margin-right: 0 !important;
+}
+.artfight-nav .dropdown {
+  border: dotted 1px transparent;
+}
+.artfight-nav .dropdown.show {
+  border: dotted 1px black;
+}
+.navbar-nav.ml-auto .dropdown {
+  border: dotted 1px transparent !important;
+}
+
+.artfight-nav .fa-discord, .artfight-nav .fa-question-square, .artfight-nav .fa-shopping-cart, .artfight-nav .fa-search, .artfight-nav .fa-plus, .profile-header-buttons .fa-envelope, .profile-header-buttons .fa-exclamation-triangle {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:center;
+  font-size: 0;
+  padding: 8px;
+  padding-bottom: 6px;
+  padding-top: 16px;
+}
+.profile-header-buttons .fas {
+  padding-bottom: 4px;
+}
+.profile-header-buttons .fa-exclamation-triangle {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/msg_warning-0.png);
+}
+.artfight-nav .fa-discord {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/world_phonereceiver.png);
+}
+.artfight-nav .fa-question-square {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/help_question_mark-0.png);
+}
+.artfight-nav .fa-shopping-cart {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/computer-2.png);
+}
+.artfight-nav .fa-search {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/entire_network_globe-2.png);
+}
+.artfight-nav .fa-plus {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/paint_file-2.png);
+}
+.artfight-nav .navbar-brand {
+  background-image: url(https://win98icons.alexmeub.com/icons/png/themes-2.png);
+  background-repeat: no-repeat;
+  padding-left: 38px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: -10px !important;
+  background-size: 32px;
+}
+.navbar-brand img, .artfight-nav .dropdown-toggle:after {
+  display: none;
+}
+.username-navbar + .dropdown-toggle:after, .profile-header-buttons .dropdown-toggle:after {
+  border-color: transparent;
+}
+.username-navbar + .dropdown-toggle, .profile-header-buttons .dropdown-toggle {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/directory_closed_cool-2.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:right;
+  font-size: 0;
+  padding: 8px;
+  padding-bottom: 4px;
+  padding-top: 16px;
+}
+.username-navbar + .dropdown-toggle:focus, .profile-header-buttons .dropdown-toggle:focus {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/directory_open_cool-2.png)
+}
+.artfight-nav .navbar-icon {
+  margin-right: 24px;
+}
+.profile-header-buttons .dropdown-toggle {
+  padding: 17.3px 16px;
+  background-size: 23px;
+  background-position: center;
+}
+
+.dropdown-menu, .profile-header-buttons .dropdown-toggle:focus, .profile-header-buttons .dropdown-toggle:active {
+  background-color: #C0C0C0 !important
+}
+.dropdown-menu a, .dropdown-header {
+  color: black !important
+}
+.dropdown-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dropdown-item:hover {
+  background: #000080 !important;
+  color: white !important
+}
+.avatar-dropdown + .dropdown-menu {
+  margin-left: 40px;
+  margin-top: 9px;
+}
+@media only screen and (max-width: 630px) {
+  .avatar-dropdown + .dropdown-menu {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+.badge {
+  background: #008;
+  color: white !important;
+}
+.follows-you {
+  background: white;
+  color: black !important;
+}
+
+.card {
+  background-color: white;
+  color: black;
+}
+.card-header, .card-footer {
+  background-color: #c0c0c0;
+}
+.bg-light {
+  background-color: #c0c0c0 !important;
+}
+
+a, a:hover {
+  color: #00E;
+}
+
+.profile-description {
+  padding: 1rem;
+}
+blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
+  margin: 1rem;
+  border: gray 2px solid !important;
+  border-right-color: #eee !important;
+  border-bottom-color: #eee !important;
+  background: white;
+}
+.profile-description tr, .profile-characters-permissions tr {
+  background: white !important;
+  color: black;
+}
+.profile-description table {
+  margin-bottom: 0;
+}
+.comment .card, .comment {
+  border: gray 2px solid !important;
+  border-right-color: #eee !important;
+  border-bottom-color: #eee !important;
+}
+.comment {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.icon-user {
+  background-color: white;
+  border-style: inset;
+}
+
+.profile-links {
+  max-width: 40%;
+}
+.profile-followers {
+  min-width: 60%;
+}
+
+.nav-tabs {
+  border: 0;
+}
+.nav-tabs .nav-link {
+  border: none;
+  background: none !important;
+  color: black !important;
+}
+.nav-tabs .nav-item:hover, .btn:hover, .pagination .page-item:hover {
+  border-top-color: #555 !important;
+  border-left-color: #555 !important;
+  border-bottom-color: #eee !important;
+  border-right-color: #eee !important;
+}
+.nav-tabs .nav-link.active {
+  border: 1px dotted black !important;
+  padding:0;
+  margin: .5rem 1rem;
+}
+.nav-tabs .nav-item.active, .btn, .pagination .page-item, .pagination .page-item.disabled {
+  border: #eee 2px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+}
+.pagination .page-link {
+  background: #c0c0c0 !important;
+  border: 0 !important;
+  color: black !important;
+}
+
+.thumbnail {
+  border-style: outset;
+}
+.thumbnail:hover {
+  border-style: inset;
+}
+.tooltip-inner, .nametag {
+  color: black;
+  background: #c0c0c0 !important;
+  border: gray 2px solid !important;
+  border-right-color: #eee !important;
+  border-bottom-color: #eee !important;
+}
+.tooltip .arrow:before {
+  border-top-color: transparent;
+}
+.tooltip.show {
+  opacity: 1;
+}
+.nametag:hover .fa-bookmark {
+  color: #eee;
+}
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+.comments .flex-shrink-0 br {
+  display: none;
+}
+
+progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions {
+  border: #eee 2px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+}
+
+.profile-gallery-header, .profile-header-background {
+  border: none !important;
+  background: #808080 !important;
+}
+.profile-header-background {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad2.svg) !important;
+  background-size: cover !important;
+}
+.profile-header-wrapper .text-muted {
+  color: white !important;
+  opacity: 1;
+}
+.profile-header-wrapper, .profile-avatar-wrapper, .btn, .btn:hover {
+  background-color: #c0c0c0;
+}
+.profile-header-normal-status p {
+  margin-bottom: 10px;
+}
+.profile-header-mobile-status p {
+  margin-bottom: 0px;
+}
+.profile-header-normal-status {
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+hr, .dropdown-divider, .progress {
+  border-top: 1px #555 solid;
+  border-left: 1px #555 solid;
+  border-bottom: 1px #eee solid;
+  border-right: 1px #eee solid;
+}
+.table-bordered, .table-bordered td, .table-bordered th {
+  border: 1px #555 solid !important;
+}
+.profile-links .card-header, .profile-followers .card-header {
+  border-bottom: 2px #555 solid !important;
+}
+.profile-followers .card-footer {
+  border-top: 2px #eee solid !important;
+}
+.table .bg-light, .btn {
+  color: black !important;
+  font-weight: lighter;
+}
+.profile-follower a, .comment .flex-shrink-0 .text-center {
+  font-weight: lighter;
+}
+
+.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title {
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  width:100% !important;
+  border: #eee 2px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+  padding:10px 0 !important;
+  text-indent:16px
+}
+.profile-defenses-title {
+  width:100% !important
+}
+.profile-defenses .d-flex.align-items-center {
+  display:block !important
+}
+.btn-group.defense-toggle {
+  float:right;
+  margin-top:-48px !important;
+  padding-right:10px
+}
+
+div.sceditor-toolbar, .bg-danger-muted, .profile-defenses .btn-primary {
+  background-color: #c0c0c0 !important;
+}
+div.sceditor-group {
+  background: none !important;
+  border: #eee 1px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+}
+.sceditor-container {
+  border: #eee 2px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+}
+.sceditor-button.active, .sceditor-button:hover {
+  background: none;
+}
+.progress {
+  background: #c0c0c0;
+}
+
+.footer .contain {
+  background: #c0c0c0 !important;
+  border-top: 3px solid white;
+}
+.footer a, .footer a:hover, .footer div, .table {
+  color: black;
+}
+.donate-wormston {
+  background-image:url(https://www.aaanimations.com/windowsxppapperclipdp.gif);
+  background-size:contain;
+  background-repeat:no-repeat;
+  padding:46px;
+  background-position:center
+}
+.sitewide-notice, .alert-info {
+  display: none !important;
+}
+.alert-success {
+  background-color: #c0c0c0 !important;
+  color: white !important;
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/JRUsqaW.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}
