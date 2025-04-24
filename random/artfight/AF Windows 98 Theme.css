@@ -51,7 +51,7 @@ To change the banner image, change the link in the chunk directly below.
   border:3px solid #eee;
   border-right-color: #555;
   border-bottom:none;
-  background-image:url("https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad.svg");
+  background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad.svg);
   background-color:#000080 !important
 }
 .artfight-nav .nav-link {
