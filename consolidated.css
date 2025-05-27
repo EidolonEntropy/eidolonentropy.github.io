@@ -317,6 +317,20 @@ blockquote,
 .table-hover tbody tr:hover {
  background:#111!important
 }
+.form-control, .c-input {
+  color:#4b4646!important;
+  color:#4b4646!important;
+  background:#111;
+  outline: none;
+  border-radius: 2px;
+  border:#060606 2px solid;
+}
+.form-control:focus, .c-input:focus {
+  background:#222;
+  color:#e2e2e2!important;
+  border-color:#09BAEF!important;
+  box-shadow:#09BAEF!important
+}
 a {
  color:#f44236
 }
