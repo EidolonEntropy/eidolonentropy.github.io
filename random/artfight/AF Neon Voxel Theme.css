@@ -183,7 +183,7 @@ Updated for Character CSS!
   font-style: italic;
 }
 
-.thumbnail, .image-thumb {
+.thumbnail, .image-thumb, .icon-character {
   border-style: inset;
   border-width: 2px;
 }
