@@ -5,43 +5,45 @@ Primary color: #000
 Secondary color: #0F0
 Hover colors are the same RGB values as the non-hover color and are controlled by 0.75 opacity instead of color.
 Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+
+Updated for Character CSS!
 */
 
 #wrapper {
-background-image: url(https://i.imgur.com/jKzIpvg.png) !important;
-background-attachment: fixed; !important;
-background-position: 50% 50%;
+  background-image: url(https://i.imgur.com/jKzIpvg.png) !important;
+  background-attachment: fixed; !important;
+  background-position: 50% 50%;
 }
 .banner-container {
-border: 5px solid #0F0
+  border: 5px solid #0F0;
 }
 .banner {
-background-image: url(https://i.imgur.com/ZXGIhlZ.jpeg) !important;
-background-position: 50% 30% !important;
+  background-image: url(https://i.imgur.com/ZXGIhlZ.jpeg) !important;
+  background-position: 50% 30% !important;
 }
 
-.profile-description.mb-4.clearfix {
-width:60%;
-height:700px;
-overflow:auto;
-margin-left:1%;
-float:right;
-margin-top:0.9%;
-padding-top:10px;
+.profile-description {
+  width:60%;
+  height:700px;
+  overflow:auto;
+  margin-left:1%;
+  float:right;
+  margin-top:0.9%;
+  padding-top:10px;
 }
 .profile-attacks-header {
   clear: right !important;
 }
 .profile-links {
-margin-right:1%;
-min-width:100%;
-padding: 0;
+  margin-right:1%;
+  min-width:100%;
+  padding: 0;
 }
 .profile-followers {
-margin-top:-1%;
-margin-bottom:2%;
-min-width:100% !important;
-padding: 0;
+  margin-top:-1%;
+  margin-bottom:2%;
+  min-width:100% !important;
+  padding: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,184 +62,209 @@ padding: 0;
     width: 100% !important;
   }
   #content ul .nav-item {
-  width: 100% !important;
+    width: 100% !important;
   }
 }
 
-.panel-heading, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show {
-border-color: transparent !important;
-color: #0F0 !important;
-background-color: #000 !important;
+.panel-heading, .card-header, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show {
+  border-color: transparent !important;
+  color: #0F0 !important;
+  background-color: #000 !important;
 }
 .profile-header-normal-status {
-background:#000;
-color:#0F0;
-height:115px;
-margin-top:-1px !important;
-padding-top:10px !important
+  background:#000;
+  color:#0F0;
+  height:115px;
+  margin-top:-1px !important;
+  padding-top:10px !important;
 }
 .text-muted, .artfight-nav .nav-link {
   color: #0F0 !important;
 }
 .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
-background: #000 !important;
-color: #0F0 !important;
-padding: 0.75rem 1rem;
-border: 5px solid #0F0
+  background: #000 !important;
+  color: #0F0 !important;
+  padding: 0.75rem 1rem;
+  border: 5px solid #0F0;
 }
 
 .profile-header-mobile-status .card {
-background:#000 !important;
-color:#000 !important
+  background:#000 !important;
+  color:#000 !important;
 }
 
 .card, .dropdown-menu.show {
-background: #000 !important;
-border: 0;
+  background: #000;
+  border: 0;
+}
+#character-content .col-12 .card {
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 .page-link, .disabled .page-link {
-background: #000 !important;
-border: 1px #000 solid !important;;
-color: #0F0 !important;
+  background: #000 !important;
+  border: 1px #000 solid !important;;
+  color: #0F0 !important;
 }
 .page-item.active .page-link, .page-link:hover {
-background: #000 !important;
-border: 1px #0F0 solid !important;;
+  background: #000 !important;
+  border: 1px #0F0 solid !important;;
 }
 
 .nav-tabs .nav-link {
-border-color: transparent !important;
+  border-color: transparent !important;
 }
-#content ul .nav-item {
-width: 20%;
-text-align: center;
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
 }
-.nav-tabs li a {
-color: #0F0 !important;
+.nav-tabs .nav-link {
+  color: #0F0 !important;
 }
-.nav-tabs li.active a {
-border: solid 2px #0F0 !important;
-background: #000 !important;
-color: #0F0 !important;
+.nav-tabs .nav-link.active {
+  border: solid 2px #0F0 !important;
+  background: #000 !important;
+  color: #0F0 !important;
 }
 .nav-link:hover {
-opacity: 0.75;
+  opacity: 0.75;
 }
 .dropdown-item {
-color: #0F0 !important;
+  color: #0F0 !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-opacity: 0.75;
-background: #000 !important;
+  opacity: 0.75;
+  background: #000 !important;
 }
 .dropdown-header {
-color: #0F0 !important;
+  color: #0F0 !important;
 }
 .dropdown-divider {
-border-color: #000;
+  border-color: #000;
 }
 .badge {
-background: #0F0;
-color: #000 !important;
+  background: #0F0;
+  color: #000 !important;
+  opacity: 100% !important;
 }
 
 .btn, .btn-primary:not(:disabled):not(.disabled).active {
-color: #0F0 !important;
-background-color: #000 !important;
-border: solid 2px #0F0;
+  color: #0F0 !important;
+  background-color: #000 !important;
+  border: solid 2px #0F0;
 }
 .btn:hover, .btn.btn-primary:hover:active {
-color: #000 !important;
-background-color: #0F0 !important;
-border: solid 2px #0F0;
+  color: #000 !important;
+  background-color: #0F0 !important;
+  border: solid 2px #0F0;
 }
 
-.footer .contain a:hover {
-text-decoration: none !important;
-opacity: 0.75;
-}
-.comment .card-panel a:hover, a:hover.bbcode_url, .username-navbar:hover, .comment strong a:hover, .card a:hover, .profile-header-name a:hover {
-opacity: 0.75 !important;
-text-decoration: none !important;
+.comment .card-panel a:hover, a:hover.bbcode_url, .username-navbar:hover, .comment strong a:hover, .card a:hover, .profile-header-name a:hover, .clearfix .mt-3 strong a:hover, .footer .contain a:hover, .profile-description a:hover, .character-description a:hover {
+  opacity: 0.75;
+  text-decoration: none !important;
 }
 .profile-header-name a, .navbar-brand div, .username-navbar span {
-color: #0F0 !important;
-font-weight: 300;
+  color: #0F0 !important;
+  font-weight: 300;
 }
-.nametag i, .panel a {
-color: #0F0 !important;
+.nametag i, .panel a, #character-content .h4 u {
+  color: #0F0 !important;
 }
-.nametag i:hover {
-opacity: 0.75 !important;
+.nametag i:hover, #character-content .h4 u:hover {
+  opacity: 0.75 !important;
 }
-.nametag a:hover {
-text-decoration: none !important;
+.nametag a:hover, #character-content .h4 u, #character-content .h4 a:hover {
+  text-decoration: none !important;
+}
+#character-content .h4 {
+  background: #000 !important;
+  padding: .25rem !important;
+  font-size: 18px;
+  border-radius: .25rem !important;
+  font-style: italic;
 }
 
-.thumbnail {
-border-style: inset;
-border-width: 2px;
+.thumbnail, .image-thumb {
+  border-style: inset;
+  border-width: 2px;
 }
-.thumbnail:hover {
-border-style: outset;
-border-width: 2px;
+.thumbnail:hover, .image-thumb:hover {
+  border-style: outset;
+  border-width: 2px;
 }
 
 blockquote span {
-color: #FFF !important;
+  color: #FFF !important;
 }
-#content blockquote {
-border: none !important;
-background-color: rgba(0, 0, 0, 0.7) !important;
-margin: auto !important;
+blockquote, .character-description {
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  margin: auto !important;
+}
+.character-description {
+  padding: 1rem;
+  color: white;
 }
 .bbcode_url span, .bbcode_url, .footer a:hover {
-color: #0F0 !important;
+  color: #0F0 !important;
+}
+#character-content .border-danger-muted .table-striped td {
+  color: white;
+  background: black !important;
+}
+.spoiler-content div, .character-description div {
+  color: white;
+}
+.profile-description a, .character-description a, .profile-description a:hover, .character-description a:hover {
+  color: #0F0;
+  text-decoration: none;
 }
 
-.comments h2 {
-padding:10px 0 !important;
-text-indent: 16px;
+.comments h2, #character-content h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
 }
-.comment .card-body, .footer a {
-color: #0F0;
+.comment .card-body, .footer a, #character-content .card a, .tooltip-inner {
+  color: #0F0;
 }
 
-.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title {
-background:#000 !important;
-color:#0F0 !important;
-margin-top:0 !important;
-margin-bottom:0 !important;
-width:100% !important;
-border:5px #0F0 solid !important;
-padding:10px 0 !important;
-text-indent: 16px
+.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title, #character-content h2 {
+  background: #000 !important;
+  color: #0F0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  border: 5px #0F0 solid !important;
+  padding: 10px 0 !important;
+  text-indent: 16px;
 }
 .profile-defenses-title {
-width: 85% !important
+  width: 85% !important;
+}
+#character-content h2 {
+  margin-bottom: 15px !important;
 }
 
 .card-header, .profile-header-background {
-border: 5px #0F0 solid !important
+  border: 5px #0F0 solid !important;
 }
  
 .sceditor-container, div.sceditor-group {
-border: none !important;
+  border: none !important;
 }
 .sceditor-container iframe, .sceditor-container iframe body, .sceditor-container textarea {
-color: #0F0 !important;
-background-color: #000 !important;
+  color: #0F0 !important;
+  background-color: #000 !important;
 }
 div.sceditor-toolbar {
-color: #0F0 !important;
-background-color: #000 !important;
-border: 1px solid #000 !important;
+  color: #0F0 !important;
+  background-color: #000 !important;
+  border: 1px solid #000 !important;
 }
 div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
-background: #000 !important;
+  background: #000 !important;
 }
 .sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
-border-color: #000 !important;
+  border-color: #000 !important;
 }
 .sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
   background: #0F0 !important;
@@ -253,22 +280,22 @@ div.sceditor-dropdown * {
 }
 
 .table-card td {
-border: none !important;
+  border: none !important;
 }
 
 div {
-  color: #0F0 !important;
+  color: #0F0;
 }
 
 .sitewide-notice, .alert-info {
-display:none !important;
+  display:none !important;
 }
 .alert-success {
-background-color:#000 !important;
-color:#0F0 !important
+  background-color:#000 !important;
+  color:#0F0 !important
 }
 .achievement-panel img {
-	width: 200px;
+  width: 200px;
 }
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
