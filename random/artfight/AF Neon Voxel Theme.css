@@ -127,6 +127,7 @@ Updated for Character CSS!
 }
 .nav-link:hover {
   opacity: 0.75;
+  border-color: transparent !important;
 }
 .dropdown-item {
   color: #0F0 !important;
