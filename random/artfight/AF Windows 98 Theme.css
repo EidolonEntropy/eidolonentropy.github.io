@@ -11,11 +11,9 @@ To change the banner image, change the link in the chunk directly below.
   background-position: center;
 }
 
-/*This does not currently work but I'm including it in case it gets whitelisted in the near future. Uncomment it and delete this line to have it take effect, one of these days.
-
 .profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card {
   border-radius: 0 !important;
-}*/
+}
 
 * {
   font-family: Tahoma, Segue UI, sans-serif;
