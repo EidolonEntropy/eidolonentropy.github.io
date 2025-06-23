@@ -1,0 +1,356 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This code was designed without many layout changes, so you can copy in the ones you want from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+Note that if you use anything that relocates the bio, you may need to change a margin-top value for .profile-description within the chunk you copied over. 
+
+See the top entries for customisable pieces.
+*/
+/*BANNER*/
+.banner {
+    background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/fossilsicon.png) !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+/*FULL PAGE BACKGROUND*/
+#wrapper {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/rocksbg.svg);
+  background-color: #836741;
+  color: #611F00;
+}
+/*TRANSLUCENT BANNER BACKGROUND*/ 
+.banner-container {
+  background: rgba(0,0,0,0.3);
+}
+
+.card, .profile-description, .nav-tabs .nav-link, .modal-content {
+  background-color: #FFDA86;
+}
+.modal tr {
+  background-color: #FFDA86 !important;
+}
+.card-header, .card-footer, .modal-header, .modal-footer {
+  background-color: #E48D32;
+}
+.card, .profile-gallery-header .card-header, .thumbnail img, .modal-content {
+  border-radius: 25px !important;
+  border: none;
+}
+.card-header, .modal-header, .modal thead .border-top-0 {
+  border-radius: 25px 25px 0px 0px !important;
+  border-style: dashed;
+  border-width: 0px 0px 2px 0px;
+  font-weight: bold;
+}
+.card-footer, .modal-footer {
+  border-radius: 0px 0px 25px 25px !important;
+  border-style: dashed;
+  border-width: 2px 0px 0px 0px;
+}
+.profile-gallery-header h2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block !important;
+  text-align: center;
+  font-weight: bold;
+}
+.profile-gallery-header-link {
+  display: block;
+  text-align: right;
+  margin-top: -30px;
+  margin-bottom: 2px;
+}
+.bg-light, .bg-danger-muted {
+  background-color: #E48D32 !important;
+}
+.table td {
+  border-style: dashed !important;
+  border-color: #FFDA86 !important;
+}
+.table, .modal-header {
+  color: #611F00;
+}
+.modal td {
+  border-width: 2px;
+}
+.profile-description tr, .profile-characters-permissions tr {
+  background: #E48D32 !important;
+}
+.profile-description table a, .profile-characters-permissions table a {
+  color: #F2EBC1;
+}
+
+.btn {
+  background: #271900 !important;
+  border-color: #271900 !important;
+  color: #BA8C25 !important;
+  font-weight: bold;
+}
+.btn:hover, .btn.active, .btn:active, .btn:focus {
+  background: #382200 !important;
+  border-color: #382200 !important;
+  color: #F2EBC1 !important;
+}
+.comments-new .btn-primary {
+  border-radius: 25px;
+}
+.defense-toggle {
+  float: right;
+  margin-top: -46px !important;
+  padding-right: 10px;
+}
+.profile-defenses .d-flex.align-items-center {
+  display: block !important;
+}
+.nav-tabs .nav-link {
+  margin: 10px 10px 0px 10px;
+  border-bottom: 0 !important;
+  border-radius: 25px 25px 0px 0px;
+  border-color: #FFDA86;
+  color: #611F00;
+  font-weight: bold;
+  border-style: dashed
+}
+.nav-tabs .nav-link:hover {
+  border-color: #611F00;
+  opacity: 1 !important;
+}
+.nav-tabs .nav-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  max-width: 20%;
+  text-align: center;
+}
+.nav-tabs {
+  margin-bottom: 0 !important;
+  border-bottom: 0;
+}
+.nav-tabs, .profile-description {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-tabs .nav-link.active {
+  background: #611F00;
+  border-color: #FFDA86;
+  color: #F2EBC1;
+}
+@media only screen and (max-width: 768px) {
+  .nav-tabs .nav-item {
+    max-width: 100% !important;
+  }
+  .nav-tabs .nav-link {
+    border-radius: 25px !important;
+    border: #FFDA86 2px dashed !important;
+  }
+  .nav-tabs {
+    margin-bottom: 15px !important;
+  }
+}
+
+.profile-description {
+  padding: 15px;
+  border-radius: 25px;
+}
+a, .profile-description blockquote a {
+  color: #F2EBC1;
+}
+a:hover {
+  color: #F2EBC1;
+  opacity: .75;
+  text-decoration: none;
+}
+.profile-header-background .element-disabled, .profile-stats .fa {
+  color: #FFDA86 !important;
+}
+blockquote, .comment {
+  background: #E48D32;
+  border: 2px dashed #FFDA86 !important;
+  border-radius: 25px;
+}
+.comment {
+  margin: 15px 0px;
+  padding: 15px 0px;
+  border: none !important;
+}
+.comment .d-none .text-center {
+  background: #FFDA86;
+  border-radius: 25px;
+  padding: 15px 0px;
+}
+hr {
+  border-style: dashed;
+  border-color: #3A0B16;
+}
+.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .element-disabled {
+  color: #BA8C25;
+}
+.comment .d-none .text-center br {
+  display: none;
+}
+.artfight-nav, .footer .contain, .profile-overall-stats .progress-bar {
+  background: #611F00 !important;
+  color: #F2EBC1;
+}
+.footer a, .footer a:hover, .artfight-nav .nav-link, .navbar-brand {
+  color: #FFDA86 !important;
+}
+.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link {
+  opacity: 1 !important;
+}
+.profile-header-background {
+  border: 2px dashed #FFDA86 !important;
+  border-width: 0px 0px 2px 0px !important;
+  border-radius: 25px 25px 0px 0px !important;
+  background: #611F00 !important;
+}
+.profile-header-wrapper {
+  background: #E48D32;
+  border-radius: 25px;
+  padding-bottom: 15px;
+}
+.profile-header p {
+  margin-bottom: 0.4rem;
+}
+.profile-header-normal-status {
+  margin-top:  8px !important;
+}
+.profile-header-mobile-status p {
+  margin: 0;
+}
+.profile-header-mobile-status {
+  margin: 0px 15px;
+}
+.thumbnail {
+  border-width: 2px !important;
+  border-style: dashed !important;
+  opacity: 1 !important;
+}
+.thumbnail:hover, .progress {
+  background: #E48D32;
+}
+.nametag {
+  border: none !important;
+  background-color: #FFDA86 !important;
+}
+.nametag .text-break i {
+  font-style: normal;
+  font-weight: bold;
+}
+.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, .comments h2 {
+  border-radius: 25px;
+  background: #E48D32 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
+  text-indent: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tooltip-inner {
+  color: #F2EBC1 !important;
+  background: #271900 !important;
+}
+.tooltip .arrow:before {
+  border-top-color: #271900;
+}
+
+.alert {
+  border: 2px dashed #FFDA86 !important;
+  background: #3A0B16;
+  border-radius: 25px;
+}
+.badge {
+  background-color: #3A0B16;
+  color: #F2EBC1 !important;
+  opacity: 1 !important;
+}
+
+.page-link, .disabled .page-link {
+  border: none !important;
+  background: #271900 !important;
+  color: #BA8C25 !important;
+  font-weight: bold;
+}
+.page-item.active .page-link, .page-link:hover {
+  border: none !important;
+  background: #382200 !important;
+  color: #F2EBC1 !important;
+}
+
+.dropdown-menu {
+  background: #271900;
+}
+.dropdown-item {
+  color: #BA8C25;
+}
+.dropdown-item:hover {
+  background: #382200;
+  color: #F2EBC1;
+  opacity: 1 !important;
+}
+.dropdown-divider {
+  border-color: #FFDA86;
+  border-top-style: dashed;
+}
+.dropdown-header {
+  color: #FFDA86;
+}
+
+div.sceditor-toolbar {
+  color: #611F00 !important;
+  background-color: #FFDA86 !important;
+  border: none;
+  border-radius: 25px 25px 0px 0px;
+  text-align: center;
+}
+div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
+  background: #E48D32 !important;
+  border: 1px dashed #FFDA86 !important;
+}
+.sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
+  border-color: #FFDA86 !important;
+}
+.sceditor-container {
+  margin-top: 15px;
+  border-style: dashed !important;
+  border-radius: 25px;
+}
+.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+  background: #FFDA86 !important;
+  color: #611F00 !important;
+}
+.sceditor-color-option:hover {
+  border-color: #611F00 !important;
+}
+div.sceditor-dropdown * {
+  color: #611F00 !important;
+  background: #FFDA86;
+  border-color: #FFDA86 !important;
+}
+.donate-wormston {
+  background-image: url(https://images.artfight.net/2025/2025_Fossils.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 46px;
+  background-position: center;
+}
+.achievement-panel img {
+  width: 200px;
+}
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color: #E48D32 !important;
+}
+.footer .mt-0 {
+  background:#FFDA86;
+}
+.footer .contain {
+  background-image: url(https://i.imgur.com/guWaze8.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
+}
