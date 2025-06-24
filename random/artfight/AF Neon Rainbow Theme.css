@@ -27,6 +27,10 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   background-position: center !important;
 }
 
+.thumbnail img, .profile-header-background, .card, .icon-user, .alert, .dropdown-menu, .nav-tabs .nav-link, .card-header, .card-footer, .nametag, .sceditor-container * {
+  border-radius: 0 !important;
+}
+
 .profile-description {
   width:60%;
   max-height:700px;
