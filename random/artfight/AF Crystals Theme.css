@@ -41,12 +41,14 @@ See the top entries for customisable pieces.
   border-radius: 25px 25px 0px 0px !important;
   border-style: dashed;
   border-width: 0px 0px 2px 0px;
+  border-bottom-color: #EF62A4;
   font-weight: bold;
 }
 .card-footer, .modal-footer {
   border-radius: 0px 0px 25px 25px !important;
   border-style: dashed;
   border-width: 2px 0px 0px 0px;
+  border-top-color: #EF62A4;
 }
 .profile-gallery-header h2 {
   margin-left: auto;
