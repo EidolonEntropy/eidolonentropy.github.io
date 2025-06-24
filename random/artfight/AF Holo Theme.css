@@ -34,6 +34,7 @@ I used a positioning value on the banner here, you might want to remove it if it
 .card {
   background: rgba(0,0,0,0.6);
   color: white;
+  border: none;
 }
 .profile-header-background {
   border: none !important;
@@ -79,6 +80,9 @@ I used a positioning value on the banner here, you might want to remove it if it
 }
 .profile-header-name a:hover {
   text-decoration: none !important;
+}
+.profile-header-mobile-status p {
+  margin: 0;
 }
 .profile-gallery-header, .achievement-panel .card, .profile-characters-permissions {
   border: none !important;
@@ -145,6 +149,7 @@ blockquote, .table-striped tr {
   border: none !important;
   background: rgba(0,0,0,0.6) !important;
   color: white;
+  border-radius: .25rem;
 }
 .profile-links .card, .profile-followers .card, .comment .card, .profile-avatar-wrapper, .profile-current-stats, .profile-overall-stats, .achievement-panel {
   border: none !important;
@@ -234,8 +239,9 @@ blockquote, .table-striped tr {
 .comment .d-md-block .text-center {
   background: rgba(0,0,0,0.6);
   padding: .5rem;
-  width: 120px;
+  width: 130px;
   margin-left: 20%;
+  border-radius: .25rem;
 }
 .comment .d-md-block .text-center br {
   display: none;
@@ -274,7 +280,7 @@ color: white !important;
 background: rgba(255,255,255,0.2) !important;
 border: none !important;
 }
-.pagination {
+.pagination, .navbar-toggler {
   background: url(https://i.imgur.com/7X2OBUs.png) !important;
 }
 
