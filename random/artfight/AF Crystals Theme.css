@@ -148,6 +148,9 @@ See the top entries for customisable pieces.
   .nav-tabs {
     margin-bottom: 15px !important;
   }
+  .profile-gallery-header h2 {
+    text-align:left;
+  }
 }
 
 .profile-description {
@@ -155,7 +158,7 @@ See the top entries for customisable pieces.
   border-radius: 25px;
 }
 a, .profile-description blockquote a {
-  color: #F2EBC1;
+  color: #FFCEDD;
 }
 a:hover {
   color: #F2EBC1;
