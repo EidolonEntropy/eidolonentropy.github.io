@@ -148,6 +148,9 @@ See the top entries for customisable pieces.
   .nav-tabs {
     margin-bottom: 15px !important;
   }
+  .profile-gallery-header h2 {
+    text-align: left;
+  }
 }
 
 .profile-description {
