@@ -129,7 +129,7 @@ To change the banner image, change the link in the chunk directly below.
   padding-top: 16px;
 }
 .username-navbar + .dropdown-toggle:focus, .profile-header-buttons .dropdown-toggle:focus {
-  background-image:url(https://win98icons.alexmeub.com/icons/png/directory_open_cool-2.png)
+  background-image:url(https://win98icons.alexmeub.com/icons/png/directory_open_cool-2.png);
 }
 .artfight-nav .navbar-icon {
   margin-right: 24px;
@@ -141,10 +141,10 @@ To change the banner image, change the link in the chunk directly below.
 }
 
 .dropdown-menu, .profile-header-buttons .dropdown-toggle:focus, .profile-header-buttons .dropdown-toggle:active {
-  background-color: #C0C0C0 !important
+  background-color: #C0C0C0 !important;
 }
 .dropdown-menu a, .dropdown-header {
-  color: black !important
+  color: black !important;
 }
 .dropdown-item {
   padding-top: 0;
@@ -152,7 +152,7 @@ To change the banner image, change the link in the chunk directly below.
 }
 .dropdown-item:hover {
   background: #000080 !important;
-  color: white !important
+  color: white !important;
 }
 .avatar-dropdown + .dropdown-menu {
   margin-left: 40px;
@@ -221,8 +221,10 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   border-style: inset;
 }
 
-.profile-links {
-  max-width: 40%;
+@media only screen and (max-width: 768px) {
+  .profile-links {
+    max-width: 40%;
+  }
 }
 .profile-followers {
   min-width: 60%;
