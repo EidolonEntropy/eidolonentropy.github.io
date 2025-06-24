@@ -51,8 +51,8 @@ Updated for Character CSS!
     float: none !important;
     width: 100% !important;
     margin:0% 0% 0% 0%;
-	padding-left: 15px;
-	padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
  .profile-links .panel, .profile-followers .panel {
     width:100% !important;
@@ -66,7 +66,7 @@ Updated for Character CSS!
   }
 }
 
-.panel-heading, .card-header, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show {
+.panel-heading, .card-header, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show, .modal-header, .modal-footer, .modal-content, .modal thead, .modal tr {
   border-color: transparent !important;
   color: #0F0 !important;
   background-color: #000 !important;
@@ -148,12 +148,12 @@ Updated for Character CSS!
   opacity: 100% !important;
 }
 
-.btn, .btn-primary:not(:disabled):not(.disabled).active {
+.btn {
   color: #0F0 !important;
   background-color: #000 !important;
   border: solid 2px #0F0;
 }
-.btn:hover, .btn.btn-primary:hover:active {
+.btn:hover {
   color: #000 !important;
   background-color: #0F0 !important;
   border: solid 2px #0F0;
@@ -245,7 +245,7 @@ blockquote, .character-description {
   margin-bottom: 15px !important;
 }
 
-.card-header, .profile-header-background {
+.card-header, .profile-header-background, .modal-header {
   border: 5px #0F0 solid !important;
 }
  
