@@ -221,7 +221,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   border-style: inset;
 }
 
-@media only screen and (mix-width: 768px) {
+@media only screen and (min-width: 768px) {
   .profile-links {
     max-width: 40%;
   }
