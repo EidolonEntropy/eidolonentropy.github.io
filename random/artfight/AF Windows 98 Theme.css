@@ -72,7 +72,7 @@ To change the banner image, change the link in the chunk directly below.
   border: dotted 1px transparent !important;
 }
 
-.artfight-nav .fa-discord, .artfight-nav .fa-question-square, .artfight-nav .fa-shopping-cart, .artfight-nav .fa-search, .artfight-nav .fa-plus, .profile-header-buttons .fa-envelope, .profile-header-buttons .fa-exclamation-triangle {
+.artfight-nav .fa-discord, .artfight-nav .fa-question-square, .artfight-nav .fa-shopping-cart, .artfight-nav .fa-compass, .artfight-nav .fa-plus, .profile-header-buttons .fa-envelope, .profile-header-buttons .fa-exclamation-triangle {
   background-image:url(https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png);
   background-repeat:no-repeat;
   background-size: contain;
@@ -98,7 +98,7 @@ To change the banner image, change the link in the chunk directly below.
 .artfight-nav .fa-shopping-cart {
   background-image:url(https://win98icons.alexmeub.com/icons/png/computer-2.png);
 }
-.artfight-nav .fa-search {
+.artfight-nav .fa-compass {
   background-image:url(https://win98icons.alexmeub.com/icons/png/entire_network_globe-2.png);
 }
 .artfight-nav .fa-plus {
