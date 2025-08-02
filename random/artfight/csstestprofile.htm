@@ -329,11 +329,12 @@ function copyText(element) {
     <div class="profile-description mb-4 clearfix">
 	<blockquote>
         <center><span class="bbcode-size-5" style="font-size:2rem;"><b>This is a preview of an ArtFight page with a CSS sheet applied. You are currently viewing eidolonentropy.art, not the actual ArtFight website.</b></span></center>
-<center><span>This page is only to be used for demo purposes. Some aspects are broken. <b>NEW: lots of stuff being worked on right this minute, it's in your best interests to not refresh right now!</b> <a href="https://artfight.net/info/credits">No copyright infringement intended.</a><br>
-Fun fact: you can edit my templates directly on this page using developer tools / inspect element! Toggle your desired template, navigate to the CSS sheet, and watch your edits update in realtime!<br>
+<center><span>This page is only to be used for demo purposes. Some aspects are broken. Items you cannot see on your own profile are intentionally made visible. <a href="https://artfight.net/info/credits">No copyright infringement intended.</a><br>
+This page can showcase the five main profile pages and a character page without reloading, making it ideal for CSS testing. Use the navigation tabs to move between profile pages, and the below button to switch to character layout.<br>
+<button class="btn-primary btn collapsed" data-toggle="collapse" href="#CHARACTER">CHARACTER SWITCH</button><br>
+Using the toggles below, you can choose to preview one of Battalia's themes, and, simultaneously, a profile layout snippet, to see how they would appear on a real profile. This is NOT a live editor, but you CAN use developer tools / inspect element to watch your edits update in realtime! <br>
 <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets" target="_blank">CSS Snippets</a> // <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663153.battalias-ftu-artfight-css-templates" target="_blank">CSS Templates</a> // <a href="https://docs.google.com/document/d/1uG5T0-1T8Hl89yrxHu6ZAO6Ns1xeKOjEsv3rv-LLzYo/edit?usp=sharing" target="_blank">BBCode Tricks</a> // <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663274.battalias-quick-easy-guide-to-artfight-banners" target="_blank">Banner Info</a><br>
 <a href="https://eidolonentropy.art">Return to EE Homepage</a></span><br>
-<button class="btn-primary btn collapsed" data-toggle="collapse" href="#CHARACTER">CHARACTER SWITCH</button>
 </center>
 </blockquote>
 <div class="w-100"></div>
@@ -341,7 +342,7 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 <br>
 <div class="row text-center justify-content-center">
 	<div class="btn-group-vertical col-12 col-sm-auto" role="group" aria-label="Theme Selector">
-	    <h1>Theme Selector</h1>
+	    <h3>Theme Selector</h3>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme1')">Default Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme2')">Neon Voxel Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme3')">Eye Shrine Theme (Psychonauts 2)</button>
@@ -358,8 +359,8 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme12')">FUNSIES: April Fools 2025</button>
 		
 	</div>
-	<div class="btn-group-vertical col-12 col-sm-auto" role="group" aria-label="Snippet Selector">
-	    <h1>Snippet Selector</h1>
+	<div class="btn-group-vertical col-12 col-sm-auto align-self-start" role="group" aria-label="Snippet Selector">
+	    <h3>Snippet Selector</h3>
 		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip1')">Left Bio</button>
 		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip2')">Right Bio</button>
 		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip3')">Navtabs On Top</button>
@@ -1612,6 +1613,7 @@ Many seasons ago, when Red Leader still went by Torture, a rift between a group 
 <br>
 Gifted by his father, Red Leader commands the <a href="https://toyhou.se/~world/100510.takeover/page/127385.soulbound-power">soulbound power</a> of Night, enabling him to manipulate objects through enchantments and telekinesis. Night power is red (#F44236) and looks similar to <a href="https://i.imgur.com/dGRPyQu.png">this</a> when in use.
 <br>
+<br>
 <div style="text-align:center;"><button class="btn-primary btn collapsed" data-toggle="collapse" href="#PROFILE">PROFILE SWITCH</button></div>
     </div>
     <!-- End description -->
@@ -1865,7 +1867,7 @@ Here's a spoiler: <details class="mt-2">
         }
     </script>
 	
-<link id="snip1" rel="stylesheet" type="text/css" href="snipLeftBio.css" />
+<link id="snip1" rel="stylesheet" type="text/css" href="snipLeftBio.css" disabled=""/>
 <link id="snip2" rel="stylesheet" type="text/css" href="snipRightBio.css" disabled=""/>
 <link id="snip3" rel="stylesheet" type="text/css" href="snipNavtabsOnTop.css" disabled=""/>
 <link id="snip4" rel="stylesheet" type="text/css" href="snipSidebar.css" disabled=""/>
