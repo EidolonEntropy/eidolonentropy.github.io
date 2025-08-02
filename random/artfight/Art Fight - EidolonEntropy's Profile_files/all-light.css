@@ -10092,7 +10092,7 @@ h3 {
 }
 
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
 
 .fas,
@@ -14858,7 +14858,7 @@ readers do not read off random characters that represent icons */
   border-width: 0; }
 
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
 
 .fas,
@@ -14969,7 +14969,7 @@ readers do not read off random characters that represent icons */
 .fa-light,
 .fat,
 .fa-thin {
-  font-family: 'Font Awesome 6 Pro'; }
+  font-family: 'Font Awesome 6 Free'; }
 
 .fa-duotone,
 .fad,
