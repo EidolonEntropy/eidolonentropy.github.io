@@ -337,9 +337,12 @@ Using the toggles below, you can choose to preview one of Battalia's themes, and
 </center>
 </blockquote>
 <div class="w-100"></div>
-<center><img src="https://eidolonentropy.art/media/bothtext500.png" width="200px"/></center>
+<center>
+	<img src="https://eidolonentropy.art/media/bothtext500.png" width="200px"/>
+	<button class="btn-primary btn btn-lg collapsed" data-toggle="collapse" href="#CHARACTER">CHARACTER SWITCH</button><br>
+</center>
 <br>
-<button class="btn-primary btn collapsed" data-toggle="collapse" href="#CHARACTER">CHARACTER SWITCH</button><br>
+
 <div class="row text-center justify-content-center">
 	<div class="btn-group-vertical col-12 col-sm-auto" role="group" aria-label="Theme Selector">
 	    <h3 class="mx-auto">Theme Selector</h3>
@@ -371,12 +374,13 @@ Using the toggles below, you can choose to preview one of Battalia's themes, and
 		
 	</div>
 </div>
-<div class="btn-group" role="group" aria-label="Site Theme Selector">
+<center>
 	<h5 class="mx-auto">Site Theme Selector</h5>
-	<button type="button" class="btn btn-primary active" onclick="toggleSiteTheme('darkFight')">Dark Fight</button>
-	<button type="button" class="btn btn-primary" onclick="toggleSiteTheme('lightFight')">Light Fight</button>
-		
-</div>
+	<div class="btn-group" role="group" aria-label="Site Theme Selector">
+		<button type="button" class="btn btn-primary" onclick="toggleSiteTheme('darkFight')">Dark Fight</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSiteTheme('lightFight')">Light Fight</button>
+	</div>
+</center>
 
     </div>
     <!-- End custom profile area -->
@@ -1839,6 +1843,17 @@ Here's a spoiler: <details class="mt-2">
 </div>
 
 
+<link id="lightFight" rel="stylesheet" type="text/css" href="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/all-light.css" />
+<link id="darkFight" rel="stylesheet" type="text/css" href="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/all-dark.css">
+
+	<script>
+        function toggleSiteTheme(value) {
+			document.getElementById('lightFight').disabled = true;
+			document.getElementById('darkFight').disabled = true;
+            document.getElementById(value).disabled = false;
+        }
+    </script>
+
 <link id="theme1" rel="stylesheet" type="text/css" href="default.css" />
 <link id="theme2" rel="stylesheet" type="text/css" href="AF Neon Voxel Theme.css" disabled=""/>
 <link id="theme3" rel="stylesheet" type="text/css" href="AF Eye Shrine Theme.css" disabled=""/>
@@ -1892,17 +1907,7 @@ Here's a spoiler: <details class="mt-2">
             document.getElementById(value).disabled = false;
         }
     </script>
-	
-<link id="lightFight" rel="stylesheet" type="text/css" href="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/all-light.css" />
-<link id="darkFight" rel="stylesheet" type="text/css" href="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/all-dark.css">
 
-	<script>
-        function toggleSiteTheme(value) {
-			document.getElementById('lightFight').disabled = true;
-			document.getElementById('darkFight').disabled = true;
-            document.getElementById(value).disabled = false;
-        }
-    </script>
 	 <!--<button >
         Default
     </button>
