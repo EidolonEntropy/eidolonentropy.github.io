@@ -339,8 +339,9 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 <div class="w-100"></div>
 <center><img src="https://eidolonentropy.art/media/bothtext500.png" width="200px"/></center>
 <br>
-<div class="text-center">
-	<div class="btn-group-vertical" role="group" aria-label="Theme Selector">
+<div class="row text-center justify-content-center">
+	<div class="btn-group-vertical col-12 col-sm-auto" role="group" aria-label="Theme Selector">
+	    <h1>Theme Selector</h1>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme1')">Default Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme2')">Neon Voxel Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme3')">Eye Shrine Theme (Psychonauts 2)</button>
@@ -355,6 +356,16 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme13')">NEW! Unofficial Fossils Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme14')">NEW! Unofficial Crystals Theme</button>
 		<button type="button" class="btn btn-primary" onclick="toggleTheme('theme12')">FUNSIES: April Fools 2025</button>
+		
+	</div>
+	<div class="btn-group-vertical col-12 col-sm-auto" role="group" aria-label="Snippet Selector">
+	    <h1>Snippet Selector</h1>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip1')">Left Bio</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip2')">Right Bio</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip3')">Navtabs On Top</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip4')">Sidebar</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip5')">Character Showcase</button>
+		<button type="button" class="btn btn-primary" onclick="toggleSnippet('snip6')">Super Compact Sidebar</button>
 		
 	</div>
 </div>
@@ -1850,6 +1861,25 @@ Here's a spoiler: <details class="mt-2">
 			document.getElementById('theme12').disabled = true;
 			document.getElementById('theme13').disabled = true;
 			document.getElementById('theme14').disabled = true;
+            document.getElementById(value).disabled = false;
+        }
+    </script>
+	
+<link id="snip1" rel="stylesheet" type="text/css" href="snipLeftBio.css" />
+<link id="snip2" rel="stylesheet" type="text/css" href="snipRightBio.css" disabled=""/>
+<link id="snip3" rel="stylesheet" type="text/css" href="snipNavtabsOnTop.css" disabled=""/>
+<link id="snip4" rel="stylesheet" type="text/css" href="snipSidebar.css" disabled=""/>
+<link id="snip5" rel="stylesheet" type="text/css" href="snipCharacterShowcase.css" disabled=""/>
+<link id="snip6" rel="stylesheet" type="text/css" href="snipSuperCompactSidebar.css" disabled=""/>
+  
+    <script>
+        function toggleSnippet(value) {
+			document.getElementById('snip1').disabled = true;
+			document.getElementById('snip2').disabled = true;
+			document.getElementById('snip3').disabled = true;
+			document.getElementById('snip4').disabled = true;
+			document.getElementById('snip5').disabled = true;
+			document.getElementById('snip6').disabled = true;
             document.getElementById(value).disabled = false;
         }
     </script>
