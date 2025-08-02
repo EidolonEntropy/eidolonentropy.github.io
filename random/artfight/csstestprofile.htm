@@ -179,8 +179,7 @@
                             <a href="https://artfight.net/"><div class="banner" style="background-image: url(default_banner.jpg)"></div></a>
                 </div>
                 <div id="content">
-				<div class="tab-content FALSE-ELEMENT"><!--container for chara switch-->
-					<div class="tab-pane fade active show FALSE-ELEMENT" id="PROFILE">
+					<div class="fade collapse show FALSE-ELEMENT" id="PROFILE" data-parent="#content">
                 <div class="container-fluid">
                                                                             
     <div class="profile-header-wrapper clearfix">
@@ -334,7 +333,7 @@ function copyText(element) {
 Fun fact: you can edit my templates directly on this page using developer tools / inspect element! Toggle your desired template, navigate to the CSS sheet, and watch your edits update in realtime!<br>
 <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets" target="_blank">CSS Snippets</a> // <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663153.battalias-ftu-artfight-css-templates" target="_blank">CSS Templates</a> // <a href="https://docs.google.com/document/d/1uG5T0-1T8Hl89yrxHu6ZAO6Ns1xeKOjEsv3rv-LLzYo/edit?usp=sharing" target="_blank">BBCode Tricks</a> // <a href="https://toyhou.se/~forums/16.htmlcss-graphics/663274.battalias-quick-easy-guide-to-artfight-banners" target="_blank">Banner Info</a><br>
 <a href="https://eidolonentropy.art">Return to EE Homepage</a></span><br>
-<button class="nav-link btn-primary" data-toggle="tab" href="#CHARACTER">CHARACTER SWITCH</button>
+<button class="btn-primary btn collapsed" data-toggle="collapse" href="#CHARACTER">CHARACTER SWITCH</button>
 </center>
 </blockquote>
 <div class="w-100"></div>
@@ -1390,7 +1389,7 @@ Fun fact: you can edit my templates directly on this page using developer tools 
 </div><!--end tab-content-->
         </div>
 					</div><!--end profile tab-->
-					<div class="tab-pane fade active show FALSE-ELEMENT" id="CHARACTER">
+					<div class="fade collapse FALSE-ELEMENT" id="CHARACTER" data-parent="#content">
 				<div class="container-fluid">
                                                                                         
     <div class="clearfix">
@@ -1657,7 +1656,7 @@ $('.copy-text').on('click', function () {
 
     <!-- Character description -->
     <div class="character-description mt-3 clearfix">
-<button class="nav-link " data-toggle="tab" href="#PROFILE">PROFILE SWITCH</button>
+<button class="btn-primary btn collapsed" data-toggle="collapse" href="#PROFILE">PROFILE SWITCH</button>
         Red Leader is the supreme leader and founder of the Red Army, a group dedicated to the unification of the legions under the rule of Red Leader. Operating in the name of justice, Red Leader looks to restore order to a dissonant realm.<br>
 <br>
 He is cold, calm, and calculating, an excellent tactician and a fierce fighter. He is usually found in his study, planning, or overseeing the training of the members of his Army.<br>
@@ -1997,7 +1996,6 @@ As long as you pay attention to each character's profile, you're good.
     </div>        </div>
         </div>
 					</div><!--end character tab-->
-				</div><!--end tab content-->
 		</div> <!-- /content -->
         <footer class="footer">
   <div class="contain">
