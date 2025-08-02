@@ -21630,7 +21630,7 @@ a.text-dark:hover {
   content:"\10f6ad"
 }
 @font-face {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-style:normal;
   font-weight:300;
   font-display:block;
@@ -21642,11 +21642,11 @@ a.text-dark:hover {
   url(../webfonts/fa-light-300.svg#fontawesome) format("svg")
 }
 .fal {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-weight:300
 }
 @font-face {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-style:normal;
   font-weight:400;
   font-display:block;
@@ -21658,11 +21658,11 @@ a.text-dark:hover {
   url(../webfonts/fa-regular-400.svg#fontawesome) format("svg")
 }
 .far {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-weight:400
 }
 @font-face {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-style:normal;
   font-weight:900;
   font-display:block;
@@ -21675,7 +21675,7 @@ a.text-dark:hover {
 }
 .fa,
 .fas {
-  font-family:'Font Awesome 5 Pro';
+  font-family:'Font Awesome 6 Free';
   font-weight:900
 }
 * {
