@@ -1,0 +1,36 @@
+@media (min-width:768px) {
+  .profile-description {
+    width: 65%;
+    max-height: 28vw;
+    overflow: auto;
+    margin-left: 1%;
+    float: right;
+    padding-top: 10px;
+  }
+  .profile-description + .row {
+    float: right;
+    min-width: 100vw;
+  }
+  .profile-gallery-character {
+    min-width: 33%;
+  }
+  .profile-attacks-header + .row, .profile-attacks-header {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-defenses-header + .row, .profile-defenses-header {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .comments {
+    clear: both;
+    padding-top: 1rem;
+  }
+}
