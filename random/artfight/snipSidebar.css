@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+  .profile-header-wrapper {
+    float: left;
+    width: 34% !important;
+    margin-right: 1% !important;
+  }
+  .profile-normal-header {
+    padding-bottom: 40px !important;
+    margin-top: 40px;
+  }
+  .profile-header-buttons {
+    margin-top: 60px;
+    float: none !important;
+  }
+  .profile-description {
+    width: 65% !important;
+    max-height: 800px;
+    overflow: auto;
+    float: right;
+    margin-top: 50px !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .profile-attacks-header {
+    clear: right !important;
+  }
+  .profile-header-normal-status {
+    padding-left: 1.5rem;
+  }
+  .profile-links {
+    margin-right:1%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-followers {
+    margin-bottom:2%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-stats, .profile-characters, .profile-attacks, .profile-defenses {
+    margin-top: 270px;
+  }
+  .profile-stats-title, .profile-characters-title, .profile-attacks-title {
+    text-align: right;
+  }
+  .profile-body {
+    margin-top: -250px;
+  }
+  .nav-tabs .nav-item {
+    width: 20%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 768px) {
+  .profile-header-name .element-disabled {
+    display: none;
+  }
+}
