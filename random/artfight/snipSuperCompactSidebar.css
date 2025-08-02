@@ -1,0 +1,96 @@
+@media only screen and (min-width: 768px) {
+  .profile-description {
+    width: 65% !important;
+    min-height: 1340px;
+    height: 68vw;
+    overflow: auto;
+    float: right;
+    margin-top: 50px !important;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .profile-gallery-character {
+    min-width: 33%;
+  }
+  .profile-attacks-header + .row, .profile-attacks-header {
+    width: 49%;
+    float:left;
+    clear:left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-defenses-header + .row, .profile-defenses-header {
+    width: 49%;
+    float:right;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-defenses-header {
+    margin-top: -62px !important;
+    /*You may need to adjust this value if your theme changes header size*/
+  }
+  .comments {
+    clear: both;
+    padding-top: 1rem;
+  }
+  .profile-header-wrapper {
+    float: left;
+    width: 34% !important;
+    margin-right: 1% !important;
+  }
+  .profile-normal-header {
+    padding-bottom: 40px !important;
+    margin-top: 40px;
+  }
+  .profile-header-buttons {
+    margin-top: 60px;
+    float: none !important;
+  }
+  .profile-header-normal-status {
+    padding-left: 1.5rem;
+  }
+  .profile-links {
+    margin-right:1%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-followers {
+    margin-bottom:2%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-stats, .profile-characters, .profile-attacks, .profile-defenses {
+    margin-top: 270px;
+  }
+  .profile-stats-title, .profile-characters-title, .profile-attacks-title {
+    text-align: right;
+  }
+  .profile-body {
+    margin-top: -250px;
+  }
+  .nav-tabs .nav-item {
+    width: 20%;
+    text-align: center;
+  }
+  .profile-followers .card-body {
+    max-height: 120px;
+    overflow: scroll;
+  }
+  .profile-characters-header {
+    display: inline-block;
+    width: 34%;
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 768px) {
+  .profile-header-name .element-disabled {
+    display: none;
+  }
+  .profile-header-buttons .btn-danger, .profile-header-buttons .btn-primary {
+    font-size: 0;
+  }
+  .profile-header-buttons i {
+    font-size: .9rem !important;
+    padding: 0.24rem 0px;
+  }
+}
