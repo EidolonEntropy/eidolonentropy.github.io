@@ -2,12 +2,13 @@
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 
 This code is definitely NOT user friendly, there's a million colors being used here and nothing's organised or even functioning the same. sorry. psychonauts is cool
+Updated for Character CSS + a LOT of major QOL changes
 */
 
-.dropdown-menu, .nametag, .btn {
+.dropdown-menu, .nametag, .btn, .table .bg-light, .nametag, .profile-follower, .profile-links a, #character-content .col-md-4 a {
   font-family: cursive;
 }
-.panel-heading, .panel-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .profile-header-mobile-status .card  {
+.panel-heading, .panel-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .profile-header-mobile-status .card, .image-pane .card, .card-header  {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine3.png);
   background-color: #90A322 !important;
   color: #2C663C !important;
@@ -17,7 +18,7 @@ This code is definitely NOT user friendly, there's a million colors being used h
 .panel-footer, .profile-characters-header .card-header, .profile-attacks-title, .profile-overall-stats .card-header {
   background-position: bottom;
 }
-.profile-links .panel-heading, .profile-attacks-header .card-header, .profile-characters-title, .comments h2, .profile-stats-title {
+.profile-links .panel-heading, .profile-attacks-header .card-header, .profile-characters-title, .comments h2, .profile-stats-title, .image-pane .card {
   background-position: center;
 }
 .sceditor-container, div.sceditor-group {
@@ -38,7 +39,7 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
   border: none;
 }
 
-.btn, .nav-tabs .nav-item a {
+.btn, .nav-tabs .nav-item a, .btn-warning.disabled {
   border: 2px solid #7DFF38;
   background: #5BB338;
 }
@@ -66,6 +67,8 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
 }
 .nav-tabs {
   background: #7DFF38;
+  border-bottom: 0 !important;
+  padding-bottom: 1px;
 }
 .nav-tabs .nav-item a:hover {
   border: 2px solid #7DFF38 !important;
@@ -86,11 +89,12 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
   background-position: top;
   background-repeat: no-repeat;
   background-color: #69892F;
+  color: white;
 }
 .artfight-nav {
   background: none !important;
 }
-.panel-default, .achievement-panel .card {
+.panel-default, .achievement-panel .card, #character-content .card.mt-3 {
   border: none;
 }
 .artfight-nav .nav-link {
@@ -100,7 +104,7 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
 .artfight-nav .nav-link:hover {
   color: #3DCEA7 !important;
 }
-.profile-gallery-header a, .panel-heading input, .panel-heading .btn, .panel-footer a, .nav-tabs .nav-item a {
+.profile-gallery-header a, .panel-heading input, .panel-heading .btn, .panel-footer a, .nav-tabs .nav-item a, #character-content .card-header a, .image-pane a {
   color: #C2EB6C;
 }
 .profile-gallery-header a:hover, .panel-footer a:hover, .profile-header-name a:hover {
@@ -110,7 +114,7 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
 .profile-header-name a {
   color: #C2EB6C !important;
 }
-.profile-description {
+.profile-description, .character-description {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine2.png) center;
   max-width: 1200px;
   margin-left: auto;
@@ -118,31 +122,45 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
   border: 4px solid #08685F;
   padding: 10px;
 }
-.panel {
+#character-content .character-description {
+  max-width: 90%;
+}
+.profile-description a, .character-description a {
+  color: #E0DC2C;
+}
+blockquote {
+  border: 4px solid #08685F !important;
+  background: rgba(44,102,60,0.4);
+}
+.panel, .profile-avatar-wrapper, .card, .progress {
   background: #E0DC2C;
 }
-.thumbnail {
+.thumbnail, .image-thumb, .icon-character {
   border-style: solid;
   border-width: 4px !important;
 }
-.thumbnail:hover {
+.thumbnail:hover, .image-thumb:hover {
   border-style: double !important;
 }
-.table .bg-light, .nametag, .thumbnail, .dropdown-item:hover {
+.table .bg-light, .nametag, .thumbnail, .dropdown-item:hover, .table-bordered tr {
   background: #82FD70 !important;
   color: #48C766 !important;
+  font-weight: bold;
 }
 .table td {
   border-color: #747C1F !important;
 }
-.table td a, .comment, .dropdown-header, .table {
+.table td a, .comment, .dropdown-header, .table, .card.border-warning-muted, .profile-characters-permissions {
   color: #747C1F;
 }
-.profile-characters-permissions a:hover, .profile-description a:hover, .comment a:hover, .profile-follower a:hover, .profile-links a:hover, .footer a:hover, .nametag a:hover {
+.card.border-warning-muted a, .card.border-danger-muted a, .profile-characters-permissions a {
+  color: #38AA7F;
+}
+.profile-characters-permissions a:hover, .profile-description a:hover, .comment .card a:hover, .profile-follower a:hover, .profile-links a:hover, .footer a:hover, .nametag a:hover {
   opacity: 0.6;
   text-decoration: none !important;
 }
-.footer .contain, .badge-danger, .badge-info {
+.footer .contain, .badge {
   background: #4BF28A !important;
   color: #38AA7F !important;
 }
@@ -152,8 +170,8 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
 .panel.panel-default.profile-header {
   background: none !important;
 }
-.profile-header-normal-status, .badge, .dropdown-item {
-  color: #F9FFB7;
+.profile-header-normal-status, .dropdown-item, .text-muted, .progress-bar {
+  color: #F9FFB7 !important;
 }
 hr, .dropdown-divider {
   border-color: #747C1F;
