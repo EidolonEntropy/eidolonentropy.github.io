@@ -10,27 +10,11 @@ Blue: #62E5F9
 Purple: #C262F9
 
 Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+
+Updated for Character CSS! Also updated for easy change of the layout!
 */
 
-#wrapper {
-  background-image: url(https://i.imgur.com/eLaElXS.png) !important;
-  background-attachment: fixed; !important;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.banner-container {
-  padding: 2px;
-  background: #F9E862;
-}
-.banner {
-  background-image: url(https://i.imgur.com/qc0XNqE.png) !important;
-  background-position: center !important;
-}
-
-.thumbnail img, .profile-header-background, .card, .icon-user, .alert, .dropdown-menu, .nav-tabs .nav-link, .card-header, .card-footer, .nametag, .sceditor-container * {
-  border-radius: 0 !important;
-}
-
+/*SECTION FOR LAYOUT CHANGE - this can be removed or replaced with a different layout snippet */
 .profile-description {
   width:60%;
   max-height:700px;
@@ -55,13 +39,11 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .profile-links, .profile-followers {
     float: none !important;
     width: 100% !important;
     margin:0% 0% 0% 0%;
-  }
-  .profile-description + .row {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -72,12 +54,30 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
     float: none !important;
     width: 100% !important;
   }
-  .nav-tabs .nav-item {
-    width: 100% !important;
-  }
+}
+/*END LAYOUT SNIPPET */
+
+#wrapper {
+  background-image: url(https://i.imgur.com/eLaElXS.png) !important;
+  background-attachment: fixed; !important;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+}
+.banner-container {
+  padding: 2px;
+  background: #F9E862;
+}
+.banner {
+  background-image: url(https://i.imgur.com/qc0XNqE.png) !important;
+  background-position: center !important;
 }
 
-.panel-heading, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show, .modal-body, .modal-header, .modal-footer, .modal tr {
+.thumbnail img, .profile-header-background, .card, .icon-user, .alert, .dropdown-menu, .nav-tabs .nav-link, .card-header, .card-footer, .nametag, .sceditor-container * {
+  border-radius: 0 !important;
+}
+
+.panel-heading, .card-header, .nametag, .panel-footer, .artfight-nav, .footer .contain, div.sceditor-toolbar, .nav.nav-tabs.my-3, .bg-light, .dropdown-menu.show, .modal-body, .modal-header, .modal-footer, .modal tr {
   background-color: #000 !important;
 }
 .dropdown-header, .table .bg-light, .comments .text-center, .nametag .fa-bookmark, .progress-bar {
@@ -113,6 +113,9 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   background: #F9E862 !important;
   color: black !important;
 }
+.nametag, .profile-header-background {
+  border: none !important;
+}
 
 .nav-tabs {
   border: none;
@@ -125,7 +128,7 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   color: #62F99C !important;
   border-color: transparent !important;
 }
-.nav-tabs .active .nav-link {
+.nav-tabs .nav-link.active {
   border: solid 2px #62F99C !important;
   background: #000 !important;
   color: #62F99C !important;
@@ -134,22 +137,16 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   opacity: 0.75;
 }
 
-.profile-links, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
+.profile-links .card, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, #character-content .card.p-1 {
   border: 2px #62E5F9 solid;
 }
-.profile-links a, .profile-links .card-header, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
+.profile-links a, .profile-links .card-header, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, #character-content .image-pane a {
   color: #62E5F9 !important;
 }
-.profile-links .card, .profile-followers .card, .profile-stats .achievement-panel {
-  margin-top: 0 !important;
-}
-.profile-followers, .profile-links, .profile-stats .col-12 {
-  margin-top: 1rem;
-}
-.profile-followers, .profile-overall-stats, .profile-characters-permissions, .comment .card, .modal-dialog {
+.profile-followers .card, .profile-overall-stats, .profile-characters-permissions, .comment .card, .modal-dialog, #character-content .card.clearfix, #character-content .image-thumb {
   border: 2px #C262F9 solid !important;
 }
-.profile-followers .card-header, .profile-followers .card-footer a, .profile-overall-stats .card-header, .profile-overall-stats td, .profile-characters-permissions, .comment .element-disabled, .comment a, .modal, .modal tr {
+.profile-followers .card-header, .profile-followers .card-footer a, .profile-overall-stats .card-header, .profile-overall-stats td, .profile-characters-permissions .card-header, .profile-characters-permissions a, .comment .element-disabled, .comment a, .modal, .modal tr, #character-content .card.clearfix, #character-content .card.clearfix a {
   color: #C262F9;
 }
 .profile-overall-stats .progress-bar {
@@ -163,22 +160,23 @@ Some sample background/banner options are available here: https://imgur.com/a/Jo
   border-color: #C262F9;
 }
 
-.profile-description {
+.profile-description, .character-description {
   border: 2px #F97662 solid;
   background: black;
   color: white;
   padding: 1rem;
 }
-blockquote {
+blockquote, .table-bordered td {
   border: none !important;
 }
-.profile-description table tr {
+.profile-description table tr, .profile-characters-permissions tr, #character-content .table {
   background: black !important;
+  color: white;
 }
 .profile-description hr {
   border-color: #F97662;
 }
-.profile-description a, .profile-current-stats .card-header, .profile-current-stats td {
+.profile-description a, .profile-current-stats .card-header, .profile-current-stats td, .character-description a {
   color: #F97662;
 }
 .profile-current-stats {
@@ -192,24 +190,31 @@ blockquote {
   border: 1px solid #F97662;
 }
 
-.profile-attacks-header, .achievement-panel {
+#character-content .card.border-danger-muted .bg-light {
+  color: #62F99C !important;
+  border-bottom: 2px #62F99C solid !important;
+}
+
+
+.profile-attacks-header, .achievement-panel, #character-content div.col-md-4 .card {
   border: 2px #F9E862 solid !important;
 }
-.profile-attacks-header h2, .profile-attacks-header a, .achievement-panel {
+.profile-attacks-header h2, .profile-attacks-header a, .achievement-panel, #character-content .col-md-4 .card-header, #character-content div.col-md-4 a {
   color: #F9E862 !important;
 }
-.profile-defenses-header {
+.profile-defenses-header, #character-content .card.border-danger-muted {
   border: 2px #99F962 solid !important;
 }
-.profile-defenses-header h2, .profile-defenses-header a {
+.profile-defenses-header h2, .profile-defenses-header a, #character-content .card.border-danger-muted .card-header {
   color: #99F962 !important;
 }
 .profile-characters-header {
   border: 2px #62F99C solid !important;
 }
-.profile-characters-header h2, .profile-characters-header a {
+.profile-characters-header h2, .profile-characters-header a, #character-content div.col-md-8 a {
   color: #62F99C !important;
 }
+
 
 .comments h2 {
   color: #62E5F9;
@@ -238,7 +243,7 @@ progress::-webkit-progress-value {
   padding: 0.75rem 1rem;
 }
 
-.card, .dropdown-menu.show {
+.card, .dropdown-menu.show, .card-header {
   background: #000 !important;
   border: 0;
 }
@@ -260,23 +265,22 @@ progress::-webkit-progress-value {
 .dropdown-divider {
   border-color: #000;
 }
-.badge {
-  background: #0F0;
-  color: #000 !important;
-}
 
 .footer .contain a:hover {
   text-decoration: none !important;
   opacity: 0.75;
 }
-.comment .card-panel a:hover, a:hover.bbcode_url, .username-navbar:hover, .comment strong a:hover, .card a:hover, .profile-header-name a:hover {
-  opacity: 0.75 !important;
+.comment .card a:hover, a:hover.bbcode_url, .comment strong a:hover, .card a:hover, .profile-header-name a:hover {
+  opacity: 0.75;
   text-decoration: none !important;
+}
+.image-pane .mw-100 {
+  opacity: 1 !important;
 }
 .profile-header-name a, .navbar-brand div, .username-navbar span {
   font-weight: 300;
 }
-.nametag i:hover {
+.nametag i:hover, .username-navbar:hover {
   opacity: 0.75 !important;
 }
 .nametag a:hover {
@@ -320,11 +324,12 @@ div.sceditor-toolbar {
   background-color: #000 !important;
   border: 1px solid #000 !important;
 }
-div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
-  background: #000 !important;
+div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button, .icon-user {
+  background-color: #000 !important;
 }
 .sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
   border-color: #000 !important;
+  background: #000 !important;
 }
 .sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
   background: #62E5F9; !important;
@@ -341,6 +346,9 @@ div.sceditor-dropdown * {
 
 .table-card td {
   border: none !important;
+}
+#character-content .col-12 .badge {
+  color: black !important;
 }
 
 div {
