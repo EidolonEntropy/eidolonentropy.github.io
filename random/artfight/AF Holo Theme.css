@@ -14,6 +14,8 @@ I used the CSS color 'white' for text elements instead of #FFF this time around.
 Most hover colors are the same RGB values as the non-hover color and are controlled by 0.75 opacity instead of color. Other colors use RGBA values of either 0.6, 0.7 or 0.2 depending on the application.
 Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
 I used a positioning value on the banner here, you might want to remove it if it's misbehaving.
+
+Updated for Character CSS!
 */
 
 #wrapper {
@@ -36,7 +38,7 @@ I used a positioning value on the banner here, you might want to remove it if it
   color: white;
   border: none;
 }
-.profile-header-background {
+.profile-header-background, .profile-header {
   border: none !important;
   background: url(https://i.imgur.com/R3LqU4o.jpg);
   background-position: bottom left;
@@ -67,10 +69,13 @@ I used a positioning value on the banner here, you might want to remove it if it
   color: white;
   background-size: cover;
 }
-.profile-gallery-header a, .table a, .profile-followers .card-footer a, .profile-description a, .profile-characters-permissions a {
+.text-muted {
+  color: #000 !important;
+}
+.profile-gallery-header a, .table a, .profile-followers .card-footer a, .profile-description a, .profile-characters-permissions a, #character-content a {
   color: #62F99C
 }
-.profile-gallery-header a:hover, .table a:hover, .profile-followers .card-footer a:hover, .profile-description a:hover, .profile-characters-permissions a:hover {
+.profile-gallery-header a:hover, .table a:hover, .profile-followers .card-footer a:hover, .profile-description a:hover, .profile-characters-permissions a:hover, #character-content a:hover {
   color: #25BC5F;
   text-decoration: none;
 }
@@ -90,20 +95,20 @@ I used a positioning value on the banner here, you might want to remove it if it
 .comments h2, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
   text-align: center;
 }
-.profile-attacks-header .card-header {
-  background-position: bottom right;
+.profile-attacks-header .card-header, #character-content .bg-info-muted {
+  background-position: bottom right !important;
 }
 .profile-defenses-header .card-header {
   background-position: left 80%;
 }
-.profile-characters-header .card-header {
-  background-position: left 70%;
+.profile-characters-header .card-header, #character-content .bg-warning-muted {
+  background-position: left 70% !important;
 }
-.profile-links .card-header, .profile-overall-stats .card-header, .profile-characters-permissions .card-header {
+.profile-links .card-header, .profile-overall-stats .card-header, .profile-characters-permissions .card-header, #character-content .col-12.col-md-8 .card-header {
   background-position: right 82%;
   font-size: large;
 }
-.profile-followers .card-header, .profile-current-stats .card-header {
+.profile-followers .card-header, .profile-current-stats .card-header, #character-content .col-12.col-md-4 .card-header {
   background-position: left 78%;
   font-size: large;
 }
@@ -119,6 +124,9 @@ I used a positioning value on the banner here, you might want to remove it if it
 .nametag, .table .bg-light {
   background: rgba(0,0,0,0.6) !important;
   border: none !important;
+}
+.table td {
+  border-color: black;
 }
 .thumbnail {
   border-style: groove;
@@ -145,50 +153,52 @@ I used a positioning value on the banner here, you might want to remove it if it
 .navbar-nav .nav-link:hover, .navbar-brand:hover {
   opacity: 0.7;
 }
-blockquote, .table-striped tr {
+blockquote, .table-striped tr, .character-description {
   border: none !important;
   background: rgba(0,0,0,0.6) !important;
   color: white;
   border-radius: .25rem;
 }
-.profile-links .card, .profile-followers .card, .comment .card, .profile-avatar-wrapper, .profile-current-stats, .profile-overall-stats, .achievement-panel {
+.character-description {
+  padding: 10px;
+}
+.profile-links .card, .profile-followers .card, .comment .card, .profile-avatar-wrapper, .profile-current-stats, .profile-overall-stats, .achievement-panel, #character-content .card-header {
   border: none !important;
 }
 .profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title, .comments h2 {
   color: white !important;
   text-transform: uppercase;
 }
-.profile-description, #wrapper {
+.profile-description, #wrapper, #character-content .card .table {
   color: white;
 }
 
 .nav-tabs .nav-link {
-  border-color: transparent !important;
   color: white;
   text-transform:uppercase;
   font-size:larger;
-  margin-bottom: -4px;
+  border: solid 3px transparent !important;
 }
-#content ul .nav-item {
+.nav-tabs .nav-item {
   width: 20%;
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  #content ul .nav-item {
+  .nav-tabs .nav-item {
     width: 100% !important;
   }
 }
 .nav-tabs {
   background: url(https://i.imgur.com/Wj5t7wj.png);
   background-position: -80% 0%;
-  border: none !important
+  border: 0;
+  padding-bottom: 2px;
 }
 .nav-tabs .nav-link.active {
-  background: transparent;
-}
-.nav-tabs .nav-item.active {
   border: solid white 3px !important;
   background: rgba(255,255,255,0.2) !important;
+  border-radius: 0 !important;
+  color: white !important;
 }
 .nav-tabs .nav-item:hover {
   background: rgba(255,255,255,0.2) !important;
