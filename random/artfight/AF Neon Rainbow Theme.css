@@ -169,7 +169,7 @@ Updated for Character CSS! Also updated for easy change of the layout!
 blockquote, .table-bordered td {
   border: none !important;
 }
-.profile-description table tr, .profile-characters-permissions tr, #character-content .table {
+.profile-description table tr, .profile-characters-permissions tr, #character-content .table, #character-content tr {
   background: black !important;
   color: white;
 }
@@ -441,4 +441,5 @@ div {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle {
   background: #F962BF
 }
+
 
