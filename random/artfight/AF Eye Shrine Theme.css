@@ -2,10 +2,9 @@
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 
 This code is definitely NOT user friendly, there's a million colors being used here and nothing's organised or even functioning the same. sorry. psychonauts is cool
-Updated for Character CSS + a LOT of major QOL changes
 */
 
-.dropdown-menu, .nametag, .btn, .table .bg-light, .nametag, .profile-follower, .profile-links a, #character-content .col-md-4 a {
+.dropdown-menu, .nametag, .btn, .table .bg-light, .nametag, .profile-follower, .profile-links a, #character-content .col-md-4 a, .nav-tabs {
   font-family: cursive;
 }
 .panel-heading, .panel-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .profile-header-mobile-status .card, .image-pane .card, .card-header  {
@@ -60,10 +59,9 @@ div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
   background: #49EAAF !important;
 }
 
-#content ul .nav-item {
+.nav-tabs .nav-item {
   width: 20%;
   text-align: center;
-  font-family: cursive;
 }
 .nav-tabs {
   background: #7DFF38;
