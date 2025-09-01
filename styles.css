@@ -274,3 +274,67 @@ width: 100vw;
 .c-input {
   max-width: 100%;
 }
+
+/* MAKO SECTION // Z */
+.text-mako {
+ color:#00ff97!important
+}
+a.text-danger:focus, a.text-danger:hover {
+ color:rgba(0,255,151,0.75)!important
+}
+
+.bg-mako,
+.card-mako,
+.alert-mako {
+ background-color:#00ff97!important
+}
+
+.card-outline-mako,
+.card-outline-mako .card-header {
+ border-color:#00ff97!important
+}
+
+.btn.btn-mako,
+.badge-mako {
+  color:#00ff97 !important;
+}
+
+.badge.badge-mako:hover,
+.badge.badge-mako:focus,
+.btn-mako:hover,
+.btn-mako:focus,
+.btn-mako.active {
+  background:#00ff97 !important;
+  border-color:#00ff97;
+  color:#fff!important;
+  text-shadow:none!important
+}
+
+.btn.btn-outline-mako {
+  border-color:#00ff97;
+  color:#00ff97;
+}
+
+.btn.btn-outline-danger:hover,
+.btn.btn-outline-danger:focus,
+.btn.btn-outline-danger.active {
+  background:#00ff97;
+  border-color:#00ff97;
+}
+
+#mako-select div::selection,
+#mako-select h1::selection,
+#mako-select li::selection,
+#mako-select i::selection,
+#mako-select h2::selection,
+#mako-select h3::selection,
+#mako-select h4::selection,
+#mako-select h5::selection,
+#mako-select span::selection,
+#mako-select a::selection,
+#mako-select u::selection,
+#mako-select p::selection,
+.cyan-select {
+  color: rgba(0,255,151,0.75) !important;
+  background: rgba(255,255,255,0.8) !important;
+}
