@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="darkly.css">
+	<link rel="shortcut icon" href="favicon.png">
+	<!--extra css, vertical center etc-->
+	<style>
+.vertical-center {
+  top: 50%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+	</style>
+	<!--title-->
+    <title>Flawed Design MAP</title>
+  </head>
+  <body>
+  
+  <!--bg-->
+  <div class="container-flex" style="background-image:url('MAPHosting/FDfinalbg.webp');background-attachment:fixed;background-position:center; z-index:-1;">
+  <!--<div class="yeehaw" style="height:100vh; width:100vw;"></div>-->
+  <!--end bg-->
+  
+  <!--nav-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="container col-9">
+  <a class="navbar-brand p-0" href="#">
+    <img class="d-inline-block align-top" src="favicon.png" width="40" height="40" alt="A">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <a class="nav-item nav-link" href="~index.html">Home</a>
+      <a class="nav-item nav-link active" href="~FDMAP.html">Flawed Design MAP <span class="sr-only">(current)</span></a>
+    </div>
+	<span class="navbar-text">
+      Promotional document for the Flawed Design Darkstalker MAP
+      </span>
+  </div>
+  </div>
+</nav>
+  <!--end of nav-->
+  
+  <!--small boi
+  
+  <a href="#" id="target">
+  <img style="max-width:15%;position:fixed;bottom:30px;left:5px;z-index:3;" src="indivImages/e.png">
+  </a>
+  <div class='_content' id='blah' style="width: 600px;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>-->
+  
+  <!--body-->
+  <br>
+  <br>
+<div class="container col-12 col-md-8 my-5" style="background-color:rgba(0, 0, 0, 0.6); position: relative;"  data-spy="scroll" data-target="#navbar">
+	<div class="justify-content-center">
+	
+		<div class="container col-7 pt-4 pb-0">
+			<div class="card border-0 bg-transparent"><!--style="mix-blend-mode:multiply;"-->
+				<!--<img class="card-img" src="MAPHosting/ACASfinalbg.png" alt="Logo">
+					<div class="card-img-overlay">
+					<h1>Logo Goes Here</h1>
+					</div>-->
+				<img src="MAPHosting/FDlogo.webp" class="img-fluid">
+			</div>
+		</div>
+		
+		<div class="container col-12 col-md-11 pt-4">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item rounded" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/Fo9CV0V4oEU?ecver=1&amp;autoplay=1&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0"></iframe>
+			</div>
+		</div>
+		
+		<hr style="border-style: double; border-width: 5px;">
+		
+		<!--start of part box-->
+		<div class="card col-12 col-md-11 mx-auto " style="background-color:rgba(0, 0, 0, 0.4);">
+			<div class="card-header bg-transparent pb-0">
+			
+				<div class="tab-content">
+				
+					<div class="tab-pane container show fade active" id="pink">
+				<ul class="nav nav-tabs flex-column flex-sm-row  d-flex flex-wrap-reverse nav-fill">
+					<li class="nav-item"> <a class="flex-sm-fill nav-link active text-danger" data-toggle="tab" href="#basics">Main</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part1">1</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part2">2</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part3">3</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part4">4</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part5">5</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part6">6</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part7">7</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part8">8</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part9">9</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part10">10</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part11">11</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part12">12</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link" data-toggle="tab" href="#orange">More Parts</a> </li>
+				</ul>
+					</div>
+					<div class="tab-pane container show fade" id="orange">
+				<ul class="nav nav-tabs flex-column flex-sm-row  d-flex flex-wrap-reverse nav-fill">
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger active" data-toggle="tab" href="#basics">Main</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part13">13</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part14">14</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part15">15</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part16">16</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part17">17</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part18">18</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part19">19</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part20">20</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part21">21</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#part22">22</a> </li>
+					<li class="nav-item"> <a class="flex-sm-fill nav-link text-danger" data-toggle="tab" href="#pink">Back</a> </li>
+				</ul>
+				</div>
+			</div>
+			
+		
+			<div class="card-body text-center bg-muted pt-0 pb-4 px-0">
+				<div class="card col-12 overflow-auto">
+					<div class="tab-content">
+						<!--First Page-->
+						<div class="tab-pane container show fade active" id="basics">
+							<div class="card border-0" style="height: 500px;">
+								<div class="my-auto vertical-center d-none d-md-block">
+									<h1 class="display-4 text-danger pt-4">Participants &amp; Parts</h1>
+									<h5>Use the tabs above to explore each part, featuring links to each upload and animator!</h5>
+									<p class="pb-0">If parts appear different here than in the final product, they were edited by the host.</p>
+								</div>
+								<div class="my-auto d-block d-md-none">
+									<br>
+									<h3 class="display-4 text-danger">Participants &amp; Parts</h3>
+									<h5>Use the tabs above to explore each part, featuring links to each upload and animator!</h5>
+									<p>If parts appear different here than in the final product, they were edited by the host.</p>
+									<br>
+								</div>
+							</div>
+						</div>
+						<!--Part 1-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part1">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 1</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC7KeLzp9cW0BcV90OZ7PvhA" target="_blank" class="text-danger">Daydreaming Drawings</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/mznThzJTZjk?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=1&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 2-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part2">
+								<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 2</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC6k3VudMgxCrRg4ZS3aBuWQ" target="_blank" class="text-danger">Verasaii</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/iBEOL3x79HM?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=1&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 3-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part3">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 3</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCFZ8KcB6xDmDukROAM5L90g" target="_blank" class="text-danger">Light 0z2</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/qlAcPpbOjQA?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 4-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part4">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 4</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCqGJEBXQQapQzhwu3hvGSoA" target="_blank" class="text-danger">Splashed Raven</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/DGN_g-SQIoM?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 5-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part5">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 5</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCaIlCEplu2Ak8lVSVZlCDOw" target="_blank" class="text-danger">Woofzilla</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/v3EmvWQHfLk?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 6-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part6">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 6</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC5SB-wOQGIbv_pig1wSqoqA" target="_blank" class="text-danger">King of Lemons</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/P5_CF0dDzuA?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 7-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part7">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 7</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger">Battalia of EidolonEntropy</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/x7BL3aKG4WE?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 8-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part8">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 8</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger">Battalia of EidolonEntropy</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/x7BL3aKG4WE?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=10&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 9-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part9">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 9</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC788Gj4K8gbCLkRgbPqCxUA" target="_blank" class="text-danger">Grainee</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/x5zc93gqYPg?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 10-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part10">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 10</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCNRKRS42FxaebB6iaRcbvpg" target="_blank" class="text-danger">Demi m0n</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/YjBCnddIR1w?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 11-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part11">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 11</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCdyW8-MvBP5NW9XoO9aZFrg" target="_blank" class="text-danger">enoughofENOCH</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/MmYaf9XBSOI?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 12-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part12">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 12</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCukKGJiwnFSU9WbuTpMt2fw" target="_blank" class="text-danger">AvengerofSquids</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/hHUEZ5OiAtQ?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 13-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part13">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 13</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UC8Q6e6m9FcpUYd9vbKgvROg" target="_blank" class="text-danger">Coastal Crow</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/3oM2FtWvfO8?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 14-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part14">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 14</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger">Ayla Animates</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/lbKeAI9nKO0?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=3&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 15-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part15">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 15</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger">Myth of EidolonEntropy</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/dhw29jZccLI?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 16-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part16">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 16</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCJJcT3iKlico9WCie7GoDZA" target="_blank" class="text-danger">Frozen Gem</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/g6IqhUukzn4?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 17-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part17">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 17</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCHCh12qlzC27CZvCHsUxRrg" target="_blank" class="text-danger">Meroaw</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/lZLP6GX-Fs0?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=4&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 18-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part18">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 18</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCFZ8KcB6xDmDukROAM5L90g" target="_blank" class="text-danger">Light 0z2</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/nvtUrVfVehc?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 19-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part19">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 19</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/c/EidolonEntropy" target="_blank" class="text-danger">Battalia of EidolonEntropy</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/0TcDmsX9gfI?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 20-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part20">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 20</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCmiCcF8rCOkGiPdG1ZsL9vQ" target="_blank" class="text-danger">Celene</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 col-md-3 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="tab-content">
+                                                <div class="tab-pane fade active show" id="el1">
+                                                    <div class="embed-responsive embed-responsive-16by9 my-auto">
+														<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/iJ93nWraaSo?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+													</div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="el2">
+                                                    <div class="embed-responsive embed-responsive-16by9 my-auto">
+														<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/5ZjlaUtsidM?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+													</div>
+                                                </div>
+                                            </div>
+											
+											<div class="mx-auto p-4">
+												<ul class="nav nav-pills justify-content-center">
+													<li class=""><a class="btn btn-danger btn-block active" data-toggle="tab" href="#el1">Final</a></li>
+													<li class=""><a class="btn btn-danger btn-block" data-toggle="tab" href="#el2">Original</a></li>  
+												</ul>
+											</div>
+										</div>
+										
+										<div class="col-2 col-md-3 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 21-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part21">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 21</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCmV3qJD_scr3wEBqsjbey1g" target="_blank" class="text-danger">Lola ._. draws</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 col-md-3 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="tab-content">
+                                                <div class="tab-pane fade active show" id="fl1">
+                                                    <div class="embed-responsive embed-responsive-16by9 my-auto">
+														<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/s6H6JUc-mJI?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+													</div>
+                                                </div>
+
+                                                <div class="tab-pane fade" id="fl2">
+                                                    <div class="embed-responsive embed-responsive-16by9 my-auto">
+														<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/unoE1SzHXQ0?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+													</div>
+                                                </div>
+                                            </div>
+											
+											<div class="mx-auto p-4">
+												<ul class="nav nav-pills justify-content-center">
+													<li class=""><a class="btn btn-danger btn-block active" data-toggle="tab" href="#fl1">Final</a></li>
+													<li class=""><a class="btn btn-danger btn-block" data-toggle="tab" href="#fl2">Original</a></li>  
+												</ul>
+											</div>
+										</div>
+										
+										<div class="col-2 col-md-3 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Part 22-->
+						<div class="tab-pane container show fade px-0 mx-0" id="part22">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Part 22</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.youtube.com/channel/UCcvLAFmXDBJlU77wIsnngsg/" target="_blank" class="text-danger">ʀʏᴛʜʀᴇᴇ</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<div class="embed-responsive embed-responsive-16by9 my-auto">
+												<iframe class="embed-responsive-item" allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/Fo9CV0V4oEU?ecver=1&amp;autoplay=0&amp;iv_load_policy=1&amp;rel=0&amp;yt:stretch=16:9&amp;autohide=0&amp;color=white&amp;start=211&amp;width=1920&amp;width=1920" width="1920" height="1080" allowtransparency="true" frameborder="0" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);"></iframe>
+											</div>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--thumbs-->
+						<div class="tab-pane container show fade px-0 mx-0" id="thumbs">
+							<div class="card border-0 mx-auto bg-transparent" style="height: 500px;">
+									<div class="card-header text-center bg-transparent"> 
+										<h5 class="pt-2 pb-0 mb-0">Thumbnail Contest Winner</h5>
+										<h1 class="pb-0 mb-0 font-weight-light"><a href="https://www.deviantart.com/kadenzathedragon" target="_blank" class="text-danger">KadenzaTheDragon</a></h1>
+									</div>
+									
+									<div class="w-100 p-2"></div>
+									
+									<div class="container-flex bg-transparent" style="height:100%">
+										<div class="row">
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										<div class="col h-100">
+											<a href="https://www.deviantart.com/kadenzathedragon/art/Frozen-Heart-MAP-Thumbnail-Entry-805598442" target="_blank">
+												<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9a5defa2-a5de-4a43-829e-a1fd7dfcfd9e/ddbmrqi-193c53d2-f7c1-4914-ad2a-10e119b173b0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOWE1ZGVmYTItYTVkZS00YTQzLTgyOWUtYTFmZDdkZmNmZDllXC9kZGJtcnFpLTE5M2M1M2QyLWY3YzEtNDkxNC1hZDJhLTEwZTExOWIxNzNiMC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.QyKKgC4_RXOcBkCX8mOy3ySsdQM3LZOMHXmV070Gslw" class="img-fluid" style="border-style: inset; border-radius: 15px 50px; border-color: white black; background: rgba(0, 0, 0, 0.3);">
+											</a>
+										</div>
+										
+										<div class="col-2 bg-transparent h-100 d-none d-md-block"></div>
+										
+										</div>
+									</div>
+									
+									
+								</div>
+						</div>
+						<!--Fourth Page-->
+						<div class="tab-pane container show fade" id="e">
+							<h1>e</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div><!--?-->
+		</div> <!--card-->
+		
+		<hr style="border-style: double; border-width: 5px;">
+		
+		<div class="px-2">
+			<h1 class="pt-2"><strong>Flawed Design</strong></h1>
+			<h3 class="font-weight-light">Darkstalker MAP</h3>
+			<hr>
+			<h5><em>"And if I could control it, maybe I could leave it all behind..."</em></h5>
+			<p>Hosted in 2018 and finished in 2019, cohosted by Battalia of EidolonEntropy and Henki, and brought to life by nineteen incredible artists, the Flawed Design MAP is a lesser known gem of the Wings of Fire animation community, portraying the faults in the life of Darkstalker before he was put to sleep for thousands of years.</p>
+			<p>Included on this page are each participant's individual part uploads (if they have one) and links to their channels. It would mean the world to each one if you could watch their uploads, visit their channels, and perhaps dish out some subscriptions!</p>
+			<p>The 2021 reedit restores parts affected by unnecessary edits. It fixes part transitions, corrects inconsistencies, removes a previously undetected levels edit, changes text effects and fonts, and updated outdated usernames, all wrapped up in a 4K 60fps experience. Most of these edits were based on viewer feedback through the experience survey and through comments. Thank you to everyone who provided suggestions for making this MAP and any others better.</p>
+			<center>
+				<div class="d-none d-md-block">
+				<div class="btn-group">
+					<a class="btn btn-danger" href="https://youtu.be/WWCe6I6tmoc" target="_blank">Original Upload</a>
+					<a class="btn btn-danger" href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAVIF96UcE5ulK19SGe5I5Ts" target="_blank">Part Playlist</a>
+					<a class="btn btn-danger" href="https://youtu.be/cVEeZIgMALU/" target="_blank">MAP Call</a>
+					<a class="btn btn-danger" href="https://youtu.be/S5M3DYzO-fw/" target="_blank">MAP Trailer</a>
+					<a class="btn btn-danger" href="http://bit.ly/FDMAP" target="_blank">Resource Folder</a>
+				</div>
+				</div>
+				<div class="d-block d-md-none">
+					<a class="btn btn-danger" href="https://youtu.be/WWCe6I6tmoc" target="_blank">Original Upload</a>
+					<a class="btn btn-danger" href="https://www.youtube.com/playlist?list=PLPcMN9jr9wAVIF96UcE5ulK19SGe5I5Ts" target="_blank">Part Playlist</a>
+					<div class="w-100"></div>
+					<a class="btn btn-danger" href="https://youtu.be/cVEeZIgMALU/" target="_blank">MAP Call</a>
+					<a class="btn btn-danger" href="https://youtu.be/S5M3DYzO-fw/" target="_blank">MAP Trailer</a>
+					<a class="btn btn-danger" href="http://bit.ly/FDMAP" target="_blank">Resource Folder</a>
+				</div>
+				<div class="p-4">
+					<a class="btn btn-danger" href="http://www.strawpoll.me/21194683" target="_blank">Website Survey</a>
+				</div>
+			</center>
+			
+			
+		</div>
+		
+		
+	
+	</div>
+</div>
+	<p class="mb-2">&nbsp;</p>
+	<!--end of container; begin stuff off the page-->
+
+<!--footer thing-->
+<div class="container-flex fixed-bottom bg-dark d-none d-md-block">
+	<div class="container col-9 pt-2">
+		<p class="align-middle text-secondary"><small>© 2021 by EidolonEntropy. See About page for image use information. This website was built from the ground up by SCP. How cool is that?!</small></p>
+	</div>
+</div>
+<div class="container-flex bg-dark d-block d-md-none">
+	<div class="container col-11 pt-2">
+		<p class="align-middle text-secondary"><small>© 2021 by EidolonEntropy. See About page for image use information. This website was built from the ground up by SCP. How cool is that?!</small></p>
+	</div>
+</div>
+<!--end footer thing-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--<script>$('body').scrollspy({ target: '#navbar' })</script>-->
+	<script>
+	$(document).ready(function() {
+
+    // We don't want to see the popover contents until the user clicks the target.
+    // If you don't hide 'blah' first it will be visible outside of the popover.
+    //
+    $('#blah').hide();
+
+    // Initialize our popover
+    //
+    $('#target').popover({
+        content: $('#blah'), // set the content to be the 'blah' div
+        placement: 'bottom',
+        html: true
+    });
+    // The popover contents will not be set until the popover is shown.  Since we don't 
+    // want to see the popover when the page loads, we will show it then hide it.
+    //
+    $('#target').popover('show');
+    $('#target').popover('hide');
+    
+    // Now that the popover's content is the 'blah' dive we can make it visisble again.
+    //
+    $('#blah').show();
+  
+
+});
+	</script>
+	</div><!--bg-->
+  </body>
+</html>
