@@ -1836,17 +1836,57 @@ Here's a spoiler: <details class="mt-2">
 
     <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">
-                    </h4>
-        <button type="button" class="close" data-dismiss="modal">×</button>
-      </div>
-      <div class="modal-body">
-                                  </div>
-      <div class="modal-footer">
-              </div>
-    </div>
+    <div class="modal-content"><div class="modal-header">
+  <h4 class="modal-title" style="word-break: break-word; overflow-wrap: break-word;">
+          2
+    Followers
+  </h4>
+  <button type="button" class="close" data-dismiss="modal">×</button>
+</div>
+<div class="modal-body">
+  
+<div class="row">
+    <table class="table table-striped">
+        <thead><tr><th class="border-top-0">Followed by</th><th class="border-top-0">On</th></tr></thead>
+        <tbody style="max-height:500px;overflow-y:scroll;">
+                <tr><td class="w-50"><strong><a style="color: #d35e88;" href="#">B2</a></strong></td><td class="">1 January 2099 12:34:56 AM</td></tr>
+                <tr><td class="w-50"><strong><a href="#" style="color: #ba8c25;">B2B2</a></strong></td><td class="">1 January 2099 12:34:56 AM</td></tr>
+               
+  
+                
+                </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center">
+<nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true">
+                    <span class="page-link">« Previous</span>
+                </li>
+            
+            
+                            <li class="page-item">
+                    <a class="page-link" href="https://artfight.net/~Battalia/followers?page=2" rel="next">Next »</a>
+                </li>
+                    </ul>
+    </nav>
+
+</div>
+<script nonce="">
+    $("a.page-link").on("click", function (e) {
+        e.preventDefault();
+        $(".modal-content:not(.modal-content-static) .modal-body").addClass("element-disabled")
+        $(".modal-content:not(.modal-content-static) .modal-title").text("Loading...")
+        getModal(this.href);
+    });
+</script>
+
+</div>
+<div class="modal-footer">
+  </div>
+</div>
 
   </div>
 </div>
@@ -2050,4 +2090,5 @@ Here's a spoiler: <details class="mt-2">
   
 
 </body><script src="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/inject.js"></script></html>
+
 
