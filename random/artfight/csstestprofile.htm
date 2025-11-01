@@ -1509,37 +1509,40 @@ $('.copy-text').on('click', function () {
    </li>
 </ul>
                 <div class="" id="character-content">
+	<div class="alert alert-warning">
+        This character has the following filters: Gore (moderate)
+    </div>
             <!-- Images -->
-    <div class="row">
+    <div class="image-display-wrapper row">
         <!-- Character main image -->
                     <div class="col-lg-8 text-center image-pane d-none" id="image-8496384">
-                <div class="card mt-3 p-1">
+                <div class="image-display card mt-3 p-1">
                     <a target="_blank" href="#" class="mw-100 mh-100">
                 <img src="https://images.artfight.net/character/fXpVxCZOf3XKZHsmucipq06KFON1jp4Y59Zxd5AQgChGBFOpf6tvzOKmSCJU.jpg?t=1656853124" data-toggle="tooltip" title="" data-original-title="Uploaded by Battalia">
             </a>
-<span>Image by
+<span class="image-display-credit">Image by
     <strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong>
 (<a target="_blank" href="#">Full view</a>)
 </span>
                 </div>
             </div>
                     <div class="col-lg-8 text-center image-pane " id="image-8496454">
-                <div class="card mt-3 p-1">
+                <div class="image-display card mt-3 p-1">
                     <a target="_blank" href="#" class="mw-100 mh-100">
                 <img src="https://images.artfight.net/character/cLhuNaEWLO782qBXlQ0lMUoSKKsQdRen2nniod3ybnlAkoh3drct4lgPX2k2.png?t=1656853173" data-toggle="tooltip" title="" data-original-title="Uploaded by Battalia">
             </a>
-<span>Image by
+<span class="image-display-credit">Image by
     <strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong>
 (<a target="_blank" href="#">Full view</a>)
 </span>
                 </div>
             </div>
                     <div class="col-lg-8 text-center image-pane d-none" id="image-8496916">
-                <div class="card mt-3 p-1">
+                <div class="image-display card mt-3 p-1">
                     <a target="_blank" href="#" class="mw-100 mh-100">
                 <img src="https://images.artfight.net/character/whwjROhklTzbsynqwErK7ZO5wEMgShC6QbWGhnQqIFb6Cy0QANO5XT1kTyfO.png?t=1656853785" data-toggle="tooltip" title="" data-original-title="Uploaded by Battalia">
             </a>
-<span>Image by
+<span class="image-display-credit">Image by
     <strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong>
 (<a target="_blank" href="#">Full view</a>)
 </span>
@@ -1549,15 +1552,15 @@ $('.copy-text').on('click', function () {
                 <!-- End character image -->
         <!-- Character gallery -->
         <div class="col-lg-4">
-            <div class="card mt-3 clearfix">
-                <div class="card-header d-flex flex-row flex-wrap justify-content-between align-items-center">
+            <div class="gallery-wrapper card mt-3 clearfix">
+                <div class="gallery-header card-header d-flex flex-row flex-wrap justify-content-between align-items-center">
                     <h4 class="mb-0">Images</h4>
-                                        <div class="text-muted">
+                                        <div class="gallery-extra-images text-muted">
                         User has 6 extra image slots with their <a href="/donate" target="_blank">contribution tier</a>
                     </div>
                                     </div>
                 <div class="card-body">
-                    <div class="row no-gutters">
+                    <div class="gallery row no-gutters">
                                                                                 <div class="col-4 col-sm-3 col-lg-6 col-xl-4 d-flex justify-content-center view-image-thumb" data-target="image-8496384">
                                 <div role="button" class="card p-1 m-1 image-thumb" data-id="8496384">
             <img class="mx-auto rounded" src="https://images.artfight.net/character/th_fXpVxCZOf3XKZHsmucipq06KFON1jp4Y59Zxd5AQgChGBFOpf6tvzOKmSCJU.png?t=1656853124" data-toggle="tooltip" title="" data-original-title="Uploaded by Battalia">
@@ -1638,13 +1641,13 @@ Gifted by his father, Red Leader commands the <a href="https://toyhou.se/~world/
 <div class="row">
     <!-- Permissions -->
     <div class="col-12 col-md-8">
-                <div class="card mt-3 border-danger-muted">
+                <div class="permissions card mt-3 border-danger-muted">
             <div class="card-header bg-danger-muted border-danger-muted">Permissions</div>
-            <table class="table table-card">
-                <tbody><tr><td class="bg-light">Character Permissions</td></tr>
+            <table class="permissions-body table table-card">
+                <tbody><tr><td class="permissions-subheader bg-light">Character Permissions</td></tr>
                 <tr>
-                    <td>
-                                                Keep in mind that the writable items within this permission section are kept within tables of their own; they use the class <code>table-card</code> while BBCode-inserted tables use <code>table-striped</code>.<br>
+                    <td class="permissions-text">
+                                                Keep in mind that the writable items within this permission section are kept within tables of their own; table code from the front page may interfere here.<br>
 <br>
 Here's a spoiler: <details class="mt-2">
                     <summary class="mb-2 btn btn-info btn-sm">
@@ -1655,9 +1658,9 @@ Here's a spoiler: <details class="mt-2">
 					Over there is a floated image using the [imgright] tag.
                                             </td>
                 </tr>
-                                <tr><td class="bg-light"><strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong>'s Global Permissions</td></tr>
+                                <tr><td class="permissions-subheader bg-light"><strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong>'s Global Permissions</td></tr>
                 <tr>
-                    <td>
+                    <td class="permissions-text">
                                                 <div class="table-responsive"><table class="table table-striped table-bordered"><tbody><tr><td>This is a table - it may be styled similarly or differently from any on the front page. This is a <a href="#" class="bbcode_url">link</a> as it would appear here.</td></tr></tbody></table></div><ul><br>
     <li>We're no strangers to love, you know the rules and so do I </li><li>A full commitment's what I'm thinking of, you wouldn't get this from any other guy</li><li>I just wanna tell you how I'm feeling</li><li>Gotta make you understand</li><li>Never gonna give you up</li><li>Never gonna let you down</li><li>Never gonna run around and desert you</li><li>Never gonna make you cry</li><li>Never gonna say goodbye</li><li>Never gonna tell a lie and hurt you</li></ul>
                                             </td>
@@ -1668,10 +1671,10 @@ Here's a spoiler: <details class="mt-2">
     <!-- End permissions -->
     <div class="col-12 col-md-4">
         
-        <div class="card mt-3">
+        <div class="info-wrapper card mt-3">
             <div class="card-header">Character Info</div>
             <table class="table table-bordered table-card">
-                <tbody><tr>
+                <tr>
                     <td class="w-25 text-right bg-light">Owner:</td>
                     <td><strong><a href="/~Battalia" style="color: #ba8c25;"><span class="fas fa-heart"></span> Battalia</a></strong></td>
                 </tr>
@@ -1689,7 +1692,7 @@ Here's a spoiler: <details class="mt-2">
                     <td class="w-25 text-right bg-light">More Info:</td>
                     <td><a href="#">External Link</a></td>
                 </tr>
-                            </tbody></table>
+                            </table>
         </div>
         
 
@@ -1701,12 +1704,12 @@ Here's a spoiler: <details class="mt-2">
                 
 
         
-        <div class="card mt-3 border-info-muted">
+        <div class="tags card mt-3 border-info-muted">
             <div class="card-header bg-info-muted border-info-muted">Tags</div>
             <div class="card-body">
-                                    <a href="#" class="btn badge badge-info fa-1x mt-1">dragon</a>
-                                    <a href="#" class="btn badge badge-info fa-1x mt-1">cyborg</a>
-                                    <a href="#" class="btn badge badge-info fa-1x mt-1">takeover</a>
+                                    <a href="#" class="tag btn badge badge-info fa-1x mt-1">dragon</a>
+                                    <a href="#" class="tag btn badge badge-info fa-1x mt-1">cyborg</a>
+                                    <a href="#" class="tag btn badge badge-info fa-1x mt-1">takeover</a>
                             </div>
         </div>
         
@@ -2047,3 +2050,4 @@ Here's a spoiler: <details class="mt-2">
   
 
 </body><script src="Art%20Fight%20-%20EidolonEntropy's%20Profile_files/inject.js"></script></html>
+
