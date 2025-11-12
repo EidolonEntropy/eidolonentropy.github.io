@@ -279,7 +279,7 @@ width: 100vw;
 .text-mako {
  color:#00ff97!important
 }
-a.text-danger:focus, a.text-danger:hover {
+a.text-mako:focus, a.text-mako:hover {
  color:rgba(0,255,151,0.75)!important
 }
 
@@ -297,6 +297,7 @@ a.text-danger:focus, a.text-danger:hover {
 .btn.btn-mako,
 .badge-mako {
   color:#00ff97 !important;
+  background: rgba(17,17,17,0.6);
 }
 
 .badge.badge-mako:hover,
@@ -315,9 +316,9 @@ a.text-danger:focus, a.text-danger:hover {
   color:#00ff97;
 }
 
-.btn.btn-outline-danger:hover,
-.btn.btn-outline-danger:focus,
-.btn.btn-outline-danger.active {
+.btn.btn-outline-mako:hover,
+.btn.btn-outline-mako:focus,
+.btn.btn-outline-mako.active {
   background:#00ff97;
   border-color:#00ff97;
 }
@@ -336,5 +337,70 @@ a.text-danger:focus, a.text-danger:hover {
 #mako-select p::selection,
 .cyan-select {
   color: rgba(0,255,151,0.75) !important;
+  background: rgba(255,255,255,0.8) !important;
+}
+
+/* VOXEL SECTION // X */
+.text-vox {
+ color:#0f0!important
+}
+a.text-vox:focus, a.text-vox:hover {
+ color:rgba(0,255,0,0.75)!important
+}
+
+.bg-vox,
+.card-vox,
+.alert-vox {
+ background-color:#0f0!important
+}
+
+.card-outline-vox,
+.card-outline-vox .card-header {
+ border-color:#0f0!important
+}
+
+.btn.btn-vox,
+.badge-vox {
+  color:#0f0 !important;
+  background: rgba(17,17,17,0.6);
+}
+
+.badge.badge-vox:hover,
+.badge.badge-vox:focus,
+.btn-vox:hover,
+.btn-vox:focus,
+.btn-vox.active {
+  background:#0f0 !important;
+  border-color:#0f0;
+  color:#fff!important;
+  text-shadow:none!important
+}
+
+.btn.btn-outline-vox {
+  border-color:#0f0;
+  color:#0f0;
+}
+
+.btn.btn-outline-vox:hover,
+.btn.btn-outline-vox:focus,
+.btn.btn-outline-vox.active {
+  background:#0f0;
+  border-color:#0f0;
+}
+
+#vox-select div::selection,
+#vox-select h1::selection,
+#vox-select li::selection,
+#vox-select i::selection,
+#vox-select h2::selection,
+#vox-select h3::selection,
+#vox-select h4::selection,
+#vox-select h5::selection,
+#vox-select span::selection,
+#vox-select a::selection,
+#vox-select u::selection,
+#vox-select p::selection,
+.green-select {
+  color: rgba(0,255,0,0.75) !important;
   background: rgba(255,255,255,0.8) !important;
 }
