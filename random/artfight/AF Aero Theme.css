@@ -1,0 +1,430 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+This code uses translucent images over solid colors to produce a glassy, frutiger aero look. Changing most background-image properties will ruin the look! However, you can change the base colors of everything.
+
+COLORS:
+Primary: royalblue
+Secondary: #f6bf00
+Tertiary: dimgray
+Links: #0066cc
+SWAP WITH CARE:
+lightgray
+white
+black
+
+This code was designed without many layout changes, so you can copy in the ones you want from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+For other editable items, see below.
+*/
+
+/*BANNER - change this link to change the banner. Supports using a transparent image over a gradient that matches the rest of the page - just remove the comment tags around the following code.*/
+.banner {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/robsheridantex03a.jpg) !important;
+  
+  /*background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+/*This is the background when a transparent image is used for the banner.*/
+.banner-container a {
+  background-color: royalblue;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aeronavbar3.svg);
+  display: block;
+}
+
+/*MAIN PAGE BACKGROUND - this code is designed for an image that fades out into a solid color, like the example. You can change the color it fades out into with the background-color property. Try a Steam background?
+Alternatively, mix and match background attributes for a more typical full page background.*/
+/*This font-family line currently doesn't work as intended. If your font suddenly changes one day and you want it back, remove the -apple-system, system-ui, from the line.*/
+#wrapper {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/poi_master_background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: black;
+  font-family: -apple-system, system-ui, Trebuchet MS;
+}
+
+/*BIO OPTIONS - If you use a snippet that changes the bio, add it here.*/
+
+
+
+
+.banner-container {
+  padding-bottom: 15px;
+  margin-bottom: 0 !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/bannershadowcircfade.svg);
+  background-size: contain;
+  background-color: whitesmoke;
+}
+
+#content {
+  background-color: whitesmoke;
+}
+.artfight-nav, .footer .contain {
+  background-color: royalblue !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+}
+
+#content, .artfight-nav, .banner-container {
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0 !important
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    background-color:transparent !important;
+    height:auto;
+  }
+  .footer .contain {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width:1100px;
+  }
+  .footer .col-md-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .donate-section {
+    padding-left: 15px;
+  }
+  #content {
+    padding-bottom: 160px;
+  }
+}
+
+.card-header, .panel-footer, .profile-header-background {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+  background-color: royalblue !important;
+  color: white;
+}
+.profile-gallery-header {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/bannershadowtrans.svg) !important;
+  background-position: bottom !important;
+  padding-bottom: 15px;
+  margin-bottom: -15px;
+}
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+  background-color: #f6bf00 !important;
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.comments h2 {
+  padding:10px 0 !important;
+  text-indent: 16px;
+}
+
+.card {
+  background-color: white;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
+}
+.table .bg-light {
+  background-color: dimgray !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
+}
+table .bg-light, .table .bg-light .text-secondary, .fa-question-circle, .permissions-subheader {
+  color: #FFF !important;
+  font-weight: 600;
+}
+table td, .profile-header-mobile-status {
+  color: #0C2939;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile-links {
+    max-width: 40%;
+  }
+}
+.profile-followers {
+  min-width: 60%;
+}
+
+.profile-description, .character-description {
+  background-color: lightgray;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scanlinetile.png);
+  padding: 1rem;
+}
+blockquote, .profile-character-permissions, .achievement-panel .card, .profile-description table tr, .profile-characters-permissions tr, #character-content .table-responsive tr {
+  background-color: white !important;
+  border: none !important;
+}
+.profile-header, .profile-gallery-header, .nav-tabs {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.profile-header-normal-status {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigrad.svg);
+  background-color: dimgray;
+  color: white;
+  margin: 0 !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.profile-header.card-header + .profile-header-normal-status {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  padding-bottom: 4rem;
+}
+.profile-header-background, .profile-header.card-header, .profile-gallery-header .card-header {
+  border-radius: 0 !important;
+}
+.nametag {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg) !important;
+  background-color: dimgray !important;
+  border: none !important;
+  color: #FFF;
+}
+.nametag .text-break i, .profile-header.card-header .profile-header-name i {
+  font-style: normal !important;
+  font-weight: 600;
+}
+
+.profile-header-name .element-disabled {
+  color: #FFF !important;
+  opacity: 1 !important;
+}
+.table .bg-light .strong {
+  color: #FFF !important;
+}
+.profile-avatar-wrapper {
+  border: none !important;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/bannershadowtrans.svg);
+  background-position: bottom;
+  background-color: transparent !important;
+}
+.profile-avatar-panel, .profile-avatar-wrapper .card-body {
+  border-radius: .25rem;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scandiaglinetile.png);
+  background-color: white;
+}
+.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu, #character-content .col-12 .card, #character-content .image-display-wrapper .card, .profile-header-mobile-status .card {
+  border: none !important;
+}
+.profile-header-mobile-status p {
+  margin: 0;
+}
+
+.footer a, .artfight-nav .nav-link, .navbar-brand {
+  color: white !important;
+  opacity: 1;
+}
+
+a, a:hover {
+  color: #0066cc;
+}
+.profile-gallery-header a, .profile-gallery-header a:hover, .card-footer a, .card-footer a:hover, .gallery-extra-images a, .gallery-extra-images a:hover {
+  color: #f6bf00;
+}
+
+.footer div {
+  color: lightgray !important;
+  opacity: 1;
+}
+.progress {
+  background: white;
+}
+
+.thumbnail, .icon-character {
+  border-style: solid !important;
+  border-width: 2px !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aeronavbar3.svg);
+}
+.thumbnail:hover {
+  border-style: ridge !important;
+}
+.tooltip-inner {
+  color: #000 !important;
+  background: #FFF !important;
+}
+.tooltip .arrow:before {
+  border-top-color: #FFF;
+}
+@media only screen and (min-width: 768px) {
+  .artfight-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0 !important;
+  }
+  .navbar-nav.ml-auto {
+    margin-left: 0 !important;
+  }
+  .navbar-nav.mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+  .navbar .nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0 !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/img_nav_divider.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+.navbar .nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.navbar .nav-item:hover, .navbar .nav-item.show {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aeronavbar3.svg) !important;
+}
+.navbar .ml-auto .dropdown {
+  background-image: none;
+}
+.dropdown-menu {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aeronavbar0.svg);
+  background-color: royalblue;
+  margin-top: 0 !important;
+  border-radius: 0
+}
+.dropdown-item {
+  color: white;
+  font-weight: 600;
+}
+.dropdown-header {
+  color: lightgray;
+}
+.dropdown-item:hover {
+  color: #FFF;
+  background-color: rgba(0,0,0,0.3) !important;
+}
+.dropdown-divider {
+  border: none;
+  height: 2px;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/img_nav_divider_horilong.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.badge {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aeronavbar0.svg) !important;
+  background-color: white;
+  color: white
+}
+
+.profile-gallery-header h2, .card-header, .artfight-nav {
+  font-weight: 600;
+}
+
+.sceditor-container, div.sceditor-group {
+  border: none !important;
+  background-color: white;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg) !important;
+}
+div.sceditor-toolbar  {
+  background-color: royalblue !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg) !important;
+}
+.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+  border-top-color: rgba(255,255,255,0.2) !important;
+  border-left-color: rgba(255,255,255,0.2) !important;
+  border-right-color: rgba(0,0,0,0.2) !important;
+  border-bottom-color: rgba(0,0,0,0.2) !important;
+}
+
+.nav-tabs {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scandiaglinetile.png);
+  background-color: #f6bf00;
+  border: none !important;
+  padding-bottom: 2px !important;
+}
+.nav-tabs .nav-item {
+  width: 20%;
+  text-align: center;
+  font-weight: 600;
+}
+.nav-tabs .nav-link.active {
+  border: 1px #f6bf00 solid !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg) !important;
+  color: #FFF !important;
+}
+.nav-tabs .nav-link {
+  border: 1px transparent solid !important;
+  color: white !important;
+  border-radius: 0rem;
+}
+.nav-tabs .nav-link:hover {
+  border: 1px #f6bf00 solid !important;
+  color: #FFF !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
+}
+
+.btn {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
+  background-color: ;
+  color: white !important;
+  font-weight: 600;
+  border: none;
+}
+.btn:hover, .btn.active, .btn:active, .btn:focus {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
+  background-color: ;
+  color: white !important;
+}
+
+.page-link, .disabled .page-link {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+  background-color: white !important;
+  color: black !important;
+  font-weight: 600;
+  border-top-color: rgba(255,255,255,0.2) !important;
+  border-left-color: rgba(255,255,255,0.2) !important;
+  border-right-color: rgba(0,0,0,0.2) !important;
+  border-bottom-color: rgba(0,0,0,0.2) !important;
+}
+.page-item.active .page-link, .page-link:hover {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
+  background-color: #f6bf00 !important;
+  color: white !important;
+}
+
+.comment hr {
+  border-color: #f6bf00;
+}
+.comment .d-none {
+  display: none !important;
+}
+.comment .d-block {
+  display: block !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-tabs .nav-item {
+  width: 100% !important;
+  }
+}
+
+.sitewide-notice, .alert-info {
+  display:none !important;
+}
+.alert {
+  background-color: #f6bf00 !important;
+  color: black !important;
+  border: none;
+  border-radius: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  font-weight: 600;
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://i.imgur.com/JRUsqaW.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: -10px bottom !important;
+}
