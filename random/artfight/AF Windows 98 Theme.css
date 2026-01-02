@@ -4,6 +4,8 @@ CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 Based on Windows 98 and not really intended to be edited.
 Icons from https://win98icons.alexmeub.com/, the medium sized ones. They can be interchanged if desired.
 To change the banner image, change the link in the chunk directly below.
+
+Updated for Character CSS!
 */
 	
 .banner {
@@ -11,7 +13,7 @@ To change the banner image, change the link in the chunk directly below.
   background-position: center;
 }
 
-.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card {
+.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card, #character-content .card, .achievement-panel .card {
   border-radius: 0 !important;
 }
 
@@ -180,7 +182,7 @@ To change the banner image, change the link in the chunk directly below.
 .card-header, .card-footer {
   background-color: #c0c0c0;
 }
-.bg-light {
+.bg-light, .bg-info-muted, .bg-warning-muted {
   background-color: #c0c0c0 !important;
 }
 
@@ -193,20 +195,20 @@ a, a:hover {
 }
 blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   margin: 1rem;
-  border: gray 2px solid !important;
+  border: #555 2px solid !important;
   border-right-color: #eee !important;
   border-bottom-color: #eee !important;
   background: white;
 }
-.profile-description tr, .profile-characters-permissions tr {
+.profile-description tr, .profile-characters-permissions tr, .permissions .table-bordered tr {
   background: white !important;
   color: black;
 }
 .profile-description table {
   margin-bottom: 0;
 }
-.comment .card, .comment {
-  border: gray 2px solid !important;
+.comment .card, .comment, .image-display {
+  border: #555 2px solid !important;
   border-right-color: #eee !important;
   border-bottom-color: #eee !important;
 }
@@ -290,7 +292,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   display: none;
 }
 
-progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions {
+progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions, .profile-header.card-header, .permissions, #character-content .col-12 .card, .gallery-wrapper {
   border: #eee 2px solid !important;
   border-right-color: #555 !important;
   border-bottom-color: #555 !important;
@@ -300,7 +302,7 @@ progress, .profile-gallery-header .card-header, .profile-links .card, .profile-f
   border: none !important;
   background: #808080 !important;
 }
-.profile-header-background {
+.profile-header-background, .profile-header.card-header {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad2.svg) !important;
   background-size: cover !important;
 }
@@ -405,9 +407,13 @@ div.sceditor-group {
 .sitewide-notice, .alert-info {
   display: none !important;
 }
-.alert-success {
+.alert {
   background-color: #c0c0c0 !important;
-  color: white !important;
+  color: black !important;
+  border: #eee 2px solid !important;
+  border-right-color: #555 !important;
+  border-bottom-color: #555 !important;
+  border-radius: 0;
 }
 .achievement-panel img {
 	width: 200px;
