@@ -26,7 +26,7 @@ Updated for character CSS!
   background: rgba(0,0,0,0.3);
 }
 
-.card, .profile-description, .nav-tabs .nav-link, .modal-content, .character-description { {
+.card, .profile-description, .nav-tabs .nav-link, .modal-content, .character-description {
   background-color: #FFDA86;
 }
 .modal tr {
@@ -78,10 +78,10 @@ Updated for character CSS!
 .modal td {
   border-width: 2px;
 }
-.profile-description tr, .profile-characters-permissions tr, .table-striped tr { {
+.profile-description tr, .profile-characters-permissions tr, .table-striped tr {
   background: #E48D32 !important;
 }
-.profile-description table a, .profile-characters-permissions table a, .table-striped a.bbcode_url { {
+.profile-description table a, .profile-characters-permissions table a, .table-striped a.bbcode_url {
   color: #F2EBC1;
 }
 
@@ -191,7 +191,7 @@ hr {
   border-style: dashed;
   border-color: #3A0B16;
 }
-.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .character-description a, .element-disabled, .image-display-credit a { {
+.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .character-description a, .element-disabled, .image-display-credit a {
   color: #BA8C25;
 }
 .comment .d-none .text-center br {
@@ -392,5 +392,6 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
+
 
 
