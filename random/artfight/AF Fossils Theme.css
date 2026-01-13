@@ -5,6 +5,8 @@ This code was designed without many layout changes, so you can copy in the ones 
 Note that if you use anything that relocates the bio, you may need to change a margin-top value for .profile-description within the chunk you copied over. 
 
 See the top entries for customisable pieces.
+
+Updated for character CSS!
 */
 /*BANNER*/
 .banner {
@@ -24,7 +26,7 @@ See the top entries for customisable pieces.
   background: rgba(0,0,0,0.3);
 }
 
-.card, .profile-description, .nav-tabs .nav-link, .modal-content {
+.card, .profile-description, .nav-tabs .nav-link, .modal-content, .character-description { {
   background-color: #FFDA86;
 }
 .modal tr {
@@ -63,7 +65,7 @@ See the top entries for customisable pieces.
   margin-top: -30px;
   margin-bottom: 2px;
 }
-.bg-light, .bg-danger-muted {
+.bg-light, .bg-danger-muted, .bg-warning-muted, .bg-info-muted {
   background-color: #E48D32 !important;
 }
 .table td {
@@ -76,10 +78,10 @@ See the top entries for customisable pieces.
 .modal td {
   border-width: 2px;
 }
-.profile-description tr, .profile-characters-permissions tr {
+.profile-description tr, .profile-characters-permissions tr, .table-striped tr { {
   background: #E48D32 !important;
 }
-.profile-description table a, .profile-characters-permissions table a {
+.profile-description table a, .profile-characters-permissions table a, .table-striped a.bbcode_url { {
   color: #F2EBC1;
 }
 
@@ -155,11 +157,11 @@ See the top entries for customisable pieces.
   }
 }
 
-.profile-description {
+.profile-description, .character-description {
   padding: 15px;
   border-radius: 25px;
 }
-a, .profile-description blockquote a {
+a, blockquote a {
   color: #F2EBC1;
 }
 a:hover {
@@ -167,7 +169,7 @@ a:hover {
   opacity: .75;
   text-decoration: none;
 }
-.profile-header-background .element-disabled, .profile-stats .fa {
+.profile-header .element-disabled, .profile-stats .fa {
   color: #FFDA86 !important;
 }
 blockquote, .comment {
@@ -189,7 +191,7 @@ hr {
   border-style: dashed;
   border-color: #3A0B16;
 }
-.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .element-disabled {
+.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .character-description a, .element-disabled, .image-display-credit a { {
   color: #BA8C25;
 }
 .comment .d-none .text-center br {
@@ -202,19 +204,27 @@ hr {
 .footer a, .footer a:hover, .artfight-nav .nav-link, .navbar-brand {
   color: #FFDA86 !important;
 }
-.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link {
+.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link, .image-display-wrapper a.mh-100 {
   opacity: 1 !important;
 }
-.profile-header-background {
+.profile-header-background, .card-header.profile-header {
   border: 2px dashed #FFDA86 !important;
   border-width: 0px 0px 2px 0px !important;
   border-radius: 25px 25px 0px 0px !important;
   background: #611F00 !important;
 }
-.profile-header-wrapper {
+.profile-header-wrapper, .profile-header.card-header + .profile-header-normal-status {
   background: #E48D32;
   border-radius: 25px;
   padding-bottom: 15px;
+}
+.profile-header.card-header + .profile-header-normal-status {
+  border-radius: 0px 0px 25px 25px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 15px;
+  padding-bottom: 40px;
 }
 .profile-header p {
   margin-bottom: 0.4rem;
@@ -268,9 +278,12 @@ hr {
   border: 2px dashed #FFDA86 !important;
   background: #3A0B16;
   border-radius: 25px;
+  color: #7D0E36;
 }
-.badge {
-  background-color: #3A0B16;
+
+.badge, .tag {
+  background-color: #C4E1F9 !important;
+  border-color: #C4E1F9 !important;
   color: #F2EBC1 !important;
   opacity: 1 !important;
 }
@@ -304,6 +317,26 @@ hr {
 }
 .dropdown-header {
   color: #FFDA86;
+}
+
+.image-display-wrapper .image-pane {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 80%;
+}
+.image-display {
+  margin-top: 0 !important;
+}
+.image-display-wrapper .col-lg-4 {
+  min-width: 100%;
+}
+.gallery .col-4 {
+  max-width: 8.3% !important;
+  margin: auto;
+}
+.gallery img {
+  border: dashed 2px #7D0E36;
+  border-radius: 25px !important;
 }
 
 div.sceditor-toolbar {
@@ -359,3 +392,4 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
+
