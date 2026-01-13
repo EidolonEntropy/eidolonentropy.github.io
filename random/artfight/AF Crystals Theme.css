@@ -5,6 +5,8 @@ This code was designed without many layout changes, so you can copy in the ones 
 Note that if you use anything that relocates the bio, you may need to change a margin-top value for .profile-description within the chunk you copied over. 
 
 See the top entries for customisable pieces.
+
+Updated for character CSS!
 */
 /*BANNER*/
 .banner {
@@ -24,7 +26,7 @@ See the top entries for customisable pieces.
   background: rgba(0,0,0,0.3);
 }
 
-.card, .profile-description, .nav-tabs .nav-link, .modal-content {
+.card, .profile-description, .nav-tabs .nav-link, .modal-content, .character-description {
   background-color: #FFD8E6;
 }
 .modal tr {
@@ -63,7 +65,7 @@ See the top entries for customisable pieces.
   margin-top: -30px;
   margin-bottom: 2px;
 }
-.bg-light, .bg-danger-muted {
+.bg-light, .bg-danger-muted, .bg-warning-muted, .bg-info-muted {
   background-color: #EF62A4 !important;
 }
 .table td {
@@ -76,10 +78,10 @@ See the top entries for customisable pieces.
 .modal td {
   border-width: 2px;
 }
-.profile-description tr, .profile-characters-permissions tr {
+.profile-description tr, .profile-characters-permissions tr, .table-striped tr {
   background: #EF62A4 !important;
 }
-.profile-description table a, .profile-characters-permissions table a {
+.profile-description table a, .profile-characters-permissions table a, .table-striped a.bbcode_url {
   color: #F2EBC1;
 }
 
@@ -155,11 +157,11 @@ See the top entries for customisable pieces.
   }
 }
 
-.profile-description {
+.profile-description, .character-description {
   padding: 15px;
   border-radius: 25px;
 }
-a, .profile-description blockquote a {
+a, blockquote a {
   color: #FFCEDD;
 }
 a:hover {
@@ -167,7 +169,7 @@ a:hover {
   opacity: .75;
   text-decoration: none;
 }
-.profile-header-background .element-disabled, .profile-stats .fa {
+.profile-header .element-disabled, .profile-stats .fa {
   color: #FFD8E6 !important;
 }
 blockquote, .comment {
@@ -189,7 +191,7 @@ hr {
   border-style: dashed;
   border-color: #C4E1F9;
 }
-.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .element-disabled {
+.comment-footer a, .table a, .profile-description a, .profile-characters-permissions a, .character-description a, .element-disabled, .image-display-credit a {
   color: #D35E88;
 }
 .comment .d-none .text-center br {
@@ -202,19 +204,26 @@ hr {
 .footer a, .footer a:hover, .artfight-nav .nav-link, .navbar-brand {
   color: #FFD8E6 !important;
 }
-.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link {
+.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link, .image-display-wrapper a.mh-100 {
   opacity: 1 !important;
 }
-.profile-header-background {
+.profile-header-background, .card-header.profile-header {
   border: 2px dashed #FFD8E6 !important;
   border-width: 0px 0px 2px 0px !important;
   border-radius: 25px 25px 0px 0px !important;
   background: #7D0E36 !important;
 }
-.profile-header-wrapper {
+.profile-header-wrapper, .profile-header.card-header + .profile-header-normal-status {
   background: #EF62A4;
   border-radius: 25px;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
   padding-bottom: 15px;
+}
+.profile-header.card-header + .profile-header-normal-status {
+  margin-top: 0 !important;
+  padding-top: 15px;
+  padding-bottom: 40px;
 }
 .profile-header p {
   margin-bottom: 0.4rem;
@@ -268,12 +277,14 @@ hr {
   border: 2px dashed #FFD8E6 !important;
   background: #C4E1F9;
   border-radius: 25px;
+  color: #7D0E36;
 }
 .alert a {
   color: #7D0E36 !important;
 }
-.badge {
-  background-color: #C4E1F9;
+.badge, .tag {
+  background-color: #C4E1F9 !important;
+  border-color: #C4E1F9 !important;
   color: #7D0E36 !important;
   opacity: 1 !important;
 }
@@ -307,6 +318,27 @@ hr {
 }
 .dropdown-header {
   color: #FFD8E6;
+}
+
+
+.image-display-wrapper .image-pane {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 80%;
+}
+.image-display {
+  margin-top: 0 !important;
+}
+.image-display-wrapper .col-lg-4 {
+  min-width: 100%;
+}
+.gallery .col-4 {
+  max-width: 8.3% !important;
+  margin: auto;
+}
+.gallery img {
+  border: dashed 2px #7D0E36;
+  border-radius: 25px !important;
 }
 
 div.sceditor-toolbar {
