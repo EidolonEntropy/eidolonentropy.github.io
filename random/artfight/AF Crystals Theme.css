@@ -216,11 +216,12 @@ hr {
 .profile-header-wrapper, .profile-header.card-header + .profile-header-normal-status {
   background: #EF62A4;
   border-radius: 25px;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
   padding-bottom: 15px;
 }
 .profile-header.card-header + .profile-header-normal-status {
+  border-radius: 0px 0px 25px 25px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
   margin-top: 0 !important;
   padding-top: 15px;
   padding-bottom: 40px;
@@ -394,3 +395,4 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
+
