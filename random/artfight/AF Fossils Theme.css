@@ -161,7 +161,7 @@ Updated for character CSS!
   padding: 15px;
   border-radius: 25px;
 }
-a, blockquote a {
+a, .profile-description blockquote a {
   color: #F2EBC1;
 }
 a:hover {
@@ -392,6 +392,7 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
+
 
 
 
