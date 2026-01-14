@@ -278,7 +278,10 @@ hr {
   border: 2px dashed #FFDA86 !important;
   background: #3A0B16;
   border-radius: 25px;
-  color: #7D0E36;
+  color: #F2EBC1;
+}
+.alert a {
+  color: #FFDA86 !important;
 }
 
 .badge, .tag {
