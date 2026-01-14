@@ -204,7 +204,7 @@ hr {
 .footer a, .footer a:hover, .artfight-nav .nav-link, .navbar-brand {
   color: #FFD8E6 !important;
 }
-.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link, .image-display-wrapper a.mh-100 {
+.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link, .image-display-wrapper a.mh-100, .profile-header .btn:hover {
   opacity: 1 !important;
 }
 .profile-header-background, .card-header.profile-header {
@@ -395,5 +395,6 @@ progress::-webkit-progress-value {
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
+
 
 
