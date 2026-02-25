@@ -21,10 +21,7 @@
 const wws_stylePath = 'darkly.css';
 const wws_formId = '1FAIpQLScHAuGuvI3ox8mboxdzZRWW7O2sxiPe4i7lGC6Tk9rFYGpjPQ';
 const wws_nameId = '360310354';
-const wws_websiteId = 'null';
 const wws_textId = '529349566';
-const wws_pageId = 'null';
-const wws_replyId = 'null';
 const wws_sheetId = '1p2rlbk0u6j8Ga-LOR2X0cfSQcoLb6lAB1VAh4Lct5gI';
 
 // Misc - Other random settings
@@ -130,5 +127,4 @@ wwc_hiddenIframe = document.getElementById('wwc_hiddenIframe');
 function fixFrame() {
     wwv_submitted = false;
     wwc_hiddenIframe.srcdoc = '';
-    getComments(); // Reload comments after submission
 }
