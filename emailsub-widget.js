@@ -70,6 +70,9 @@ c_cssLink.href = 'consolidated.css';
 document.getElementsByTagName('head')[0].appendChild(c_cssLink);
 
 // HTML Form
+const v_mainHtml = `
+    <div></div>
+`;
 
 // NAME FIELD IS FOR EMAIL
 // TEXT FIELD IS FOR CHECKBOX
