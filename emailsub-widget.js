@@ -119,12 +119,12 @@ wwc_form.appendChild(wwc_pageInput);
 // Add the invisible iFrame to the document for catching the default Google Forms submisson page
 let wwv_submitted = false;
 let wwc_hiddenIframe = document.createElement('iframe');
-wwc_hiddenIframe.id = 'wwc_hiddenIframe'; wwc_hiddenIframe.name = 'wwc_hiddenIframe'; wwc_hiddenIframe.style.display = 'none'; wwc_hiddenIframe.setAttribute('onload', 'if(wwv_submitted){fixFrame()}');
+wwc_hiddenIframe.id = 'wwc_hiddenIframe'; wwc_hiddenIframe.name = 'wwc_hiddenIframe'; wwc_hiddenIframe.style.display = 'none'; wwc_hiddenIframe.setAttribute('onload', 'if(wwv_submitted){wwfixFrame()}');
 wwc_form.appendChild(wwc_hiddenIframe);
 wwc_hiddenIframe = document.getElementById('wwc_hiddenIframe');
 
 // Fix the invisible iFrame so it doesn't keep trying to load stuff
-function fixFrame() {
+function wwfixFrame() {
     wwv_submitted = false;
     wwc_hiddenIframe.srcdoc = '';
     getEmailsub(); // Reload comments after submission
@@ -145,4 +145,6 @@ function getEmailsub() {
         document.getElementById(`entry.${wws_websiteId}`).value = '';
         document.getElementById(`entry.${wws_textId}`).value = '';
     }
+	
+    wwc_submitButton.disabled = false // Now that everything is done, re-enable the submit button
 }
