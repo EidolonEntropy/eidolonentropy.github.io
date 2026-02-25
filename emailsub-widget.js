@@ -70,18 +70,18 @@ wwc_cssLink.href = 'consolidated.css';
 document.getElementsByTagName('head')[0].appendChild(wwc_cssLink);
 
 // HTML Form
-const v_mainHtml = `
+const wwv_mainHtml = `
     <div id="wwc_inputDiv">
-        <form id="wwc_form" onsubmit="wwc_submitButton.disabled = true; v_submitted = true;" method="post" target="wwc_hiddenIframe" action="https://docs.google.com/forms/d/e/${wws_formId}/formResponse"></form>
+        <form id="wwc_form" onsubmit="wwc_submitButton.disabled = true; wwv_submitted = true;" method="post" target="wwc_hiddenIframe" action="https://docs.google.com/forms/d/e/${wws_formId}/formResponse"></form>
     </div>
 `;
 
 // NAME FIELD IS FOR EMAIL
 // TEXT FIELD IS FOR CHECKBOX
-const v_formHtml = `
+const wwv_formHtml = `
     <div id="wwc_nameWrapper" class="c-inputWrapper">
         <label class="c-label c-nameLabel" for="entry.${wws_nameId}">${wws_nameFieldLabel}</label>
-        <input class="c-input c-nameInput" placeholder="..." name="entry.${wws_nameId}" id="entry.${wws_nameId}" type="text" maxlength="${wws_maxLengthName}" required>
+        <input class="c-input c-nameInput" placeholder="..." name="entry.${wws_nameId}" id="entry.${wws_nameId}" type="text" required>
     </div>
 	
 	<div id="ww_textWrapper" class="c-inputWrapper">
@@ -93,17 +93,17 @@ const v_formHtml = `
 `;
 
 // Insert main HTML to page
-document.getElementById('ww_widget').innerHTML = v_mainHtml;
+document.getElementById('ww_widget').innerHTML = wwv_mainHtml;
 const wwc_form = document.getElementById('wwc_form');
-if (wws_commentsOpen) {wwc_form.innerHTML = v_formHtml} 
+if (wws_commentsOpen) {wwc_form.innerHTML = wwv_formHtml} 
 else {wwc_form.innerHTML = wws_closedCommentsText}
 
 // Initialize misc things
 const wwc_container = document.getElementById('wwc_container');
-let v_pageNum = 1;
-let v_amountOfPages = 1;
-let v_commentMax = 1;
-let v_commentMin = 1;
+let wwv_pageNum = 1;
+let wwv_amountOfPages = 1;
+let wwv_commentMax = 1;
+let wwv_commentMin = 1;
 
 // The fake button is just a dummy placeholder for when comments are closed
 let wwc_submitButton;
@@ -111,24 +111,24 @@ if (wws_commentsOpen) {wwc_submitButton = document.getElementById('wwc_submitBut
 else {wwc_submitButton = document.createElement('button')}
 
 // Add invisible page input to document
-let v_pagePath = window.location.pathname;
-if (wws_includeUrlParameters) {v_pagePath += window.location.search}
-if (wws_fixRarebitIndexPage && v_pagePath == '/') {v_pagePath = '/?pg=1'}
+let wwv_pagePath = window.location.pathname;
+if (wws_includeUrlParameters) {wwv_pagePath += window.location.search}
+if (wws_fixRarebitIndexPage && wwv_pagePath == '/') {wwv_pagePath = '/?pg=1'}
 const wwc_pageInput = document.createElement('input');
-wwc_pageInput.value = v_pagePath; wwc_pageInput.type = 'text'; wwc_pageInput.style.display = 'none';
+wwc_pageInput.value = wwv_pagePath; wwc_pageInput.type = 'text'; wwc_pageInput.style.display = 'none';
 wwc_pageInput.id = 'entry.' + wws_pageId; wwc_pageInput.name = wwc_pageInput.id; 
 wwc_form.appendChild(wwc_pageInput);
 
 // Add the invisible iFrame to the document for catching the default Google Forms submisson page
-let v_submitted = false;
+let wwv_submitted = false;
 let wwc_hiddenIframe = document.createElement('iframe');
-wwc_hiddenIframe.id = 'wwc_hiddenIframe'; wwc_hiddenIframe.name = 'wwc_hiddenIframe'; wwc_hiddenIframe.style.display = 'none'; wwc_hiddenIframe.setAttribute('onload', 'if(v_submitted){fixFrame()}');
+wwc_hiddenIframe.id = 'wwc_hiddenIframe'; wwc_hiddenIframe.name = 'wwc_hiddenIframe'; wwc_hiddenIframe.style.display = 'none'; wwc_hiddenIframe.setAttribute('onload', 'if(wwv_submitted){fixFrame()}');
 wwc_form.appendChild(wwc_hiddenIframe);
 wwc_hiddenIframe = document.getElementById('wwc_hiddenIframe');
 
 // Fix the invisible iFrame so it doesn't keep trying to load stuff
 function fixFrame() {
-    v_submitted = false;
+    wwv_submitted = false;
     wwc_hiddenIframe.srcdoc = '';
     getComments(); // Reload comments after submission
 }
