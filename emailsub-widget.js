@@ -39,7 +39,7 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
 const s_widgetTitle = 'Leave A Comment';
-const s_nameFieldLabel = 'Name';
+const s_nameFieldLabel = 'Email';
 const s_websiteFieldLabel = 'Your Site';
 const s_textFieldLabel = '';
 const s_submitButtonLabel = 'Submit';
@@ -70,24 +70,17 @@ c_cssLink.href = 'consolidated.css';
 document.getElementsByTagName('head')[0].appendChild(c_cssLink);
 
 // HTML Form
-const v_mainHtml = `
-    <div id="c_inputDiv">
-        <form id="c_form" onsubmit="c_submitButton.disabled = true; v_submitted = true;" method="post" target="c_hiddenIframe" action="https://docs.google.com/forms/d/e/${s_formId}/formResponse"></form>
-    </div>
-    <div id="c_container">${s_loadingText}</div>
-`;
+
 // NAME FIELD IS FOR EMAIL
 // TEXT FIELD IS FOR CHECKBOX
 const v_formHtml = `
-    <h4 id="c_widgetTitle" style="font-family:Goldman, sans-serif;">${s_widgetTitle}</h4>
-	
     <div id="c_nameWrapper" class="c-inputWrapper">
         <label class="c-label c-nameLabel" for="entry.${s_nameId}">${s_nameFieldLabel}</label>
         <input class="c-input c-nameInput" placeholder="..." name="entry.${s_nameId}" id="entry.${s_nameId}" type="text" maxlength="${s_maxLengthName}" required>
     </div>
 	
 	<div id="ww_textWrapper" class="c-inputWrapper">
-		<input class="ww-CHECKBOX" name="entry.${s_textId}" id="entry.${s_textId}">
+		<input type="checkbox" class="ww-CHECKBOX" name="entry.${s_textId}" id="entry.${s_textId}">
 		<label for="entry.${s_textId}"> Remove from list (unsubscribe)</label><br>
 	</div>
 
