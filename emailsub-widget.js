@@ -127,4 +127,22 @@ wwc_hiddenIframe = document.getElementById('wwc_hiddenIframe');
 function fixFrame() {
     wwv_submitted = false;
     wwc_hiddenIframe.srcdoc = '';
+    getEmailsub(); // Reload comments after submission
+}
+
+// Processes comment data with the Google Sheet ID
+function getEmailsub() {
+    // Disable the submit button while comments are reloaded
+    wwc_submitButton.disabled;
+
+    // Reset reply stuff to default
+    wwc_replyingText.style.display = 'none';
+    wwc_replyInput.value = '';
+
+    // Clear input fields too
+    if (wws_commentsOpen) {
+        document.getElementById(`entry.${wws_nameId}`).value = '';
+        document.getElementById(`entry.${wws_websiteId}`).value = '';
+        document.getElementById(`entry.${wws_textId}`).value = '';
+    }
 }
