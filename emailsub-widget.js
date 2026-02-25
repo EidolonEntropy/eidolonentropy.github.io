@@ -95,7 +95,7 @@ const v_formHtml = `
 `;
 
 // Insert main HTML to page
-document.getElementById('c_widget').innerHTML = v_mainHtml;
+document.getElementById('ww_widget').innerHTML = v_mainHtml;
 const c_form = document.getElementById('c_form');
 if (s_commentsOpen) {c_form.innerHTML = v_formHtml} 
 else {c_form.innerHTML = s_closedCommentsText}
