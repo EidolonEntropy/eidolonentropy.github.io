@@ -89,7 +89,7 @@ const v_formHtml = `
 		<label for="entry.${wws_textId}"> Remove from list (unsubscribe)</label><br>
 	</div>
 
-    <input class="btn btn-primary" id="wwc_submitButton" name="wwc_submitButton" type="submit" value="${wws_submitButtonLabel}" disabled>
+    <input class="btn btn-primary" id="wwc_submitButton" name="wwc_submitButton" type="submit" value="${wws_submitButtonLabel}">
 `;
 
 // Insert main HTML to page
