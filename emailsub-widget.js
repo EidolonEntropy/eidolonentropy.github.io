@@ -127,11 +127,11 @@ wwc_hiddenIframe = document.getElementById('wwc_hiddenIframe');
 function wwfixFrame() {
     wwv_submitted = false;
     wwc_hiddenIframe.srcdoc = '';
-    getEmailsub(); // Reload comments after submission
+    ww_getEmailsub(); // Reload comments after submission
 }
 
 // Processes comment data with the Google Sheet ID
-function getEmailsub() {
+function ww_getEmailsub() {
     // Disable the submit button while comments are reloaded
     wwc_submitButton.disabled;
 
