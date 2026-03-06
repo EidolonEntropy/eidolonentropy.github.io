@@ -60,7 +60,7 @@ td, blockquote  {
   background: none !important;
 }
 .footer .contain .row {
-  background-image: url(https://i.imgur.com/5dXuRo7.png) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/w24.png) !important;
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
@@ -69,7 +69,7 @@ td, blockquote  {
   color: white;
 }
 .profile-header-normal-status {
-  background: url(https://i.imgur.com/mU6ofg5.png) no-repeat;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/24vp.png) no-repeat;
   background-position: 99%;
   margin: 0 !important;
   padding-top: 0.5rem;
@@ -190,4 +190,5 @@ progress::-webkit-progress-value {
 }
 .footer .mt-0 {
   background:rgba(0,0,0,0.3);
+
 }
