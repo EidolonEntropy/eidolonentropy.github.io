@@ -61,17 +61,22 @@ background-size: 100% 100%;
 
 <div class="container">
 <div class="center">
-<div class="oof troll" style="height:300px;width:400px;margin:auto;mix-blend-mode:multiply;"></div>
+<div class="oof troll" style="height:300px;width:400px;margin:auto;mix-blend-mode:multiply;" onclick="playAudio()"></div>
 </div>
 </div>
 
 <div class="" style="position:fixed;bottom:10px;left:60px;z-index:-3;">
 	<div class="">
-<audio autoplay>
+<audio autoplay id="song">
   <source src="https://eidolonentropy.art/random/Troll Song.mp3" type="audio/mpeg">
 </audio>
 	</div>
 </div>
 
-
+<script>
+var x = document.getElementById("song");
+function playAudio() {
+  x.play();
+} 
+</script>
 </body></html>
