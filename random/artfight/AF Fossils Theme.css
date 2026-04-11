@@ -35,7 +35,7 @@ Updated for character CSS!
 .card-header, .card-footer, .modal-header, .modal-footer {
   background-color: #E48D32;
 }
-.card, .profile-gallery-header .card-header, .thumbnail img, .modal-content {
+.card, .profile-gallery-header .card-header, .thumbnail img, .modal-content, .connection-gallery img {
   border-radius: 25px !important;
   border: none;
 }
@@ -333,16 +333,18 @@ hr {
 .image-display-wrapper .col-lg-4 {
   min-width: 100%;
 }
-.gallery .col-4 {
+.gallery .col-4, .connection-gallery .col-4 {
   max-width: 8.3% !important;
   margin: auto;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
 }
-.gallery img {
+.gallery img, .connection-gallery .icon-character {
   border: dashed 2px #7D0E36;
   border-radius: 25px !important;
 }
 @media only screen and (max-width: 960px) {
-  .gallery .col-4 {
+  .gallery .col-4, .connection-gallery .col-4 {
     max-width: 50% !important;
   }
 }
