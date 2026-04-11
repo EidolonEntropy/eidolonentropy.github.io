@@ -254,9 +254,9 @@ hr {
   font-style: normal;
   font-weight: bold;
 }
-.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, .comments h2 {
+.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, .comments h2, #character-connections h2.text-center {
   border-radius: 25px;
-  background: #E48D32 !important;
+  background: #EF62A4 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   width: 100% !important;
@@ -264,6 +264,14 @@ hr {
   text-indent: 16px;
   text-align: center;
   font-weight: bold;
+}
+#character-connections {
+  padding-top: 0 !important;
+}
+.character-connection h5 {
+  background-color: #FFD8E6;
+  padding: 0.5rem;
+  border-radius: 25px;
 }
 
 .tooltip-inner {
