@@ -10113,7 +10113,7 @@ h3 {
 }
 
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
 
 .fas,
@@ -10224,7 +10224,7 @@ h3 {
 .fa-light,
 .fat,
 .fa-thin {
-  font-family: 'Font Awesome 6 Pro'; }
+  font-family: 'Font Awesome 6 Free'; }
 
 .fa-duotone,
 .fad,
@@ -14879,7 +14879,7 @@ readers do not read off random characters that represent icons */
   border-width: 0; }
 
 .fa {
-  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900); }
 
 .fas,
@@ -14990,7 +14990,7 @@ readers do not read off random characters that represent icons */
 .fa-light,
 .fat,
 .fa-thin {
-  font-family: 'Font Awesome 6 Pro'; }
+  font-family: 'Font Awesome 6 Free'; }
 
 .fa-duotone,
 .fad,
@@ -21260,11 +21260,11 @@ readers do not read off random characters that represent icons */
  * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-classic: 'Font Awesome 6 Pro';
-  --fa-font-light: normal 300 1em/1 'Font Awesome 6 Pro'; }
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-light: normal 300 1em/1 'Font Awesome 6 Free'; }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 300;
   font-display: block;
@@ -21280,11 +21280,11 @@ readers do not read off random characters that represent icons */
  * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-classic: 'Font Awesome 6 Pro';
-  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Pro'; }
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Free'; }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 400;
   font-display: block;
@@ -21300,11 +21300,11 @@ readers do not read off random characters that represent icons */
  * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-classic: 'Font Awesome 6 Pro';
-  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Pro'; }
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 900;
   font-display: block;
@@ -21320,11 +21320,11 @@ readers do not read off random characters that represent icons */
  * Copyright 2024 Fonticons, Inc.
  */
 :root, :host {
-  --fa-style-family-classic: 'Font Awesome 6 Pro';
-  --fa-font-thin: normal 100 1em/1 'Font Awesome 6 Pro'; }
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-thin: normal 100 1em/1 'Font Awesome 6 Free'; }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: 'Font Awesome 6 Free';
   font-style: normal;
   font-weight: 100;
   font-display: block;
