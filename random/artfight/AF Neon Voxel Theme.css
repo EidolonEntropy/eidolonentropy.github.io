@@ -95,7 +95,7 @@ Updated for Character CSS!
 
 .card, .dropdown-menu.show {
   background: #000;
-  border: 0;
+  border-width: 0;
 }
 #character-content .col-12 .card {
   background-color: rgba(0, 0, 0, 0.7) !important;
