@@ -141,6 +141,9 @@ Updated for Character CSS!
   background-size: 23px;
   background-position: center;
 }
+.navbar-icon-badge {
+  font-size: 10.8px;
+}
 
 .dropdown-menu, .profile-header-buttons .dropdown-toggle:focus, .profile-header-buttons .dropdown-toggle:active {
   background-color: #C0C0C0 !important;
