@@ -1,25 +1,25 @@
 /*
-	CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 	
-	This code has a large layout change which you can easily swap out for another from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
-	Also includes a pagedoll format which is by default commented out.
+This code has a large layout change which you can easily swap out for another from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+Also includes a pagedoll format which is by default commented out.
 	
-	See the top entries for customisable pieces. 
+See the top entries for customisable pieces. 
 	
-	Primary accent (links, borders): #EE6C2F
-	Main background (card body, full page background): #603825
-	Secondary background (headers, dropdowns): #3E261A
-	Tertiary background (navbar, footer, table left, etc, high contrast text): #2C0E00
-	Miscellaneous accent (muted text, some backgrounds): #A2604C
-	Default text color: #DD9F6D
-	Extra accent: #242E2C
+Primary accent (links, borders): #EE6C2F
+Main background (card body, full page background): #603825
+Secondary background (headers, dropdowns): #3E261A
+Tertiary background (navbar, footer, table left, etc, high contrast text): #2C0E00
+Miscellaneous accent (muted text, some backgrounds): #A2604C
+Default text color: #DD9F6D
+Extra accent: #242E2C
 	
-	Works for character CSS!
+Works for character CSS!
 */
 
 /*BANNER - can be removed with background-image: none !important; to just show the brush, or replace with your desired image. You may need to change 'contain' to 'cover' and/or add background-position: center !important;*/
 .banner {
-	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/comedyaccenttest.svg) !important;
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/mysteryaccent.svg) !important;
 	background-size: contain;
 }
 /*BANNER CONTAINER - this controls both the brush at the top of the page and the overlay of the page over the banner. Adjust the last two values if you don't want the overlap. Remove the image link to remove the brush.*/
@@ -45,32 +45,32 @@
 	color: #DD9F6D;
 }
 
-/*CUSTOM PFP/PAGEDOLL VERSION - remove comment tags to activate. Exchange image link for desired image. You shouldn't need to touch this beyond that*/
+/*CUSTOM PFP/PAGEDOLL VERSION - remove comment tags to activate. Exchange image link for desired image. You may need to change the background-size value if your image isn't square*/
 /*
-	@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	.profile-avatar-wrapper.float-left {
-    display: none !important
+		display: none !important
 	}
 	.profile-header-name {
-	display: inline-block;
-    background: url(https://images.artfight.net/2026/M_SmallO.png) no-repeat !important;
-	background-size: auto 85% !important;
-    border: none;
-	padding-top: 160px;
-    background-position: top !important;
-    margin-top: -160px !important;
+		display: inline-block;
+		background: url(https://images.artfight.net/2026/M_SmallO.png) no-repeat !important;
+		background-size: 180px !important; 
+		border: none;
+		padding-top: 160px;
+		background-position: top !important;
+		margin-top: -160px !important;
 	}
 	.profile-header-background {
-	margin-top: 3rem;
+		margin-top: 3rem;
 	}
 	.profile-header-buttons {
-	margin-top: -3.2rem;
+		margin-top: -3.2rem;
 	}
-	}
+}
 */
 /*END CUSTOM PFP*/
 
-/*LAYOUT CHANGE - remove this entire section to revert the layout, or replace it with another snippet*/
+/*LAYOUT CHANGE - remove this entire section to revert the layout, or replace it with another snippet. You may need to adjust some notated values*/
 @media only screen and (min-width: 1288px) {
 	.profile-attacks-header + .row, .profile-defenses-header + .row {
 		width:27%;
@@ -108,11 +108,10 @@
 	}
 	.profile-description {
 		width: 60%;
-		max-height: 720px; /*Change this value if your Links box causes the right side to be too short/too long*/
+		height: 830px; /*Change this value if your columns are poorly aligned or your Defenses moved to the side*/
 		overflow: auto;
 		float: left;
 		padding-top: 10px;
-		min-height: 26vw
 	}
 	.profile-links {
 		min-width: 100%;
@@ -422,6 +421,8 @@ progress::-webkit-progress-value {
 	}
 	.profile-header-buttons {
 		border: 4px double #EE6C2F;
+		min-height: 200px;
+		background-color: #2C0E00;
 	}
 }
 
@@ -440,4 +441,3 @@ progress::-webkit-progress-value {
 	background-repeat: no-repeat !important;
 	background-position: 0% 100% !important;
 }
-
