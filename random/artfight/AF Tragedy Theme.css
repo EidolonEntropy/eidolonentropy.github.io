@@ -126,6 +126,9 @@ Works for character CSS!
 	.profile-stats, .profile-characters, .profile-attacks, .profile-defenses {
 		margin-top: 1rem;
 	}
+	.profile-header-background .profile-header-buttons {
+		min-height: 210px;
+	}
 }
 @media only screen and (min-width: 768px) {
 	.nav-tabs.my-3 {
@@ -421,7 +424,6 @@ progress::-webkit-progress-value {
 	}
 	.profile-header-buttons {
 		border: 4px double #4C9C9F;
-		min-height: 200px;
 		background-color: #0A1B25;
 	}
 }
