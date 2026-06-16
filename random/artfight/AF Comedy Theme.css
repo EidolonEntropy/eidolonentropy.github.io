@@ -1,0 +1,443 @@
+/*
+	CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+	
+	This code has a large layout change which you can easily swap out for another from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+	Also includes a pagedoll format which is by default commented out.
+	
+	See the top entries for customisable pieces. 
+	
+	Primary accent (links, borders): #EE6C2F
+	Main background (card body, full page background): #603825
+	Secondary background (headers, dropdowns): #3E261A
+	Tertiary background (navbar, footer, table left, etc, high contrast text): #2C0E00
+	Miscellaneous accent (muted text, some backgrounds): #A2604C
+	Default text color: #DD9F6D
+	Extra accent: #242E2C
+	
+	Works for character CSS!
+*/
+
+/*BANNER - can be removed with background-image: none !important; to just show the brush, or replace with your desired image. You may need to change 'contain' to 'cover' and/or add background-position: center !important;*/
+.banner {
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/comedyaccenttest.svg) !important;
+	background-size: contain;
+}
+/*BANNER CONTAINER - this controls both the brush at the top of the page and the overlay of the page over the banner. Adjust the last two values if you don't want the overlap. Remove the image link to remove the brush.*/
+.banner-container {
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/brushstroke1.svg);
+	background-size: 1400px;
+	background-position: center -30px;
+	background-repeat: repeat-x;
+	height: 500px;
+	margin-bottom: -330px !important;
+}
+/*CONTENT - contains the bottom brush. Remove image link to remove*/
+#content {
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/brushstroke3.svg);
+	background-size: 1300px;
+	background-repeat: repeat-x;
+	background-position: center 108%;
+}
+/*WRAPPER - full page background with color and translucent texture. Can be replaced with a tiling background of your choice, or another form of background with additional properties*/
+#wrapper {
+	background-color: #603825;
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/diamondbg.svg);
+	color: #DD9F6D;
+}
+
+/*CUSTOM PFP/PAGEDOLL VERSION - remove comment tags to activate. Exchange image link for desired image. You shouldn't need to touch this beyond that*/
+/*
+	@media only screen and (min-width: 768px) {
+	.profile-avatar-wrapper.float-left {
+    display: none !important
+	}
+	.profile-header-name {
+	display: inline-block;
+    background: url(https://images.artfight.net/2026/M_SmallO.png) no-repeat !important;
+	background-size: auto 85% !important;
+    border: none;
+	padding-top: 160px;
+    background-position: top !important;
+    margin-top: -160px !important;
+	}
+	.profile-header-background {
+	margin-top: 3rem;
+	}
+	.profile-header-buttons {
+	margin-top: -3.2rem;
+	}
+	}
+*/
+/*END CUSTOM PFP*/
+
+/*LAYOUT CHANGE - remove this entire section to revert the layout, or replace it with another snippet*/
+@media only screen and (min-width: 1288px) {
+	.profile-attacks-header + .row, .profile-defenses-header + .row {
+		width:27%;
+		float:left;
+		margin-left: 1%;
+		margin-bottom: 1.5vw;
+	}
+	.profile-defenses-header, .profile-attacks-header {
+		float:left;
+		width: 10%;
+		overflow:hidden;
+		margin-left: 15px;
+	}
+	.profile-attacks-header .card-header, .profile-defenses-header .card-header {
+		padding: 0;
+	}
+	.profile-attacks-header h2, .profile-defenses-header h2 {
+		text-indent: 1rem;
+	}
+	.profile-attacks-header .profile-gallery-header-link a, .profile-defenses-header .profile-gallery-header-link a {
+		margin-left: -50% !important;
+		font-size: 0;
+		height: 80px;
+		width: 400px !important;
+		display: block;
+	}
+	.profile-defenses-header {
+		clear:right;
+	}
+	.profile-characters-header {
+		clear: both;
+	}
+	.profile-gallery-attack, .profile-gallery-defense {
+		padding: 0 !important;
+	}
+	.profile-description {
+		width: 60%;
+		max-height: 720px; /*Change this value if your Links box causes the right side to be too short/too long*/
+		overflow: auto;
+		float: left;
+		padding-top: 10px;
+		min-height: 26vw
+	}
+	.profile-links {
+		min-width: 100%;
+		margin-right: -15px !important;
+	}
+	.profile-followers {
+		margin-top: -1%;
+		margin-bottom: 2%;
+		min-width: 100% !important;
+		margin-right: -15px !important;
+	}
+	.profile-stats, .profile-characters, .profile-attacks, .profile-defenses {
+		margin-top: 1rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.nav-tabs.my-3 {
+		float: left;
+		display: block;
+		margin-top: -190px !important;
+		width: 15%;
+		margin-bottom: 0 !important;
+		padding-bottom: 1px;
+	}
+	.profile-header {
+		float: right;
+		width: 84%;
+	}
+	.profile-header-button {
+		display: block !important;
+	}
+	.profile-header-button .btn {
+		width: 15vw;
+	}
+	.profile-avatar-wrapper {
+		float: none !important;
+		display: inline-block !important;
+		margin-top: -50px
+	}
+	.profile-header-normal-status p, .profile-normal-header {
+		text-align: center;
+		margin-bottom: 0.4rem;
+	}
+	.profile-header.card-header + .profile-header-normal-status {
+		text-align: center;
+		clear: right;
+		margin-bottom: 20px;
+	}
+	.profile-header-normal-status {
+		margin-top: 0 !important;
+	}
+	.connection-gallery .col-4 {
+		max-width: 16.6%;
+	}
+}
+.nav-tabs .nav-item {
+	width: 100% !important;
+	text-align: center;
+}
+.profile-body, .profile-stats, .profile-characters, .profile-attacks, .profile-defenses, #character-content {
+	clear: both;
+}
+/*END LAYOUT CHANGE*/
+
+
+
+/*BEGIN THEMING - you shouldn't need to touch anything beyond this point unless you wish to fine tune the coloring*/
+.card {
+	background-color: transparent !important;
+	border-width: 4px;
+	border-style: double;
+	border-color: #EE6C2F;
+	border-radius: 0;
+}
+.card-header, .card-footer, .modal-content {
+	background-color: #3E261A;
+	font-variant: small-caps;
+	border: none !important;
+}
+.bg-danger-muted, .bg-warning-muted, .bg-info-muted, .table-striped tr {
+	background-color: #3E261A !important;
+}
+.border-danger-muted, .border-warning-muted, .border-info-muted {
+	border-color: #EE6C2F !important;
+}
+.card-body, .table {
+	background-color: #603825;
+}
+.image-display {
+	background-color: #603825 !important;
+}
+.bg-light, .artfight-nav, .footer .contain {
+	background-color: #2C0E00 !important;
+	color: #A2604C;
+}
+.footer .donate-section div {
+	color: #A2604C;
+}
+.table td, .modal-header, .modal-content .table-striped th, .modal-footer {
+	border-color: #2C0E00;
+	color: #DD9F6D;
+}
+.alert {
+	background-color: #2C0E00;
+	color: #DD9F6D;
+	border: 4px double #EE6C2F;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+a, .footer a, .nametag .fa-bookmark, .alert a {
+	color: #EE6C2F;
+}
+a:hover, .footer a:hover, .social a:hover i {
+	color: #EE6C2F;
+	opacity: .75;
+	text-decoration: none;
+}
+.banner-container a, .avatar-dropdown div, .profile-avatar-wrapper a, .comment .flex-shrink-0 .d-flex, .page-link, .image-display-wrapper a.mh-100, .profile-header .btn:hover, .thumbnail:hover, .icon-character:hover, .nav-tabs a:hover, .badge:hover, .dropdown-item:hover {
+	opacity: 1 !important;
+}
+.element-disabled, .text-muted, .fa-question-circle, .navbar-brand {
+	opacity: 1;
+	color: #A2604C !important;
+}
+
+.thumbnail {
+	border-color: inherit !important;
+}
+.thumbnail:hover {
+	border-width: 4px;
+	border-style: solid;
+}
+.profile-header .icon-user, .icon-character {
+	border-radius: 0;
+	border-style: solid;
+}
+
+.btn, .nav-tabs.my-3 .nav-link {
+	background: #2C0E00 !important;
+	border-color: #2C0E00 !important;
+	color: #DD9F6D !important;
+	font-weight: bold;
+	border-radius: 0;
+}
+.btn:hover, .btn.active, .btn:active, .btn:focus, .nav-tabs.my-3 .nav-link:hover {
+	background: #EE6C2F !important;
+	border-color: #EE6C2F !important;
+	color: #2C0E00 !important;
+}
+.nav-tabs.my-3 {
+	border: 4px double #EE6C2F;
+}
+
+.dropdown-menu {
+	background-color: #3E261A;
+	border: 4px double #EE6C2F;
+	border-radius: 0;
+}
+.dropdown-item, .character-connection {
+	color: #DD9F6D;
+}
+.dropdown-item:hover {
+	color: #EE6C2F;
+	background-color: #603825;
+}
+.dropdown-header, .artfight-nav .nav-link {
+	color: #A2604C !important;
+	font-weight: bold;
+}
+hr, .dropdown-divider {
+	border-color: #242E2C;
+	border-style: double;
+	border-width: 0;
+	border-top-width: 3px !important;
+}
+.achievement-panel .card-body .card {
+	border-color: #242E2C !important;
+}
+
+.page-link, .disabled .page-link {
+	border: none !important;
+	background-color: #3E261A !important;
+	color: #DD9F6D !important;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.page-item.active .page-link, .page-link:hover {
+	border: none !important;
+	background-color: #603825 !important;
+	color: #EE6C2F !important;
+}
+.badge {
+	background-color: #EE6C2F;
+	color: #2C0E00;
+}
+
+.tooltip-inner {
+	color: #DD9F6D !important;
+	background: #242E2C !important;
+	font-variant: small-caps
+}
+.tooltip .arrow:before {
+	border-top-color: #242E2C;
+}
+
+.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
+	text-align: center;
+	font-variant: small-caps;
+}
+.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, .comments h2, #character-connections h2.text-center {
+	background-color: #3E261A;
+	border: 4px double #EE6C2F;
+	font-variant: small-caps;
+	margin-top: 0 !important;
+	width: 100% !important;
+	padding: 10px 0 !important;
+	text-indent: 16px;
+	text-align: center;
+}
+.profile-defenses-title {
+	display: block;
+	width: 100%;
+}
+.defense-toggle {
+	float: right;
+	margin-top: -58px !important;
+	padding-right: 10px;
+}
+.profile-defenses .d-flex.align-items-center {
+	display: block !important;
+}
+.profile-header-normal-status, .profile-header-mobile-status, .btn, .nav-item, .comment .ml-3.flex-shrink-0 a, .footer .contain, .nametag {
+	font-variant: small-caps;
+}
+.nametag i {
+	font-style: normal;
+}
+.nametag {
+	border: none !important;
+}
+.modal-content {
+	border: 4px double #EE6C2F !important;
+	border-radius: 0;	
+}
+
+.progress, .footer .mt-0 {
+	background-color: #DD9F6D;
+}
+.profile-overall-stats .progress-bar, .profile-description .progress-bar,
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+	background-color: #242E2C !important;
+	color: #A2604C;
+}
+
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar {
+	border: 4px double #EE6C2F !important;
+	border-radius: 0 !important;
+}
+.fr-help-modal table tbody tr, .fr-modal-head {
+	border-color: #EE6C2F !important;
+}
+.fr-toolbar, .fr-second-toolbar, .fr-tabs {
+	background: #3E261A !important;
+	color: #DD9F6D !important;
+}
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body {
+	background: #603825 !important;
+}
+.CodeMirror div, .fr-wrapper .fr-element {
+	color: white;
+}
+.fr-wrapper .fr-element {
+	color: #DD9F6D !important;
+}
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab {
+	background: #242E2C !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+	background: #EE6C2F !important;
+	border-color: #EE6C2F !important;
+}
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active  {
+	background-color: #3E261A !important;
+	color: #EE6C2F !important;
+}
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter {
+	color: #DD9F6D !important;
+}
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+	background: #603825 !important;
+	color: #DD9F6D !important;
+}
+.fr-wrapper, .fr-newline {
+	background: none !important;
+	border-top: none !important;
+	border-bottom: none !important;
+}
+
+@media only screen and (min-width: 1288px) {
+	.profile-attacks-header h2, .profile-defenses-header h2 {
+		color: #EE6C2F;
+	}
+	.profile-attacks-header:hover h2, .profile-defenses-header:hover h2 {
+		opacity: .75;
+	}
+	.profile-header-buttons {
+		border: 4px double #EE6C2F;
+	}
+}
+
+/*keep this at the bottom Or Else*/
+.profile-header.card-header, .profile-header-background {
+	background: none !important;
+	border: none !important;
+	font-variant: small-caps;
+}
+
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain {
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: 0% 100% !important;
+}
+
