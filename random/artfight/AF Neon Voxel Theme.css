@@ -4,7 +4,7 @@ CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 Primary color: #000
 Secondary color: #0F0
 Hover colors are the same RGB values as the non-hover color and are controlled by 0.75 opacity instead of color.
-Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+Some sample background/banner options are available here: https://filegarden.com/users/65da1083e831cd5091fbd87b/garden/#acdH463f6w5_tdgN
 
 Updated for Character CSS!
 */
@@ -317,7 +317,7 @@ progress::-webkit-progress-value {
   border: 1px solid #0F0;
 }
 .footer .contain {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.png) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.svg) !important;
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
