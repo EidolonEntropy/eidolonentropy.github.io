@@ -435,11 +435,18 @@ progress::-webkit-progress-value {
 	font-variant: small-caps;
 }
 
+.donate-wormston {
+  background-image: url(https://images.artfight.net/2026/T_SmallO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 46px;
+  background-position: center;
+}
 .achievement-panel img {
 	width: 200px;
 }
 .footer .contain {
-	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.png) !important;
+	background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.svg) !important;
 	background-repeat: no-repeat !important;
 	background-position: 0% 100% !important;
 }
