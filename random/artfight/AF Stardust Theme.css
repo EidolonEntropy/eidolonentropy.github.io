@@ -1,7 +1,7 @@
 /*
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 
-This code was designed without many layout changes, so you can copy in the ones you want from this document: https://docs.google.com/document/d/16kgp1jjPUDCQoAzhALCx2xNpbJPqWQTXzO3RvKws7Sw/edit?usp=sharing
+This code was designed without many layout changes, so you can copy in the ones you want from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
 Note that if you use anything that relocates the bio, you must remove the chunk notated below!
 
 See the top entries for customisable pieces.
@@ -237,7 +237,7 @@ color:white !important
 	width: 200px;
 }
 .footer .contain .row {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/1xx.png) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/1xx.svg) !important;
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 
