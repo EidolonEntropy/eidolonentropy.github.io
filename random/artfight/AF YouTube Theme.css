@@ -319,7 +319,7 @@ For other editable items, see below.
 .footer .donate-section div, .table, .dropdown-item, .fr-modal-body, .fr-modal-head, .modal-header, .alert {
   color: black;
 }
-.text-muted, .fr-modal-body td {
+.text-muted, .element-disabled, .fr-modal-body td {
   color: black !important;
   opacity: 1;
 }
