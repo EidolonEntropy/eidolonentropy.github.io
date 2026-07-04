@@ -1,0 +1,534 @@
+/*
+CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
+
+A theme inspired by the early UI design of YouTube circa 2006. Thank you @AtomicOperations!
+
+COLORS:
+Headers: #CCC
+Containers: #EEE
+Light Accents: #DDD
+Dark Accents: #999
+Links: #03C
+
+Unselected Tab: #BCE
+Normal Buttons: #00C
+Danger Buttons: #C00
+Other Buttons: #AAAA44
+
+SWAP WITH CARE:
+white
+black
+
+The layout is not very piecewise, but the upper main profile can be swapped with items from here: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+For other editable items, see below.
+*/
+.wrapper, .dummy-class {}
+
+@media only screen and (min-width: 900px) {
+  /*If your bio feels too short/too long, change this value!*/
+  .profile-description, .profile-description .fr-view {   
+    max-height: 980px;
+  }
+}
+
+/*BANNER - for true old YouTube vibes, add display: none; to remove the banner entirely*/
+/*.banner {
+  background-image: url() !important;
+  background-position: center !important;
+}*/
+
+/*MAJOR LAYOUT CHANGE - remove or replace everything between these comments to change layout*/
+@media only screen and (min-width: 900px) {
+  .profile-header-wrapper {
+    float: left;
+    width: 34% !important;
+    margin-right: 1% !important;
+  }
+  .profile-header-background {
+    min-height: 196px;
+  }
+  .profile-header-name strong {
+    display: block;
+    padding-top: 10px;
+  }
+  /*If and ONLY if your layout gets all wonky with accessibility icons enabled, use this to nuke the problematic one*/
+  /*.profile-header-name a span + span {
+    display: none;
+  }*/
+  .profile-header-buttons {
+    float: none !important;
+    margin-top: 40px;
+  }
+  .profile-header-wrapper .profile-header-name strong {
+    font-size: 20px;
+  }
+  .profile-avatar-wrapper {
+    margin-right: 10px !important;
+  }
+  .profile-description {
+    width: 65% !important;
+    min-height: 400px;
+    float: right;
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    margin-top: -310px;
+  }
+  .profile-description .fr-view {
+    overflow: auto;
+  }
+  .profile-attacks-header {
+    clear: right !important;
+  }
+  .profile-header-normal-status {
+    padding-left: 1.5rem;
+  }
+  .profile-links {
+    margin-right:1%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-followers {
+    margin-bottom:2%;
+    min-width:97% !important;
+    padding: 0;
+  }
+  .profile-stats-title, .profile-characters-title, .profile-attacks-title {
+    text-align: right;
+  }
+  .profile-attacks-title, .profile-defenses-title {
+    margin-bottom: 280px !important;
+  }
+  .nav-tabs .nav-item {
+    width: 20%;
+    text-align: center;
+  }
+  .nav-tabs.my-3 {
+    max-width:1100px;
+    width: 100vw;
+    margin-top: -354px !important;
+    float: right;
+    margin-right: -15px;
+  }
+  .profile-body, .profile-stats, .profile-characters, .profile-attacks, .profile-defenses {
+    margin-top: 60px;
+  }
+  .profile-header.card-header + .profile-header-normal-status {
+    margin-bottom: 85px;
+  }
+  .profile-header.card-header {
+    margin-top: 50px;
+    padding-bottom: 37px !important;
+  }
+  #character-content {
+    margin-top: -60px;
+  }
+  .profile-characters-header, .profile-characters-header + .row {
+    width: 38%;
+    float: left;
+    clear: left !important;
+  }
+  .profile-body + .comments {
+    width: 60%;
+    float: right;
+    clear: right;
+    margin-top: -40px !important;
+  }
+  #content {
+    padding-bottom: 160px;
+    display: table;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .profile-header-name .element-disabled {
+    display: none;
+  }
+}
+/*END LAYOUT CHANGE*/
+
+/*NAVBAR BRAND LOGO - remove to revert, or change link to alter*/
+.artfight-nav .navbar-brand {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/YouTube_Brand_by_AtomicOperations.png);
+  background-repeat: no-repeat;
+  padding-left: 80px !important;
+  padding-bottom: 40px !important;
+  margin-bottom: -10px !important;
+  background-size: contain;
+  font-size: 0;
+}
+.navbar-brand img {
+  display: none;
+}
+/*END NAVBAR BRAND*/
+
+/*PAGE WIDTH SET - USE WITH CARE!*/
+#content, .artfight-nav, .banner-container {
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0 !important
+}
+@media only screen and (min-width: 1000px) {
+  .footer {
+    background-color:transparent !important;
+    height:auto;
+  }
+  .footer .contain {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width:1100px;
+  }
+  .footer .col-md-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .donate-section {
+    padding-left: 15px;
+  }
+}
+
+#wrapper {
+  background-color: white;
+  color: black;
+}
+
+.profile-follower {
+  display: block !important;
+  min-width: 100% !important;
+}
+.nav-tabs.my-3 .nav-link {
+  font-weight: bold;
+  background-color: #BCE;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid white !important;
+}
+.nav-tabs.my-3 .nav-link:hover {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid white !important;
+}
+.nav-tabs.my-3 .nav-item {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 20%;
+  text-align: center;
+}
+.nav-tabs.my-3 .nav-link.active {
+  background-color: #DDD;
+  border-color: #DDD;
+  color: #03C;
+}
+.nav-tabs.my-3 {
+  margin-bottom: 0 !important;
+  border-bottom: 0;
+}
+
+.profile-gallery-character {
+  min-width: 100%;
+}
+.profile-gallery-character .card {
+  max-width: 40%;
+}
+.profile-body div.d-flex.thumbnail-width, .profile-body .thumbnail + .nametag {
+  display: block !important;
+  float: right;
+  min-width: 57%;
+  text-align: left !important;
+  margin-top: 1rem;
+  max-width: 57% !important;
+}
+.profile-body .thumbnail-width .nametag {
+  min-width: 100% !important;
+  text-align: left !important;
+}
+.profile-body .bookmark-character {
+  margin-top: 0.4rem !important;
+  margin-left: 0 !important;
+  width: 25px;
+}
+.profile-characters .nametag a.text-break {
+  white-space: normal !important;
+}
+.profile-gallery-character .nametag {
+  background: none !important;
+  border: none !important;
+}
+.profile-body .thumbnail-width .thumbnail-width i, .profile-gallery-character .thumbnail + .nametag i {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.profile-description .fr-view, .character-description {
+  border: solid 1px #CCC;
+  padding: 1rem;
+}
+.profile-characters-permissions .card-body {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.card-header, .card-footer, .modal-header, .modal-header h4, .modal-footer, .alert {
+  background-color: #CCC;
+  border-color: #CCC;
+  font-weight: bold;
+}
+.card, .modal-body, .table-striped td {
+  background-color: #EEE;
+}
+.card.panel, #character-content .card, #user-tag-list {
+  border-color: #CCC;
+}
+.border-light, .border, .modal-body, .border-danger-muted, .border-info-muted, .border-warning-muted {
+  border-color: #CCC !important;
+}
+.bg-light, .bg-danger-muted, .bg-info-muted, .bg-warning-muted {
+  background-color: #CCC !important;
+}
+.permissions-subheader.bg-light {
+  background-color: #EEE !important;
+}
+.permissions td {
+  border-width: 1px;
+  border-color: #999;
+}
+.profile-gallery-header h2, #character-content .card-header h4, .connections-wrapper .card-header a {
+  font-weight: bold;
+  font-size: 14.4px;
+}
+.card-header a, .card-footer a {
+  font-size: 14.4px;
+  font-weight: normal;
+}
+.profile-header.card-header .profile-header-name a {
+  font-size: larger;
+}
+.artfight-nav {
+  background-color: #DDD !important;
+  color: black;
+}
+.footer .contain {
+  background: white !important;
+  color: black;
+  border-top: 1px solid #999;
+}
+.footer .donate-section div, .table, .dropdown-item, .fr-modal-body, .fr-modal-head, .modal-header, .alert {
+  color: black;
+}
+.text-muted, .fr-modal-body td {
+  color: black !important;
+  opacity: 1;
+}
+.progress, .donate-section .mt-0 {
+  background-color: #EEE;
+}
+.artfight-nav .nav-link, .artfight-nav .navbar-brand {
+  color: #03C !important;
+}
+.artfight-nav .nav-link:hover, .artfight-nav .navbar-brand:hover {
+  text-decoration: underline !important;
+}
+.artfight-nav i, .profile-header-button i {
+  display: none;
+}
+a, a:hover, .footer a, .footer a:hover {
+  color: #03C;
+}
+.profile-characters-header {
+  border-radius: 0;
+  background: none !important;
+  border: none !important;
+}
+.profile-characters-header + .row {
+  background: #EEE;
+  margin-left: 0 !important;
+  border: 1px solid #CCC;
+}
+.thumbnail, .thumbnail:hover, .comment .icon-user, .icon-character {
+  border-radius: 0;
+  border-style: solid;
+}
+.table td {
+  border-color: #999;
+  border-style: dotted;
+}
+.profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, .comments h2, #character-connections h2.text-center {
+  background-color: #DDD !important;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  width: 101% !important;
+  padding: 10px 0 !important;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 3px;
+}
+.comments h2, #character-connections h2.text-center {
+  width: 100% !important;
+}
+.defense-toggle {
+  float: right;
+  padding-right: 10px;
+  margin-top: -46px !important;
+}
+.profile-defenses .d-flex.align-items-center {
+  display: block !important;
+}
+.profile-header-mobile-status .card {
+  background: none !important;
+  border: none !important;
+}
+.profile-header-mobile-status p, .profile-header-mobile-status {
+  margin: 0 !important;
+}
+
+.pagination .page-item, .pagination .page-item.disabled {
+  margin-right: 1px;
+}
+.pagination .page-link {
+  border-radius: 0 !important;
+  background: #DDD !important;
+  border: #999 1px dotted;
+  color: black !important;
+}
+.pagination .page-link:hover {
+  border-style: solid !important;
+  border-left: solid 1px #999 !important;
+}
+
+.dropdown-menu {
+  border: 1px solid #CCC;
+  background-color: white;
+}
+.dropdown-header {
+  color: #999 !important;
+}
+.dropdown-divider, hr {
+  border-top-style: dotted;
+}
+.dropdown-item:hover {
+  background-color: #EEE;
+  color: black;
+}
+
+.btn, .badge {
+  color: white !important;
+  border: 1px solid transparent;
+  font-weight: normal;
+}
+.btn:hover, .tag:hover {
+  border: 1px solid #999 !important;
+}
+.btn-primary, .btn-primary:not(:disabled):not(.disabled).active, .btn-info, .btn-secondary, 
+.tag, .badge-info, .badge-secondary {
+  background: #00C !important;
+}
+.btn-danger, .badge-danger{
+  background: #C00 !important;
+}
+.btn-success, .btn-warning, .badge-success, .badge-warning  {
+  background: #AAAA44 !important;
+}
+.navbar-toggler {
+  background: white;
+}
+
+
+.comment .d-md-block strong {
+  display: none !important;
+}
+.comment .d-md-block {
+  width: 120px !important;
+}
+.comment .d-md-none {
+  display: block !important;
+}
+.comment .card-body .row .col-md-4, .comment .card-body .row .col-md-8 {
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+.comment .card-header, .comment .card {
+  background: none !important;
+  border: none !important;
+}
+.comment .card-header {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+.comment .card-header a {
+  font-weight: bold !important;
+  color: #03C !important;
+}
+
+
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head {
+  border-color: #CCC !important;
+  border-radius: 0 !important;
+}
+.fr-toolbar, .fr-second-toolbar, .fr-tabs {
+  background: #CCC !important;
+  color: black !important;
+}
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body {
+  background: white !important;
+}
+.CodeMirror div, .fr-wrapper .fr-element {
+  color: black;
+}
+.fr-wrapper .fr-element {
+  color: black !important;
+}
+.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab {
+  background: #999 !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: #DDD !important;
+  border-color: #DDD !important;
+}
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active  {
+  background-color: #EEE !important;
+  color: black !important;
+}
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter {
+  color: black !important;
+}
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: white !important;
+  color: black !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-tabs .nav-item {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .nav-tabs .nav-link {
+    border-radius: 0;
+  }
+  .defense-toggle {
+    float: none !important;
+    margin-top: 10px !important;
+  }
+  .banner {
+    margin-bottom: 1rem;
+  }
+  .profile-characters-header + .row {
+    margin-right: 0 !important;
+  }
+}
+
+.sitewide-notice, .alert-info {
+  display:none !important;
+}
+.achievement-panel img {
+	width: 200px;
+}
+.footer .contain .row {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/1xx.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: -10px bottom !important;
+}
