@@ -35,7 +35,7 @@ Updated for character CSS!
 .card-header, .card-footer, .modal-header, .modal-footer {
   background-color: #EF62A4;
 }
-.card, .profile-gallery-header .card-header, .thumbnail img, .modal-content, .connection-gallery img {
+.card.panel, #character-content .card, .profile-gallery-header .card-header, .thumbnail img, .modal-content, .connection-gallery img {
   border-radius: 25px !important;
   border: none;
 }
@@ -242,6 +242,7 @@ hr {
   border-width: 2px !important;
   border-style: dashed !important;
   opacity: 1 !important;
+  border-radius: 30px;
 }
 .thumbnail:hover, .progress {
   background: #EF62A4;
@@ -362,37 +363,55 @@ hr {
   }
 }
 
-div.sceditor-toolbar {
-  color: #7D0E36 !important;
-  background-color: #FFD8E6 !important;
-  border: none;
-  border-radius: 25px 25px 0px 0px;
-  text-align: center;
+.form-group {
+  margin-top: 1rem;
 }
-div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
+.fr-toolbar, .fr-second-toolbar, .fr-wrapper {
+  border-radius: 25px !important;
+  border: dashed 2px #FFD8E6 !important;
+}
+.fr-wrapper {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.fr-help-modal table tbody tr, .fr-modal-head {
+  border-color: #FFD8E6 !important;
+}
+.fr-wrapper, .fr-toolbar, .fr-second-toolbar {
+  border-width: 2px !important;
+}
+.fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-modal-head, .fr-modal-body,
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active {
   background: #EF62A4 !important;
-  border: 1px dashed #FFD8E6 !important;
+  color: #7D0E36 !important;
 }
-.sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
-  border-color: #FFD8E6 !important;
-}
-.sceditor-container {
-  margin-top: 15px;
-  border-style: dashed !important;
-  border-radius: 25px;
-}
-.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input {
   background: #FFD8E6 !important;
+}
+.CodeMirror div, .fr-wrapper .fr-element, .fr-popup label, .fr-toggle-advanced-options {
+  color: #7D0E36;
+}
+.fr-wrapper .fr-element, .fr-box .fr-counter {
   color: #7D0E36 !important;
 }
-.sceditor-color-option:hover {
-  border-color: #7D0E36 !important;
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
+  background: #7D0E36 !important;
 }
-div.sceditor-dropdown * {
-  color: #7D0E36 !important;
-  background: #FFD8E6;
+.fr-more-toolbar {
+  border-radius: 25px !important;
+}
+.fr-newline {
+  display: none !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: #FFD8E6 !important;
   border-color: #FFD8E6 !important;
 }
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: #000 !important;
+  color: #7D0E36 !important;
+}
+
 .donate-wormston {
   background-image: url(https://images.artfight.net/2025/2025_Crystals.png);
   background-size: contain;
