@@ -150,7 +150,7 @@ Updated for Character CSS! Also updated for easy change of the layout!
 .profile-links a, .profile-links .card-header, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title, #character-content .image-pane a {
   color: #62E5F9 !important;
 }
-.profile-followers .card, .profile-overall-stats, .profile-characters-permissions, .comment .card, .modal-dialog, #character-content .card.clearfix, #character-content .image-thumb {
+.profile-followers .card, .profile-overall-stats, .profile-characters-permissions, .comment .card, .modal-dialog, #character-content .card.clearfix, #character-content .image-thumb, #character-connections .card {
   border: 2px #C262F9 solid !important;
 }
 .profile-followers .card-header, .profile-followers .card-footer a, .profile-overall-stats .card-header, .profile-overall-stats td, .profile-characters-permissions .card-header, .profile-characters-permissions a, .comment .element-disabled, .comment a, .modal, .modal tr, #character-content .card.clearfix, #character-content .card.clearfix a {
