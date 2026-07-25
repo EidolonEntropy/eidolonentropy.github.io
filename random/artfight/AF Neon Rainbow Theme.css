@@ -374,7 +374,7 @@ div {
 .sitewide-notice, .alert-info {
   display:none !important;
 }
-.alert-success {
+.alert {
   background-color:#000 !important;
   color:#F97662 !important;
   border: 2px #F97662 solid;
@@ -453,6 +453,3 @@ div {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle {
   background: #F962BF
 }
-
-
-
