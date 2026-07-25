@@ -271,7 +271,7 @@ blockquote, .character-description {
 .fr-wrapper .fr-element {
   color: white !important;
 }
-.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab {
+.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
   background: #0F0 !important;
 }
 .fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
