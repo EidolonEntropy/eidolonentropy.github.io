@@ -312,36 +312,43 @@ progress::-webkit-progress-value {
   width: 85% !important
 }
  
-.sceditor-container, div.sceditor-group {
-  border: none !important;
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head {
+  border-color: #62E5F9 !important;
+  border-radius: 0 !important;
 }
-.sceditor-container iframe, .sceditor-container iframe body, .sceditor-container textarea {
-  color: #62E5F9; !important;
-  background-color: #000 !important;
+.fr-wrapper, .fr-toolbar, .fr-second-toolbar {
+  border-width: 2px !important;
 }
-div.sceditor-toolbar {
-  color: #62E5F9; !important;
-  background-color: #000 !important;
-  border: 1px solid #000 !important;
+.fr-toolbar, .fr-second-toolbar, .fr-tabs {
+  background: #000 !important;
+  color: #62E5F9 !important;
 }
-div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button, .icon-user {
-  background-color: #000 !important;
-}
-.sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
-  border-color: #000 !important;
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body {
   background: #000 !important;
 }
-.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
-  background: #62E5F9; !important;
+.CodeMirror div, .fr-wrapper .fr-element {
+  color: white;
+}
+.fr-wrapper .fr-element {
+  color: white !important;
+}
+.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab {
+  background: #62E5F9 !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: #62E5F9 !important;
+  border-color: #62E5F9 !important;
+}
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active  {
+  background-color: #62E5F9 !important;
   color: #000 !important;
 }
-.sceditor-color-option:hover {
-  border-color: #000 !important;
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter {
+  color: #62E5F9 !important;
 }
-div.sceditor-dropdown * {
-  color: #62E5F9; !important;
-  background: #000;
-  border-color: #62E5F9; !important;
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: #000 !important;
+  color: #62E5F9 !important;
 }
 
 .table-card td {
