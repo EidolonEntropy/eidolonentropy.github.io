@@ -99,8 +99,15 @@ Updated for Character CSS! Also updated for easy change of the layout!
   background:#000 !important;
   color:#99F962 !important
 }
-.profile-header-wrapper {
+.profile-header-wrapper, .profile-header.card-header + .profile-header-normal-status {
   border: #99F962 2px solid;
+}
+.profile-header.card-header {
+  border: #99F962 2px solid !important;
+  border-bottom: 0 !important;
+}
+.profile-header.card-header + .profile-header-normal-status {
+  border-top: 0 !important;
 }
 .follows-you.badge {
   background: #99F962 !important;
@@ -216,11 +223,6 @@ blockquote, .table-bordered td {
 }
 
 
-.comments h2 {
-  color: #62E5F9;
-  border: 2px #62E5F9 solid;
-}
-
 .footer {
   padding-top: 2px;
   background: #F9E862 !important;;
@@ -296,7 +298,10 @@ progress::-webkit-progress-value {
   border-width: 2px;
 }
 
+
 .comments h2 {
+  color: #62E5F9;
+  border: 2px #62E5F9 solid;
   padding:10px 0 !important;
   text-indent: 16px;
 }
@@ -332,7 +337,7 @@ progress::-webkit-progress-value {
 .fr-wrapper .fr-element {
   color: white !important;
 }
-.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab {
+.fr-newline, .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
   background: #62E5F9 !important;
 }
 .fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
