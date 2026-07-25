@@ -362,37 +362,55 @@ hr {
   }
 }
 
-div.sceditor-toolbar {
-  color: #611F00 !important;
-  background-color: #FFDA86 !important;
-  border: none;
-  border-radius: 25px 25px 0px 0px;
-  text-align: center;
+.form-group {
+  margin-top: 1rem;
 }
-div.sceditor-group, div.sceditor-dropdown, div.sceditor-dropdown .button {
+.fr-toolbar, .fr-second-toolbar, .fr-wrapper {
+  border-radius: 25px !important;
+  border: dashed 2px #FFDA86 !important;
+}
+.fr-wrapper {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.fr-help-modal table tbody tr, .fr-modal-head {
+  border-color: #FFDA86 !important;
+}
+.fr-wrapper, .fr-toolbar, .fr-second-toolbar {
+  border-width: 2px !important;
+}
+.fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-modal-head, .fr-modal-body,
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active {
   background: #E48D32 !important;
-  border: 1px dashed #FFDA86 !important;
+  color: #611F00 !important;
 }
-.sceditor-container, .sceditor-color-option, div.sceditor-dropdown {
-  border-color: #FFDA86 !important;
-}
-.sceditor-container {
-  margin-top: 15px;
-  border-style: dashed !important;
-  border-radius: 25px;
-}
-.sceditor-button.active, .sceditor-button:hover, div.sceditor-dropdown .button:hover {
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input {
   background: #FFDA86 !important;
+}
+.CodeMirror div, .fr-wrapper .fr-element, .fr-popup label, .fr-toggle-advanced-options {
+  color: #611F00;
+}
+.fr-wrapper .fr-element, .fr-box .fr-counter {
   color: #611F00 !important;
 }
-.sceditor-color-option:hover {
-  border-color: #611F00 !important;
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
+  background: #611F00 !important;
 }
-div.sceditor-dropdown * {
-  color: #611F00 !important;
-  background: #FFDA86;
+.fr-more-toolbar {
+  border-radius: 25px !important;
+}
+.fr-newline {
+  display: none !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: #FFDA86 !important;
   border-color: #FFDA86 !important;
 }
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: #000 !important;
+  color: #611F00 !important;
+}
+
 .donate-wormston {
   background-image: url(https://images.artfight.net/2025/2025_Fossils.png);
   background-size: contain;
