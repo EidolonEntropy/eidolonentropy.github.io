@@ -35,7 +35,7 @@ Updated for character CSS!
 .card-header, .card-footer, .modal-header, .modal-footer {
   background-color: #EF62A4;
 }
-.card.panel, #character-content .card, .profile-gallery-header .card-header, .thumbnail img, .modal-content, .connection-gallery img {
+.card.panel, #character-content .card, .profile-gallery-header .card-header, .thumbnail img, .modal-content, .connection-gallery img, .profile-avatar-wrapper {
   border-radius: 25px !important;
   border: none;
 }
