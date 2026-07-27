@@ -343,7 +343,7 @@ hr, .dropdown-divider, .progress {
 .table-bordered, .table-bordered td, .table-bordered th, .modal td {
   border: 1px #555 solid !important;
 }
-.profile-links .card-header, .profile-followers .card-header, .border-danger-muted, .card.border-warning-muted, .info-wrapper .card-header, .card-header.bg-warning-muted, .tags .card-header, .modal-header, .modal-body {
+.profile-links .card-header, .profile-followers .card-header, .border-danger-muted, #character-content .card-header, .modal-header, .modal-body {
   border-bottom: 2px #555 solid !important;
 }
 .profile-followers .card-footer {
