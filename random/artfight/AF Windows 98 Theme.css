@@ -213,7 +213,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
 .profile-description table {
   margin-bottom: 0;
 }
-.comment .card, .comment, .image-display, .character-connection .card-body {
+.comment .card, .comment, .image-display, .character-connection .card.card-body {
   border: #555 2px solid !important;
   border-right-color: #eee !important;
   border-bottom-color: #eee !important;
@@ -298,7 +298,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   display: none;
 }
 
-progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions, .profile-header.card-header, .permissions, #character-content .col-12 .card, .gallery-wrapper {
+progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions, .profile-header.card-header, .permissions, #character-content .card.bg-light, .gallery-wrapper {
   border: #eee 2px solid !important;
   border-right-color: #555 !important;
   border-bottom-color: #555 !important;
