@@ -185,7 +185,7 @@ Updated for Character CSS!
 .card-header, .card-footer {
   background-color: #c0c0c0;
 }
-.bg-light, .bg-info-muted, .bg-warning-muted {
+.bg-light, .bg-info-muted, .bg-warning-muted, .bg-danger-muted {
   background-color: #c0c0c0 !important;
 }
 
@@ -313,7 +313,7 @@ progress, .profile-gallery-header .card-header, .profile-links .card, .profile-f
   color: white !important;
   opacity: 1;
 }
-.profile-header-wrapper, .profile-avatar-wrapper, .btn, .btn:hover {
+.profile-header-wrapper, .profile-avatar-wrapper, .btn, .btn:hover, .badge.btn:hover {
   background-color: #c0c0c0;
 }
 .profile-header-normal-status p {
@@ -371,10 +371,6 @@ hr, .dropdown-divider, .progress {
   margin-top:-48px !important;
   padding-right:10px
 }
-
-
-
-
 
 .fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-modal-head, .fr-popup, .fr-dropdown-menu .fr-dropdown-content, .fr-btn-grp {
   border: #eee 2px solid !important;
