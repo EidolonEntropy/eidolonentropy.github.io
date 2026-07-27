@@ -213,7 +213,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
 .profile-description table {
   margin-bottom: 0;
 }
-.comment .card, .comment, .image-display {
+.comment .card, .comment, .image-display, .character-connection .card-body {
   border: #555 2px solid !important;
   border-right-color: #eee !important;
   border-bottom-color: #eee !important;
