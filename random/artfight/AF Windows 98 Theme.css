@@ -13,7 +13,7 @@ Updated for Character CSS!
   background-position: center;
 }
 
-.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card, #character-content .card, .achievement-panel .card, .comments-new *, .fr-popup, .modal-content {
+.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .icon-character, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card, #character-content .card, .achievement-panel .card, .comments-new *, .fr-popup, .modal-content {
   border-radius: 0 !important;
 }
 
@@ -227,7 +227,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.icon-user {
+.icon-user, .icon-character {
   background-color: white;
   border-style: inset;
 }
@@ -343,7 +343,7 @@ hr, .dropdown-divider, .progress {
 .table-bordered, .table-bordered td, .table-bordered th, .modal td {
   border: 1px #555 solid !important;
 }
-.profile-links .card-header, .profile-followers .card-header, .border-danger-muted, .info-wrapper .card-header, .tags .card-header, .modal-header, .modal-body {
+.profile-links .card-header, .profile-followers .card-header, .border-danger-muted, .card.border-warning-muted, .info-wrapper .card-header, .card-header.bg-warning-muted, .tags .card-header, .modal-header, .modal-body {
   border-bottom: 2px #555 solid !important;
 }
 .profile-followers .card-footer {
