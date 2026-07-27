@@ -372,23 +372,66 @@ hr, .dropdown-divider, .progress {
   padding-right:10px
 }
 
-div.sceditor-toolbar, .bg-danger-muted, .profile-defenses .btn-primary {
-  background-color: #c0c0c0 !important;
-}
-div.sceditor-group {
-  background: none !important;
-  border: #eee 1px solid !important;
-  border-right-color: #555 !important;
-  border-bottom-color: #555 !important;
-}
-.sceditor-container {
+
+
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-modal-head, .fr-popup, .fr-dropdown-menu .fr-dropdown-content, .fr-btn-grp {
   border: #eee 2px solid !important;
   border-right-color: #555 !important;
   border-bottom-color: #555 !important;
 }
-.sceditor-button.active, .sceditor-button:hover {
-  background: none;
+.fr-btn-grp {
+  margin: 2px !important;
 }
+.fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-dropdown-menu .fr-dropdown-content, .fr-popup.fr-above, .fr-modal-head, .fr-modal-wrapper {
+  background: #c0c0c0 !important;
+  color: black !important;
+  border-radius: 0 !important;
+}
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-body {
+  background: white !important;
+}
+.CodeMirror div, .fr-wrapper .fr-element {
+  color: black;
+}
+.fr-wrapper .fr-element, .fr-modal td {
+  color: black !important;
+}
+.fr-newline, .fr-separator {
+  display: none !important;
+}
+.fr-btn-wrap .fr-btn:hover {
+  border: none !important;
+}
+.fr-btn, .fr-popup .fr-action-buttons .fr-command, .fr-above .fr-separator {
+  margin: 0 !important;
+  background: none !important;
+}
+.fr-popup .fr-action-buttons .fr-command:hover {
+  text-decoration: underline !important;
+}
+.fr-btn i, .fr-btn .fr-svg, .fr-tabs .fr-btn img, .fr-popup .fr-icon-container .fr-command img {
+  border: 1px dotted transparent !important;
+}
+.fr-btn.fr-active .fr-svg, .fr-tabs .fr-active-tab img, .fr-popup .fr-icon-container .fr-command:hover img {
+  border: 1px dotted black !important;
+}
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar,
+.fr-btn:hover i, .fr-btn:hover .fr-svg, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: none !important;
+  border-color: black !important;
+}
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active  {
+  background: #000080 !important;
+  color: white !important;
+}
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter, .fr-not-empty, .fr-input-line * {
+  color: black !important;
+}
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: white !important;
+  color: black !important;
+}
+
 .progress {
   background: #c0c0c0;
 }
