@@ -13,7 +13,7 @@ Updated for Character CSS!
   background-position: center;
 }
 
-.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card, #character-content .card, .achievement-panel .card, .comments-new * {
+.profile-links .card, .profile-followers .card, .card-header, .card-footer, .profile-gallery-header, .profile-gallery-header .card-header, .thumbnail, .comment .card, .icon-user, .profile-header-background, .profile-avatar-wrapper, .btn, .nametag, .sceditor-group, .tooltip-inner, .nav-link, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .progress, .profile-characters-permissions, .profile-header-mobile-status .card, #character-content .card, .achievement-panel .card, .comments-new *, .fr-popup {
   border-radius: 0 !important;
 }
 
@@ -374,6 +374,8 @@ hr, .dropdown-divider, .progress {
 
 
 
+
+
 .fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-modal-head, .fr-popup, .fr-dropdown-menu .fr-dropdown-content, .fr-btn-grp {
   border: #eee 2px solid !important;
   border-right-color: #555 !important;
@@ -387,10 +389,10 @@ hr, .dropdown-divider, .progress {
   color: black !important;
   border-radius: 0 !important;
 }
-.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-body {
+.fr-wrapper .fr-element, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-body {
   background: white !important;
 }
-.CodeMirror div, .fr-wrapper .fr-element {
+.fr-wrapper .fr-element {
   color: black;
 }
 .fr-wrapper .fr-element, .fr-modal td {
@@ -427,7 +429,7 @@ hr, .dropdown-divider, .progress {
 .fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter, .fr-not-empty, .fr-input-line * {
   color: black !important;
 }
-.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div *, .fr-not-empty, .fr-input-line * {
   background: white !important;
   color: black !important;
 }
