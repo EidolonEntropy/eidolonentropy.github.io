@@ -298,7 +298,7 @@ blockquote, .profile-followers .card-body, .profile-header-mobile-status .card {
   display: none;
 }
 
-progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions, .profile-header.card-header, .permissions, #character-content .card.bg-light, .gallery-wrapper {
+progress, .profile-gallery-header .card-header, .profile-links .card, .profile-followers .card, .profile-header-wrapper, .profile-avatar-wrapper, .profile-description, .comments h2, .nav-tabs .nav-item, .dropdown-menu, .achievement-panel, .profile-overall-stats, .profile-current-stats, .profile-characters-permissions, .profile-header.card-header, .permissions, #character-content .card.bg-light, .gallery-wrapper, .info-wrapper, .tags.card {
   border: #eee 2px solid !important;
   border-right-color: #555 !important;
   border-bottom-color: #555 !important;
@@ -312,7 +312,7 @@ progress, .profile-gallery-header .card-header, .profile-links .card, .profile-f
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad2.svg) !important;
   background-size: cover !important;
 }
-.profile-header-name .text-muted {
+.profile-header-name .element-disabled {
   color: white !important;
   opacity: 1;
 }
@@ -339,7 +339,7 @@ hr, .dropdown-divider, .progress {
 .table-bordered, .table-bordered td, .table-bordered th {
   border: 1px #555 solid !important;
 }
-.profile-links .card-header, .profile-followers .card-header {
+.profile-links .card-header, .profile-followers .card-header, .border-danger-muted {
   border-bottom: 2px #555 solid !important;
 }
 .profile-followers .card-footer {
