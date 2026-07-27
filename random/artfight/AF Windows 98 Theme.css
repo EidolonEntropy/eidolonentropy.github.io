@@ -74,7 +74,7 @@ Updated for Character CSS!
   border: dotted 1px transparent !important;
 }
 
-.artfight-nav .fa-discord, .artfight-nav .fa-question-square, .artfight-nav .fa-shopping-cart, .artfight-nav .fa-compass, .artfight-nav .fa-plus, .profile-header-buttons .fa-envelope, .profile-header-buttons .fa-exclamation-triangle {
+.artfight-nav .fa-discord, .artfight-nav .fa-question-square, .artfight-nav .fa-shopping-cart, .artfight-nav .fa-compass, .artfight-nav .fa-plus, .profile-header-buttons .fa-envelope, .profile-header-buttons .fa-exclamation-triangle, .profile-header-buttons .fa-pencil {
   background-image:url(https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png);
   background-repeat:no-repeat;
   background-size: contain;
@@ -85,11 +85,14 @@ Updated for Character CSS!
   padding-left: 8px;
   padding-right: 8px;
 }
-.profile-header-buttons .fas {
+.profile-header-buttons .fas, .profile-header-buttons .far {
   padding-bottom: 4px;
 }
 .profile-header-buttons .fa-exclamation-triangle {
   background-image:url(https://win98icons.alexmeub.com/icons/png/msg_warning-0.png);
+}
+.profile-header-buttons .fa-pencil {
+  background-image:url(https://win98icons.alexmeub.com/icons/png/file_blue_grad_paint-0.png);
 }
 .artfight-nav .fa-discord {
   background-image:url(https://win98icons.alexmeub.com/icons/png/world_phonereceiver.png);
@@ -309,11 +312,11 @@ progress, .profile-gallery-header .card-header, .profile-links .card, .profile-f
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/win98navbargrad2.svg) !important;
   background-size: cover !important;
 }
-.profile-header-wrapper .text-muted {
+.profile-header-name .text-muted {
   color: white !important;
   opacity: 1;
 }
-.profile-header-wrapper, .profile-avatar-wrapper, .btn, .btn:hover, .badge.btn:hover {
+.profile-header-wrapper, .profile-avatar-wrapper, .btn, .btn:hover, .badge.btn:hover, .btn:active, .badge.btn:active {
   background-color: #c0c0c0;
 }
 .profile-header-normal-status p {
