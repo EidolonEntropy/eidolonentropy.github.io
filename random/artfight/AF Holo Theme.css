@@ -129,11 +129,11 @@ Updated for Character CSS!
 .table td {
   border-color: black;
 }
-.thumbnail {
+.thumbnail, .icon-character {
   border-style: groove;
   border-width: 4px !important;
 }
-.thumbnail:hover {
+.thumbnail:hover, a.icon-character:hover {
   border-style: ridge !important;
 }
 .profile-header-normal-status {
