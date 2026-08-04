@@ -37,7 +37,7 @@ Updated for Character CSS!
   background: rgba(0,0,0,0.6);
   color: white;
 }
-.card.panel, #character-content .image-display-wrapper .card, #character-content .col-12 .card, .comments .card, .profile-gallery-header .card-header, .modal-content, .connection-gallery img, .profile-avatar-wrapper, .profile-header {
+.card.panel, #character-content .image-display-wrapper .card, #character-content .col-12 .card, .comments .card, .profile-gallery-header .card-header, .modal-content, .connection-gallery img, .profile-avatar-wrapper, .profile-header, .profile-header-mobile-status .card {
   border: none !important;
 }
 .profile-header-background, .profile-header.card-header {
