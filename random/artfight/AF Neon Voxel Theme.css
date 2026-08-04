@@ -258,7 +258,7 @@ blockquote, .character-description {
 .fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head {
   border-color: #0F0 !important;
 }
-.fr-toolbar, .fr-second-toolbar, .fr-tabs {
+.fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-not-empty, .fr-input-line * {
   background: #000 !important;
   color: #0F0 !important;
 }
