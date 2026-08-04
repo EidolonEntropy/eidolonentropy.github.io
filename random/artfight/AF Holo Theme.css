@@ -36,11 +36,13 @@ Updated for Character CSS!
 .card {
   background: rgba(0,0,0,0.6);
   color: white;
-  border: none;
 }
-.profile-header-background, .profile-header {
+.card.panel, #character-content .image-display-wrapper .card, #character-content .col-12 .card, .comments .card, .profile-gallery-header .card-header, .modal-content, .connection-gallery img, .profile-avatar-wrapper, .profile-header {
   border: none !important;
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp);
+}
+.profile-header-background, .profile-header.card-header {
+  border: none !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp) !important;
   background-position: bottom left;
   background-size: cover;
 }
@@ -123,7 +125,7 @@ Updated for Character CSS!
   background-size: cover;
 }
 .nametag, .bg-light {
-  background: rgba(0,0,0,0.6) !important;
+  background-color: rgba(0,0,0,0.6) !important;
   border: none !important;
 }
 .table td {
@@ -228,7 +230,7 @@ blockquote, .table-striped tr, .character-description {
 .btn-success:hover, .btn.badge-success:hover {
   background: #99F962
 }
-.btn-warning {
+.btn-warning, .btn-warning.disabled {
   background: #C6B52F
 }
 .btn-warning:hover, .btn.btn-warning:hover {
