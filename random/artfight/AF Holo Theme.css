@@ -207,7 +207,7 @@ blockquote, .table-striped tr, .character-description {
   background: rgba(255,255,255,0.2) !important;
 }
 
-.btn {
+.btn, .fr-popup .fr-command {
   color: white !important;
   text-transform: uppercase;
   border: none;
@@ -245,8 +245,8 @@ blockquote, .table-striped tr, .character-description {
 .btn-secondary {
   background: #AF1875
 }
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle, .btn.badge-secondary:hover {
-  background: #F962BF
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle, .btn.badge-secondary:hover, .fr-popup .fr-action-buttons .fr-command:hover {
+  background: #F962BF !important;
 }
 
 .comment .d-md-block .text-center {
@@ -306,7 +306,7 @@ blockquote, .table-striped tr, .character-description {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png) !important;
   color: white !important;
 }
-.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-modal-head, .fr-modal-body {
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-modal-head, .fr-modal-body, .fr-not-empty, .fr-input-line * {
   background: rgba(0,0,0,0.6) !important;
 }
 .fr-wrapper {
@@ -315,7 +315,7 @@ blockquote, .table-striped tr, .character-description {
 .CodeMirror div, .fr-wrapper .fr-element {
   color: white;
 }
-.fr-wrapper .fr-element {
+.fr-wrapper .fr-element, .fr-not-empty, .fr-input-line * {
   color: white !important;
 }
 .fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
