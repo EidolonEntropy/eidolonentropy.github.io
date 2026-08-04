@@ -82,7 +82,7 @@ Updated for Character CSS!
   color: #25BC5F;
   text-decoration: none;
 }
-.footer a:hover, .nametag a:hover, .profile-followers .card-body a:hover, .comment strong a:hover, .comment .card-body a:hover {
+.footer a:hover, .nametag a:hover, .profile-followers .card-body a:hover, .comment strong a:hover, .comment .card-body a:hover, .permissions-subheader a:hover, .info-wrapper strong a:hover, .character-connection h5 a:hover {
   text-decoration: none !important;
   opacity: 0.7;
 }
@@ -195,7 +195,7 @@ blockquote, .table-striped tr, .character-description {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png);
   background-position: -80% 0%;
   border: 0;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 .nav-tabs.my-3 .nav-link.active {
   border: solid #FFF 3px !important;
