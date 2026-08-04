@@ -255,7 +255,7 @@ blockquote, .character-description {
   border: 5px #0F0 solid !important;
 }
  
-.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head {
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head, .fr-input-line *:focus {
   border-color: #0F0 !important;
 }
 .fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-not-empty, .fr-input-line * {
