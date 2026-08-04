@@ -306,7 +306,7 @@ blockquote, .table-striped tr, .character-description {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png) !important;
   color: white !important;
 }
-.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body {
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-modal-head, .fr-modal-body {
   background: rgba(0,0,0,0.6) !important;
 }
 .fr-wrapper {
