@@ -1,26 +1,25 @@
 /*
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 
-NOTE: IMGUR LINKS NO LONGER WORK WORLDWIDE. PLEASE USE A DIFFERENT HOST. THIS TEMPLATE WILL BE UPDATED SOON.
-This profile utilizes exclusively images for backgrounds, they are as follows (replace every instance of these links for easy image exchanging):
-Full page background (sized to cover): https://i.imgur.com/ExaXlEV.jpg
-Headers (cover): https://i.imgur.com/A7OjgEC.jpg
-Navbar + footer + some other headers (cover): https://i.imgur.com/R3LqU4o.jpg
-Horizontal Rainbow (tiling): https://i.imgur.com/Wj5t7wj.png
-Vertical Rainbow (tiling): https://i.imgur.com/qYxAlms.png
-Small Rainbow (pagination + pogbar) (tiling): https://i.imgur.com/7X2OBUs.png
+NOTE: IMGUR LINKS NO LONGER WORK WORLDWIDE. PLEASE USE A DIFFERENT HOST. This template has been updated with new links.
+This theme utilizes images for backgrounds, they are as follows (replace every instance of these links for easy image exchanging):
+Full page background (sized to cover): https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/ExaXlEV.webp
+Headers (cover): https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/A7OjgEC.webp
+Navbar + footer + some other headers (cover): https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp
+Horizontal Rainbow (tiling): https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png
+Vertical Rainbow (tiling): https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradientdropdown.png
 ...is that it?
-Links and buttons are all unique for the most part.
-I used the CSS color 'white' for text elements instead of #FFF this time around. 
+Links and buttons are all unique for the most part. Primary accent is #62F99C with #25BC5F for hover.
+I used the CSS color 'white' for text elements. 
 Most hover colors are the same RGB values as the non-hover color and are controlled by 0.75 opacity instead of color. Other colors use RGBA values of either 0.6, 0.7 or 0.2 depending on the application.
-Some sample background/banner options are available here: https://imgur.com/a/JoV6GZO
+Some sample background/banner options are available here: https://filegarden.com/users/65da1083e831cd5091fbd87b/garden/#acdH463f6w5_tdgN
 I used a positioning value on the banner here, you might want to remove it if it's misbehaving.
 
 Updated for Character CSS!
 */
 
 #wrapper {
-  background-image: url(https://i.imgur.com/ExaXlEV.jpg);
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/ExaXlEV.webp);
   background-color: black;
   background-position: bottom;
   background-size: cover;
@@ -31,7 +30,7 @@ Updated for Character CSS!
 }
 .banner-container {
   padding-bottom: 1rem;
-  background: url(https://i.imgur.com/Wj5t7wj.png);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png);
   background-position: right;
 }
 .card {
@@ -41,12 +40,12 @@ Updated for Character CSS!
 }
 .profile-header-background, .profile-header {
   border: none !important;
-  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp);
   background-position: bottom left;
   background-size: cover;
 }
 .footer .contain {
-  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp);
   background-position: bottom;
   color: white !important;
   background-size: cover;
@@ -56,22 +55,23 @@ Updated for Character CSS!
 }
 .footer {
   padding-top: 1rem;
-  background: url(https://i.imgur.com/Wj5t7wj.png);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png);
   background-position: -30%;
 }
 .artfight-nav {
-  background: url(https://i.imgur.com/R3LqU4o.jpg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/R3LqU4o.webp);
   background-position: center 60%;
   background-size: cover;
 }
 .card-header {
-  background: url(https://i.imgur.com/A7OjgEC.jpg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/A7OjgEC.webp);
   text-transform: uppercase;
   color: white;
   background-size: cover;
 }
-.text-muted {
-  color: #000 !important;
+.text-muted, .element-disabled {
+  color: white !important;
+  opacity: 1;
 }
 .profile-gallery-header a, .table a, .profile-followers .card-footer a, .profile-description a, .profile-characters-permissions a, #character-content a {
   color: #62F99C
@@ -96,10 +96,10 @@ Updated for Character CSS!
 .comments h2, .profile-stats-title, .profile-characters-title, .profile-attacks-title, .profile-defenses-title {
   text-align: center;
 }
-.profile-attacks-header .card-header, #character-content .bg-info-muted {
+.profile-attacks-header .card-header, .connections-header, #character-content .bg-info-muted {
   background-position: bottom right !important;
 }
-.profile-defenses-header .card-header {
+.profile-defenses-header .card-header, #character-content .gallery-header.card-header {
   background-position: left 80%;
 }
 .profile-characters-header .card-header, #character-content .bg-warning-muted {
@@ -118,11 +118,11 @@ Updated for Character CSS!
   font-size: large;
 }
 .profile-followers .card-footer {
-  background: url(https://i.imgur.com/A7OjgEC.jpg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/A7OjgEC.webp);
   background-position: center 90%;
   background-size: cover;
 }
-.nametag, .table .bg-light {
+.nametag, .bg-light {
   background: rgba(0,0,0,0.6) !important;
   border: none !important;
 }
@@ -174,34 +174,34 @@ blockquote, .table-striped tr, .character-description {
   color: white;
 }
 
-.nav-tabs .nav-link {
+.nav-tabs.my-3 .nav-link {
   color: white;
   text-transform:uppercase;
   font-size:larger;
   border: solid 3px transparent !important;
 }
-.nav-tabs .nav-item {
+.nav-tabs.my-3 .nav-item {
   width: 20%;
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  .nav-tabs .nav-item {
+  .nav-tabs.my-3 .nav-item {
     width: 100% !important;
   }
 }
-.nav-tabs {
-  background: url(https://i.imgur.com/Wj5t7wj.png);
+.nav-tabs.my-3 {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png);
   background-position: -80% 0%;
   border: 0;
   padding-bottom: 2px;
 }
-.nav-tabs .nav-link.active {
-  border: solid white 3px !important;
+.nav-tabs.my-3 .nav-link.active {
+  border: solid #FFF 3px !important;
   background: rgba(255,255,255,0.2) !important;
   border-radius: 0 !important;
   color: white !important;
 }
-.nav-tabs .nav-item:hover {
+.nav-tabs.my-3 .nav-item:hover {
   background: rgba(255,255,255,0.2) !important;
 }
 
@@ -213,37 +213,37 @@ blockquote, .table-striped tr, .character-description {
 .btn-primary {
   background: #25A8BC;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn.badge-primary:hover {
   background: #62E5F9;
 }
 .btn-danger {
   background: #AF2C18
 }
-.btn-danger:hover {
+.btn-danger:hover, .btn.badge-danger:hover {
   background: #F97662
 }
 .btn-success {
   background: #60BF28
 }
-.btn-success:hover {
+.btn-success:hover, .btn.badge-success:hover {
   background: #99F962
 }
 .btn-warning {
   background: #C6B52F
 }
-.btn-warning:hover {
+.btn-warning:hover, .btn.btn-warning:hover {
   background: #F9E862
 }
 .btn-info {
   background: #0F20A6
 }
-.btn-info:hover {
+.btn-info:hover, .btn.badge-info:hover {
   background: #6273F9
 }
 .btn-secondary {
   background: #AF1875
 }
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle {
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .show .btn-secondary.dropdown-toggle, .btn.badge-secondary:hover {
   background: #F962BF
 }
 
@@ -259,7 +259,7 @@ blockquote, .table-striped tr, .character-description {
 }
 
 .dropdown-menu {
-  background: url(https://i.imgur.com/qYxAlms.png);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradientdropdown.png);
   background-position: center 70%;
   text-transform: uppercase;
   border: none !important;
@@ -271,7 +271,7 @@ blockquote, .table-striped tr, .character-description {
   display: none !important;
 }
 .dropdown-divider, hr {
-  border-color: white !important;
+  border-color: #FFF !important;
   opacity: 0.6
 }
 .dropdown-item:hover {
@@ -283,30 +283,59 @@ blockquote, .table-striped tr, .character-description {
 }
 
 .page-link, .disabled .page-link {
-background: none !important;
-border: none !important;;
-color: white !important;
+  background: none !important;
+  border: none !important;;
+  color: white !important;
 }
 .page-item.active .page-link, .page-link:hover {
-background: rgba(255,255,255,0.2) !important;
-border: none !important;
+  background: rgba(255,255,255,0.2) !important;
+  border: none !important;
 }
 .pagination, .navbar-toggler {
-  background: url(https://i.imgur.com/7X2OBUs.png) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png) !important;
+  background-size: 400px;
+  background-position: 20%;
 }
 
-div.sceditor-toolbar {
-  background: url(https://i.imgur.com/Wj5t7wj.png) !important;
+.fr-toolbar, .fr-wrapper, .fr-second-toolbar, .fr-help-modal table tbody tr, .fr-modal-head {
+  border: none !important;
 }
-div.sceditor-group {
+.fr-toolbar, .fr-second-toolbar, .fr-tabs {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png) !important;
+  color: white !important;
+}
+.fr-wrapper .fr-element, .CodeMirror, .CodeMirror-gutters, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body {
+  background: rgba(0,0,0,0.6) !important;
+}
+.fr-wrapper {
   background: none !important;
-  border: none !important;
 }
-.sceditor-container {
-  border: none !important;
+.CodeMirror div, .fr-wrapper .fr-element {
+  color: white;
 }
-.sceditor-button.active, .sceditor-button:hover {
+.fr-wrapper .fr-element {
+  color: white !important;
+}
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
   background: rgba(255,255,255,0.2) !important;
+}
+.fr-newline {
+  display: none !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: rgba(255,255,255,0.2) !important;
+  border: none !important;
+}
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active  {
+  background-color: rgba(255,255,255,0.2) !important;
+  color: white !important;
+}
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter {
+  color: white !important;
+}
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png) !important;
+  color: white !important;
 }
 
 .profile-gallery-character:first-child .thumbnail,
@@ -343,9 +372,10 @@ div.sceditor-group {
 .sitewide-notice, .alert-info {
   display:none !important;
 }
-.alert-success {
+.alert {
   background-color: rgba(0,0,0,0.6) !important;
-  color:white !important
+  color:white !important;
+  border: none;
 }
 .achievement-panel img {
 	width: 200px;
@@ -355,7 +385,7 @@ progress::-webkit-progress-value {
   background-color: white !important;
 }
 .footer .mt-0, .progress {
-  background: url(https://i.imgur.com/7X2OBUs.png);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/holothemeassets/gradient.png);
   background-size: cover;
 }
 .footer .contain .row {
