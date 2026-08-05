@@ -8,10 +8,13 @@ Primary: royalblue
 Secondary: #f6bf00
 Tertiary: dimgray
 Links: #0066cc
+
 SWAP WITH CARE:
 lightgray
 white
 black
+whitesmoke
+#0C2939
 
 If you desire a more compact layout, the Left and Right Bio snippets are compatible with this code: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
 For other editable items, see below.
@@ -35,7 +38,7 @@ For other editable items, see below.
 
 /*MAIN PAGE BACKGROUND - this code is designed for an image that fades out into a solid color, like the example. You can change the color it fades out into with the background-color property. Try a Steam background?
 Alternatively, mix and match background attributes for a more typical full page background.*/
-/*This font-family line currently doesn't work as intended. If your font suddenly changes one day and you want it back, remove the -apple-system, system-ui, from the line.*/
+/*This font-family line currently doesn't work as intended, but may work in the future. If your font suddenly changes one day and you want it back, remove the -apple-system, system-ui, from the line.*/
 #wrapper {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/poi_master_background.jpg);
   background-size: 100%;
@@ -49,7 +52,7 @@ Alternatively, mix and match background attributes for a more typical full page 
 
 
 
-
+/*You shouldn't need to touch anything below this line.*/
 .banner-container {
   padding-bottom: 15px;
   margin-bottom: 0 !important;
@@ -96,7 +99,7 @@ Alternatively, mix and match background attributes for a more typical full page 
   }
 }
 
-.card-header, .panel-footer, .profile-header-background {
+.card-header, .panel-footer, .profile-header-background, .modal-header, .modal-footer {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
   background-color: royalblue !important;
   color: white;
@@ -107,7 +110,7 @@ Alternatively, mix and match background attributes for a more typical full page 
   padding-bottom: 15px;
   margin-bottom: -15px;
 }
-.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, #character-connections h2 {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg);
   background-color: #f6bf00 !important;
   color: white !important;
@@ -122,12 +125,15 @@ Alternatively, mix and match background attributes for a more typical full page 
   padding:10px 0 !important;
   text-indent: 16px;
 }
+#character-connections {
+  padding: 0 !important;
+}
 
-.card {
+.card, .permissions-text, .modal-body {
   background-color: white;
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
 }
-.table .bg-light {
+.table .bg-light, .character-connection .icon-character {
   background-color: dimgray !important;
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
 }
@@ -135,8 +141,11 @@ table .bg-light, .table .bg-light .text-secondary, .fa-question-circle, .permiss
   color: #FFF !important;
   font-weight: 600;
 }
-table td, .profile-header-mobile-status {
+table td, .modal-content th, .profile-header-mobile-status {
   color: #0C2939;
+}
+.modal-content tr {
+  background: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -188,11 +197,19 @@ blockquote, .profile-character-permissions, .achievement-panel .card, .profile-d
   font-weight: 600;
 }
 
+.character-connection {
+  background-color: lightgray !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scanlinetile.png) !important;
+}
+.text-muted, .element-disabled {
+  color: lightgray !important;
+}
+
 .profile-header-name .element-disabled {
   color: #FFF !important;
   opacity: 1 !important;
 }
-.table .bg-light .strong {
+.table .bg-light .strong, .connections-wrapper h4 a {
   color: #FFF !important;
 }
 .profile-avatar-wrapper {
@@ -208,7 +225,7 @@ blockquote, .profile-character-permissions, .achievement-panel .card, .profile-d
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scandiaglinetile.png);
   background-color: white;
 }
-.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu, #character-content .col-12 .card, #character-content .image-display-wrapper .card, .profile-header-mobile-status .card {
+.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu, #character-content .col-12 .card, #character-content .image-display-wrapper .card, .profile-header-mobile-status .card, .modal-content, .modal-footer, .modal-header {
   border: none !important;
 }
 .profile-header-mobile-status p {
@@ -335,6 +352,15 @@ div.sceditor-toolbar  {
   border-right-color: rgba(0,0,0,0.2) !important;
   border-bottom-color: rgba(0,0,0,0.2) !important;
 }
+.fr-toolbar, .fr-second-toolbar {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerohorigradtrans.svg) !important;
+}
+.fr-more-toolbar {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg) !important;
+}
+.fr-newline {
+  display: none !important;
+}
 
 .nav-tabs {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scandiaglinetile.png);
@@ -365,14 +391,12 @@ div.sceditor-toolbar  {
 
 .btn {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
-  background-color: ;
   color: white !important;
   font-weight: 600;
   border: none;
 }
 .btn:hover, .btn.active, .btn:active, .btn:focus {
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/aerogradup2.svg);
-  background-color: ;
   color: white !important;
 }
 
