@@ -202,7 +202,7 @@ blockquote, .profile-character-permissions, .achievement-panel .card, .profile-d
   background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/scanlinetile.png) !important;
 }
 .text-muted, .element-disabled {
-  color: lightgray !important;
+  color: dimgray !important;
 }
 
 .profile-header-name .element-disabled {
