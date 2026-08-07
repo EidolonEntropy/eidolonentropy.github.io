@@ -1,7 +1,7 @@
 @media only screen and (min-width: 768px) {
   .profile-description {
     width: 65% !important;
-    min-height: 1340px;
+    min-height: 1370px;
     height: 68vw;
     overflow: auto;
     float: right;
