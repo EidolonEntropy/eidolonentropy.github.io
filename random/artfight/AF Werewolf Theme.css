@@ -14,7 +14,7 @@ Change the banner by pasting the direct image link within the parentheses in the
 }
 
 #wrapper {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werebackground.svg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewbackground.svg);
   color: white;
 }
 .banner {
@@ -42,7 +42,7 @@ a {
   background: none !important;
 }
 .card-header, .profile-header-background, .dropdown-menu, .fr-dropdown-menu {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradient.svg) !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
   border: none !important;
 }
 .card, blockquote {
@@ -59,11 +59,11 @@ a {
 	font-weight: lighter !important;
 }
 .card-footer {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradientinv2.svg) !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
   border: none;
 }
 .footer .contain {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradientinv2.svg) !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
 }
 .footer {
   background: none !important;
@@ -94,7 +94,7 @@ a {
 
 .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
   background-color: rgba(0,0,0,0.3) !important;
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradient.svg) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
   border: none !important;
   color: white; !important;
   padding: 0.75rem 1rem;
@@ -144,7 +144,7 @@ a {
 }
 
 .dropdown-item:hover, .fr-dropdown-menu .fr-command:hover, .fr-command.fr-active {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradientinv2.svg) !important;
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
 }
 .dropdown-divider, hr {
   border-color: rgb(98, 145, 173);
@@ -152,7 +152,7 @@ a {
 
 .nav-tabs.my-3 {
   border: none;
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradientinv.svg);
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv.svg);
 }
 .nav-tabs.my-3 .nav-item {
   width: 20%;
@@ -180,7 +180,7 @@ a {
   width: 100% !important;
   }
   .artfight-nav {
-    background: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradient.svg) !important;
+    background: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
   }
 }
 
@@ -195,10 +195,10 @@ a {
   margin-top: 8px !important;
 }
 .fr-toolbar {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradient.svg) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradient.svg) !important;
 }
 .fr-second-toolbar, .fr-tabs {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/weregradientinv2.svg) !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/werewgradientinv2.svg) !important;
 }
 .fr-element, .fr-modal-head {
   background: none !important;
