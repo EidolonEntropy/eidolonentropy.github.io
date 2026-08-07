@@ -1,10 +1,12 @@
 /*
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 Thank you AF user ChaseK for providing the animated gradient and inspiring these themes!
+2026 UPDATED VERSION
 
+To swap the team icon, find and replace this link: https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/24vp.png
 Want more layout changes? You should be able to paste in most of the snippets from this doc without issue: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
 
-Change the banner by pasting the direct image link within the parentheses in the topmost chunk.
+Change the banner by pasting the direct image link within the parentheses in the topmost item.
 */
 
 .banner {
@@ -13,41 +15,48 @@ Change the banner by pasting the direct image link within the parentheses in the
 
 #wrapper {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampbackground.svg);
+  color: white;
 }
 .banner {
   height: 260px;
   margin-top: -60px;
 }
-.profile-header-normal-status p, .profile-header-mobile-status p, .profile-description, .card-header, .table .bg-light, .text-muted, .comment, .footer, .footer a, .dropdodown-item {
+.table .bg-light, .table, .footer, .footer a, .dropdown-header, .modal, .fr-element {
   color: white;
 }
-.profile-gallery-header a, .card-footer a, .profile-links a, .profile-description a {
+.dropdown-item, .text-muted, .element-disabled, .artfight-nav .nav-link, .fr-box .fr-counter, #user-tag-list .float-right .w-auto {
+  color: white !important;
+}
+a {
   color: rgb(230, 70, 108);
 }
-.profile-gallery-header a:hover, .card-footer a:hover, .profile-links a:hover, .profile-description a:hover, .profile-followers a:hover, .profile-header-name a:hover, .nametag a:hover, .comment-footer a:hover, .comment .card-body a:hover, .comment strong a:hover, .footer a:hover {
+.panel a:hover, .profile-description a:hover, .profile-followers a:hover, .profile-header-name strong a:hover, .nametag a:hover, .comment-footer a:hover, .comment .card-body a:hover, .comment strong a:hover, .footer a:hover, .profile-header-normal-status a:hover, #character-content .col-lg-8 a:hover, #character-content .col-md-8 a:hover, #character-content .col-md-4 a:hover, #character-content .col-lg-4 a:hover, .character-description a:hover, .character-connection h5 a:hover, .character-connection .col-sm-1 a:hover {
   text-decoration: none;
+  color: rgb(230, 70, 108);
   opacity: 0.6;
+}
+.image-display a.mh-100:hover, .icon-character:hover, .badge:hover, .dropdown-item:hover, .profile-header-buttons a:hover {
+  opacity: 1 !important;
 }
 .artfight-nav {
   background: none !important;
 }
-.card-header, .profile-header-background, .dropdown-menu {
+.card-header, .profile-header-background, .dropdown-menu, .fr-dropdown-menu {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradient.svg) !important;
   border: none !important;
 }
 .card, blockquote {
   background: rgba(0,0,0,0.3);
-  border: none;
 }
-.table .bg-light, .nametag, .sceditor-container, .table-striped tr:first-child {
-  background: rgba(0,0,0,0.3) !important;
+.profile-header-background, .profile-gallery-header, .profile-gallery-header .card-header, .card.panel, .card-header, .card-footer, td, .dropdown-menu, #character-content .col-12 .card, #character-content .image-display-wrapper .card, .profile-header-mobile-status .card, .modal-content, .modal-footer, .modal-header, .achievement-panel .card {
   border: none !important;
 }
-.table .bg-light, .nametag {
+.table .bg-light, .nametag, .dropdown-menu, .fr-dropdown-menu, .table-striped tr, .character-connection, #user-tag-list, .progress, #user-tag-list .float-right .w-auto {
+  background-color: rgba(0,0,0,0.3) !important;
+  border: none !important;
+}
+.table .bg-light, .nametag, #user-tag-list .mb-0 {
 	font-weight: lighter !important;
-}
-td, blockquote  {
-  border: none !important;
 }
 .card-footer {
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv2.svg) !important;
@@ -58,12 +67,17 @@ td, blockquote  {
 }
 .footer {
   background: none !important;
+  height: auto;
 }
-.footer .contain .row {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/w24.png) !important;
-  background-repeat: no-repeat !important;
-  background-position: 0% 100% !important;
+#content {
+  padding-bottom: 200px;
 }
+@media only screen and (max-width: 768px) {
+  #content {
+    padding-bottom: 380px !important;
+  }
+}
+
 .badge {
   background: rgb(230, 70, 108) !important;
   color: white;
@@ -74,6 +88,9 @@ td, blockquote  {
   margin: 0 !important;
   padding-top: 0.5rem;
 }
+.profile-header.card-header + .profile-header-normal-status {
+  padding-bottom: 38px;
+}
 
 .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
   background-color: rgba(0,0,0,0.3) !important;
@@ -81,17 +98,18 @@ td, blockquote  {
   border: none !important;
   color: white; !important;
   padding: 0.75rem 1rem;
+  border-radius: .25rem;
 }
 .comments h2 {
   padding:10px 0 !important;
   text-indent: 16px;
 }
 
-.thumbnail {
+.thumbnail, .icon-character {
   border-style: inset;
   border-width: 2px;
 }
-.thumbnail:hover {
+.thumbnail:hover, .icon-character:hover {
   border-style: outset;
 }
 
@@ -100,46 +118,54 @@ td, blockquote  {
   color: white !important;
   border-color: transparent !important;
 }
-.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active {
-  background: #A22036;
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn.badge-primary:hover {
+  background: #A22036 !important;
 }
-.btn:hover, .btn:active, .btn-focus, .btn-primary:not(:disabled):not(.disabled).active {
+.btn:hover, .btn:active, .btn-focus, .btn-primary:not(:disabled):not(.disabled).active, .btn.badge:hover {
   color: white !important;
 }
-.btn-warning:hover, .btn-danger:hover {
+.btn-warning:hover, .btn-danger:hover, .btn.badge-warning:hover, .btn.badge-danger:hover, .btn-warning.disabled {
   background: #EF6C4D !important;
 }
-.btn-success:hover, .btn-info:hover {
+.btn-success:hover, .btn-info:hover, .btn.badge-success:hover, .btn.badge-info:hover {
   background: #6F4272 !important;
 }
-.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus, .btn.badge-secondary:hover {
   background: #2F232C !important;
 }
 
-.dropdown-header {
-  color: white;
+.page-item .page-link {
+  background: rgb(230, 70, 108);
+  color: white !important;
+  border-color: transparent !important;
 }
-.dropdown-item:hover {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv2.svg)
+.page-item.disabled .page-link, .page-item.active .page-link, .page-link:hover {
+  background: #A22036 !important;
 }
-.dropdown-divider, .comment hr {
+
+.dropdown-item:hover, .fr-dropdown-menu .fr-command:hover, .fr-command.fr-active {
+  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv2.svg) !important;
+}
+.dropdown-divider, hr {
   border-color: rgb(230, 70, 108);
 }
 
-.nav-tabs .nav-item {
-  width: 20%;
-  text-align: center;
-}
 .nav-tabs.my-3 {
   border: none;
   background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv.svg);
 }
-.nav-tabs .nav-item:hover, .nav-tabs .nav-item.active {
+.nav-tabs.my-3 .nav-item {
+  width: 20%;
+  text-align: center;
+}
+.nav-tabs.my-3 .nav-link:hover, .nav-tabs.my-3 .nav-link.active {
   background: rgba(255,255,255,0.1);
+  border-radius: 0 !important;
 }
 .nav-tabs .nav-link {
   color: white;
   text-transform: uppercase;
+  border-color: transparent !important;
 }
 .nav-tabs .nav-link:hover {
   border-color: transparent;
@@ -158,28 +184,41 @@ td, blockquote  {
   }
 }
 
-div.sceditor-group {
+.fr-wrapper, .fr-toolbar, .fr-second-toolbar, .fr-more-toolbar, .fr-open, .fr-modal .fr-command, .fr-action-buttons .fr-command, .fr-tabs, .fr-not-empty, .fr-input-line * {
   border: none !important;
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv2.svg);
+  background: rgba(0,0,0,0.3) !important;
 }
-div.sceditor-toolbar, .achievement-panel .card {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv.svg) !important;
+.fr-modal .fr-command, .fr-popup .fr-command {
+  color: rgb(230, 70, 108) !important;
 }
-.sceditor-container, div.sceditor-dropdown {
-border-color: #000 !important;
+.fr-open {
+  margin-top: 8px !important;
 }
-.sceditor-button.active, .sceditor-button:hover {
+.fr-toolbar {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradient.svg) !important;
+}
+.fr-second-toolbar, .fr-tabs {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/vampgradientinv2.svg) !important;
+}
+.fr-element, .fr-modal-head {
+  background: none !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover,
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-command:hover {
   background: rgba(255,255,255,0.1) !important;
-  color: white !important;
   border: transparent;
 }
-
-.sitewide-notice, .alert-info {
-display:none !important;
+.fr-newline {
+  display: none !important;
 }
-.alert-success {
-background-color: rgba(0,0,0,0.6) !important;
-color:white !important
+
+.sitewide-notice {
+  display:none !important;
+}
+.alert, .modal-content, .fr-popup {
+  background-color: rgba(0,0,0,0.6) !important;
+  color:white !important;
+  border: none !important;
 }
 .achievement-panel img {
 	width: 200px;
@@ -190,5 +229,9 @@ progress::-webkit-progress-value {
 }
 .footer .mt-0 {
   background:rgba(0,0,0,0.3);
-
+}
+.footer .contain .row {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/w24.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: 0% 100% !important;
 }
