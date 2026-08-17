@@ -1,228 +1,508 @@
 /*
 CODE BY B//EIDOLONENTROPY, https://artfight.net/~Battalia. Credit me maybe?
 
-This code is definitely NOT user friendly, there's a million colors being used here and nothing's organised or even functioning the same. sorry. psychonauts is cool
-*/
+The refreshed version of this code is designed for users who aren't fluent in CSS but want to make particular changes to their page. Unlike my other themes, which are noob-friendly in terms of find and replace only, this theme is almost fully notated and keeps different items in distinct sections for easy editing.
+For that reason, this theme is unfriendly to advanced users.
 
-.dropdown-menu, .nametag, .btn, .table .bg-light, .nametag, .profile-follower, .profile-links a, #character-content .col-md-4 a, .nav-tabs {
-  font-family: cursive;
+I encourage you to use find and replace on the following color codes to get the general palette you want, then go through the entire code to make changes like image swaps and individual tweaks.
+Full page background: #69892F
+Default text color: #F9FFB7
+Primary card background: #E0DC2C
+Primary card text: #22492C
+Header and footer background: #747C1F
+Header and footer text: #06413A
+Header and footer border: #42631F
+Tertiary container background: #82FD70
+Tertiary container text: #2C663C
+Default link color: #038780
+Header link color: #C2EB6C
+Button background: #7C8C24
+Button text: #6FFFF1
+Button border: #7DFF38
+Button hover background: #4BF28A
+Button hover text: (same as tertiary container text)
+Button active background: #90A322
+Button primary/info hover background: #34FF7A
+Button warning/danger hover background: #F5FA11
+Button success hover background: #55FF45
+Button secondary hover background: #49EAAF
+
+This code has no major layout changes, so you can copy in the ones you want from this document: https://toyhou.se/~forums/16.htmlcss-graphics/663202.battalias-ftu-artfight-css-snippets
+The changes this theme makes to the bio/character content can be reverted or switched to another element within the field (such as blockquote) if you please.
+
+Works with Character CSS!
+*/
+#wrapper .dummy-class {}
+
+/*GLOBAL CHANGES*/
+/*Font Stack - This theme is designed for beefy fonts in mind. You may wish to remove/change instances of font-weight: bold; if it doesn't pair well with your chosen fonts.*/
+* {
+  font-family: Comic Sans MS, Comic Sans Pro, Comic Sans, Comic Neue, Komika Text, Comic Parchment, Comic Code, Trebuchet MS, sans-serif;
 }
-.panel-heading, .panel-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .profile-header-mobile-status .card, .image-pane .card, .card-header  {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine3.png);
-  background-color: #90A322 !important;
-  color: #2C663C !important;
-  font-family: cursive;
+
+/*CARDS*/
+/*Typical styles - do not use border here!*/
+.card, .permissions-body, .modal-content, .modal-body table, #user-tag-list .float-right .w-auto {
+  color: #22492C;
+  background-color: #E0DC2C;
+}
+/*Card borders*/
+.card.panel, #character-content .image-display-wrapper .card, #character-content .col-12 .card, .comments .card, .profile-gallery-header .card-header, .modal-content, .connection-gallery img, .profile-avatar-wrapper, .profile-header-mobile-status .card {
+  border: none;
+}
+
+/*HEADERS AND FOOTERS*/
+/*Header colors*/
+.card-header, .card-footer, .profile-header-background.bg-light, .modal-header, .modal-footer, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .footer .contain {
+  background-color: #747C1F !important;
   border: solid 4px #42631F !important;
+  color: #06413A;
 }
-.panel-footer, .profile-characters-header .card-header, .profile-attacks-title, .profile-overall-stats .card-header {
+/*Header text styles*/
+.card-header, .card-header h2, .card-header h4, .modal-header h4, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  font-weight: bold;
+}
+/*Unstyled header layout*/
+.comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title {
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  width:100% !important;
+  padding:10px 0 !important;
+  text-indent: 16px;
+  border-radius: .25rem !important;
+}
+/*Header links*/
+.card-header a, .card-footer a, .card-header a:hover, .card-footer a:hover, .footer a, .footer a:hover, .social a:hover {
+  color: #C2EB6C;
+}
+/*Header background image*/
+.card-header, .card-footer, .profile-header-background, .comments h2, .profile-attacks-title, .profile-defenses-title, .profile-characters-title, .profile-stats-title, .footer .contain {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/eyeshrine3.svg); /*Use a large image that repeats!*/
+}
+/*Add variation to the headers by changing where the background image is anchored*/
+.card-footer, .profile-characters-header .card-header, .profile-attacks-title, .profile-overall-stats .card-header {
   background-position: bottom;
 }
-.profile-links .panel-heading, .profile-attacks-header .card-header, .profile-characters-title, .comments h2, .profile-stats-title, .image-pane .card {
+.profile-links .card-header, .profile-attacks-header .card-header, .profile-characters-title, .comments h2, .profile-stats-title, .image-pane .card, .footer .contain {
   background-position: center;
 }
-.sceditor-container, div.sceditor-group {
-  border: none !important;
-  background: #82FD70;
-}
-div.sceditor-toolbar, .dropdown-menu.show, .achievement-panel .card {
-  background: #90A322 !important;
-}
 
-@media only screen and (max-width: 600px) {
-  #content ul .nav-item {
-  width: 100% !important;
-  }
-}
-.profile-mobile-header .profile-avatar-wrapper {
-  background: #4BF28A;
-  border: none;
-}
-
-.btn, .nav-tabs .nav-item a, .btn-warning.disabled {
-  border: 2px solid #7DFF38;
-  background: #5BB338;
-}
-.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active {
-  background: #34FF7A;
-}
-.btn:hover, .btn:active, .btn-focus, .btn-primary:not(:disabled):not(.disabled).active {
-  border: 2px solid #7DFF38 !important;
+/*ACCENTS*/
+/*Tertiary box color*/
+.bg-light {
+  background-color: #82FD70 !important;
   color: #2C663C !important;
 }
-.btn-warning:hover, .btn-danger:hover {
-  background: #F5FA11;
+/*Alerts*/
+.alert {
+  background-color: #82FD70 !important;
+  color: #2C663C !important;
+  border: none !important;
 }
-.btn-success:hover {
-  background: #82FD70 !important;
+/*Minor text*/
+.text-muted, .element-disabled, .profile-stats .fa, .progress-bar {
+  color: #42631F !important;
+  opacity: 1;
+  font-weight: bold;
 }
-.btn-secondary:hover {
-  background: #49EAAF !important;
+/*Default link color*/
+a, a:hover {
+  color: #038780;
 }
 
-.nav-tabs .nav-item {
-  width: 20%;
-  text-align: center;
+/*USER DEFINED FIELDS (BIO + CHARACTER DESCRIPTION)*/
+/*Default links*/
+.profile-description a, .character-description a, .profile-description a:hover, .character-description a:hover {
+  color: #C2EB6C;
 }
-.nav-tabs {
-  background: #7DFF38;
-  border-bottom: 0 !important;
-  padding-bottom: 1px;
+/*Special bio style - remove this if using custom HTML. Alternatively, replace .fr-view for blockquote or a custom ID and use this style on only a section of your HTML*/
+.profile-description .fr-view, .character-description .fr-view {
+  color: #06413A !important;
+  background-color: #82FD70 !important;
+  border: 4px solid #08685F !important;
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine2.png) !important;
+  background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 10px;
+  border-radius: .25rem;
 }
-.nav-tabs .nav-item a:hover {
-  border: 2px solid #7DFF38 !important;
-  background: #49EAAF;
-  color: #2C663C;
+/*Special style links - same guidelines as above*/
+.profile-description .fr-view a, .profile-description .fr-view a:hover, .character-description .fr-view a, .character-description .fr-view a:hover {
+  color: #6FFFF1;
 }
-.nav-tabs .nav-item .active {
-  border: 2px solid #7DFF38 !important;
-  background: #90A322 !important;
+
+/*PAGE BACKGROUND 'BANNER' AND DEFAULT STYLES*/ 
+#wrapper {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine1.png); /*Use an image that fades to transparent!*/
+  background-color: #69892F; /*Background color of entire page*/
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #F9FFB7; /*Default text color*/
+}
+/*Corrections and layout*/
+.artfight-nav, .banner {
+  background: none !important;
+}
+.banner {
+  height: 10vw !important;
+}
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    background-size: 150vw !important; /*Makes image larger based on screen height*/
+  }
+}
+
+/*TOP NAVBAR*/
+/*Button styles*/
+.artfight-nav .nav-item, .artfight-nav .navbar-brand, .artfight-nav .navbar-toggler, .navbar-collapse {
+  background-color: #7C8C24;
+  border: 2px solid #7DFF38;
+  border-radius: .25rem;
+  font-weight: bold;
+}
+/*Button text styles*/
+.artfight-nav .nav-link, .artfight-nav .navbar-brand {
+  color: #6FFFF1 !important;
+}
+/*Button styles HOVER*/
+.artfight-nav .nav-item:hover, .artfight-nav .nav-item.show, .artfight-nav .navbar-brand:hover {
+  background-color: #4BF28A;
+}
+/*Button text styles HOVER*/
+.artfight-nav .nav-item:hover .nav-link, .artfight-nav .nav-item.show .nav-link, .artfight-nav .navbar-brand:hover {
+  color: #2C663C !important;
+}
+/*Layout and semantics*/
+.artfight-nav .navbar-brand {
+  padding: 2.5px !important;
+}
+.artfight-nav .avatar-dropdown .navbar-icon {
+  height: 38px;
+  width: 38px;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.artfight-nav .mr-3 {
+  margin-right: 10px !important;
+}
+@media only screen and (max-width: 768px) {
+  .artfight-nav .nav-item {
+    border: none !important;
+    background: none !important;
+  }
+  .navbar-collapse {
+    padding-left: 10px;
+    padding-right:  10px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar-collapse {
+    background: none !important;
+    border: none !important;
+  }
+}
+
+/*DROPDOWNS*/
+/*Menu*/
+.dropdown-menu {
+  background-color: #7C8C24;
+  border: 2px solid #7DFF38;
+  margin-bottom: 1rem;
+}
+/*Buttons*/
+.dropdown-item {
   color: #F9FFB7 !important;
 }
+/*Buttons HOVER*/
+.dropdown-item:hover {
+  background-color: #82FD70;
+  color: #2C663C !important;
+}
+/*Unclickable header*/
+.dropdown-header {
+  color: #06413A !important;
+}
+/*Dividers*/
+.dropdown-divider, .artfight-nav hr {
+  border-color: #747C1F;
+}
 
-.banner {
-  background: none !important;
+/*NAVTABS*/
+/*Tabs*/
+.nav-tabs.my-3 .nav-link {
+  background-color: #7C8C24;
+  border: 2px solid #7DFF38;
+  border-radius: .25rem;
+  font-weight: bold;
+  color: #6FFFF1 !important;
 }
-#wrapper {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine1.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-color: #69892F;
-  color: white;
+/*Tabs HOVER*/
+.nav-tabs.my-3 .nav-link:hover {
+  background-color: #4BF28A;
+  color: #2C663C !important;
 }
-.artfight-nav {
-  background: none !important;
+/*Current Tab*/
+.nav-tabs.my-3 .nav-link.active {
+  background-color: #90A322 !important;
+  color: #6FFFF1 !important;
 }
-.panel-default, .achievement-panel .card, #character-content .card.mt-3 {
-  border: none;
+/*Layout*/
+.nav-tabs.my-3 .nav-item {
+  width: 20%;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.artfight-nav .nav-link {
+.nav-tabs.my-3 {
+  border: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .nav-tabs.my-3 .nav-item {
+    width: 100% !important;
+  }
+}
+
+/*THUMBNAILS*/
+/*Affects all borders with dashed/dotted lines. For accessibility, please do not use border-color here!*/
+.thumbnail, .image-thumb, .icon-character {
+  border-style: solid !important;
+}
+/*Affects LARGE thumbnail border width*/
+.thumbnail, .connection-gallery a {
+  border-width: 4px !important;
+}
+/*Large thumbnail HOVER*/
+.thumbnail:hover, .image-thumb:hover, .connection-gallery a:hover {
+  border-style: double !important;
+}
+/*Sets absent styles for character image thumbnails and achievements*/
+.image-thumb, .achievement-panel .border-light {
+  border-color: #42631F !important;
+  border-width: 4px !important;
+}
+/*Layout - forces Connections gallery to match character image gallery sizing and spacing*/
+.connection-gallery .d-flex, .connection-gallery {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+.connection-gallery .icon-character {
+  padding: 0.25rem !important;
+  margin: 0.25rem !important;
+}
+
+/*BUTTONS AND BADGES*/
+/*Default button + badge styles*/
+.btn, .badge {
+  background-color: #7C8C24;
+  border: 2px solid #7DFF38 !important;
+  border-radius: .25rem;
+  font-weight: bold;
+  color: #6FFFF1 !important;
+}
+/*Pagination default*/
+.page-link, .disabled .page-link, .fr-popup .fr-action-buttons .fr-command, .fr-modal .fr-float-right .fr-command {
+  background-color: #7C8C24 !important;
+  border: 2px solid #7DFF38 !important;
   color: #6FFFF1 !important;
   font-weight: bold;
 }
-.artfight-nav .nav-link:hover {
-  color: #3DCEA7 !important;
-}
-.profile-gallery-header a, .panel-heading input, .panel-heading .btn, .panel-footer a, .nav-tabs .nav-item a, #character-content .card-header a, .image-pane a {
-  color: #C2EB6C;
-}
-.profile-gallery-header a:hover, .panel-footer a:hover, .profile-header-name a:hover {
-  text-decoration: none !important;
-  color: #FFF !important;
-}
-.profile-header-name a {
-  color: #C2EB6C !important;
-}
-.profile-description, .character-description {
-  background: url(https://file.garden/ZdoQg-gxzVCR-9h7/eyeshrine2.png) center;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 4px solid #08685F;
-  padding: 10px;
-}
-#character-content .character-description {
-  max-width: 90%;
-}
-.profile-description a, .character-description a {
-  color: #E0DC2C;
-}
-blockquote {
-  border: 4px solid #08685F !important;
-  background: rgba(44,102,60,0.4);
-}
-.panel, .profile-avatar-wrapper, .card, .progress {
-  background: #E0DC2C;
-}
-.thumbnail, .image-thumb, .icon-character {
-  border-style: solid;
-  border-width: 4px !important;
-}
-.thumbnail:hover, .image-thumb:hover {
-  border-style: double !important;
-}
-.table .bg-light, .nametag, .thumbnail, .dropdown-item:hover, .table-bordered tr {
-  background: #82FD70 !important;
-  color: #48C766 !important;
-  font-weight: bold;
-}
-.table td {
-  border-color: #747C1F !important;
-}
-.table td a, .comment, .dropdown-header, .table, .card.border-warning-muted, .profile-characters-permissions {
-  color: #747C1F;
-}
-.card.border-warning-muted a, .card.border-danger-muted a, .profile-characters-permissions a {
-  color: #38AA7F;
-}
-.profile-characters-permissions a:hover, .profile-description a:hover, .comment .card a:hover, .profile-follower a:hover, .profile-links a:hover, .footer a:hover, .nametag a:hover {
-  opacity: 0.6;
-  text-decoration: none !important;
-}
-.footer .contain, .badge {
-  background: #4BF28A !important;
-  color: #38AA7F !important;
-}
-.footer .contain a, .nametag i, .dropdown-item:hover {
+/*Default button HOVER or active state */
+.btn:hover, a.badge:hover, .btn:focus, .btn:active, .btn.disabled, .dropdown.show .btn-secondary, .btn.active, 
+.page-link:hover, .page-item.active .page-link, 
+.fr-popup .fr-action-buttons .fr-command:hover, .fr-modal .fr-command:hover {
   color: #2C663C !important;
 }
-.panel.panel-default.profile-header {
-  background: none !important;
+/*Button HOVER or active by function*/
+.btn-primary:hover, .btn-primary.active, .btn-primary:focus, a.badge-primary:hover, .btn-info:hover, .btn-info:focus, a.badge-info:hover,
+.page-link:hover, .page-item.active .page-link,
+.fr-popup .fr-action-buttons .fr-command:hover, .fr-modal .fr-command:hover {
+  background-color: #34FF7A !important;
 }
-.profile-header-normal-status, .dropdown-item, .text-muted, .progress-bar {
-  color: #F9FFB7 !important;
+.btn-warning:hover, .btn-warning:focus, a.badge-warning:hover, .btn-danger:hover, .btn-danger:focus, a.badge-danger:hover, .btn.disabled {
+  background-color: #F5FA11 !important;
 }
-hr, .dropdown-divider {
+.btn-success:hover, .btn-success:focus, a.badge-success:hover {
+  background-color: #55FF45 !important;
+}
+.btn-secondary:hover, .btn-secondary:focus, a.badge-secondary:hover, .dropdown.show .btn-secondary {
+  background-color: #49EAAF !important;
+}
+/*Buttons layout*/
+.profile-header-buttons {
+  margin-top: -2px;
+}
+.defense-toggle {
+  float: right;
+  margin-top: -50px !important;
+  padding-right: 10px;
+}
+.profile-defenses .d-flex.align-items-center {
+  display: block !important;
+}
+@media only screen and (max-width: 768px) {
+  .defense-toggle {
+    float: none !important;
+    margin-top: 0 !important;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+  }
+}
+
+/*COMMENTS*/
+/*.fr-help-modal table tbody tr, .fr-modal-head {
+  border-color: #42631F !important;
+  border-radius: 0 !important;
+}*/
+/*Border for entire editor*/
+.fr-box, .fr-modal-wrapper {
+  border: solid 4px #42631F !important;
+  border-radius: .25rem !important;
+}
+/*Border separating field from toolbars*/
+.fr-wrapper {
+  border: solid 4px #42631F !important;
+  border-left: none !important;
+  border-right: none !important;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+/*Toolbar (header) styles*/
+.fr-toolbar, .fr-second-toolbar, .fr-tabs, .fr-floating-btn {
+  background-color: #747C1F !important;
+  color: #06413A;
+}
+/*Body areas + writable fields*/
+.fr-wrapper .fr-element, .fr-command.fr-btn + .fr-dropdown-menu, .fr-popup, .fr-body input, .fr-body label, .fr-input-line label, .fr-input-line input, .fr-modal-head, .fr-modal-body, .fr-separator {
+  background: #E0DC2C !important;
+}
+/*Base text color*/
+.fr-wrapper .fr-element, .fr-popup, .fr-dropdown-menu, .fr-modal, .fr-modal td {
+  color: #22492C !important;
+}
+/*Buttons hover + active*/
+.fr-btn.fr-active, .fr-btn-active-popup, .fr-tabs .fr-active-tab, .fr-command.fr-open, .fr-more-toolbar {
+  background: #4BF28A !important;
+}
+.fr-btn:hover, .fr-btn-wrap:hover .fr-btn, .fr-btn-hover, .fr-icon:hover {
+  background: #4BF28A !important;
+  border-color: #4BF28A !important;
+}
+/*Dropdown item hover*/
+.fr-dropdown-menu li a:hover, .fr-dropdown-menu .fr-command.fr-active, .language-css, .language-html  {
+  background-color: #82FD70 !important;
+  color: #2C663C !important;
+}
+/*Info text*/
+.fr-popup label, .fr-toggle-advanced-options, .fr-box .fr-counter, .fr-code-snippet-header {
+  color: #06413A !important;
+}
+/*Advanced Options area (same as body bg and info text)*/
+.fr-toggle-advanced-options, .fr-toggle-advanced-options + div * {
+  background: #E0DC2C !important;
+  color: #06413A !important;
+}
+/*Layout*/
+.comments-new .form-group {
+  margin-top: 1rem;
+}
+.fr-box .fr-toolbar, .fr-box .fr-second-toolbar {
+  border-radius: 0 !important;
+  border: none !important;
+}
+.fr-newline {
+  display: none !important;
+}
+.fr-color-hex-layer .fr-action-buttons .fr-command {
+  width: 40px !important;
+  padding: 8px !important;
+}
+
+/*MISCELLANEOUS*/
+
+/*TABLES*/
+/*Default table border color*/
+.table td, thead th.border-top-0 {
   border-color: #747C1F;
 }
-.comments h2 {
-padding:10px 0 !important;
-text-indent: 16px;
+/*Remove striping on tables*/
+.modal-content .table tr, .table-striped tr {
+  background: none !important;
 }
-.profile-attacks-title, .profile-characters-title, .profile-stats-title, .profile-defenses-title {
-margin-top:0 !important;
-margin-bottom:0 !important;
-width:100% !important;
-padding:10px 0 !important;
-text-indent: 16px
+/*Set table default color to card color*/
+.table {
+  color: #22492C;
 }
-.profile-defenses-title {
-width: 85% !important
+/*Set footer default text*/
+.footer div {
+  color: #06413A;
+  font-weight: bold;
 }
 
-.page-link, .disabled .page-link {
-  border: 2px solid #7DFF38 !important;
-  background: #5BB338 !important;
-  color: #C2EB6C !important;
-}
-.page-item.active .page-link, .page-link:hover {
-  border: 2px solid #7DFF38 !important;
-  background: #49EAAF !important;
+/*CHARACTER ATTACK NAMETAGS*/
+.character-attack-name {
+  background-color: #82FD70 !important;
   color: #2C663C !important;
+  max-width: 220px;
+  padding: 0.25rem !important;
+  border-radius: 0.25rem !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+.character-attack-name u {
+  text-decoration: none !important;
 }
 
-.sitewide-notice, .alert-info {
-display:none !important;
+/*TOOLTIPS*/
+.tooltip-inner {
+  color: #C2EB6C !important;
+  background: #42631F !important;
+  font-weight: bold;
 }
-.alert-success {
-background-color:#000 !important;
-color:#0F0 !important
+.tooltip .arrow:before {
+  border-top-color: #42631F !important;
 }
+
+/*PROGRESS BARS*/
+/*Uncolored bar*/
+.progress, .footer .mt-0 {
+  background-color: #747C1F;
+}
+/*Footer bar + Battle Ratio*/
+.profile-overall-stats .progress-bar, progress::-moz-progress-bar, progress::-webkit-progress-value {
+  background-color: #82FD70 !important;
+}
+
+/*OTHER*/
+/*Horizontal dividing lines*/
+hr {
+  border-color: #747C1F;
+}
+/*Extra border remover*/
+#user-tag-list .float-right .w-auto, .nametag {
+  border: none !important;
+}
+/*Clean up mobile status*/
+.profile-header-mobile-status p {
+  margin: 0 !important;
+}
+/*Nudge notification badge a smidge*/
+.navbar-icon-badge {
+  margin-right: -16px;
+}
+
 .achievement-panel img {
-	width: 200px;
+  width: 200px;
 }
-.donation_meter {
-  color: #38AA7F !important;
-}
-progress::-moz-progress-bar,
-progress::-webkit-progress-value {
-  background-color:#90A322 !important
-}
-.footer .mt-0 {
-  background:#82FD70;
-}
-.footer .contain {
-  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/e2.svg) !important;
+.footer .contain .row {
+  background-image: url(https://file.garden/ZdoQg-gxzVCR-9h7/AFassets/csswm/1xx.svg) !important;
   background-repeat: no-repeat !important;
   background-position: 0% 100% !important;
 }
-
