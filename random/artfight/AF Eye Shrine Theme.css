@@ -313,7 +313,7 @@ a, a:hover {
   font-weight: bold;
 }
 /*Default button HOVER or active state */
-.btn:hover, a.badge:hover, .btn:focus, .btn:active, .btn.disabled, .dropdown.show .btn-secondary, .btn.active, 
+.btn:hover, a.badge:hover, .btn:focus, .btn:active, .btn.disabled, .dropdown.show .btn, .btn.active, 
 .page-link:hover, .page-item.active .page-link, 
 .fr-popup .fr-action-buttons .fr-command:hover, .fr-modal .fr-command:hover {
   color: #2C663C !important;
@@ -324,7 +324,7 @@ a, a:hover {
 .fr-popup .fr-action-buttons .fr-command:hover, .fr-modal .fr-command:hover {
   background-color: #34FF7A !important;
 }
-.btn-warning:hover, .btn-warning:focus, a.badge-warning:hover, .btn-danger:hover, .btn-danger:focus, a.badge-danger:hover, .btn.disabled {
+.btn-warning:hover, .btn-warning:focus, a.badge-warning:hover, .btn-danger:hover, .btn-danger:focus, a.badge-danger:hover, .btn.disabled, .dropdown.show .btn-warning {
   background-color: #F5FA11 !important;
 }
 .btn-success:hover, .btn-success:focus, a.badge-success:hover {
@@ -496,6 +496,11 @@ hr {
 /*Nudge notification badge a smidge*/
 .navbar-icon-badge {
   margin-right: -16px;
+}
+/*Loosen footer to account for bold text and border*/
+.footer .contain, .dummy-class {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .achievement-panel img {
