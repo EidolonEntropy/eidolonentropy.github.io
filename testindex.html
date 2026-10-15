@@ -1002,20 +1002,11 @@
     }
   </script>
   <script>
-// For Bootstrap 5.1 redirection
-const hashValue = location.hash.replace(/^#/, '');
-if (hashValue) {
-    const tabElement = $(`.nav-tabs a[href="#${hashValue}"]`);
-    // Instantiate and show the tab using the Bootstrap 5 JS object
-    const tab = new bootstrap.Tab(tabElement[0]);
-    tab.show();
+// Check URL hash on page load and activate corresponding tab
+var hash = location.hash.replace(/^#/, '');
+if (hash) {
+    $('.nav-tabs a[href="#' + hash + '"]').tab('show');
 }
-
-// Synchronization on change (using native events)
-$('.nav-tabs a').on('shown.bs.tab', function (e) {
-  window.location.hash = e.target.hash;
-  window.scrollTo(0, 0); // Explicitly scroll to top if desired
-});
   </script>
 
     <!--JavaScript for iframes to be full height--><script src="https://eidolonentropy.art/resources/parentcode.js"></script>
