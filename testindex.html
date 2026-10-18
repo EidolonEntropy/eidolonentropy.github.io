@@ -97,7 +97,7 @@
   <!--nav-->
   <div class="p-2 container-fluid ui-group filters" style="position:fixed; z-index:100;">
     <ul class="w-100 row justify-content-between mx-auto nav nav-pills" style="max-width:400px">
-      <li class="align-self-center" data-toggle="tooltip" title="Status" onclick="triggerHeaderAnim('Status')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#reg2"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Portfolio" onclick="triggerHeaderAnim('Portfolio')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#reg2"></a> </li>
       <li class="align-self-center" data-toggle="tooltip" title="Projects" onclick="triggerHeaderAnim('Projects')"><a class="text-danger fas fa-photo-video fa-2x button" data-toggle="tab" href="#reg3" data-filter=".project-ongoing"></a> </li>
       <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="media/bothtext500.png" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#reg1"></li>
       <li class="align-self-center" data-toggle="tooltip" title="Contributors" onclick="triggerHeaderAnim('Contributors')"><a class="text-info fas fa-address-card fa-2x" data-toggle="tab" href="#reg4"></a> </li>
@@ -955,7 +955,8 @@ $(function(){
   hash && $('ul.nav.nav-pills a[href="' + hash + '"]').tab('show'); 
   $('ul.nav.nav-pills a').click(function (e) {
      $(this).tab('show');
-     window.location.hash = this.hash;
+     // window.location.hash = this.hash;
+	 triggerHeaderAnim('Portfolio');
   });
 });
   </script>
