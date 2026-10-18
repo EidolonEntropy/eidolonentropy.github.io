@@ -438,9 +438,9 @@
           </div>
         
           <div class="tab-pane fade" id="portfolio" style="height:calc(100% - 100px);margin-top:90px">
-			<div class="container-fluid row" style="height:100%;">
+			<div class="container-fluid row tab-content" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
-                <div class="button-group js-radio-button-group btn-group">
+                <div class="button-group js-radio-button-group btn-group" data-toggle="tab" data-target="#portShow">
                   <button class="button btn btn-primary is-checked" data-filter=".portfolio-none">//</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-animation">Animation</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-frutiger">Frutiger Design</button>
@@ -452,9 +452,9 @@
 			  <div class="col-12 col-md-4">
 				  <h1>bruh</h1>
 			  </div>
-              <div class="grid row px-0 col-md-8" style="height: 0px; overflow-y: scroll; position: relative;">
+              <div class="grid row px-0 col-md-8 tab-pane" style="height:100%;overflow-y:scroll;" id="portShow">
                 <div class="grid-sizer w-100"></div>
-                <div class="grid-item col-12 col-lg-4 mb-4 portfolio-animation" style="position: absolute; left: 0%; top: 0px; display: none;">
+                <div class="grid-item col-12 col-lg-4 mb-4 portfolio-animation">
                   <div class="card">
                     <img class="card-img-top" src="media/takeover.webp">
                     <div class="card-body">
@@ -462,7 +462,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item col-12 col-lg-4 mb-4 portfolio-frutiger" style="position: absolute; left: 0%; top: 0px; display: none;">
+                <div class="grid-item col-12 col-lg-4 mb-4 portfolio-frutiger">
                   <div class="card">
                     <img class="card-img-top" src="media/divergencethumb.png">
                     <div class="card-body">
@@ -470,7 +470,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item col-12 col-lg-8 mb-4 portfolio-animation" style="position: absolute; left: 0%; top: 0px; display: none;">
+                <div class="grid-item col-12 col-lg-8 mb-4 portfolio-animation">
                   <div class="card">
                     <img class="card-img-top" src="media/divergencethumb.png">
                     <div class="card-body">
