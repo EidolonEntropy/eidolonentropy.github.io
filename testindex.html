@@ -437,11 +437,11 @@
             
           </div>
         
-          <div class="tab-pane fade" id="reg2" style="height:100%">
-			<div class="container-fluid" style="height:100%;">
+          <div class="tab-pane fade" id="reg2" style="height:calc(100% - 100px);margin-top:90px">
+			<div class="container-fluid row" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
                 <div class="button-group js-radio-button-group btn-group">
-                  <button class="button btn btn-primary is-checked" data-filter="">All</button>
+                  <button class="button btn btn-primary is-checked" data-filter="">//</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-animation">Animation</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-frutiger">Frutiger Design</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-grungeglitch">Grunge & Glitch</button>
@@ -449,8 +449,10 @@
                   <button class="button btn btn-primary" data-filter=".portfolio-misc">Other Artwork</button>
                 </div>
               </div>
-			  <div class=""></div>
-              <div class="grid row" style="height:100%;overflow-y:scroll;">
+			  <div class="col-12 col-md-4">
+				  <h1>bruh</h1>
+			  </div>
+              <div class="grid row col-md-8" style="height:100%;overflow-y:scroll;">
                 <div class="grid-sizer w-100"></div>
                 <div class="grid-item col-12 col-lg-4 mb-4 portfolio-animation">
                   <div class="card">
@@ -948,11 +950,14 @@
     }
   </script>
   <script>
-// Check URL hash on page load and activate corresponding tab
-var hash = location.hash.replace(/^#/, '');
-if (hash) {
-    $('.nav-tabs a[href="#' + hash + '"]').tab('show');
-}
+$(function(){
+  var hash = window.location.hash;
+  hash && $('ul.nav.nav-pills a[href="' + hash + '"]').tab('show'); 
+  $('ul.nav.nav-pills a').click(function (e) {
+     $(this).tab('show');
+     window.location.hash = this.hash;
+  });
+});
   </script>
 
     <!--JavaScript for iframes to be full height--><script src="https://eidolonentropy.art/resources/parentcode.js"></script>
