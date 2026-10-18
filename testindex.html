@@ -961,15 +961,15 @@
 $(function(){
   var hash = window.location.hash;
   hash && $('ul.nav.nav-pills a[href="' + hash + '"]').tab('show'); 
-  $('ul.nav.nav-pills a').click(function (e) {
-     $(this).tab('show');
-     // window.location.hash = this.hash;
-      console.log("Hello, World!");
+  
       document.getElementById('header').innerHTML="Portfolio";
       document.getElementById('header').classList.remove("reveal-text");
       document.getElementById('header').offsetWidth;
       document.getElementById('header').classList.add("reveal-text");
-      console.log("Hello, World 2!");
+      console.log("port thing fired prop");
+  $('ul.nav.nav-pills a').click(function (e) {
+     $(this).tab('show');
+     // window.location.hash = this.hash;
   });
 });
   </script>
