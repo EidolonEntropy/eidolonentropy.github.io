@@ -97,11 +97,11 @@
   <!--nav-->
   <div class="p-2 container-fluid ui-group filters" style="position:fixed; z-index:100;">
     <ul class="w-100 row justify-content-between mx-auto nav nav-pills" style="max-width:400px">
-      <li class="align-self-center" data-toggle="tooltip" title="Portfolio" onclick="triggerHeaderAnim('Portfolio')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#reg2"></a> </li>
-      <li class="align-self-center" data-toggle="tooltip" title="Projects" onclick="triggerHeaderAnim('Projects')"><a class="text-danger fas fa-photo-video fa-2x button" data-toggle="tab" href="#reg3" data-filter=".project-ongoing"></a> </li>
-      <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="media/bothtext500.png" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#reg1"></li>
-      <li class="align-self-center" data-toggle="tooltip" title="Contributors" onclick="triggerHeaderAnim('Contributors')"><a class="text-info fas fa-address-card fa-2x" data-toggle="tab" href="#reg4"></a> </li>
-      <li class="align-self-center" data-toggle="tooltip" title="Shops" onclick="triggerHeaderAnim('Shops')"><a class="text-success fas fa-shopping-cart fa-2x" data-toggle="tab" href="#reg5"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Portfolio" onclick="triggerHeaderAnim('Portfolio')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#portfolio"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Projects" onclick="triggerHeaderAnim('Projects')"><a class="text-danger fas fa-photo-video fa-2x button" data-toggle="tab" href="#projects" data-filter=".project-ongoing"></a> </li>
+      <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="media/bothtext500.png" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#main"></li>
+      <li class="align-self-center" data-toggle="tooltip" title="Contributors" onclick="triggerHeaderAnim('Contributors')"><a class="text-info fas fa-address-card fa-2x" data-toggle="tab" href="#contributors"></a> </li>
+      <li class="align-self-center" data-toggle="tooltip" title="Shops" onclick="triggerHeaderAnim('Shops')"><a class="text-success fas fa-shopping-cart fa-2x" data-toggle="tab" href="#merch"></a> </li>
     </ul>
   </div><!--end nav-->
   
@@ -116,7 +116,7 @@
         </div>
 
         <div class="tab-content" style="height:100%">
-          <div class="tab-pane fade active show" id="reg1" style="height:calc(100% - 100px);margin-top:90px">
+          <div class="tab-pane fade active show" id="main" style="height:calc(100% - 100px);margin-top:90px">
             <div class="container-fluid" style="height:calc(100% - 30px);overflow-y:scroll;">
 
               <div class="tab-content">
@@ -437,7 +437,7 @@
             
           </div>
         
-          <div class="tab-pane fade" id="reg2" style="height:calc(100% - 100px);margin-top:90px">
+          <div class="tab-pane fade" id="portfolio" style="height:calc(100% - 100px);margin-top:90px">
 			<div class="container-fluid row" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
                 <div class="button-group js-radio-button-group btn-group">
@@ -470,6 +470,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="grid-item col-12 col-lg-8 mb-4 portfolio-animation">
+                  <div class="card">
+                    <img class="card-img-top" src="media/divergencethumb.png">
+                    <div class="card-body">
+                      <h4 class="goldman"><a href="#">ARTIFICE</a></h4>
+                    </div>
+                  </div>
+                </div>
 			  </div>
 			</div>
             <!--<div class="card-header-spacer w-100" style="height:100px"></div>
@@ -480,7 +488,7 @@
             </div>-->
           </div>
         
-          <div class="tab-pane fade" id="reg3" style="height:calc(100% - 100px);margin-top:90px">
+          <div class="tab-pane fade" id="projects" style="height:calc(100% - 100px);margin-top:90px">
             <div class="container-fluid" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
                 <div class="button-group js-radio-button-group btn-group">
@@ -685,7 +693,7 @@
             </div>
           </div>
 
-          <div class="tab-pane fade" id="reg4" style="height:calc(100% - 100px);margin-top:90px">
+          <div class="tab-pane fade" id="contributors" style="height:calc(100% - 100px);margin-top:90px">
 			      <div class="container-fluid" style="height:calc(100%);overflow-y:scroll;">
               <!--<h1 class="goldman text-uppercase text-center">Coming Soon</h1>-->
 			        <div class="card card-outline-info px-4 pb-4 pt-0">
@@ -897,7 +905,7 @@
             </div>
           </div>
 
-          <div class="tab-pane fade" id="reg5" style="height:calc(100% - 100px);margin-top:90px">
+          <div class="tab-pane fade" id="merch" style="height:calc(100% - 100px);margin-top:90px">
             <div class="mx-2 row justify-content-center">
               <div class="card-deck">
                 <div class="card col-lg-4 text-center">
@@ -956,7 +964,10 @@ $(function(){
   $('ul.nav.nav-pills a').click(function (e) {
      $(this).tab('show');
      // window.location.hash = this.hash;
-	 triggerHeaderAnim('Portfolio');
+      document.getElementById('header').innerHTML="Portfolio";
+      document.getElementById('header').classList.remove("reveal-text");
+      document.getElementById('header').offsetWidth;
+      document.getElementById('header').classList.add("reveal-text");
   });
 });
   </script>
