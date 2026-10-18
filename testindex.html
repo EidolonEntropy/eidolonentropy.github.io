@@ -430,7 +430,7 @@
                     <a class="btn btn-primary rounded-0" data-toggle="tab" href="#main3">Legal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-primary" style="border-top-left-radius:0;border-bottom-left-radius:0;" href="https://eidolonentropy.art/~portfolioB.html">Portfolio <i class="fas fa-external-link-alt"></i></a>
+                    <a class="btn btn-primary" style="border-top-left-radius:0;border-bottom-left-radius:0;" href="https://eidolonentropy.art/~portfolioB.html">Status <i class="fas fa-external-link-alt"></i></a>
                 </li>
             </ul>
             </div>
@@ -440,17 +440,19 @@
           <div class="tab-pane fade" id="portfolio" style="height:calc(100% - 100px);margin-top:90px">
 			<div class="container-fluid row" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
-                <div class="button-group js-radio-button-group btn-group portButtons">
-                  <button class="button btn btn-primary is-checked" data-filter=".portfolio-none">//</button>
-                  <button class="button btn btn-primary" data-filter=".portfolio-animation">Animation</button>
-                  <button class="button btn btn-primary" data-filter=".portfolio-frutiger">Frutiger Design</button>
-                  <button class="button btn btn-primary" data-filter=".portfolio-grungeglitch">Grunge & Glitch</button>
-                  <button class="button btn btn-primary" data-filter=".portfolio-illus">Illustration</button>
-                  <button class="button btn btn-primary" data-filter=".portfolio-misc">Other Artwork</button>
+                <div class="button-group js-radio-button-group btn-group nav portButtons">
+                  <button class="button btn btn-primary is-checked active" data-filter=".portfolio-none" data-toggle="tab" href="#portNone">//</button>
+                  <button class="button btn btn-primary" data-filter=".portfolio-animation" data-toggle="tab" href="#portAnim">Animation</button>
+                  <button class="button btn btn-primary" data-filter=".portfolio-frutiger" data-toggle="tab" href="#portFrutiger">Frutiger Design</button>
+                  <button class="button btn btn-primary" data-filter=".portfolio-grungeglitch" data-toggle="tab" href="#portGG">Grunge & Glitch</button>
+                  <button class="button btn btn-primary" data-filter=".portfolio-illus" data-toggle="tab" href="#portIllus">Illustration</button>
+                  <button class="button btn btn-primary" data-filter=".portfolio-misc" data-toggle="tab" href="#portMisc">Other Artwork</button>
                 </div>
               </div>
-			  <div class="col-12 col-md-4">
-				  <h1>bruh</h1>
+			  <div class="col-12 col-md-4 tab-content">
+  				<div class="tab-pane fade active show" id="portNone">bruh</div>
+				<div class="tab-pane fade" id="portAnim">anim</div>
+				<div class="tab-pane fade" id="portFrutiger">fruit</div>
 			  </div>
               <div class="grid row px-0 col-md-8 tab-pane" style="height:100%;overflow-y:scroll; visibility: hidden;" id="hiddenIsotope">
                 <div class="grid-sizer w-100"></div>
@@ -961,12 +963,6 @@
 $(function(){
   var hash = window.location.hash;
   hash && $('ul.nav.nav-pills a[href="' + hash + '"]').tab('show'); 
-  
-      document.getElementById('header').innerHTML="Portfolio";
-      document.getElementById('header').classList.remove("reveal-text");
-      document.getElementById('header').offsetWidth;
-      document.getElementById('header').classList.add("reveal-text");
-      console.log("port thing fired prop");
   $('ul.nav.nav-pills a').click(function (e) {
      $(this).tab('show');
      // window.location.hash = this.hash;
