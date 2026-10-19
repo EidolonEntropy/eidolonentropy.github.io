@@ -2,6 +2,8 @@
 // init Isotope
 var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
+    // use packery for better space management
+    layoutMode: 'packery',
     // use element for option
     columnWidth: '.grid-sizer',
     percentPosition: true,
