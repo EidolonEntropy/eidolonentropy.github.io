@@ -949,7 +949,7 @@
                   <div class="card">
                     <img class="card-img-top" src="media/portfolio/tortureheadshot.webp">
                     <div class="px-3">
-                      <h6 class="goldman mb-0 mt-2">Torture Icon</h6>
+                      <h6 class="goldman mb-0 mt-2">Fall of the Deceiver</h6>
 					  <p class="text-secondary"><small>2D Digital</small></p>
                     </div>
                   </div>
@@ -1009,13 +1009,13 @@
                   </div>
                 </div>
                 <div class="grid-item col-12 col-lg-4 mb-4 portfolio-misc">
-                  <div class="card">
+                  <a class="card" data-toggle="modal" data-target="#imageExpand" onclick="imageSwap(children[1].innerHTML, children[0].getAttribute('src'))">
                     <img class="card-img-top" src="media/portfolio/POWER.webp">
                     <div class="px-3">
                       <h6 class="goldman mb-0 mt-2">POWER</h6>
 					  <p class="text-secondary"><small>Graphite</small></p>
                     </div>
-                  </div>
+                  </a>
                 </div>
 				<!--end griditems-->
 			  </div>
@@ -1482,6 +1482,23 @@
 	</div>
 	
 
+<!--image modal-->
+	<div class="modal fade" id="imageExpand" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalTitle">Modal Error</h5>
+					<button type="button" class="close" data-dismiss="modal">
+					<span class="text-light">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center">
+					<img id="modalImage" src="https://i0.kym-cdn.com/entries/icons/facebook/000/000/091/TrollFace.jpg" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	  
   <script src="emailsub-widget.js"></script>
   <script src="comment-widget.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -1513,6 +1530,13 @@ $(document).ready(function(){
     $("#hiddenIsotope").addClass("visible");
   });
 });
+	</script>
+	<script>//Taken from old site stuff lol
+	function imageSwap(artTitle, artLink) {
+		console.log(artTitle);
+		document.getElementById("modalTitle").innerHTML = artTitle;
+		document.getElementById('modalImage').src = artLink;
+	}
 	</script>
 
     <!--JavaScript for iframes to be full height--><script src="https://eidolonentropy.art/resources/parentcode.js"></script>
