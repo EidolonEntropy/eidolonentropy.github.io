@@ -458,7 +458,7 @@
           <div class="tab-pane fade" id="portfolio" style="height:calc(100% - 100px);margin-top:90px">
 			<div class="container-fluid row mx-0 px-0" style="height:100%;">
               <div class="ui-group filters" style="position:absolute;right:20px;top:60px;">
-                <div class="button-group js-radio-button-group btn-group nav portButtons">
+                <div class="button-group js-radio-button-group btn-group nav portButtons d-none d-lg-block">
                   <button class="button btn btn-primary is-checked active" data-filter=".portfolio-none" data-toggle="tab" href="#portNone">//</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-anim" data-toggle="tab" href="#portAnim">Animation</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-3d" data-toggle="tab" href="#port3d">3D Works</button>
@@ -469,8 +469,22 @@
                   <button class="button btn btn-primary" data-filter=".portfolio-series" data-toggle="tab" href="#portSeries">Series</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-misc" data-toggle="tab" href="#portMisc">Other Artwork</button>
                 </div>
+				<div class="dropdown d-lg-none">
+					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+					<div class="dropdown-menu">
+                  <button class="dropdown-item is-checked active" data-filter=".portfolio-none" data-toggle="tab" href="#portNone">//</button>
+                  <button class="dropdown-item" data-filter=".portfolio-anim" data-toggle="tab" href="#portAnim">Animation</button>
+                  <button class="dropdown-item" data-filter=".portfolio-3d" data-toggle="tab" href="#port3d">3D Works</button>
+                  <button class="dropdown-item" data-filter=".portfolio-design" data-toggle="tab" href="#portDesign">Design</button>
+                  <button class="dropdown-item" data-filter=".portfolio-illust" data-toggle="tab" href="#portIllust">Illustration</button>
+                  <button class="dropdown-item" data-filter=".portfolio-chardes" data-toggle="tab" href="#portChars">Character Design</button>
+                  <button class="dropdown-item" data-filter=".portfolio-craft" data-toggle="tab" href="#portCraft">Craft Works</button>
+                  <button class="dropdown-item" data-filter=".portfolio-series" data-toggle="tab" href="#portSeries">Series</button>
+                  <button class="dropdown-item" data-filter=".portfolio-misc" data-toggle="tab" href="#portMisc">Other Artwork</button>
+					</div>
+				</div>
               </div>
-			  <div class="col-12 col-md-4 tab-content" style="height:100%; overflow-y: auto;">
+			  <div class="col-12 col-md-4 tab-content" style="max-height:100%; overflow-y: auto;">
   				<div class="tab-pane fade active show" id="portNone">
 					<h2 class="goldman">B//EidolonEntropy Portfolio</h2>
 					<h4 class="goldman">View various visual works by Battalia</h4>
