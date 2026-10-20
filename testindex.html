@@ -469,9 +469,10 @@
                   <button class="button btn btn-primary" data-filter=".portfolio-series" data-toggle="tab" href="#portSeries">Series</button>
                   <button class="button btn btn-primary" data-filter=".portfolio-misc" data-toggle="tab" href="#portMisc">Other Artwork</button>
                 </div>
-				<div class="dropdown d-lg-none">
-			      <a class="btn btn-primary dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-expanded="false">Tabs</a>
-				  <div class="dropdown-menu dropdown-menu-right">
+
+<li class="dropdown">
+    <a class="dropdown-toggle btn btn-primary dropbtn" data-toggle="dropdown" href="#" role="button" onclick="dropdownBruh('fandoms')">Tabs</a>
+    <div class="dropdown-menu dropdown-menu-right" id="fandoms" style="color:#e2e2e2; text-align: right;">
 					<a href="#" class="button btn btn-primary is-checked active" data-filter=".portfolio-none" data-toggle="tab" href="#portNone">//</a>
 			        <a class="button btn btn-primary" data-filter=".portfolio-anim" data-toggle="tab" href="#portAnim">Animation</a>
 			        <a class="button btn btn-primary" data-filter=".portfolio-3d" data-toggle="tab" href="#port3d">3D Works</a>
@@ -481,8 +482,9 @@
 			        <a class="button btn btn-primary" data-filter=".portfolio-craft" data-toggle="tab" href="#portCraft">Craft Works</a>
 			        <a class="button btn btn-primary" data-filter=".portfolio-series" data-toggle="tab" href="#portSeries">Series</a>
 			        <a class="button btn btn-primary" data-filter=".portfolio-misc" data-toggle="tab" href="#portMisc">Other Artwork</a>
-			      </div>
-			    </div>
+    </div>
+  </li>
+				  
               </div>
 			  <div class="col-12 col-md-4 tab-content" style="max-height:100%; overflow-y: auto;">
   				<div class="tab-pane fade active show" id="portNone">
@@ -2055,6 +2057,28 @@ $(document).ready(function(){
 		document.getElementById('modalImage').src = artLink;
 	}
 	</script>
+<script>
+    //w3schools dropdown thing bc bootstrap hates me
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function dropdownBruh(item) {
+  document.getElementById(item).classList.toggle("d-block");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('d-block')) {
+        openDropdown.classList.remove('d-block');
+      }
+    }
+  }
+} 
+</script>
 
     <!--JavaScript for iframes to be full height--><script src="https://eidolonentropy.art/resources/parentcode.js"></script>
     <!-- Optional JavaScript -->
