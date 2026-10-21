@@ -7,7 +7,7 @@ var $grid = $('.grid').isotope({
     // use element for option
     columnWidth: '.grid-sizer',
     percentPosition: true,
-    //uh
+    // filter by dummy class for an empty load
     filter: '.init',
   });
   
@@ -45,9 +45,6 @@ var $grid = $('.grid').isotope({
     }
     return value;
   }
-
-// filter by dummy class for an empty load
-$('#grid').isotope({ filter: '.init' });
 
 // layout Isotope again after all images have loaded
 $grid.imagesLoaded().progress( function() {
