@@ -7,6 +7,8 @@ var $grid = $('.grid').isotope({
     // use element for option
     columnWidth: '.grid-sizer',
     percentPosition: true,
+    //uh
+    filter: '.init',
   });
   
   // store filter for each group
