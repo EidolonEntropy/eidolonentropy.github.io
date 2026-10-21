@@ -564,7 +564,7 @@
 					<p>Other works of note spanning a variety of mediums.</p>
 				</div>
 			  </div>
-              <div class="grid row px-0 mx-0 col-md-8 tab-pane" style="height:100%;overflow-y:scroll; visibility: hidden;" id="hiddenIsotope">
+              <div class="grid row px-0 mx-0 col-md-8 tab-pane" style="height:100%;overflow-y:scroll;">
                 <div class="grid-sizer w-100"></div>
 				  
                 <div class="grid-item col-12 mb-4 portfolio-item portfolio-anim">
@@ -1994,6 +1994,7 @@ $(function(){
 });
   </script>
 	<script>
+// this was intended to make the portfolio isotope only appear after a click, but it's no longer required! but it took ages to figure out so um
 $(document).ready(function(){
   $(".portButtons").click(function(){
     $("#hiddenIsotope").addClass("visible");
