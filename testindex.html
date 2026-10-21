@@ -29,7 +29,7 @@
         .goldman {
           font-family: Goldman;
         }
-        .grid .card, .card-deck .card, #reg4 .card {
+        .grid .card, .card-deck .card, #contributors .card {
           background: rgba(0,0,0,0.6);
         }
         a:hover .redden-icon {
@@ -105,10 +105,10 @@
   <!--bg-->
   <!--<div class="container-flex" style="background-image:url(https://file.garden/ZdoQg-gxzVCR-9h7/gradient.svg);background-attachment:fixed;background-position:center;">-->
     <div style="position:absolute;width:100%;height:100%;z-index:-1;mix-blend-mode: difference;">
-	    <img src="media/corner1.svg" style="position:absolute;top:0;left:0;max-width:50%;max-height:50%">
-	    <img src="media/corner2.svg" style="position:absolute;top:0;right:0;max-width:50%;max-height:50%">
-	    <img src="media/corner3.svg" style="position:absolute;bottom:0;left:0;max-width:50%;max-height:50%">
-	    <img src="media/corner4.svg" style="position:absolute;bottom:0;right:0;max-width:50%;max-height:50%">
+	    <img src="media/corner1.svg" style="position:absolute;top:0;left:0;max-width:50%;max-height:50%" fetchpriority="high">
+	    <img src="media/corner2.svg" style="position:absolute;top:0;right:0;max-width:50%;max-height:50%" fetchpriority="high">
+	    <img src="media/corner3.svg" style="position:absolute;bottom:0;left:0;max-width:50%;max-height:50%" fetchpriority="high">
+	    <img src="media/corner4.svg" style="position:absolute;bottom:0;right:0;max-width:50%;max-height:50%" fetchpriority="high">
     </div>
   <!--end bg-->
 
@@ -117,7 +117,7 @@
     <ul class="w-100 row justify-content-between mx-auto nav nav-pills" style="max-width:400px">
       <li class="align-self-center" data-toggle="tooltip" title="Portfolio" onclick="triggerHeaderAnim('Portfolio')"><a class="text-warning fas fa-tasks fa-2x" data-toggle="tab" href="#portfolio"></a> </li>
       <li class="align-self-center" data-toggle="tooltip" title="Projects" onclick="triggerHeaderAnim('Projects')"><a class="text-danger fas fa-photo-video fa-2x button" data-toggle="tab" href="#projects" data-filter=".project-ongoing"></a> </li>
-      <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="media/bothtext500.png" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#main"></li>
+      <li data-toggle="tooltip" title="Main" onclick="triggerHeaderAnim('EidolonEntropy')" class="nav-item"><img src="media/bothtext500.png" fetchpriority="high" style="max-height:100px;cursor:pointer" class="img-expand active" data-toggle="tab" href="#main"></li>
       <li class="align-self-center" data-toggle="tooltip" title="Contributors" onclick="triggerHeaderAnim('Contributors')"><a class="text-info fas fa-address-card fa-2x" data-toggle="tab" href="#contributors"></a> </li>
       <li class="align-self-center" data-toggle="tooltip" title="Shops" onclick="triggerHeaderAnim('Shops')"><a class="text-success fas fa-shopping-cart fa-2x" data-toggle="tab" href="#merch"></a> </li>
     </ul>
@@ -551,11 +551,11 @@
 				<div class="tab-pane fade" id="portSeries">
 					<h2 class="goldman">Bodies of Works</h2>
 					<p>Series of works are as follows:</p>
-					<h6>Sins Series</h6>
+					<h6 class="goldman">Sins Series</h6>
 					<p>An exploration of both the positive and negative manifestations of the cardinal sins. Each piece portrays characters from <i>Takeover</i> as one of them falls victim to sin, while another uses it to benefit themselves. With wisdom, these 'sins' can either be one's greatest asset or biggest weakness.</p>
-					<h6>Frutiger Series</h6>
+					<h6 class="goldman">Frutiger Series</h6>
 					<p>Each work in this series features a <i>Takeover</i> character with a unique colour palette, identifying pose, and signature shape. They are a study of both character and design, with each entry used on products available <a href="https://eidolonentropy.threadless.com/" target="_blank">here</a>.</p>
-					<h6>Grunge Series</h6>
+					<h6 class="goldman">Grunge Series</h6>
 					<p>These works blend modern style with a dirty, old painting feel to portray the members of the Blackstar family. Each has a position relative to each other that matches the fates and trajectories of the pictured character. If they were to be printed, they are intended to be done on metal or an otherwise holographic material.</p>
 				</div>
 				<div class="tab-pane fade" id="portMisc">
@@ -1815,21 +1815,21 @@
                       <div class="w-100 mb-sm-4"></div>
                       <div class="card-deck">
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/uq4ninVbcvI/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/uq4ninVbcvI/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/uq4ninVbcvI">FAITH 12-13</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">14 Februrary 2022</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/3qbA9dJBvCY/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/3qbA9dJBvCY/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://www.youtube.com/watch?v=3qbA9dJBvCY">Chug Jug With You 26-27</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">14 April 2021</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/gTLhHrntgbs/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/gTLhHrntgbs/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/gTLhHrntgbs">Never Gonna Give You Up 3</a></h4>
                           </div>
@@ -1837,7 +1837,7 @@
                         </div> 
                         <div class="w-100 mb-sm-4"></div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/d-Q4eUJqF5c/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/d-Q4eUJqF5c/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/d-Q4eUJqF5c">Along Came A Spider 1-2</a></h4>
                             <p class="card-text">Parts completed by Battalia</p>
@@ -1845,14 +1845,14 @@
                           <div class="card-footer"><small class="text-light">31 October 2020</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/um5SLsrtz_k/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/um5SLsrtz_k/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/um5SLsrtz_k">Myth Did You Lay This Egg</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">5 September 2020</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/WFL5xzPtiMI/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/WFL5xzPtiMI/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/WFL5xzPtiMI">Giorno's Theme 2</a></h4>
                           </div>
@@ -1860,7 +1860,7 @@
                         </div>
                         <div class="w-100 mb-sm-4"></div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/WFUAHFgCHg4/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/WFUAHFgCHg4/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/WFUAHFgCHg4">Q&A Meme</a></h4>
                             <p class="card-text"></p>
@@ -1868,14 +1868,14 @@
                           <div class="card-footer"><small class="text-light">30 March 2020</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/Ht1ftKv55I8/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/Ht1ftKv55I8/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://www.youtube.com/watch?v=Ht1ftKv55I8">A P P L E  B O S S</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">21 February 2020</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/FSBSoTACX1s/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/FSBSoTACX1s/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/FSBSoTACX1s">Miser Brothers 6/11 (Winter)</a></h4>
                           </div>
@@ -1883,7 +1883,7 @@
                         </div>
                         <div class="w-100 mb-sm-4"></div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/DDN6GhYRBf8/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/DDN6GhYRBf8/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/DDN6GhYRBf8">All Bets Are Off 10</a></h4>
                             <p class="card-text">First shot + editing by Battalia</p>
@@ -1891,14 +1891,14 @@
                           <div class="card-footer"><small class="text-light">14 October 2019</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/QRiVmo4x5II/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/QRiVmo4x5II/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/QRiVmo4x5II">Lion King Spoofs Speedpaint</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">14 July 2019</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/o6CIt5tg_80/mqdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/o6CIt5tg_80/mqdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/o6CIt5tg_80">Megalovania But It's A Bunch Of Memes</a></h4>
                           </div>
@@ -1906,14 +1906,14 @@
                         </div>
                         <div class="w-100 mb-sm-4"></div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/EudiZqYH9-8/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/EudiZqYH9-8/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/EudiZqYH9-8">Leekbomb Part</a></h4>
                           </div>
                           <div class="card-footer"><small class="text-light">26 May 2019</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/UWb7vjb2ZI0/mqdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/UWb7vjb2ZI0/mqdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/UWb7vjb2ZI0">Mountain Sound 15</a></h4>
                             <p class="card-text">Contributed art</p>
@@ -1921,7 +1921,7 @@
                           <div class="card-footer"><small class="text-light">20 April 2019</small></div>
                         </div>
                         <div class="card card-outline-info">
-                          <img class="card-img-top" src="https://img.youtube.com/vi/dhw29jZccLI/maxresdefault.jpg">
+                          <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/dhw29jZccLI/maxresdefault.jpg">
                           <div class="card-body">
                             <h4 class="goldman"><a href="https://youtu.be/dhw29jZccLI">Flawed Design 15</a></h4>
                             <p class="card-text">Boarded and edited by Battalia</p>
@@ -1945,7 +1945,7 @@
                 <h3 class="goldman">Contributions</h3>
                 <div class="card-deck">
                   <div class="card card-outline-mako">
-                    <img class="card-img-top" src="https://64.media.tumblr.com/2e7d7e3a8555935d578f3fc0094cd309/8977ae610b2cd8e2-b9/s1280x1920/df4cfbac10cda1905c7ad71cd47ed87d0328ac54.gifv">
+                    <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://64.media.tumblr.com/2e7d7e3a8555935d578f3fc0094cd309/8977ae610b2cd8e2-b9/s1280x1920/df4cfbac10cda1905c7ad71cd47ed87d0328ac54.gifv">
                     <div class="card-body">
                       <h4 class="goldman"><a href="#">Seeing Red 6</a></h4>
                       <p class="card-text">Contributed animation</p>
@@ -1953,7 +1953,7 @@
                     <div class="card-footer"><small class="text-light">Soon</small></div>
                   </div>
                   <div class="card card-outline-mako">
-                    <img class="card-img-top" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
+                    <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
                     <div class="card-body">
                       <h4 class="goldman"><a href="https://youtu.be/OT2Dwh5MD_4">Go To War</a></h4>
                       <p class="card-text">Contributed art</p>
@@ -1961,7 +1961,7 @@
                     <div class="card-footer"><small class="text-light">11 July 2023</small></div>
                   </div>
                   <div class="card card-outline-mako d-none d-sm-flex" style="visibility:hidden">
-                    <img class="card-img-top" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
+                    <img class="card-img-top" loading="lazy" fetchpriority="low" src="https://img.youtube.com/vi/OT2Dwh5MD_4/maxresdefault.jpg">
                     <div class="card-body">
                       <h4 class="goldman"><a href="https://youtu.be/OT2Dwh5MD_4">Go To War</a></h4>
                       <p class="card-text">Contributed art</p>
