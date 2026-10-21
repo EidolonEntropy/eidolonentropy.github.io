@@ -43,4 +43,8 @@ var $grid = $('.grid').isotope({
     }
     return value;
   }
-  
+
+// layout Isotope again after all images have loaded
+$grid.imagesLoaded().progress( function() {
+   $grid.isotope('layout');
+});
