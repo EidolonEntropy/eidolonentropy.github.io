@@ -53,6 +53,6 @@ $grid.imagesLoaded().progress( function() {
 
 // um
 $grid.on( 'arrangeComplete', function( event, filteredItems ) {
+  console.log('Second layout pass triggered');
   $grid.isotope('layout');
-    console.log('we did the thing');
 });
