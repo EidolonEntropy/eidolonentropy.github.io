@@ -52,7 +52,7 @@ $grid.imagesLoaded().progress( function() {
 });
 
 // um
-imgLoad.on( 'progress', function( instance, image ) {
-  var result = image.isLoaded ? 'loaded' : 'broken';
-  console.log( 'image is ' + result + ' for ' + image.img.src );
+$grid.on( 'arrangeComplete', function( event, filteredItems ) {
+  $grid.isotope('layout');
+    console.log('we did the thing');
 });
