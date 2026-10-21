@@ -50,3 +50,9 @@ var $grid = $('.grid').isotope({
 $grid.imagesLoaded().progress( function() {
    $grid.isotope('layout');
 });
+
+// um
+imgLoad.on( 'progress', function( instance, image ) {
+  var result = image.isLoaded ? 'loaded' : 'broken';
+  console.log( 'image is ' + result + ' for ' + image.img.src );
+});
